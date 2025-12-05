@@ -1,0 +1,7 @@
+---
+title: "GrüentAI"
+format: 
+  revealjs: 
+    theme: dark
+---
+

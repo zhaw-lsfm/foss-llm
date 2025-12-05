@@ -22,6 +22,124 @@
 
 ## Key Themes & Elements
 
+### 0. The Cooking Metaphor (OPENING HOOK & RECURRING REFERENCE)
+
+**The Absurd Proprietary Cooking System:**
+
+Imagine you want to cook a meal, but you can only follow recipes from one specific provider. The recipe card looks like this:
+
+```
+PROPRIETARY RECIPE CARD:
+
+1. Add 2 units of Compound-XJ7 (available only from us, $15/bottle)
+2. Heat in Model-Pro-Pan-2024 at setting "MEDIUM"
+3. Stir with Certified-Stirring-Tool (sold separately)
+4. When indicator light turns green, add Flavor-Packet-B
+
+⚠️ WARNING:
+- Substitutions void warranty
+- Recipe may stop working if ingredients discontinued
+- Do not attempt to understand the chemical processes involved
+- Model-Pro-Pan-2024 will be discontinued next year; upgrade required
+```
+
+**Contrast with Open Source Cooking:**
+
+```
+OPEN RECIPE:
+
+1. Sauté onions in oil until translucent
+   (WHY: releases sugars, builds flavor base)
+2. Add garlic, cook 30 seconds
+   (WHY: aromatic, cooks fast, burns easily)
+3. Add tomatoes, simmer 20 min
+   (WHY: breaks down, concentrates)
+4. Season to taste
+
+NOTES:
+- No onions? Try shallots or leeks (similar aromatic base)
+- Olive oil or butter both work (you need fat for flavor)
+- Any pan that conducts heat evenly
+- Adjust time based on your stove's heat output
+```
+
+**Key Questions to Audience:**
+
+1. **"Would you accept this for cooking?"**
+   - Of course not! It's absurd!
+   - You'd want to understand WHY each step works
+   - You'd want to substitute based on what you have
+   - You'd want freedom to adapt to YOUR needs
+
+2. **"But we DO accept this for software. Why?"**
+   - **Time argument:** "We spend FAR more time on computers than cooking"
+   - Most people cook 30-60 min/day
+   - Most people use computers 4-8 hours/day
+   - Yet we accept ignorance about technology but not about cooking
+
+3. **"What about someone who doesn't know how to cook?"**
+   - They might say: "It's going to take me ages just deciding on a pan!"
+   - "How should I find the time to learn all that?"
+   - **Same with software:** Yes, initial investment needed
+   - **BUT:** It pays off many-fold over time
+   - And you're NOT vulnerable anymore
+
+**The Vulnerability of Lock-in (Vendor Lock-in via Cooking):**
+
+Once you've bought:
+- The Model-Pro-Pan-2024 ($200)
+- 12 bottles of Compound-XJ7 ($180)
+- The Certified-Stirring-Tool ($50)
+- Learned their obscure ingredient names
+- Built up a recipe collection that ONLY works with their system
+
+**You are now in a vulnerable position:**
+- **Switching cost is enormous** - you'd have to replace everything
+- **They can raise prices** - you're already invested
+- **They can discontinue products** - your recipes break
+- **They control your ability to cook** - you're dependent
+
+**Sound familiar?** This is exactly how software lock-in works.
+
+**Mapping to Software Reality:**
+
+| Cooking Metaphor | Software Reality |
+|------------------|------------------|
+| "Compound-XJ7" | Proprietary file formats (.docx, .psd, etc.) |
+| "Model-Pro-Pan-2024" | Specific OS/hardware requirements |
+| Recipe only works with their stuff | Vendor lock-in, no interoperability |
+| Can't substitute ingredients | Can't switch tools/platforms |
+| Don't know WHY it works | Closed source, black box systems |
+| Ingredient discontinued = recipe breaks | Software sunset = your workflow dies |
+| Understanding cooking basics | Understanding technology principles |
+| Can adapt recipe to YOUR context | Can modify open source for YOUR needs |
+| Vulnerable after investment | Trapped by switching costs |
+
+**The Empowerment Message:**
+
+When you understand the BASICS of cooking:
+- "Oh, I'm building a flavor base - I can use what I have"
+- "This is creating an emulsion - milk works too"
+- "I'm at high altitude, I need to adjust"
+- **You become empowered, not dependent**
+
+When you understand the BASICS of technology:
+- "Oh, this is just a text editor - I can use any one"
+- "This is file synchronization - multiple tools do this"
+- "I need privacy - I'll choose the open alternative"
+- **Same empowerment, same freedom**
+
+**How to Use Throughout Workshop:**
+
+- **Opening hook:** Start with this scenario, get them reacting
+- **When explaining lock-in:** "Remember the proprietary recipe? That's what's happening here."
+- **Infuriating examples:** "WhatsApp leak? You trusted the recipe provider and they exposed your data."
+- **Framework section:** "Three layers: Recipe (interface), Ingredients (implementation), Cooking process (technology)"
+- **Switching costs:** "You've invested in their pans and ingredients - now you're stuck"
+- **Closing:** "Would you accept proprietary cooking? Then why accept proprietary software?"
+
+---
+
 ### 1. Personal/Emotional Arc
 
 **Father's Photo (1998 Linux Workshop, Sri Lanka)**
@@ -35,11 +153,20 @@
 - Makes the concept accessible and narrative
 
 **Infuriating Examples** (make them feel the anger!)
-- ICC prosecutor email blocked by Microsoft after Trump sanctions
-- Windows 10 forced obsolescence → environmental waste
-- Academic publisher paywalls locking knowledge
-- Field data locked in proprietary formats
-- ArcGIS licensing preventing Global South collaboration (echoes father's story)
+
+**FINAL SELECTION - 3 Concrete Examples:**
+1. **WhatsApp security flaw** - Billions of phone numbers exposed (Wired article)
+   - Everyone uses it, personal stakes
+   - Shows you can't trust platforms you don't control
+   - Links to opening: "Why not Signal? THIS is why."
+2. **ICC prosecutor email block** - Microsoft blocked emails after Trump sanctions
+   - Corporate platforms can censor at will
+   - Global justice implications
+3. **Windows 10 forced obsolescence** - Hardware made "obsolete" by software
+   - Environmental waste, e-waste crisis
+   - Resonates with IUNR environmental focus
+
+*(Other candidates considered but dropped: Academic paywalls - separate issue; Field data/ArcGIS - not concrete enough)*
 
 ### 2. The Framework (Simplified for Mixed Audience)
 
@@ -214,22 +341,46 @@ Quality: Nearly equivalent
 
 **Total time: 60-65 minutes** (may need slight adjustment)
 
-### Opening (5 min) - "The WhatsApp Moment"
-- "How many use WhatsApp daily? How many use Signal?"
-- "Why not Signal? Same features, more private, free..."
-- **Reveal:** "Can't switch because everyone's on WhatsApp. That's lock-in."
+### Opening (7 min) - "The Proprietary Cooking System" [REVISED]
+**Start with the absurd scenario:**
+- "Imagine you could only cook using one company's recipes..."
+- Show the proprietary recipe card (visual slide)
+- Show the open recipe (visual slide)
+- **Key questions:** "Would you accept this? No! Why not?"
 
-### Personal Stakes (8 min) - Why This Matters
+**Then pivot to software:**
+- "But we DO accept this for software"
+- **Time argument:** "We spend 4-8 hours/day on computers, 30-60 min cooking"
+- "Yet we accept ignorance about technology but not cooking"
+
+**The vulnerability point:**
+- "Once you've invested in their pans, ingredients, learned their system..."
+- "Switching cost becomes enormous - you're trapped"
+- **This is vendor lock-in**
+
+**Quick WhatsApp validation:**
+- "How many use WhatsApp daily? Signal?"
+- "Why not switch? EXACTLY - switching costs"
+- "Keep the cooking metaphor in mind - we'll come back to it"
+
+### Personal Stakes (7 min) - Why This Matters [SHORTENED from 8]
 - **Father's photo:** 1998, Sri Lanka, licensing costs matter
-- **Ada & Zangemann:** The pattern of control vs. freedom
-- **Infuriating examples:** ICC blocked, Windows waste, data trapped
+- **Ada & Zangemann:** The pattern of control vs. freedom (brief!)
+- **Infuriating examples with cooking callbacks:**
+  - **WhatsApp leak:** "You trusted the recipe provider with your data - they exposed it"
+  - **ICC block:** "The recipe provider decided you can't cook anymore"
+  - **Windows waste:** "Your pan is 'obsolete' because they say so"
 - **The arc:** This has always mattered (1998) → It's a pattern (Ada) → It's urgent NOW
 
 ### The Framework (6 min) - Understanding Lock-in [SHORTENED from 7]
-- Three layers (quick, simple language)
+- **Three layers with cooking parallel:**
+  - Interface: "I can follow the recipe" → "I can use Word"
+  - Implementation: Proprietary vs open (their ingredients vs any ingredients)
+  - Technology: The cooking process itself → The fundamental capability
 - Lock-in triangle
 - Examples: Maps, Podcasts, ArcGIS, WhatsApp
 - Export difficulty: Proprietary traps vs Open Source liberates
+- **Cooking callback:** "Recipe (interface), Ingredients (implementation), Cooking (technology)"
 
 ### Activity 1: Your Lock-ins (15 min)
 **Format:** Flipcharts with stars
@@ -307,7 +458,12 @@ Quality: Nearly equivalent
 - "Same technology, different products - and YOU control one of them"
 
 ### Closing (5 min) - The Invitation
+- **Return to cooking metaphor:** "Would you accept proprietary cooking? No! So why accept proprietary software?"
 - "We're at the fork in the road. Which path do we take?"
+- **Address the 'I don't have time' objection:**
+  - "Learning to 'cook' with technology takes initial investment"
+  - "But it pays off many-fold over time"
+  - "And you're no longer vulnerable to vendor decisions"
 - "Switching costs are real, but so is the cost of staying locked in"
 - "Try one new open alternative this month - start small"
 - GrüentAI is here as a resource for questions
@@ -316,11 +472,20 @@ Quality: Nearly equivalent
 ---
 
 ## Timing Note
-**Total: 65 minutes** - slightly over. Options:
+**Total: 65 minutes** - slightly over.
+
+**Changes with cooking metaphor:**
+- Opening extended from 5→7 min (worth it for strong hook)
+- Personal Stakes shortened from 8→7 min (Ada can be briefer)
+- Net change: Still at 65 minutes
+
+**Options to fit 60 minutes:**
 1. Tighten Framework section (6→5 min)
 2. Compress Understanding LLMs (6→5 min)
 3. Acknowledge workshop may run 65 min with discussion
 4. Make Understanding LLMs optional/backup slides
+
+**Recommendation:** The cooking metaphor is so strong, keep the 7 min opening. Compress Understanding LLMs to 5 min to compensate.
 
 ---
 
@@ -342,13 +507,10 @@ Quality: Nearly equivalent
   - Live head-to-head comparison (powerful but risky)
   - Video recording of comparisons (backup plan)
 
-**2. "Anger Moments" Selection:**
-Which 2-3 examples will resonate most with IUNR?
-- ICC prosecutor email block (global justice)
-- Windows 10 obsolescence (environmental waste)
-- Academic publisher paywalls (knowledge access)
-- Field data in proprietary formats (research continuity)
-- ArcGIS licensing blocking Global South collaboration (echoes father's story)
+**2. "Anger Moments" Selection:** ✅ **RESOLVED**
+- **WhatsApp security flaw** (billions exposed - personal stakes, everyone uses it)
+- **ICC prosecutor email block** (corporate censorship, global justice)
+- **Windows 10 obsolescence** (environmental waste - resonates with IUNR focus)
 
 **3. Example Collection:**
 Need more tool pairs that resonate with IUNR. Brainstorm:
@@ -410,11 +572,11 @@ Need more tool pairs that resonate with IUNR. Brainstorm:
 ## Next Steps
 
 ### High-Level (Before Drilling Down):
-- [ ] Finalize teaching use cases to showcase
-- [ ] Select 2-3 most powerful "anger" examples
+- [ ] Finalize teaching use cases to showcase (TABLED - see notes in Open Questions)
+- [x] Select 2-3 most powerful "anger" examples (WhatsApp leak, ICC block, Windows waste)
 - [ ] Decide on benchmark presentation approach
-- [ ] Determine teaching content placement in flow
-- [ ] Complete example collection (tool pairs)
+- [ ] Determine teaching content placement in flow (TABLED - see notes in Open Questions)
+- [ ] Complete example collection (tool pairs) - IN PROGRESS
 
 ### Detail Work (After High-Level is Set):
 - [ ] Create slide deck

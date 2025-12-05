@@ -1,4 +1,4 @@
-# Session Notes - November 25, 2025
+# Session Notes - November 25 & 27, 2025
 ## Workshop Design Progress
 
 ### What We Accomplished Today
@@ -47,20 +47,94 @@
 **Project Documentation:**
 - `N_FO_Antrag_Foerderung_E_Learning_Final.md` - Original grant proposal (already existed)
 
+### November 27 Session - Question 1 Discussion
+
+**Worked on:** Teaching Use Cases / Benchmarks placement and structure
+
+**Key insight discovered:** This isn't one question, it's THREE related aspects:
+
+1. **"When is AI helpful?"**
+   - Assumption: Audience already uses ChatGPT for something
+   - Goal: Expand their mental model of what's possible beyond current usage
+   - Treatment needed: Show broader categories of teaching tasks
+   - Example: "You use it for emails, but try: exam questions, grading, summaries"
+
+2. **"When is LOCAL AI helpful?"**
+   - Criteria identified: Private data + small repetitive tasks
+   - Goal: Help them recognize when they SHOULD choose local over commercial
+   - Treatment needed: Decision framework or clear guidelines
+   - Example: "Student data? Local. One-off creative? Either. Repetitive grading? Local shines."
+
+3. **"How does local compare to commercial?"**
+   - Goal: Prove local is "good enough" for their use cases
+   - Treatment needed: Benchmarks with star ratings
+   - Example: Show DeepSeek-r1 matches ChatGPT for specific teaching tasks
+
+**Proposed structure considered:**
+- "Solution" section: Expand use cases (1 min) + Decision framework (2 min) + Benchmarks (3 min)
+- Demo: Pick ONE benchmarked task, run live on both systems to validate
+- Benefit: Demo can fail but content still covered
+
+**Status:** Stuck on this question. Three aspects are clear, but how to weave them together in the workshop flow is unresolved. **Decided to table this and move to other questions.**
+
+---
+
+### December 5 Session - Cooking Metaphor Integration
+
+**Major development:** Created powerful opening hook using "proprietary cooking system" metaphor
+
+**Key innovation:**
+- Imagine cooking only with one vendor's proprietary recipes, ingredients, and tools
+- "Compound-XJ7", "Model-Pro-Pan-2024", "Certified-Stirring-Tool"
+- Contrast with open recipe that explains WHY each step works
+- Absurdity is immediately obvious for cooking - why accept it for software?
+
+**Three critical arguments integrated:**
+1. **Vendor lock-in vulnerability:** Once you've invested in their pans/ingredients/system, switching cost becomes enormous - you're trapped
+2. **Time disparity:** We spend 4-8 hours/day on computers vs 30-60 min cooking, yet accept ignorance about technology but not cooking
+3. **"I don't have time" objection:** Yes, initial investment needed to learn, but pays off many-fold and removes vulnerability
+
+**Integration into workshop:**
+- Opening hook (7 min) - Start with absurd proprietary recipe, pivot to software
+- Recurring reference throughout
+- Framework section: "Recipe (interface), Ingredients (implementation), Cooking (technology)"
+- Infuriating examples: "You trusted the recipe provider..."
+- Closing: "Would you accept proprietary cooking? Then why accept proprietary software?"
+
+**Changes made:**
+- Extended opening from 5→7 min (worth it for strong hook)
+- Shortened Personal Stakes from 8→7 min (Ada can be briefer)
+- Added cooking callbacks throughout flow
+- Still at 65 min total (recommend compressing Understanding LLMs to 5 min)
+
+**Status:** Cooking metaphor fully integrated into Workshop_IUNR_Design_v2.md
+
+**Slide outline created:**
+- Created `SLIDES_OUTLINE.md` - complete 54-slide breakdown
+- Organized by sections with timing
+- Visual requirements noted
+- Ready for full Quarto drafting
+- Formatted with empty lines before bullet lists for markdown compatibility
+
+---
+
 ### Where We Left Off
 
-**Workshop Status:** High-level structure complete, NOT detailed yet
+**Workshop Status:** High-level structure complete, cooking metaphor integrated, NOT detailed yet
 
 **Still at high-level planning stage. Need to resolve:**
 
-1. **Teaching Use Cases**
-   - Which specific examples to showcase?
-   - How to present benchmarks (slides vs live)?
-   - Where in flow (before demo, after activity 1, or integrated)?
+1. **Teaching Use Cases** [PARTIALLY EXPLORED - TABLED]
+   - Clarified three distinct aspects (see November 27 notes above)
+   - Still need to decide: Where in flow? How to present?
+   - Relationship to demo unclear
 
-2. **"Anger Examples"**
-   - Which 2-3 resonate most with IUNR?
-   - ICC email block? Windows waste? ArcGIS licensing?
+2. **"Anger Examples"** [RESOLVED]
+   - **DECISION: Use these 3 concrete examples:**
+     1. WhatsApp leak - Billions of phone numbers exposed (Wired article)
+     2. ICC prosecutor email block - Microsoft blocked after Trump sanctions
+     3. Windows 10 obsolescence - Forced e-waste, environmental impact
+   - All are concrete, documented, and hit different angles (privacy, control, environment)
 
 3. **Example Collection**
    - Need more tool pairs for IUNR audience
