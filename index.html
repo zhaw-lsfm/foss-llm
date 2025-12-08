@@ -9,7 +9,8 @@
 <link href="index_files/libs/quarto-html/quarto-syntax-highlighting-dark-a5cc9e99dca6daa9fc4f9db80b98b5ad.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.9.11">
 
-  <title>GrüentAI</title>
+  <meta name="author" content="GrüentAI Team">
+  <title>Technology Sovereignty &amp; Local LLMs</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -126,16 +127,550 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">GrüentAI</h1>
+  <h1 class="title">Technology Sovereignty &amp; Local LLMs</h1>
+  <p class="subtitle">Who Controls Your AI Tools?</p>
 
 <div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+GrüentAI Team 
+</div>
+</div>
 </div>
 
 </section>
-<section class="slide level2">
-
+<section>
+<section id="opening-fork-in-the-road-cooking-metaphor" class="title-slide slide level1 section center">
+<h1>1. OPENING: Fork in the Road + Cooking Metaphor</h1>
 
 </section>
+<section id="were-at-a-critical-choice-point-with-ai" class="slide level2">
+<h2>We’re at a critical choice point with AI</h2>
+<div class="r-fit-text">
+<p><strong>Is AI going to own us?</strong></p>
+<p><strong>Or are we going to own AI?</strong></p>
+</div>
+</section>
+<section id="the-pattern-repeats" class="slide level2">
+<h2>The Pattern Repeats</h2>
+<p>We’ve been here before:</p>
+<ul>
+<li>Windows → locked in</li>
+<li>Office → locked in</li>
+<li>WhatsApp → locked in</li>
+<li>ArcGIS → locked in</li>
+</ul>
+<div class="fragment">
+<p><strong>Now it’s happening with AI</strong></p>
+</div>
+</section>
+<section id="let-me-show-you-what-lock-in-looks-like" class="slide level2">
+<h2>Let me show you what lock-in looks like…</h2>
+<p>Imagine you want to cook a meal…</p>
+</section>
+<section id="proprietary-recipe-card" class="slide level2">
+<h2>Proprietary Recipe Card</h2>
+<pre><code>PROPRIETARY RECIPE CARD
+
+1. Add 2 units of Compound-XJ7
+   ($15/bottle, our brand only)
+2. Heat in Model-Pro-Pan-2024 at setting "MEDIUM"
+3. Stir with Certified-Stirring-Tool
+   (sold separately)
+4. Add Flavor-Packet-B when indicator light turns green
+
+⚠️ WARNING:
+- Substitutions void warranty
+- Recipe breaks if ingredients discontinued
+- Do not attempt to understand the chemistry
+- Model-Pro-Pan-2024 discontinued next year; upgrade required</code></pre>
+</section>
+<section id="open-recipe-card" class="slide level2">
+<h2>Open Recipe Card</h2>
+<pre><code>OPEN RECIPE
+
+1. Sauté onions in oil until translucent
+   WHY: Releases sugars, builds flavor base
+
+2. Add garlic, cook 30 seconds
+   WHY: Aromatic, cooks fast, burns easily
+
+3. Add tomatoes, simmer 20 min
+   WHY: Breaks down, concentrates
+
+NOTES:
+- No onions? Use shallots or leeks
+- Olive oil or butter both work
+- Any pan that conducts heat evenly</code></pre>
+</section>
+<section id="the-absurdity" class="slide level2">
+<h2>The Absurdity</h2>
+<div class="r-fit-text">
+<p>Would you accept the proprietary system for cooking?</p>
+<p><strong>Of course not!</strong></p>
+</div>
+</section>
+<section id="but-we-do-accept-this-for-software" class="slide level2">
+<h2>But We DO Accept This for Software</h2>
+<div class="r-fit-text">
+<p>And now we’re doing it with AI</p>
+</div>
+</section>
+<section id="time-comparison" class="slide level2">
+<h2>Time Comparison</h2>
+
+<img data-src="images/time-comparison.png" alt="Bar chart showing cooking 30-60 min/day vs computer use 4-8 hours/day" class="r-stretch"><p><strong>Yet we accept ignorance about technology</strong></p>
+<aside class="notes">
+<p>TODO: Create bar chart visual showing time spent cooking vs using computers</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-vulnerability" class="slide level2">
+<h2>The Vulnerability</h2>
+<p>Once you’ve invested in ChatGPT Plus…</p>
+<ul>
+<li>Learned their interface</li>
+<li>Built your prompts in their system</li>
+<li>Stored your data with them</li>
+</ul>
+<div class="fragment">
+<p><strong>Switching cost becomes ENORMOUS</strong></p>
+</div>
+</section>
+<section id="quick-check" class="slide level2">
+<h2>Quick Check</h2>
+<ul>
+<li class="fragment">How many use ChatGPT? 🙋</li>
+<li class="fragment">How many run local LLMs? 🙋</li>
+<li class="fragment">Why not? Let’s explore that.</li>
+</ul>
+</section>
+<section id="transition" class="slide level2">
+<h2>Transition</h2>
+<div class="r-fit-text">
+<p>Today: I want to show you there <strong>IS</strong> an alternative</p>
+</div>
+<ul>
+<li>Open source LLMs you can run locally</li>
+<li>For teaching</li>
+<li>On your own hardware</li>
+</ul>
+</section></section>
+<section>
+<section id="understanding-llms-pragmatic-overview" class="title-slide slide level1 section center">
+<h1>2. UNDERSTANDING LLMs: Pragmatic Overview</h1>
+
+</section>
+<section id="what-are-llms-practical-overview" class="slide level2">
+<h2>What Are LLMs? (Practical Overview)</h2>
+</section>
+<section id="what-llms-are-simple" class="slide level2">
+<h2>What LLMs Are (Simple)</h2>
+<ul>
+<li>Sophisticated pattern matching from massive text</li>
+<li>Like very advanced autocomplete</li>
+<li>Not “intelligence” - pattern recognition at scale</li>
+</ul>
+<div class="fragment">
+<p><strong>Not magic - technology you can understand</strong></p>
+</div>
+</section>
+<section id="the-last-5-years" class="slide level2">
+<h2>The Last 5 Years</h2>
+
+<img data-src="images/llm-timeline.png" alt="Timeline of LLM development 2019-2025" class="r-stretch"><ul>
+<li><strong>2019:</strong> GPT-2 impressive but limited</li>
+<li><strong>2023:</strong> ChatGPT changes everything</li>
+<li><strong>2024-2025:</strong> Open models catch up</li>
+</ul>
+<div class="fragment">
+<p><strong>Key insight: Gap closing FAST</strong></p>
+</div>
+<aside class="notes">
+<p>TODO: Create timeline visual</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="proprietary-vs-open-weights" class="slide level2">
+<h2>Proprietary vs Open Weights</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Proprietary</strong> (ChatGPT, Claude, Gemini)</p>
+<ul>
+<li>Runs on their servers</li>
+<li>They see your data</li>
+<li>You pay subscription</li>
+<li>They control access</li>
+<li>Can change/remove features</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><strong>Open Weights</strong> (Llama, DeepSeek, Mistral)</p>
+<ul>
+<li>Runs on YOUR hardware</li>
+<li>Your data stays local</li>
+<li>One-time hardware cost</li>
+<li>You control everything</li>
+<li>Stable, predictable</li>
+</ul>
+</div></div>
+</section>
+<section id="good-enough-is-good-enough" class="slide level2">
+<h2>“Good Enough” is Good Enough</h2>
+<p>You don’t need the absolute <strong>best</strong> model</p>
+<ul>
+<li class="fragment">You need one that solves YOUR problem</li>
+<li class="fragment">With YOUR data privacy intact</li>
+<li class="fragment">At YOUR cost structure</li>
+<li class="fragment">Under YOUR control</li>
+</ul>
+</section>
+<section id="the-three-enhancements" class="slide level2">
+<h2>The Three Enhancements</h2>
+<div class="columns">
+<div class="column" style="width:33%;">
+<p><strong>RAG</strong></p>
+<p>Retrieval Augmented Generation</p>
+<p>Give LLM access to YOUR documents</p>
+<p><em>Example: IUNR course materials, research papers</em></p>
+</div><div class="column" style="width:33%;">
+<p><strong>MCPs</strong></p>
+<p>Model Context Protocol</p>
+<p>Connect LLM to your tools</p>
+<p><em>Example: Field data, GIS, email, calendar</em></p>
+</div><div class="column" style="width:33%;">
+<p><strong>Personas</strong></p>
+<p>System Prompts</p>
+<p>Shape how LLM behaves</p>
+<p><em>Example: “Teaching assistant for environmental science”</em></p>
+</div></div>
+</section>
+<section id="why-local-makes-sense-for-teaching" class="slide level2">
+<h2>Why Local Makes Sense for Teaching</h2>
+<ul>
+<li>Student data is <strong>sensitive</strong> (GDPR, privacy)</li>
+<li><strong>Repetitive tasks</strong> (grading, feedback)</li>
+<li>Custom <strong>course materials</strong> (RAG)</li>
+<li>One-time setup, <strong>ongoing value</strong></li>
+<li><strong>No per-query costs</strong></li>
+</ul>
+</section>
+<section id="transition-1" class="slide level2">
+<h2>Transition</h2>
+<div class="r-fit-text">
+<p>Okay, so what can you <strong>actually DO</strong> with this?</p>
+</div>
+</section></section>
+<section>
+<section id="teaching-use-cases-benchmarks" class="title-slide slide level1 section center">
+<h1>3. TEACHING USE CASES + BENCHMARKS</h1>
+
+</section>
+<section id="what-can-local-llms-do-for-teaching" class="slide level2">
+<h2>What Can Local LLMs Do For Teaching?</h2>
+</section>
+<section id="use-case-1-generate-practice-questions" class="slide level2">
+<h2>Use Case 1: Generate Practice Questions</h2>
+<p><strong>Input:</strong> Lecture slides or textbook chapter</p>
+<p><strong>Output:</strong> 10 multiple choice questions with explanations</p>
+<p><strong>Why local:</strong> Course materials often proprietary/sensitive</p>
+</section>
+<section class="slide level2">
+
+<p><strong>Benchmark:</strong></p>
+<pre><code>ChatGPT-4:        ⭐⭐⭐⭐⭐
+Local DeepSeek-r1: ⭐⭐⭐⭐⭐
+
+Privacy: Local WINS | Cost: Local WINS</code></pre>
+</section>
+<section id="use-case-2-student-writing-feedback" class="slide level2">
+<h2>Use Case 2: Student Writing Feedback</h2>
+<p><strong>Input:</strong> Student essay or report</p>
+<p><strong>Output:</strong> Constructive feedback on structure, argument, clarity</p>
+<p><strong>Why local:</strong> Student work is confidential</p>
+</section>
+<section class="slide level2">
+
+<p><strong>Benchmark:</strong></p>
+<pre><code>ChatGPT-4:        ⭐⭐⭐⭐⭐
+Local DeepSeek-r1: ⭐⭐⭐⭐
+
+Privacy: Local WINS | Cost: Local WINS</code></pre>
+</section>
+<section id="use-case-3-summarize-research" class="slide level2">
+<h2>Use Case 3: Summarize Research</h2>
+<p><strong>Input:</strong> 30-page research paper</p>
+<p><strong>Output:</strong> 1-page summary for students</p>
+<p><strong>Why local:</strong> Can process many papers, no API costs</p>
+</section>
+<section class="slide level2">
+
+<p><strong>Benchmark:</strong></p>
+<pre><code>ChatGPT-4:        ⭐⭐⭐⭐⭐
+Local DeepSeek-r1: ⭐⭐⭐⭐⭐
+
+Privacy: Local WINS | Cost: Local WINS</code></pre>
+</section>
+<section id="more-use-cases" class="slide level2">
+<h2>More Use Cases</h2>
+<p>Other tasks that work well locally:</p>
+<ul>
+<li>Translate technical content to different reading levels</li>
+<li>Create interactive study guides with RAG</li>
+<li>Generate grading rubrics</li>
+<li>Answer student questions about course materials</li>
+</ul>
+</section>
+<section id="the-key-insight" class="slide level2">
+<h2>The Key Insight</h2>
+<ul>
+<li>Local models are <strong>“good enough”</strong> for teaching tasks</li>
+<li>Quality gap has <strong>closed dramatically</strong></li>
+<li>Privacy advantage is <strong>huge</strong></li>
+<li>Cost: Hardware once, then <strong>unlimited use</strong></li>
+</ul>
+</section>
+<section id="transition-to-demo" class="slide level2">
+<h2>Transition to Demo</h2>
+<div class="r-fit-text">
+<p>Let’s see this in action</p>
+</div>
+</section></section>
+<section>
+<section id="live-demo" class="title-slide slide level1 section center">
+<h1>4. LIVE DEMO</h1>
+
+</section>
+<section id="demo-intro" class="slide level2">
+<h2>Demo Intro</h2>
+<p><strong>Let’s See It In Action</strong></p>
+<ul>
+<li>I’ll run BOTH ChatGPT and local Ollama</li>
+<li>YOU give me a teaching task</li>
+<li>We’ll compare results</li>
+</ul>
+</section>
+<section id="demo-setup" class="slide level2">
+<h2>Demo Setup</h2>
+<aside class="notes">
+<p>Split screen or side-by-side Same prompt to both Real-time comparison</p>
+<p>Possible demo tasks: - Generate 5 exam questions from a text snippet - Give feedback on a short student paragraph - Summarize a research abstract</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<p>[LIVE DEMO SCREEN]</p>
+</section>
+<section id="demo-debrief" class="slide level2">
+<h2>Demo Debrief</h2>
+<div class="r-fit-text">
+<p>Same capability, different backends</p>
+<p>One you control, one you don’t</p>
+<p>Both work for teaching tasks</p>
+</div>
+</section></section>
+<section>
+<section id="why-open-source-matters" class="title-slide slide level1 section center">
+<h1>5. WHY OPEN SOURCE MATTERS</h1>
+
+</section>
+<section id="why-control-matters" class="slide level2">
+<h2>Why Control Matters</h2>
+</section>
+<section id="two-times-you-were-betrayed" class="slide level2">
+<h2>Two Times You Were Betrayed</h2>
+<p><strong>Example 1: WhatsApp Leak</strong></p>
+<ul>
+<li>Billions of phone numbers exposed</li>
+<li>“You trusted them with your data”</li>
+<li>Everyone uses it, personal stakes</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<p><strong>Example 2: Windows 10 Obsolescence</strong></p>
+<ul>
+<li>Hardware made “obsolete” by software decision</li>
+<li>Environmental waste, e-waste crisis</li>
+<li>Forced upgrades, no choice</li>
+</ul>
+</section>
+<section id="the-lock-in-pattern" class="slide level2">
+<h2>The Lock-in Pattern</h2>
+<pre><code>         Cognitive Lock-in
+         (I only know THIS)
+              ╱│╲
+             ╱ │ ╲
+   Technical│  │ Institutional
+   (Format) │  │ (Everyone uses it)</code></pre>
+</section>
+<section id="fathers-photo-global-justice" class="slide level2">
+<h2>Father’s Photo + Global Justice</h2>
+
+<img data-src="images/father-linux-1998.jpg" alt="Linux workshop in Sri Lanka, 1998" class="r-stretch"><p>“This has always mattered - licensing costs exclude entire regions”</p>
+<p><strong>Open source = global equity</strong></p>
+<aside class="notes">
+<p>TODO: Add actual photo</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-ai-choice-is-now" class="slide level2">
+<h2>The AI Choice is NOW</h2>
+<ul>
+<li>In 2-3 years, everyone locked into ChatGPT like WhatsApp?</li>
+<li>Or will we preserve alternatives?</li>
+</ul>
+<div class="fragment">
+<p><strong>This window won’t stay open forever</strong></p>
+</div>
+<div class="fragment">
+<p><strong>Good news:</strong> Open models exist NOW</p>
+</div>
+</section>
+<section id="recipe-callback" class="slide level2">
+<h2>Recipe Callback</h2>
+<div class="r-fit-text">
+<p>Remember the proprietary recipe?</p>
+<p>Would you accept that for cooking?</p>
+<p><strong>Then why accept it for AI?</strong></p>
+</div>
+</section></section>
+<section>
+<section id="interactive-moment" class="title-slide slide level1 section center">
+<h1>6. INTERACTIVE MOMENT</h1>
+
+</section>
+<section id="your-use-cases" class="slide level2">
+<h2>Your Use Cases</h2>
+<div class="r-fit-text">
+<p>What would YOU use local LLMs for in your teaching?</p>
+</div>
+<aside class="notes">
+<p>Quick brainstorm (show of hands or call-outs) Capture 3-5 ideas verbally Validate: “Yes, that would work!”</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="where-are-you-locked-in" class="slide level2">
+<h2>Where Are You Locked In?</h2>
+<p><strong>Which tools feel hardest to escape?</strong></p>
+<aside class="notes">
+<p>Quick discussion (2-3 people share) “That’s the lock-in we’re talking about” “Local LLMs can help break some of those chains”</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="closing-the-invitation" class="title-slide slide level1 section center">
+<h1>7. CLOSING: The Invitation</h1>
+
+</section>
+<section id="return-to-fork-in-the-road" class="slide level2">
+<h2>Return to Fork in the Road</h2>
+<div class="r-fit-text">
+<p>We started with a choice</p>
+<p><strong>Is AI going to own us, or do we own AI?</strong></p>
+</div>
+</section>
+<section id="you-have-options" class="slide level2">
+<h2>You Have Options</h2>
+<ul>
+<li>Open weight models exist</li>
+<li>Hardware is capable (even laptops)</li>
+<li>Tools are maturing (Ollama, LM Studio)</li>
+<li>Community is growing</li>
+</ul>
+<div class="fragment">
+<p><strong>YOU can do this</strong></p>
+</div>
+</section>
+<section id="address-the-objection" class="slide level2">
+<h2>Address the Objection</h2>
+<p>“I don’t have time to learn this!”</p>
+<ul>
+<li class="fragment">Yes, initial investment needed</li>
+<li class="fragment">But: Pays off over time</li>
+<li class="fragment">And: You’re no longer vulnerable</li>
+</ul>
+<div class="fragment">
+<p><em>Cooking callback: Worth learning to cook vs.&nbsp;proprietary recipes</em></p>
+</div>
+</section>
+<section id="start-small" class="slide level2">
+<h2>Start Small</h2>
+<p>Try <strong>ONE</strong> thing this month:</p>
+<ul>
+<li>Install Ollama and run a model</li>
+<li>Generate one set of exam questions locally</li>
+<li>Test a local LLM for summarizing</li>
+<li>Explore LM Studio or similar tools</li>
+</ul>
+<div class="fragment">
+<p><strong>You don’t have to switch everything at once</strong></p>
+</div>
+</section>
+<section id="resources-thank-you" class="slide level2">
+<h2>Resources &amp; Thank You</h2>
+<p><strong>GrüentAI team contact info</strong></p>
+<ul>
+<li>We’re working on this for teaching</li>
+<li>We’re here as a resource</li>
+<li>Reach out with questions</li>
+</ul>
+<div class="r-fit-text">
+<p><strong>Thank you</strong></p>
+</div>
+
+</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
@@ -192,7 +727,7 @@
         progress: true,
 
         // Display the page number of the current slide
-        slideNumber: false,
+        slideNumber: 'c/t',
 
         // 'all', 'print', or 'speaker'
         showSlideNumber: 'all',
@@ -297,14 +832,14 @@
         previewLinks: false,
 
         // Transition style (none/fade/slide/convex/concave/zoom)
-        transition: 'none',
+        transition: 'slide',
 
         // Transition speed (default/fast/slow)
         transitionSpeed: 'default',
 
         // Transition style for full page slide backgrounds
         // (none/fade/slide/convex/concave/zoom)
-        backgroundTransition: 'none',
+        backgroundTransition: 'fade',
 
         // Number of slides away from the current that are visible
         viewDistance: 3,

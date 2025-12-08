@@ -1,7 +1,514 @@
 ---
-title: "GrüentAI"
-format: 
-  revealjs: 
+title: "Technology Sovereignty & Local LLMs"
+subtitle: "Who Controls Your AI Tools?"
+author: "GrüentAI Team"
+format:
+  revealjs:
     theme: dark
+    slide-number: true
+    transition: slide
+    background-transition: fade
 ---
 
+# 1. OPENING: Fork in the Road + Cooking Metaphor {.section}
+
+## We're at a critical choice point with AI
+
+::: {.r-fit-text}
+**Is AI going to own us?**
+
+**Or are we going to own AI?**
+:::
+
+## The Pattern Repeats
+
+We've been here before:
+
+- Windows → locked in
+- Office → locked in
+- WhatsApp → locked in
+- ArcGIS → locked in
+
+::: {.fragment}
+**Now it's happening with AI**
+:::
+
+## Let me show you what lock-in looks like...
+
+Imagine you want to cook a meal...
+
+## Proprietary Recipe Card
+
+```
+PROPRIETARY RECIPE CARD
+
+1. Add 2 units of Compound-XJ7
+   ($15/bottle, our brand only)
+2. Heat in Model-Pro-Pan-2024 at setting "MEDIUM"
+3. Stir with Certified-Stirring-Tool
+   (sold separately)
+4. Add Flavor-Packet-B when indicator light turns green
+
+⚠️ WARNING:
+- Substitutions void warranty
+- Recipe breaks if ingredients discontinued
+- Do not attempt to understand the chemistry
+- Model-Pro-Pan-2024 discontinued next year; upgrade required
+```
+
+## Open Recipe Card
+
+```
+OPEN RECIPE
+
+1. Sauté onions in oil until translucent
+   WHY: Releases sugars, builds flavor base
+
+2. Add garlic, cook 30 seconds
+   WHY: Aromatic, cooks fast, burns easily
+
+3. Add tomatoes, simmer 20 min
+   WHY: Breaks down, concentrates
+
+NOTES:
+- No onions? Use shallots or leeks
+- Olive oil or butter both work
+- Any pan that conducts heat evenly
+```
+
+## The Absurdity
+
+::: {.r-fit-text}
+Would you accept the proprietary system for cooking?
+
+**Of course not!**
+:::
+
+## But We DO Accept This for Software
+
+::: {.r-fit-text}
+And now we're doing it with AI
+:::
+
+## Time Comparison
+
+![](images/time-comparison.png){fig-alt="Bar chart showing cooking 30-60 min/day vs computer use 4-8 hours/day"}
+
+**Yet we accept ignorance about technology**
+
+::: {.notes}
+TODO: Create bar chart visual showing time spent cooking vs using computers
+:::
+
+## The Vulnerability
+
+Once you've invested in ChatGPT Plus...
+
+- Learned their interface
+- Built your prompts in their system
+- Stored your data with them
+
+::: {.fragment}
+**Switching cost becomes ENORMOUS**
+:::
+
+## Quick Check
+
+::: {.incremental}
+- How many use ChatGPT? 🙋
+- How many run local LLMs? 🙋
+- Why not? Let's explore that.
+:::
+
+## Transition
+
+::: {.r-fit-text}
+Today: I want to show you there **IS** an alternative
+:::
+
+- Open source LLMs you can run locally
+- For teaching
+- On your own hardware
+
+# 2. UNDERSTANDING LLMs: Pragmatic Overview {.section}
+
+## What Are LLMs? (Practical Overview)
+
+## What LLMs Are (Simple)
+
+- Sophisticated pattern matching from massive text
+- Like very advanced autocomplete
+- Not "intelligence" - pattern recognition at scale
+
+::: {.fragment}
+**Not magic - technology you can understand**
+:::
+
+## The Last 5 Years
+
+![](images/llm-timeline.png){fig-alt="Timeline of LLM development 2019-2025"}
+
+- **2019:** GPT-2 impressive but limited
+- **2023:** ChatGPT changes everything
+- **2024-2025:** Open models catch up
+
+::: {.fragment}
+**Key insight: Gap closing FAST**
+:::
+
+::: {.notes}
+TODO: Create timeline visual
+:::
+
+## Proprietary vs Open Weights
+
+::: {.columns}
+::: {.column width="50%"}
+**Proprietary**
+(ChatGPT, Claude, Gemini)
+
+- Runs on their servers
+- They see your data
+- You pay subscription
+- They control access
+- Can change/remove features
+:::
+
+::: {.column width="50%"}
+**Open Weights**
+(Llama, DeepSeek, Mistral)
+
+- Runs on YOUR hardware
+- Your data stays local
+- One-time hardware cost
+- You control everything
+- Stable, predictable
+:::
+:::
+
+## "Good Enough" is Good Enough
+
+You don't need the absolute **best** model
+
+::: {.incremental}
+- You need one that solves YOUR problem
+- With YOUR data privacy intact
+- At YOUR cost structure
+- Under YOUR control
+:::
+
+## The Three Enhancements
+
+::: {.columns}
+::: {.column width="33%"}
+**RAG**
+
+Retrieval Augmented Generation
+
+Give LLM access to YOUR documents
+
+*Example: IUNR course materials, research papers*
+:::
+
+::: {.column width="33%"}
+**MCPs**
+
+Model Context Protocol
+
+Connect LLM to your tools
+
+*Example: Field data, GIS, email, calendar*
+:::
+
+::: {.column width="33%"}
+**Personas**
+
+System Prompts
+
+Shape how LLM behaves
+
+*Example: "Teaching assistant for environmental science"*
+:::
+:::
+
+## Why Local Makes Sense for Teaching
+
+- Student data is **sensitive** (GDPR, privacy)
+- **Repetitive tasks** (grading, feedback)
+- Custom **course materials** (RAG)
+- One-time setup, **ongoing value**
+- **No per-query costs**
+
+## Transition
+
+::: {.r-fit-text}
+Okay, so what can you **actually DO** with this?
+:::
+
+# 3. TEACHING USE CASES + BENCHMARKS {.section}
+
+## What Can Local LLMs Do For Teaching?
+
+## Use Case 1: Generate Practice Questions
+
+**Input:** Lecture slides or textbook chapter
+
+**Output:** 10 multiple choice questions with explanations
+
+**Why local:** Course materials often proprietary/sensitive
+
+---
+
+**Benchmark:**
+
+```
+ChatGPT-4:        ⭐⭐⭐⭐⭐
+Local DeepSeek-r1: ⭐⭐⭐⭐⭐
+
+Privacy: Local WINS | Cost: Local WINS
+```
+
+## Use Case 2: Student Writing Feedback
+
+**Input:** Student essay or report
+
+**Output:** Constructive feedback on structure, argument, clarity
+
+**Why local:** Student work is confidential
+
+---
+
+**Benchmark:**
+
+```
+ChatGPT-4:        ⭐⭐⭐⭐⭐
+Local DeepSeek-r1: ⭐⭐⭐⭐
+
+Privacy: Local WINS | Cost: Local WINS
+```
+
+## Use Case 3: Summarize Research
+
+**Input:** 30-page research paper
+
+**Output:** 1-page summary for students
+
+**Why local:** Can process many papers, no API costs
+
+---
+
+**Benchmark:**
+
+```
+ChatGPT-4:        ⭐⭐⭐⭐⭐
+Local DeepSeek-r1: ⭐⭐⭐⭐⭐
+
+Privacy: Local WINS | Cost: Local WINS
+```
+
+## More Use Cases
+
+Other tasks that work well locally:
+
+- Translate technical content to different reading levels
+- Create interactive study guides with RAG
+- Generate grading rubrics
+- Answer student questions about course materials
+
+## The Key Insight
+
+- Local models are **"good enough"** for teaching tasks
+- Quality gap has **closed dramatically**
+- Privacy advantage is **huge**
+- Cost: Hardware once, then **unlimited use**
+
+## Transition to Demo
+
+::: {.r-fit-text}
+Let's see this in action
+:::
+
+# 4. LIVE DEMO {.section}
+
+## Demo Intro
+
+**Let's See It In Action**
+
+- I'll run BOTH ChatGPT and local Ollama
+- YOU give me a teaching task
+- We'll compare results
+
+## Demo Setup
+
+::: {.notes}
+Split screen or side-by-side
+Same prompt to both
+Real-time comparison
+
+Possible demo tasks:
+- Generate 5 exam questions from a text snippet
+- Give feedback on a short student paragraph
+- Summarize a research abstract
+:::
+
+[LIVE DEMO SCREEN]
+
+## Demo Debrief
+
+::: {.r-fit-text}
+Same capability, different backends
+
+One you control, one you don't
+
+Both work for teaching tasks
+:::
+
+# 5. WHY OPEN SOURCE MATTERS {.section}
+
+## Why Control Matters
+
+## Two Times You Were Betrayed
+
+**Example 1: WhatsApp Leak**
+
+- Billions of phone numbers exposed
+- "You trusted them with your data"
+- Everyone uses it, personal stakes
+
+---
+
+**Example 2: Windows 10 Obsolescence**
+
+- Hardware made "obsolete" by software decision
+- Environmental waste, e-waste crisis
+- Forced upgrades, no choice
+
+## The Lock-in Pattern
+
+```
+         Cognitive Lock-in
+         (I only know THIS)
+              ╱│╲
+             ╱ │ ╲
+   Technical│  │ Institutional
+   (Format) │  │ (Everyone uses it)
+```
+
+## Father's Photo + Global Justice
+
+![](images/father-linux-1998.jpg){fig-alt="Linux workshop in Sri Lanka, 1998"}
+
+"This has always mattered - licensing costs exclude entire regions"
+
+**Open source = global equity**
+
+::: {.notes}
+TODO: Add actual photo
+:::
+
+## The AI Choice is NOW
+
+- In 2-3 years, everyone locked into ChatGPT like WhatsApp?
+- Or will we preserve alternatives?
+
+::: {.fragment}
+**This window won't stay open forever**
+:::
+
+::: {.fragment}
+**Good news:** Open models exist NOW
+:::
+
+## Recipe Callback
+
+::: {.r-fit-text}
+Remember the proprietary recipe?
+
+Would you accept that for cooking?
+
+**Then why accept it for AI?**
+:::
+
+# 6. INTERACTIVE MOMENT {.section}
+
+## Your Use Cases
+
+::: {.r-fit-text}
+What would YOU use local LLMs for in your teaching?
+:::
+
+::: {.notes}
+Quick brainstorm (show of hands or call-outs)
+Capture 3-5 ideas verbally
+Validate: "Yes, that would work!"
+:::
+
+## Where Are You Locked In?
+
+**Which tools feel hardest to escape?**
+
+::: {.notes}
+Quick discussion (2-3 people share)
+"That's the lock-in we're talking about"
+"Local LLMs can help break some of those chains"
+:::
+
+# 7. CLOSING: The Invitation {.section}
+
+## Return to Fork in the Road
+
+::: {.r-fit-text}
+We started with a choice
+
+**Is AI going to own us, or do we own AI?**
+:::
+
+## You Have Options
+
+- Open weight models exist
+- Hardware is capable (even laptops)
+- Tools are maturing (Ollama, LM Studio)
+- Community is growing
+
+::: {.fragment}
+**YOU can do this**
+:::
+
+## Address the Objection
+
+"I don't have time to learn this!"
+
+::: {.incremental}
+- Yes, initial investment needed
+- But: Pays off over time
+- And: You're no longer vulnerable
+:::
+
+::: {.fragment}
+*Cooking callback: Worth learning to cook vs. proprietary recipes*
+:::
+
+## Start Small
+
+Try **ONE** thing this month:
+
+- Install Ollama and run a model
+- Generate one set of exam questions locally
+- Test a local LLM for summarizing
+- Explore LM Studio or similar tools
+
+::: {.fragment}
+**You don't have to switch everything at once**
+:::
+
+## Resources & Thank You
+
+**GrüentAI team contact info**
+
+- We're working on this for teaching
+- We're here as a resource
+- Reach out with questions
+
+::: {.r-fit-text}
+**Thank you**
+:::
