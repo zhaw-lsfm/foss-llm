@@ -201,4 +201,86 @@
 
 ---
 
-**Status:** Ready to continue high-level planning or move to detail work when you return.
+### December 8 Session - Slide Deck Implementation
+
+**Major accomplishment:** Moved from outline to full Quarto slide deck
+
+**What We Accomplished:**
+
+1. **Created Complete Quarto Slide Deck (index.qmd)**
+   - Implemented all 7 sections based on SLIDES_OUTLINE_v2.md
+   - 46+ slides with cooking metaphor framework
+   - Teaching use cases with benchmarks
+   - Live demo structure
+   - Open source arguments and closing invitation
+   - Configured reveal.js with dark theme, transitions, slide numbers
+
+2. **Added Comprehensive Speaker Notes**
+   - Detailed notes for all 7 sections in proper `:::  {.notes}` blocks
+   - Timing guidance for each section (total: 57-59 minutes)
+   - Facilitation tips and emphasis points
+   - Audience interaction guidance
+   - Pacing notes and transition cues
+   - Notes on handling objections and building energy
+
+3. **Custom Opening Implementation**
+   - Background image slides for cooking metaphor
+   - R code for cooking vs. computer time comparison chart
+   - Custom title: "Large Language Models: Local and OpenSource"
+   - Visual storytelling with images
+
+4. **Project Organization**
+   - Added images/ directory with background photos and reference materials
+   - Updated .gitignore for Quarto build artifacts (index_files/)
+   - Created SLIDES_OUTLINE_v2.md for detailed slide breakdown
+   - Generated HTML presentation via Quarto render
+
+**Key Decisions Made:**
+
+- Cooking metaphor as opening AND closing callback (bookends structure)
+- DeepSeek-r1 as benchmark model vs ChatGPT-4
+- Three detailed use cases (questions, feedback, summaries) + quick list
+- Emphasis on "good enough" vs "best" model
+- Speaker notes focus on facilitation, not just content
+- Visual design with background images for storytelling
+
+**Files Created/Modified:**
+
+- `index.qmd` - Complete slide deck with speaker notes (690 lines)
+- `index.html` - Generated presentation
+- `SLIDES_OUTLINE_v2.md` - Detailed slide outline (446 lines)
+- `.gitignore` - Added Quarto build artifacts
+- `images/` - Background images and reference materials
+  - `table-setting-6859276_1280.jpg` - Opening slide background
+  - `5FAoI86RaWY8Goqvt1b-77.jpg` - Recipe card visual
+  - `tim.pdf` - Reference material
+
+**Current Status:**
+
+Workshop slide deck is **complete** with:
+- ✅ All sections implemented
+- ✅ Comprehensive speaker notes
+- ✅ Visual design started (backgrounds, charts)
+- ⏳ Still needed: Timeline visual, benchmark graphics, father's photo
+- ⏳ Demo preparation and testing required
+- ⏳ Translation to German (working in English first)
+
+**Next Steps:**
+
+**Immediate:**
+- Test live demo setup (ChatGPT + Ollama side-by-side)
+- Create missing visuals (LLM timeline, lock-in diagram)
+- Add father's Linux photo (1998 Sri Lanka)
+- Practice presentation with speaker notes
+- Get feedback from team
+
+**Before Workshop:**
+- Translate slides to German (or decide on English delivery)
+- Prepare backup plan if demo fails
+- Create benchmark visualization graphics
+- Test on actual presentation hardware
+- Print speaker notes separately if needed
+
+---
+
+**Status:** Slide deck complete, ready for visual polish and demo preparation.
