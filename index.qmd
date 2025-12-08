@@ -1,7 +1,7 @@
 ---
-title: "Technology Sovereignty & Local LLMs"
-subtitle: "Who Controls Your AI Tools?"
-author: "GrüentAI Team"
+title: "Large Language Models"
+subtitle: "Local and OpenSource"
+author: "FG Geoinformatik"
 format:
   revealjs:
     theme: dark
@@ -10,11 +10,81 @@ format:
     background-transition: fade
 ---
 
-# 1. OPENING: Fork in the Road + Cooking Metaphor {.section}
+# {background-image="images/table-setting-6859276_1280.jpg"}
+
+::: {.notes}
+
+**Cooking metaphor**
+
+- Imagine you were invited to a faboulus dinner at a distant relative's place
+- You ask how the dinner was prepared, and the host proudly shows you the recepie
+- (next slide)
+
+:::
+
+
+## {background-image="images/5FAoI86RaWY8Goqvt1b-77.jpg" background-size="contain" background-color="white"}
+
+## 
+
+```
+PROPRIETARY RECIPE CARD
+
+1. Add 2 units of Compound-XJ7
+   ($15/bottle, our brand only)
+2. Heat in Model-Pro-Pan-2024 at setting "MEDIUM"
+3. Stir with Certified-Stirring-Tool
+   (sold separately)
+4. Add Flavor-Packet-B when indicator light turns green
+
+⚠️ WARNING:
+- Substitutions void warranty
+- Recipe breaks if ingredients discontinued
+- Do not attempt to understand the chemistry
+- Model-Pro-Pan-2024 discontinued next year; upgrade required
+```
+
+::: {.notes}
+- Point out: proprietary ingredients, mandatory equipment, warnings about substitutions, planned obsolescence. This should feel ridiculous.
+- When confronted, the host has following arguments:
+  - With this method, I know the meal is going to turn out great. I dont mind sacrificing a little freedom for that
+  - If I wanted to cook myself, I would have to learn so many details. I dont have time for this.
+  - Everone I know cooks like this. *We've been taught so in school*
+:::
+
+
+## Cooking vs. Computer
+
+```{r}
+#| fig-cap: Daily hours spent on cooking / preparing meals vs. hours spent on the computer. Ratnaweera et al (2025), n = 1
+
+library(ggplot2)
+
+df <- data.frame(activity = c("Cooking", "Computer"), hours = c(1.25, 6.72))
+
+ggplot(df, aes(activity, hours)) +
+   geom_col() +
+   theme_minimal() +
+   theme(panel.grid = element_blank(), axis.title.x = element_blank())
+
+
+
+```
+
+::: {.notes}
+- We spent *much* more time at the computer than we spend cooking. 
+- Why do we allow 
+
+:::
+
+
+<!-- continue here -->
+
 
 ## We're at a critical choice point with AI
 
-::: {.r-fit-text}
+
+::: {.notes}
 **Is AI going to own us?**
 
 **Or are we going to own AI?**
@@ -33,28 +103,19 @@ We've been here before:
 **Now it's happening with AI**
 :::
 
+::: {.notes}
+Emphasize the pattern - this has happened before, multiple times. ArcGIS is especially relevant for IUNR audience. Pause before revealing "Now it's happening with AI" for dramatic effect.
+:::
+
 ## Let me show you what lock-in looks like...
 
 Imagine you want to cook a meal...
 
-## Proprietary Recipe Card
+::: {.notes}
+Transition to the cooking metaphor. Use a casual, conversational tone here - "Let me show you something..."
+:::
 
-```
-PROPRIETARY RECIPE CARD
 
-1. Add 2 units of Compound-XJ7
-   ($15/bottle, our brand only)
-2. Heat in Model-Pro-Pan-2024 at setting "MEDIUM"
-3. Stir with Certified-Stirring-Tool
-   (sold separately)
-4. Add Flavor-Packet-B when indicator light turns green
-
-⚠️ WARNING:
-- Substitutions void warranty
-- Recipe breaks if ingredients discontinued
-- Do not attempt to understand the chemistry
-- Model-Pro-Pan-2024 discontinued next year; upgrade required
-```
 
 ## Open Recipe Card
 
@@ -76,6 +137,10 @@ NOTES:
 - Any pan that conducts heat evenly
 ```
 
+::: {.notes}
+Contrast is key here. Note the "WHY" explanations - understanding vs blind following. Note the flexibility - substitutions welcome. This is what open source looks like.
+:::
+
 ## The Absurdity
 
 ::: {.r-fit-text}
@@ -84,10 +149,18 @@ Would you accept the proprietary system for cooking?
 **Of course not!**
 :::
 
+::: {.notes}
+Wait for audience reaction - maybe laughter, head shakes. Let them feel the absurdity before moving on.
+:::
+
 ## But We DO Accept This for Software
 
 ::: {.r-fit-text}
 And now we're doing it with AI
+:::
+
+::: {.notes}
+The pivot. We DO accept proprietary lock-in for software. Pause here. Let the cognitive dissonance build.
 :::
 
 ## Time Comparison
@@ -112,12 +185,20 @@ Once you've invested in ChatGPT Plus...
 **Switching cost becomes ENORMOUS**
 :::
 
+::: {.notes}
+This is vendor lock-in explained. Once you're invested in their ecosystem, switching becomes prohibitively expensive - not just money, but time, learning, data migration.
+:::
+
 ## Quick Check
 
 ::: {.incremental}
 - How many use ChatGPT? 🙋
 - How many run local LLMs? 🙋
 - Why not? Let's explore that.
+:::
+
+::: {.notes}
+Hands-on validation moment. Expect most hands for ChatGPT, very few for local LLMs. This validates the problem we're addressing. Ask "Why not?" genuinely - you want to understand their barriers.
 :::
 
 ## Transition
@@ -130,9 +211,21 @@ Today: I want to show you there **IS** an alternative
 - For teaching
 - On your own hardware
 
+::: {.notes}
+Transition to solution mode. The rest of the workshop is about showing them this alternative exists and is viable. Energy should shift from provocative to empowering.
+:::
+
 # 2. UNDERSTANDING LLMs: Pragmatic Overview {.section}
 
+::: {.notes}
+This section demystifies LLMs and explains local vs proprietary. Goal is understanding, not technical depth. Keep it practical. Time: 10 minutes.
+:::
+
 ## What Are LLMs? (Practical Overview)
+
+::: {.notes}
+Section divider slide - no need to say much, just let it introduce the topic.
+:::
 
 ## What LLMs Are (Simple)
 
@@ -142,6 +235,10 @@ Today: I want to show you there **IS** an alternative
 
 ::: {.fragment}
 **Not magic - technology you can understand**
+:::
+
+::: {.notes}
+Keep this simple and non-threatening. Avoid technical jargon. The key message: it's not magic, it's understandable technology. You can learn this.
 :::
 
 ## The Last 5 Years
@@ -158,6 +255,8 @@ Today: I want to show you there **IS** an alternative
 
 ::: {.notes}
 TODO: Create timeline visual
+
+Key insight: the gap between proprietary and open models is closing fast. This is recent history - open models becoming competitive is NEW. This creates the opportunity we're discussing.
 :::
 
 ## Proprietary vs Open Weights
@@ -186,6 +285,10 @@ TODO: Create timeline visual
 :::
 :::
 
+::: {.notes}
+This is the key comparison slide. Take time with each point. Emphasize: "their servers vs YOUR hardware", "they see your data vs your data stays local". This is about control and sovereignty.
+:::
+
 ## "Good Enough" is Good Enough
 
 You don't need the absolute **best** model
@@ -195,6 +298,10 @@ You don't need the absolute **best** model
 - With YOUR data privacy intact
 - At YOUR cost structure
 - Under YOUR control
+:::
+
+::: {.notes}
+Critical mindset shift: you don't need the absolute best model. You need good enough for YOUR use case. This liberates them from thinking they must use ChatGPT-4 for everything.
 :::
 
 ## The Three Enhancements
@@ -231,6 +338,10 @@ Shape how LLM behaves
 :::
 :::
 
+::: {.notes}
+These three enhancements make local LLMs powerful. Don't go too deep technically - just explain what each does and give concrete examples relevant to teaching. RAG is especially important for their use case.
+:::
+
 ## Why Local Makes Sense for Teaching
 
 - Student data is **sensitive** (GDPR, privacy)
@@ -239,15 +350,31 @@ Shape how LLM behaves
 - One-time setup, **ongoing value**
 - **No per-query costs**
 
+::: {.notes}
+Connect the dots: student data + GDPR = must be local. Repetitive tasks + no per-query cost = economically viable. This is why local makes sense specifically for teaching.
+:::
+
 ## Transition
 
 ::: {.r-fit-text}
 Okay, so what can you **actually DO** with this?
 :::
 
+::: {.notes}
+Transition to practical applications. Shift from "why" to "what". Time to show concrete value.
+:::
+
 # 3. TEACHING USE CASES + BENCHMARKS {.section}
 
+::: {.notes}
+This section shows concrete teaching applications with benchmarks proving local models are good enough. Time: 8 minutes. Show 3 detailed examples, then quick list of others.
+:::
+
 ## What Can Local LLMs Do For Teaching?
+
+::: {.notes}
+Section divider - pause, let the question hang.
+:::
 
 ## Use Case 1: Generate Practice Questions
 
@@ -268,6 +395,10 @@ Local DeepSeek-r1: ⭐⭐⭐⭐⭐
 Privacy: Local WINS | Cost: Local WINS
 ```
 
+::: {.notes}
+First use case: generating practice questions. Emphasize the benchmark - DeepSeek-r1 matches ChatGPT-4 quality. Point out privacy and cost advantages. This is a common teaching task.
+:::
+
 ## Use Case 2: Student Writing Feedback
 
 **Input:** Student essay or report
@@ -286,6 +417,10 @@ Local DeepSeek-r1: ⭐⭐⭐⭐
 
 Privacy: Local WINS | Cost: Local WINS
 ```
+
+::: {.notes}
+Second use case: writing feedback. Note: DeepSeek slightly lower quality (4 stars vs 5) but still good enough. Emphasize: student work is CONFIDENTIAL - this absolutely must be local for GDPR compliance.
+:::
 
 ## Use Case 3: Summarize Research
 
@@ -306,6 +441,10 @@ Local DeepSeek-r1: ⭐⭐⭐⭐⭐
 Privacy: Local WINS | Cost: Local WINS
 ```
 
+::: {.notes}
+Third use case: research summaries. Back to 5 stars - matches ChatGPT quality. Point out: "Can process many papers, no API costs" - this is where local really shines economically. Process 100 papers? No problem, no extra cost.
+:::
+
 ## More Use Cases
 
 Other tasks that work well locally:
@@ -315,6 +454,10 @@ Other tasks that work well locally:
 - Generate grading rubrics
 - Answer student questions about course materials
 
+::: {.notes}
+Quick list - don't dwell on each. The point is to expand their mental model of what's possible. They can explore these later.
+:::
+
 ## The Key Insight
 
 - Local models are **"good enough"** for teaching tasks
@@ -322,13 +465,25 @@ Other tasks that work well locally:
 - Privacy advantage is **huge**
 - Cost: Hardware once, then **unlimited use**
 
+::: {.notes}
+Summary slide. Hammer home: "good enough" is the key concept. You don't need perfection. Quality gap has closed. Privacy is huge. Cost model is different and favorable for teaching use cases.
+:::
+
 ## Transition to Demo
 
 ::: {.r-fit-text}
 Let's see this in action
 :::
 
+::: {.notes}
+Transition to live demo. Energy shift - this is the "proof" moment. Show, don't just tell.
+:::
+
 # 4. LIVE DEMO {.section}
+
+::: {.notes}
+Live demo section - 10 minutes. Show both ChatGPT and local Ollama side-by-side doing the same task. Audience participation - they give you the task. Have backup plan if tech fails.
+:::
 
 ## Demo Intro
 
@@ -337,6 +492,10 @@ Let's see this in action
 - I'll run BOTH ChatGPT and local Ollama
 - YOU give me a teaching task
 - We'll compare results
+
+::: {.notes}
+Invite audience participation - "YOU give me a teaching task". This makes it more engaging and ensures the demo is relevant to their actual needs.
+:::
 
 ## Demo Setup
 
@@ -363,9 +522,21 @@ One you control, one you don't
 Both work for teaching tasks
 :::
 
+::: {.notes}
+Key debrief points: same capability (both can do the task), different backends (one proprietary, one local), both work for teaching (proof that local is viable). Acknowledge if there were quality differences but emphasize "good enough".
+:::
+
 # 5. WHY OPEN SOURCE MATTERS {.section}
 
+::: {.notes}
+This section provides the supporting arguments for why control and sovereignty matter. Time: 7 minutes. Two betrayal examples, lock-in pattern, father's photo, urgency, callback to cooking.
+:::
+
 ## Why Control Matters
+
+::: {.notes}
+Section divider - minimal speaking, let the question land.
+:::
 
 ## Two Times You Were Betrayed
 
@@ -383,6 +554,10 @@ Both work for teaching tasks
 - Environmental waste, e-waste crisis
 - Forced upgrades, no choice
 
+::: {.notes}
+Two concrete examples of betrayal. WhatsApp: privacy violation, everyone uses it, personal stakes. Windows 10: environmental waste, forced obsolescence. These are real, documented events. Let anger simmer - these companies failed their users.
+:::
+
 ## The Lock-in Pattern
 
 ```
@@ -394,6 +569,10 @@ Both work for teaching tasks
    (Format) │  │ (Everyone uses it)
 ```
 
+::: {.notes}
+Explain the three types of lock-in: cognitive (you only know this one tool), technical (file formats, APIs), institutional (everyone else uses it). All three reinforce each other, making escape nearly impossible.
+:::
+
 ## Father's Photo + Global Justice
 
 ![](images/father-linux-1998.jpg){fig-alt="Linux workshop in Sri Lanka, 1998"}
@@ -404,6 +583,8 @@ Both work for teaching tasks
 
 ::: {.notes}
 TODO: Add actual photo
+
+Personal moment. Your father taught Linux in Sri Lanka in 1998. This has always been about global justice and equity. Proprietary software licensing excludes entire regions of the world. Open source = access for everyone, regardless of geography or wealth.
 :::
 
 ## The AI Choice is NOW
@@ -419,6 +600,10 @@ TODO: Add actual photo
 **Good news:** Open models exist NOW
 :::
 
+::: {.notes}
+Create urgency. We're at a choice point NOW. In 2-3 years, will everyone be locked into ChatGPT the way they're locked into WhatsApp? Or will we preserve alternatives? This window won't stay open forever. But good news - open models exist right now, today.
+:::
+
 ## Recipe Callback
 
 ::: {.r-fit-text}
@@ -429,7 +614,15 @@ Would you accept that for cooking?
 **Then why accept it for AI?**
 :::
 
+::: {.notes}
+Callback to opening. Bring it full circle. You wouldn't accept proprietary cooking - so why accept proprietary AI? Let this land. Pause.
+:::
+
 # 6. INTERACTIVE MOMENT {.section}
+
+::: {.notes}
+Quick interactive section - 5 minutes total. Two discussion prompts to get them thinking about application and lock-in in their own context.
+:::
 
 ## Your Use Cases
 
@@ -455,12 +648,20 @@ Quick discussion (2-3 people share)
 
 # 7. CLOSING: The Invitation {.section}
 
+::: {.notes}
+Closing section - 5 minutes. Return to opening question, show them they have options, address objections, give concrete next steps, close with resources.
+:::
+
 ## Return to Fork in the Road
 
 ::: {.r-fit-text}
 We started with a choice
 
 **Is AI going to own us, or do we own AI?**
+:::
+
+::: {.notes}
+Return to the opening question. Full circle. We started here, and now you've seen there IS an alternative. Remind them of the choice.
 :::
 
 ## You Have Options
@@ -472,6 +673,10 @@ We started with a choice
 
 ::: {.fragment}
 **YOU can do this**
+:::
+
+::: {.notes}
+Empowerment. List the evidence: models exist, hardware is capable (even laptops!), tools are maturing, community is growing. Build confidence. End with: YOU can do this. Emphasize YOU.
 :::
 
 ## Address the Objection
@@ -488,6 +693,10 @@ We started with a choice
 *Cooking callback: Worth learning to cook vs. proprietary recipes*
 :::
 
+::: {.notes}
+Address the biggest objection head-on: "I don't have time!" Acknowledge it's real - yes, initial investment needed. But counter: pays off over time, removes vulnerability. Cooking callback reinforces: worth learning to cook instead of being dependent on proprietary system.
+:::
+
 ## Start Small
 
 Try **ONE** thing this month:
@@ -501,6 +710,10 @@ Try **ONE** thing this month:
 **You don't have to switch everything at once**
 :::
 
+::: {.notes}
+Give concrete, actionable next steps. Pick ONE thing to try this month. Lower the barrier to entry. Emphasize: you don't have to switch everything at once. Start small, build confidence, expand gradually.
+:::
+
 ## Resources & Thank You
 
 **GrüentAI team contact info**
@@ -511,4 +724,8 @@ Try **ONE** thing this month:
 
 ::: {.r-fit-text}
 **Thank you**
+:::
+
+::: {.notes}
+Close with resources and invitation to connect. Make it clear: GrüentAI is working on this specifically for teaching. You're here as a resource for them. Reach out with questions. Open door for continued conversation and support.
 :::
