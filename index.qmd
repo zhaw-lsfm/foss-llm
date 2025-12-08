@@ -53,6 +53,31 @@ PROPRIETARY RECIPE CARD
 - We would *NEVER* tollerate such a system in the cooking domain
 :::
 
+## Open Recipe Card
+
+```
+OPEN RECIPE
+
+1. Sauté onions in oil until translucent
+   WHY: Releases sugars, builds flavor base
+
+2. Add garlic, cook 30 seconds
+   WHY: Aromatic, cooks fast, burns easily
+
+3. Add tomatoes, simmer 20 min
+   WHY: Breaks down, concentrates
+
+NOTES:
+- No onions? Use shallots or leeks
+- Olive oil or butter both work
+- Any pan that conducts heat evenly
+```
+
+::: {.notes}
+Contrast is key here. Note the "WHY" explanations - understanding vs blind following. Note the flexibility - substitutions welcome. This is what open source looks like.
+:::
+
+
 
 ## Cooking vs. Computer
 
@@ -79,90 +104,28 @@ ggplot(df, aes(activity, hours)) +
 :::
 
 
-<!-- continue here -->
+
+## {background-image="images/tim-1-crop.jpg" background-size="contain" background-color="white"}
+
+::: {.notes}
+- The pattern repeats:
+- We've been here before
+:::
+
 
 ## The Pattern Repeats
 
-We've been here before:
-
-- Windows → locked in
-- Office → locked in
-- WhatsApp → locked in
-- ArcGIS → locked in
+- We don't use document publishing systems, we use *Microsoft Office*
+- We don't use Instant Messangers, we use *WhatsApp*
+- We dont use GIS, we use *ArcGIS*
 
 ::: {.fragment}
-**Now it's happening with AI**
+- Are we going to use AI, or are will we use *ChatGPT*?
 :::
 
 ::: {.notes}
-Emphasize the pattern - this has happened before, multiple times. ArcGIS is especially relevant for IUNR audience. Pause before revealing "Now it's happening with AI" for dramatic effect.
 :::
 
-## Let me show you what lock-in looks like...
-
-Imagine you want to cook a meal...
-
-::: {.notes}
-Transition to the cooking metaphor. Use a casual, conversational tone here - "Let me show you something..."
-:::
-
-
-
-## Open Recipe Card
-
-```
-OPEN RECIPE
-
-1. Sauté onions in oil until translucent
-   WHY: Releases sugars, builds flavor base
-
-2. Add garlic, cook 30 seconds
-   WHY: Aromatic, cooks fast, burns easily
-
-3. Add tomatoes, simmer 20 min
-   WHY: Breaks down, concentrates
-
-NOTES:
-- No onions? Use shallots or leeks
-- Olive oil or butter both work
-- Any pan that conducts heat evenly
-```
-
-::: {.notes}
-Contrast is key here. Note the "WHY" explanations - understanding vs blind following. Note the flexibility - substitutions welcome. This is what open source looks like.
-:::
-
-## The Absurdity
-
-::: {.r-fit-text}
-Would you accept the proprietary system for cooking?
-
-**Of course not!**
-:::
-
-::: {.notes}
-Wait for audience reaction - maybe laughter, head shakes. Let them feel the absurdity before moving on.
-:::
-
-## But We DO Accept This for Software
-
-::: {.r-fit-text}
-And now we're doing it with AI
-:::
-
-::: {.notes}
-The pivot. We DO accept proprietary lock-in for software. Pause here. Let the cognitive dissonance build.
-:::
-
-## Time Comparison
-
-![](images/time-comparison.png){fig-alt="Bar chart showing cooking 30-60 min/day vs computer use 4-8 hours/day"}
-
-**Yet we accept ignorance about technology**
-
-::: {.notes}
-TODO: Create bar chart visual showing time spent cooking vs using computers
-:::
 
 ## The Vulnerability
 
@@ -170,59 +133,113 @@ Once you've invested in ChatGPT Plus...
 
 - Learned their interface
 - Built your prompts in their system
-- Stored your data with them
+- **Stored your data with them**
 
 ::: {.fragment}
-**Switching cost becomes ENORMOUS**
+- → **Switching costs become ENORMOUS**4
 :::
 
 ::: {.notes}
-This is vendor lock-in explained. Once you're invested in their ecosystem, switching becomes prohibitively expensive - not just money, but time, learning, data migration.
+- Why?
 :::
 
-## Quick Check
 
-::: {.incremental}
-- How many use ChatGPT? 🙋
-- How many run local LLMs? 🙋
-- Why not? Let's explore that.
-:::
+## Vendor Lock-In {data-background="images/Push-and-pull.jpg"}
 
 ::: {.notes}
-Hands-on validation moment. Expect most hands for ChatGPT, very few for local LLMs. This validates the problem we're addressing. Ask "Why not?" genuinely - you want to understand their barriers.
+- Vendors don't want you to be plattform independant
+- They purposfully make their products incompatible with those of other vendors
+- Once a certain level is reached, it's hard or even impossible to swith vendors
 :::
 
-## Transition
+## {background-image="images/5FAoI86RaWY8Goqvt1b-77.jpg" background-size="contain" background-color="white"}
 
-::: {.r-fit-text}
-Today: I want to show you there **IS** an alternative
+::: {.notes}
+- Going back to the cooking analogy
 :::
 
-- Open source LLMs you can run locally
-- For teaching
-- On your own hardware
+## 
+
+```
+PROPRIETARY RECIPE CARD
+
+1. Add 2 units of Compound-XJ7
+   ($15/bottle, our brand only)
+2. Heat in Model-Pro-Pan-2024 at setting "MEDIUM"
+3. Stir with Certified-Stirring-Tool
+   (sold separately)
+4. Add Flavor-Packet-B when indicator light turns green
+
+⚠️ WARNING:
+- Substitutions void warranty
+- Recipe breaks if ingredients discontinued
+- Do not attempt to understand the chemistry
+- Model-Pro-Pan-2024 discontinued next year; upgrade required
+```
+
+::: {.notes}
+- Once *Model-Pro-Pan-2024*, *Certified-Stirring-Tool* and other similar products have been bought, it will be hard to use recepies by other vendors
+:::
+
+## Why is this a problem?
+
+<!-- Add infuriating examples here? -->
+
+
+## {.center}
+
+> But not everyone can be a computer expert
+
+
+
+::: {.notes}
+
+- "10,000-hour rule," popularized by Malcolm Gladwell in his book Outliers, suggests that achieving mastery in a skill requires approximately 10,000 hours of practice.
+- At 6 hours a day, you are a computer expert after about 7 Years
+
+:::
+
+## Three Layers
+
+```{mermaid}
+%%| fig-width: 8
+flowchart TB
+    A["Interface Layer<br/>'I know how to use ChatGPT'"]
+    B["Implementation<br/>Open vs. proprietary"]
+    C["Technology<br/>The fundamental capability"]
+
+    A --> B --> C
+
+    style A fill:#e1f5ff,stroke:#01579b,stroke-width:2px
+    style B fill:#fff3e0,stroke:#e65100,stroke-width:2px
+    style C fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
+```
+
+
+
+## Fork in the Road {data-background-image="images/forest-6607631_1280.jpg" .center}
+
+- Will we invest time and money into *the easy way* or into *the right way*?
+- Will we become *masters of a techonology* or *users of a product*?
+
+
+
+# OpenSource & LLM
+
+<!-- continue here -->
 
 ::: {.notes}
 Transition to solution mode. The rest of the workshop is about showing them this alternative exists and is viable. Energy should shift from provocative to empowering.
 :::
 
-# 2. UNDERSTANDING LLMs: Pragmatic Overview {.section}
 
-::: {.notes}
-This section demystifies LLMs and explains local vs proprietary. Goal is understanding, not technical depth. Keep it practical. Time: 10 minutes.
-:::
 
-## What Are LLMs? (Practical Overview)
 
-::: {.notes}
-Section divider slide - no need to say much, just let it introduce the topic.
-:::
+## What LLMs Are
 
-## What LLMs Are (Simple)
-
-- Sophisticated pattern matching from massive text
+- Sophisticated pattern matching from *massive* text
 - Like very advanced autocomplete
-- Not "intelligence" - pattern recognition at scale
+- Not "intelligence" but pattern recognition at scale
 
 ::: {.fragment}
 **Not magic - technology you can understand**
@@ -232,17 +249,13 @@ Section divider slide - no need to say much, just let it introduce the topic.
 Keep this simple and non-threatening. Avoid technical jargon. The key message: it's not magic, it's understandable technology. You can learn this.
 :::
 
-## The Last 5 Years
 
-![](images/llm-timeline.png){fig-alt="Timeline of LLM development 2019-2025"}
+## The Last 5 Years
 
 - **2019:** GPT-2 impressive but limited
 - **2023:** ChatGPT changes everything
 - **2024-2025:** Open models catch up
 
-::: {.fragment}
-**Key insight: Gap closing FAST**
-:::
 
 ::: {.notes}
 TODO: Create timeline visual
