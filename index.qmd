@@ -50,6 +50,7 @@ PROPRIETARY RECIPE CARD
   - With this method, I know the meal is going to turn out great. I dont mind sacrificing a little freedom for that
   - If I wanted to cook myself, I would have to learn so many details. I dont have time for this.
   - Everone I know cooks like this. *We've been taught so in school*
+- We would *NEVER* tollerate such a system in the cooking domain
 :::
 
 
@@ -73,22 +74,12 @@ ggplot(df, aes(activity, hours)) +
 
 ::: {.notes}
 - We spent *much* more time at the computer than we spend cooking. 
-- Why do we allow 
+- Why do we allow this in the digital domain?
 
 :::
 
 
 <!-- continue here -->
-
-
-## We're at a critical choice point with AI
-
-
-::: {.notes}
-**Is AI going to own us?**
-
-**Or are we going to own AI?**
-:::
 
 ## The Pattern Repeats
 

@@ -2,3 +2,6 @@
 .Rhistory
 .RData
 .Ruserdata
+
+# Quarto generated files
+index_files/
