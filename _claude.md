@@ -284,3 +284,50 @@ Workshop slide deck is **complete** with:
 ---
 
 **Status:** Slide deck complete, ready for visual polish and demo preparation.
+
+---
+
+### December 18 Session - Refining "Openness Spectrum" Content
+
+**Focus:** Clarifying the distinction between open source, open weights, and proprietary LLMs
+
+**What We Accomplished:**
+
+1. **Identified the Full Spectrum of LLM Openness**
+   - Recognized that most "open" LLMs are actually "open weights," not fully open source
+   - Mapped out 4 distinct categories:
+     1. Proprietary (ChatGPT, Claude, Gemini) - black box, API only
+     2. Open Weights (Llama 3.3, DeepSeek, Mistral, Qwen) - weights downloadable, but no training code/data
+     3. Open Weights + Code (some research releases) - weights + training methodology, but no data
+     4. Fully Open Source (OLMo, BLOOM) - weights + code + data, fully reproducible (rare!)
+
+2. **Added "Openness is a Spectrum" Slide to index.qmd (lines 288-330)**
+   - Visual representation: More open ↑ to More closed ↓
+   - Comprehensive speaker notes with specific examples for each category
+   - Key message: "Open weights" is good enough for teaching purposes - local control without requiring full reproducibility
+
+3. **Technical Setup**
+   - Resolved Positron extension installation (Quarto v1.126.0 confirmed working)
+   - Ready to continue slide development
+
+**Key Insights:**
+
+**Terminology Precision:**
+- Most people conflate "open source" with "open weights" in LLM context
+- Important to educate audience about the spectrum without being pedantic
+- Pragmatic message: Open weights gives you the practical benefits (local control, privacy, no vendor lock-in)
+
+**Pedagogical Approach:**
+- Don't let perfect be the enemy of good
+- Audience doesn't need fully open source models to achieve technology sovereignty
+- Focus: "Open weights" models are "open enough" for teaching use cases
+
+**Where We Left Off:**
+
+Currently at line 335 in index.qmd (after the openness spectrum slide). The comment "continue here" suggests this is where content development paused previously. Next logical sections based on SLIDES_OUTLINE_v2.md:
+
+- Continue refining the transition between "openness spectrum" and "Proprietary vs Open Weights" comparison
+- The slide deck structure after line 335 already has the remaining sections implemented
+- May need to review flow between the new spectrum slide and existing content
+
+**Status:** Openness spectrum slide complete with detailed speaker notes. Ready to continue content refinement or move to other workshop preparation tasks (visuals, demo prep, etc.).

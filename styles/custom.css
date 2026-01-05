@@ -1,0 +1,40 @@
+/* ============================================
+   PROJECT-SPECIFIC STYLES
+   Custom styles for this presentation
+   ============================================ */
+
+/* Three Layers boxes */
+.layer-box-blue {
+  background: #e1f5ff;
+  padding: 20px;
+  border: 2px solid #01579b;
+  border-radius: 5px;
+  color: black;
+}
+
+.layer-box-orange {
+  background: #fff3e0;
+  padding: 20px;
+  border: 2px solid #e65100;
+  border-radius: 5px;
+  margin-top: 10px;
+  color: black;
+}
+
+.layer-box-purple {
+  background: #f3e5f5;
+  padding: 20px;
+  border: 2px solid #9963dbff;
+  border-radius: 5px;
+  margin-top: 10px;
+  color: black;
+}
+
+/* Recipe card styling */
+.recipe {
+  font-family: 'Shadows Into Light Two', cursive;
+  font-size: 0.8em;
+  line-height: 1;
+}
+
+

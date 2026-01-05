@@ -1,16 +1,24 @@
 ---
-title: "Large Language Models"
-subtitle: "Local and OpenSource"
 author: "FG Geoinformatik"
 format:
   revealjs:
     theme: dark
+    css: [styles/base.css, styles/custom.css]
     slide-number: true
     transition: slide
     background-transition: fade
+    pagetitle: "OSS LLMs"
 ---
 
-# {background-image="images/table-setting-6859276_1280.jpg"}
+
+# Open Source LLMs {background-image="images/table-setting-6859276_1280.jpg" class="blurred-10px shadow"}
+
+[And why they matter]{.shadow}
+
+
+
+
+## {background-image="images/table-setting-6859276_1280.jpg"}
 
 ::: {.notes}
 
@@ -25,24 +33,24 @@ format:
 
 ## {background-image="images/5FAoI86RaWY8Goqvt1b-77.jpg" background-size="contain" background-color="white"}
 
-## 
+## {background-color="yellow"}
 
-```
-PROPRIETARY RECIPE CARD
+::: {.recipe}
+RECIPE
 
-1. Add 2 units of Compound-XJ7
-   ($15/bottle, our brand only)
-2. Heat in Model-Pro-Pan-2024 at setting "MEDIUM"
+1. Add 2 units of Compound-XJ7 ($15/bottle, our brand only)  
+2. Heat in Model-Pro-Pan-2024 at setting "MEDIUM"  
 3. Stir with Certified-Stirring-Tool
    (sold separately)
 4. Add Flavor-Packet-B when indicator light turns green
 
-⚠️ WARNING:
+⚠ WARNING:
+
 - Substitutions void warranty
 - Recipe breaks if ingredients discontinued
 - Do not attempt to understand the chemistry
 - Model-Pro-Pan-2024 discontinued next year; upgrade required
-```
+:::
 
 ::: {.notes}
 - Point out: proprietary ingredients, mandatory equipment, warnings about substitutions, planned obsolescence. This should feel ridiculous.
@@ -136,7 +144,7 @@ Once you've invested in ChatGPT Plus...
 - **Stored your data with them**
 
 ::: {.fragment}
-- → **Switching costs become ENORMOUS**4
+- → **Switching costs become ENORMOUS**
 :::
 
 ::: {.notes}
@@ -181,9 +189,48 @@ PROPRIETARY RECIPE CARD
 - Once *Model-Pro-Pan-2024*, *Certified-Stirring-Tool* and other similar products have been bought, it will be hard to use recepies by other vendors
 :::
 
-## Why is this a problem?
+## Why is this a problem? {.center}
 
-<!-- Add infuriating examples here? -->
+
+---
+
+
+##  {background-image="images/whatsapp-leak.png" background-size="contain" background-color="white"}
+
+:::{.notes}
+- Sometimes products are plain bad, lack basic security features and the safety of userdata is no priority
+
+:::
+
+
+
+##  {background-image="images/sanctions.png" background-size="contain" background-color="white"}
+
+<!-- https://www.heise.de/news/Strafgerichtshof-Microsofts-E-Mail-Sperre-als-Weckruf-fuer-digitale-Souveraenitaet-10387368.html -->
+
+::: {.notes}
+- Microsoft hat nach Trump-Sanktionen das Mail-Konto des Chefanklägers des Internationalen Gerichtshofs blockiert. 
+- Trump sanktionierte das Den Haager Gericht im Februar, nachdem ein Gremium von IStGH-Richtern im November 25 Haftbefehle gegen den israelischen Premierminister Benjamin Netanjahu mit Blick auf Kriegsverbrechen im Gaza-Streifen erlassen hatte.
+:::
+
+
+
+##  {background-image="images/end-of-10.png" background-size="contain" background-color="white"}
+
+<!-- https://www.computerbild.de/artikel/cb-Tipps-Software-Windows-10-wird-eingestellt-Updates-36482825.html -->
+
+::: {.notes}
+- Sometimes Software versions are not supported anymore, as seen in the example of the End-of-Life for Windows 10.
+- Das Problem: Zahlreiche PCs bringen die geforderten Komponenten nicht mit. Ein Upgrade auf Windows 11 auf offiziellem Wege ist in solchen Fällen ausgeschlossen.
+:::
+
+
+
+## {background-iframe="https://endof10.org"}
+
+::: {.notes}
+Go to "Places and zoom in"
+:::
 
 
 ## {.center}
@@ -196,102 +243,101 @@ PROPRIETARY RECIPE CARD
 
 - "10,000-hour rule," popularized by Malcolm Gladwell in his book Outliers, suggests that achieving mastery in a skill requires approximately 10,000 hours of practice.
 - At 6 hours a day, you are a computer expert after about 7 Years
+- Especially, we don't need to understand all 3 layers (next slide)
 
 :::
 
-## Three Layers
+## Three Layers{.center}
 
-```{mermaid}
-%%| fig-width: 8
-flowchart TB
-    A["Interface Layer<br/>'I know how to use ChatGPT'"]
-    B["Implementation<br/>Open vs. proprietary"]
-    C["Technology<br/>The fundamental capability"]
+::: {.fragment .fade-in-then-semi-out}
+::: {.layer-box-blue}
+**Interface Layer**
+"ChatGPT or MS Copilot"
+:::
+:::
 
-    A --> B --> C
+::: {.fragment .fade-in-then-semi-out}
+::: {.layer-box-orange}
+**Implementation**
+Formats, Standards etc
+:::
+:::
 
-    style A fill:#e1f5ff,stroke:#01579b,stroke-width:2px
-    style B fill:#fff3e0,stroke:#e65100,stroke-width:2px
-    style C fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
-```
+::: {.fragment}
+::: {.layer-box-purple}
+**Technology**
+The fundamental capability
+:::
+:::
 
 
 
-## Fork in the Road {data-background-image="images/forest-6607631_1280.jpg" .center}
+## Fork in the Road {data-background-image="images/forest-6607631_1280.jpg" .center .shadow}
 
+::: {.notes}
 - Will we invest time and money into *the easy way* or into *the right way*?
 - Will we become *masters of a techonology* or *users of a product*?
 
+:::
 
 
-# OpenSource & LLM
+# OpenSource & LLM {background-image="images/books-2596809_1280.jpg" class="blurred-10px shadow"}
 
-<!-- continue here -->
+
+## {background-image="images/books-2596809_1280.jpg"}
+
+
+## "Openness" is a spectrum
+
+
+More open ↑
+
+::: {.incremental}
+- Fully Open Source (fully reproducible)
+- Open Weights + Code (auditable methodology, but not data)
+- Open Weights (runnable, but not verifiable)
+- Proprietary (black box)
+:::
+
+More closed ↓ 
 
 ::: {.notes}
-Transition to solution mode. The rest of the workshop is about showing them this alternative exists and is viable. Energy should shift from provocative to empowering.
+
+**Proprietary (ChatGPT, Claude, Gemini):**
+- Complete black box - you only get API access
+- No insight into how it works, what data it was trained on, or how decisions are made
+- You're entirely dependent on the vendor
+
+**Open Weights (Llama 3.3, DeepSeek, Mistral, Qwen):**
+- The trained model weights are released - you can download and run them locally
+- BUT: Training code and training data typically NOT included
+- You can USE it, but can't fully verify or reproduce how it was created
+- This is where MOST "open" models sit today
+- For practical teaching purposes: This is sufficient! You get local control.
+
+**Open Weights + Code (Some research releases):**
+- Weights + the methodology/code used for training
+- You can understand and audit HOW it was trained
+- BUT: Training data usually not included (licensing issues, competitive advantage)
+- Example: Some academic lab releases
+- Closer to true "open source" philosophy - transparent and auditable
+
+**Fully Open Source (OLMo, BLOOM - rare!):**
+- Weights + Training Code + Training Data - everything
+- Fully reproducible and auditable
+- This is the gold standard but extremely rare (training data is expensive, complex licensing)
+- Most similar to traditional open source software
+
+
 :::
 
 
 
-
-## What LLMs Are
-
-- Sophisticated pattern matching from *massive* text
-- Like very advanced autocomplete
-- Not "intelligence" but pattern recognition at scale
-
-::: {.fragment}
-**Not magic - technology you can understand**
-:::
-
-::: {.notes}
-Keep this simple and non-threatening. Avoid technical jargon. The key message: it's not magic, it's understandable technology. You can learn this.
-:::
+<!-- 
+continue here 
+-->
 
 
-## The Last 5 Years
-
-- **2019:** GPT-2 impressive but limited
-- **2023:** ChatGPT changes everything
-- **2024-2025:** Open models catch up
-
-
-::: {.notes}
-TODO: Create timeline visual
-
-Key insight: the gap between proprietary and open models is closing fast. This is recent history - open models becoming competitive is NEW. This creates the opportunity we're discussing.
-:::
-
-## Proprietary vs Open Weights
-
-::: {.columns}
-::: {.column width="50%"}
-**Proprietary**
-(ChatGPT, Claude, Gemini)
-
-- Runs on their servers
-- They see your data
-- You pay subscription
-- They control access
-- Can change/remove features
-:::
-
-::: {.column width="50%"}
-**Open Weights**
-(Llama, DeepSeek, Mistral)
-
-- Runs on YOUR hardware
-- Your data stays local
-- One-time hardware cost
-- You control everything
-- Stable, predictable
-:::
-:::
-
-::: {.notes}
-This is the key comparison slide. Take time with each point. Emphasize: "their servers vs YOUR hardware", "they see your data vs your data stays local". This is about control and sovereignty.
-:::
 
 ## "Good Enough" is Good Enough
 
@@ -307,6 +353,184 @@ You don't need the absolute **best** model
 ::: {.notes}
 Critical mindset shift: you don't need the absolute best model. You need good enough for YOUR use case. This liberates them from thinking they must use ChatGPT-4 for everything.
 :::
+
+
+
+## {.center}
+
+Ok, so how does this work?
+
+
+
+# Practical Demo {background-image="images/magic-note-8836935_1280.jpg" .shadow .blurred-5px}
+
+## {background-image="images/magic-note-8836935_1280.jpg"}
+
+## Step 1: Get a Runtime Environment
+
+You need software that can **run** the model on your machine
+
+::: {.incremental}
+- Downloads the model files
+- Manages memory and processing
+- Provides an interface (API, chat, etc.)
+:::
+
+::: {.notes}
+
+**Popular options:**
+
+**Ollama** (ollama.ai) - Recommended for beginners  
+
+- Command-line tool, very simple
+- Works on Mac, Linux, Windows
+- Easy model management: `ollama pull deepseek-r1`
+- Built-in API server
+- Free and open source
+
+**LM Studio** (lmstudio.ai)
+
+- Graphical interface, very user-friendly
+- Great for non-technical users
+- Model browser built-in
+- Works on Mac, Windows, Linux
+- Free
+
+**GPT4All**
+
+- Desktop app with GUI
+- Good for absolute beginners
+- Limited model selection but curated
+- Free and open source
+
+**Jan.ai**
+
+- Desktop app, modern interface
+- Local-first philosophy
+- Good privacy focus
+- Free and open source
+
+**For this workshop, we'll focus on Ollama** - it's the most flexible and widely used, but any of these will work for getting started.
+
+:::
+
+
+## Step 2: Choose and Download a Model
+
+Models vary by:
+
+::: {.incremental}
+- **Size** (1GB to 100GB+)
+- **Capability** (general chat, coding, reasoning)
+- **Language** (multilingual vs English-focused)
+:::
+
+::: {.fragment}
+Start with a **small, general-purpose model**
+:::
+
+::: {.notes}
+
+**How to choose:**
+
+**For beginners, recommend:**
+- **DeepSeek-R1:1.5B or 7B** - Excellent reasoning, good for teaching tasks, reasonable size
+- **Llama 3.2 3B** - Fast, capable, widely supported
+- **Qwen 2.5 7B** - Strong multilingual, good for international contexts
+- **Phi-4** - Microsoft's efficient small model, surprisingly capable
+
+**Size considerations:**
+- **1-3B parameters:** Fast, runs on most laptops, good for basic tasks (2-6GB RAM needed)
+- **7-8B parameters:** Sweet spot for teaching - good quality, reasonable speed (8-16GB RAM)
+- **13B+ parameters:** Better quality, but slower and needs more RAM (16GB+ minimum)
+
+**With Ollama:**
+```bash
+ollama pull deepseek-r1:1.5b    # Small, fast
+ollama pull llama3.2:3b          # General purpose
+ollama pull qwen2.5:7b           # Multilingual
+```
+
+**With LM Studio:**
+- Open the model browser
+- Search for "deepseek" or "llama"
+- Look for models marked with your RAM capacity
+- Click download
+
+**Key point:** You can always download more models later. Start small, test it out, then try larger models if needed. Models are just files - you can delete them if you don't like them.
+
+:::
+
+
+## Step 3: Run Your First Query
+
+Now you can **interact** with the model
+
+::: {.incremental}
+- Start the model/server
+- Send it a prompt
+- Get a response
+:::
+
+::: {.fragment}
+**That's it!** You're running AI locally.
+:::
+
+::: {.notes}
+
+**With Ollama (command-line):**
+
+Start a chat session:
+```bash
+ollama run deepseek-r1:1.5b
+```
+
+Then just type your question:
+```
+>>> Generate 3 multiple choice questions about photosynthesis
+```
+
+Or use it as an API:
+```bash
+curl http://localhost:11434/api/generate -d '{
+  "model": "deepseek-r1:1.5b",
+  "prompt": "Summarize this: [paste text]"
+}'
+```
+
+**With LM Studio (GUI):**
+1. Select your downloaded model from the left sidebar
+2. Click "Load Model"
+3. Type your prompt in the chat interface
+4. Hit enter
+
+**With GPT4All or Jan.ai:**
+- Similar - select model, type in chat box, get response
+
+**First prompts to try:**
+- "Generate 5 practice questions about [your subject]"
+- "Summarize this text in simple language: [paste text]"
+- "Give feedback on this student paragraph: [paste text]"
+- "Explain [concept] at a high school level"
+
+**What's happening behind the scenes:**
+- The model file is loaded into RAM
+- Your text is converted to numbers (tokens)
+- The model predicts the next token, over and over
+- Results are converted back to text
+- All happening **on your machine**, no internet needed (after download)
+
+**Key insight:** Once you get to this point, you realize it's not magic - it's just software running locally. You have full control.
+
+:::
+
+
+
+<!-- 
+continue here 
+-->
+
+
 
 ## The Three Enhancements
 

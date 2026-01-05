@@ -1,0 +1,39 @@
+/* ============================================
+   REUSABLE / GENERIC STYLES
+   Personal CSS library for presentations
+   ============================================ */
+
+/* Font declarations */
+@font-face {
+  font-display: swap;
+  font-family: 'Shadows Into Light Two';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/shadows-into-light-two-v19-latin-regular.woff2') format('woff2');
+}
+
+/* Blur effect for backgrounds */
+.blurred-5px .slide-background-content {
+  filter: blur(5px);
+}
+
+
+.blurred-10px .slide-background-content {
+  filter: blur(10px);
+}
+
+/* Text outline effect for readability on background images */
+/* Can be applied to sections (affects h1, h2) or directly to text spans */
+.outline,
+.outline h1,
+.outline h2 {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000 !important;
+}
+
+/* Drop shadow effect */
+/* Can be applied to sections (affects h1, h2) or directly to text spans */
+.shadow,
+.shadow h1,
+.shadow h2 {
+  text-shadow: 2px 2px #000000 !important;
+}

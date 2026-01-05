@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.9.11">
 
   <meta name="author" content="FG Geoinformatik">
-  <title>Large Language Models</title>
+  <title>OSS LLMs</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -28,8 +28,76 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+      }
+    pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+    div.sourceCode
+      { color: #f8f8f2;  }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #f8f8f2; } /* Normal */
+    code span.al { color: #f07178; } /* Alert */
+    code span.an { color: #d4d0ab; } /* Annotation */
+    code span.at { color: #00e0e0; } /* Attribute */
+    code span.bn { color: #d4d0ab; } /* BaseN */
+    code span.bu { color: #abe338; } /* BuiltIn */
+    code span.cf { color: #ffa07a; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #abe338; } /* Char */
+    code span.cn { color: #ffd700; } /* Constant */
+    code span.co { color: #f8f8f2; font-style: italic; } /* Comment */
+    code span.cv { color: #ffd700; } /* CommentVar */
+    code span.do { color: #f8f8f2; } /* Documentation */
+    code span.dt { color: #ffa07a; } /* DataType */
+    code span.dv { color: #d4d0ab; } /* DecVal */
+    code span.er { color: #f07178; text-decoration: underline; } /* Error */
+    code span.ex { color: #00e0e0; font-weight: bold; } /* Extension */
+    code span.fl { color: #d4d0ab; } /* Float */
+    code span.fu { color: #ffa07a; } /* Function */
+    code span.im { color: #abe338; } /* Import */
+    code span.in { color: #d4d0ab; } /* Information */
+    code span.kw { color: #ffa07a; font-weight: bold; } /* Keyword */
+    code span.op { color: #ffa07a; } /* Operator */
+    code span.ot { color: #00e0e0; } /* Other */
+    code span.pp { color: #dcc6e0; } /* Preprocessor */
+    code span.re { color: #00e0e0; background-color: #f8f8f2; } /* RegionMarker */
+    code span.sc { color: #abe338; } /* SpecialChar */
+    code span.ss { color: #abe338; } /* SpecialString */
+    code span.st { color: #abe338; } /* String */
+    code span.va { color: #00e0e0; } /* Variable */
+    code span.vs { color: #abe338; } /* VerbatimString */
+    code span.wa { color: #dcc6e0; } /* Warning */
   </style>
   <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto-327cab17de08e4a17faa7d61f48ae591.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/custom.css">
   <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -121,30 +189,19 @@
       margin-right: 0; 
     }
   </style>
-  <script src="index_files/libs/quarto-diagram/mermaid.min.js"></script>
-  <script src="index_files/libs/quarto-diagram/mermaid-init.js"></script>
-  <link href="index_files/libs/quarto-diagram/mermaid.css" rel="stylesheet">
 </head>
 <body class="quarto-dark">
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Large Language Models</h1>
-  <p class="subtitle">Local and OpenSource</p>
 
-<div class="quarto-title-authors">
-<div class="quarto-title-author">
-<div class="quarto-title-author-name">
-FG Geoinformatik 
-</div>
-</div>
-</div>
-
-</section>
 <section>
-<section id="section" class="title-slide slide level1 center" data-background-image="images/table-setting-6859276_1280.jpg">
-<h1></h1>
+<section id="open-source-llms" class="title-slide slide level1 blurred-10px shadow center" data-background-image="images/table-setting-6859276_1280.jpg">
+<h1>Open Source LLMs</h1>
+<p><span class="shadow">And why they matter</span></p>
+</section>
+<section id="section" class="slide level2" data-background-image="images/table-setting-6859276_1280.jpg">
+<h2></h2>
 <aside class="notes">
 <p><strong>Cooking metaphor</strong></p>
 <ul>
@@ -167,22 +224,26 @@ FG Geoinformatik
 <section id="section-1" class="slide level2" data-background-image="images/5FAoI86RaWY8Goqvt1b-77.jpg" data-background-size="contain" data-background-color="white">
 <h2></h2>
 </section>
-<section id="section-2" class="slide level2">
+<section id="section-2" class="slide level2" data-background-color="yellow">
 <h2></h2>
-<pre><code>PROPRIETARY RECIPE CARD
-
-1. Add 2 units of Compound-XJ7
-   ($15/bottle, our brand only)
-2. Heat in Model-Pro-Pan-2024 at setting "MEDIUM"
-3. Stir with Certified-Stirring-Tool
-   (sold separately)
-4. Add Flavor-Packet-B when indicator light turns green
-
-⚠️ WARNING:
-- Substitutions void warranty
-- Recipe breaks if ingredients discontinued
-- Do not attempt to understand the chemistry
-- Model-Pro-Pan-2024 discontinued next year; upgrade required</code></pre>
+<div class="recipe">
+<p>RECIPE</p>
+<ol type="1">
+<li>Add 2 units of Compound-XJ7 ($15/bottle, our brand only)<br>
+</li>
+<li>Heat in Model-Pro-Pan-2024 at setting “MEDIUM”<br>
+</li>
+<li>Stir with Certified-Stirring-Tool (sold separately)</li>
+<li>Add Flavor-Packet-B when indicator light turns green</li>
+</ol>
+<p>⚠ WARNING:</p>
+<ul>
+<li>Substitutions void warranty</li>
+<li>Recipe breaks if ingredients discontinued</li>
+<li>Do not attempt to understand the chemistry</li>
+<li>Model-Pro-Pan-2024 discontinued next year; upgrade required</li>
+</ul>
+</div>
 <aside class="notes">
 <ul>
 <li>Point out: proprietary ingredients, mandatory equipment, warnings about substitutions, planned obsolescence. This should feel ridiculous.</li>
@@ -312,7 +373,7 @@ NOTES:
 </ul>
 <div class="fragment">
 <ul>
-<li>→ <strong>Switching costs become ENORMOUS</strong>4</li>
+<li>→ <strong>Switching costs become ENORMOUS</strong></li>
 </ul>
 </div>
 <aside class="notes">
@@ -401,11 +462,84 @@ NOTES:
           display:block!important;
       }</style></aside>
 </section>
-<section id="why-is-this-a-problem" class="slide level2">
+<section id="why-is-this-a-problem" class="slide level2 center">
 <h2>Why is this a problem?</h2>
-<!-- Add infuriating examples here? -->
 </section>
-<section id="section-6" class="slide level2 center">
+<section id="section-6" class="slide level2" data-background-image="images/whatsapp-leak.png" data-background-size="contain" data-background-color="white">
+<h2></h2>
+<aside class="notes">
+<ul>
+<li>Sometimes products are plain bad, lack basic security features and the safety of userdata is no priority</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="section-7" class="slide level2" data-background-image="images/sanctions.png" data-background-size="contain" data-background-color="white">
+<h2></h2>
+<!-- https://www.heise.de/news/Strafgerichtshof-Microsofts-E-Mail-Sperre-als-Weckruf-fuer-digitale-Souveraenitaet-10387368.html -->
+<aside class="notes">
+<ul>
+<li>Microsoft hat nach Trump-Sanktionen das Mail-Konto des Chefanklägers des Internationalen Gerichtshofs blockiert.</li>
+<li>Trump sanktionierte das Den Haager Gericht im Februar, nachdem ein Gremium von IStGH-Richtern im November 25 Haftbefehle gegen den israelischen Premierminister Benjamin Netanjahu mit Blick auf Kriegsverbrechen im Gaza-Streifen erlassen hatte.</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="section-8" class="slide level2" data-background-image="images/end-of-10.png" data-background-size="contain" data-background-color="white">
+<h2></h2>
+<!-- https://www.computerbild.de/artikel/cb-Tipps-Software-Windows-10-wird-eingestellt-Updates-36482825.html -->
+<aside class="notes">
+<ul>
+<li>Sometimes Software versions are not supported anymore, as seen in the example of the End-of-Life for Windows 10.</li>
+<li>Das Problem: Zahlreiche PCs bringen die geforderten Komponenten nicht mit. Ein Upgrade auf Windows 11 auf offiziellem Wege ist in solchen Fällen ausgeschlossen.</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="section-9" class="slide level2" data-background-iframe="https://endof10.org">
+<h2></h2>
+<aside class="notes">
+<p>Go to “Places and zoom in”</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="section-10" class="slide level2 center">
 <h2></h2>
 <blockquote>
 <p>But not everyone can be a computer expert</p>
@@ -414,6 +548,7 @@ NOTES:
 <ul>
 <li>“10,000-hour rule,” popularized by Malcolm Gladwell in his book Outliers, suggests that achieving mastery in a skill requires approximately 10,000 hours of practice.</li>
 <li>At 6 hours a day, you are a computer expert after about 7 Years</li>
+<li>Especially, we don’t need to understand all 3 layers (next slide)</li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -427,89 +562,66 @@ NOTES:
           display:block!important;
       }</style></aside>
 </section>
-<section id="three-layers" class="slide level2">
+<section id="three-layers" class="slide level2 center">
 <h2>Three Layers</h2>
-<div class="cell" data-reveal="true" data-fig-width="8" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class=""><p></p>
-<div>
-<pre class="mermaid mermaid-js">flowchart TB
-    A["Interface Layer&lt;br/&gt;'I know how to use ChatGPT'"]
-    B["Implementation&lt;br/&gt;Open vs. proprietary"]
-    C["Technology&lt;br/&gt;The fundamental capability"]
-
-    A --&gt; B --&gt; C
-
-    style A fill:#e1f5ff,stroke:#01579b,stroke-width:2px
-    style B fill:#fff3e0,stroke:#e65100,stroke-width:2px
-    style C fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
-</pre>
+<div class="fragment fade-in-then-semi-out">
+<div class="layer-box-blue">
+<p><strong>Interface Layer</strong> “ChatGPT or MS Copilot”</p>
 </div>
-<p></p></figure><p></p>
 </div>
+<div class="fragment fade-in-then-semi-out">
+<div class="layer-box-orange">
+<p><strong>Implementation</strong> Formats, Standards etc</p>
+</div>
+</div>
+<div class="fragment">
+<div class="layer-box-purple">
+<p><strong>Technology</strong> The fundamental capability</p>
 </div>
 </div>
 </section>
-<section id="fork-in-the-road" class="slide level2 center" data-background-image="images/forest-6607631_1280.jpg">
+<section id="fork-in-the-road" class="slide level2 center shadow" data-background-image="images/forest-6607631_1280.jpg">
 <h2>Fork in the Road</h2>
+<aside class="notes">
 <ul>
 <li>Will we invest time and money into <em>the easy way</em> or into <em>the right way</em>?</li>
 <li>Will we become <em>masters of a techonology</em> or <em>users of a product</em>?</li>
 </ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section></section>
 <section>
-<section id="opensource-llm" class="title-slide slide level1 center">
+<section id="opensource-llm" class="title-slide slide level1 blurred-10px shadow center" data-background-image="images/books-2596809_1280.jpg">
 <h1>OpenSource &amp; LLM</h1>
-<!-- continue here -->
-<aside class="notes">
-<p>Transition to solution mode. The rest of the workshop is about showing them this alternative exists and is viable. Energy should shift from provocative to empowering.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
+
 </section>
-<section id="what-llms-are" class="slide level2">
-<h2>What LLMs Are</h2>
-<ul>
-<li>Sophisticated pattern matching from <em>massive</em> text</li>
-<li>Like very advanced autocomplete</li>
-<li>Not “intelligence” but pattern recognition at scale</li>
-</ul>
-<div class="fragment">
-<p><strong>Not magic - technology you can understand</strong></p>
-</div>
-<aside class="notes">
-<p>Keep this simple and non-threatening. Avoid technical jargon. The key message: it’s not magic, it’s understandable technology. You can learn this.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
+<section id="section-11" class="slide level2" data-background-image="images/books-2596809_1280.jpg">
+<h2></h2>
 </section>
-<section id="the-last-5-years" class="slide level2">
-<h2>The Last 5 Years</h2>
+<section id="openness-is-a-spectrum" class="slide level2">
+<h2>“Openness” is a spectrum</h2>
+<p>More open ↑</p>
 <ul>
-<li><strong>2019:</strong> GPT-2 impressive but limited</li>
-<li><strong>2023:</strong> ChatGPT changes everything</li>
-<li><strong>2024-2025:</strong> Open models catch up</li>
+<li class="fragment">Fully Open Source (fully reproducible)</li>
+<li class="fragment">Open Weights + Code (auditable methodology, but not data)</li>
+<li class="fragment">Open Weights (runnable, but not verifiable)</li>
+<li class="fragment">Proprietary (black box)</li>
 </ul>
+<p>More closed ↓</p>
 <aside class="notes">
-<p>TODO: Create timeline visual</p>
-<p>Key insight: the gap between proprietary and open models is closing fast. This is recent history - open models becoming competitive is NEW. This creates the opportunity we’re discussing.</p>
+<p><strong>Proprietary (ChatGPT, Claude, Gemini):</strong> - Complete black box - you only get API access - No insight into how it works, what data it was trained on, or how decisions are made - You’re entirely dependent on the vendor</p>
+<p><strong>Open Weights (Llama 3.3, DeepSeek, Mistral, Qwen):</strong> - The trained model weights are released - you can download and run them locally - BUT: Training code and training data typically NOT included - You can USE it, but can’t fully verify or reproduce how it was created - This is where MOST “open” models sit today - For practical teaching purposes: This is sufficient! You get local control.</p>
+<p><strong>Open Weights + Code (Some research releases):</strong> - Weights + the methodology/code used for training - You can understand and audit HOW it was trained - BUT: Training data usually not included (licensing issues, competitive advantage) - Example: Some academic lab releases - Closer to true “open source” philosophy - transparent and auditable</p>
+<p><strong>Fully Open Source (OLMo, BLOOM - rare!):</strong> - Weights + Training Code + Training Data - everything - Fully reproducible and auditable - This is the gold standard but extremely rare (training data is expensive, complex licensing) - Most similar to traditional open source software</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -521,42 +633,9 @@ NOTES:
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-</section>
-<section id="proprietary-vs-open-weights" class="slide level2">
-<h2>Proprietary vs Open Weights</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Proprietary</strong> (ChatGPT, Claude, Gemini)</p>
-<ul>
-<li>Runs on their servers</li>
-<li>They see your data</li>
-<li>You pay subscription</li>
-<li>They control access</li>
-<li>Can change/remove features</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><strong>Open Weights</strong> (Llama, DeepSeek, Mistral)</p>
-<ul>
-<li>Runs on YOUR hardware</li>
-<li>Your data stays local</li>
-<li>One-time hardware cost</li>
-<li>You control everything</li>
-<li>Stable, predictable</li>
-</ul>
-</div></div>
-<aside class="notes">
-<p>This is the key comparison slide. Take time with each point. Emphasize: “their servers vs YOUR hardware”, “they see your data vs your data stays local”. This is about control and sovereignty.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
+<!-- 
+continue here 
+-->
 </section>
 <section id="good-enough-is-good-enough" class="slide level2">
 <h2>“Good Enough” is Good Enough</h2>
@@ -580,6 +659,146 @@ NOTES:
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
+</section>
+<section id="section-12" class="slide level2 center">
+<h2></h2>
+<p>Ok, so how does this work?</p>
+</section></section>
+<section>
+<section id="practical-demo" class="title-slide slide level1 shadow blurred-5px center" data-background-image="images/magic-note-8836935_1280.jpg">
+<h1>Practical Demo</h1>
+
+</section>
+<section id="section-13" class="slide level2" data-background-image="images/magic-note-8836935_1280.jpg">
+<h2></h2>
+</section>
+<section id="step-1-get-a-runtime-environment" class="slide level2">
+<h2>Step 1: Get a Runtime Environment</h2>
+<p>You need software that can <strong>run</strong> the model on your machine</p>
+<ul>
+<li class="fragment">Downloads the model files</li>
+<li class="fragment">Manages memory and processing</li>
+<li class="fragment">Provides an interface (API, chat, etc.)</li>
+</ul>
+<aside class="notes">
+<p><strong>Popular options:</strong></p>
+<p><strong>Ollama</strong> (ollama.ai) - Recommended for beginners</p>
+<ul>
+<li>Command-line tool, very simple</li>
+<li>Works on Mac, Linux, Windows</li>
+<li>Easy model management: <code>ollama pull deepseek-r1</code></li>
+<li>Built-in API server</li>
+<li>Free and open source</li>
+</ul>
+<p><strong>LM Studio</strong> (lmstudio.ai)</p>
+<ul>
+<li>Graphical interface, very user-friendly</li>
+<li>Great for non-technical users</li>
+<li>Model browser built-in</li>
+<li>Works on Mac, Windows, Linux</li>
+<li>Free</li>
+</ul>
+<p><strong>GPT4All</strong></p>
+<ul>
+<li>Desktop app with GUI</li>
+<li>Good for absolute beginners</li>
+<li>Limited model selection but curated</li>
+<li>Free and open source</li>
+</ul>
+<p><strong>Jan.ai</strong></p>
+<ul>
+<li>Desktop app, modern interface</li>
+<li>Local-first philosophy</li>
+<li>Good privacy focus</li>
+<li>Free and open source</li>
+</ul>
+<p><strong>For this workshop, we’ll focus on Ollama</strong> - it’s the most flexible and widely used, but any of these will work for getting started.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="step-2-choose-and-download-a-model" class="slide level2">
+<h2>Step 2: Choose and Download a Model</h2>
+<p>Models vary by:</p>
+<ul>
+<li class="fragment"><strong>Size</strong> (1GB to 100GB+)</li>
+<li class="fragment"><strong>Capability</strong> (general chat, coding, reasoning)</li>
+<li class="fragment"><strong>Language</strong> (multilingual vs English-focused)</li>
+</ul>
+<div class="fragment">
+<p>Start with a <strong>small, general-purpose model</strong></p>
+</div>
+<aside class="notes">
+<p><strong>How to choose:</strong></p>
+<p><strong>For beginners, recommend:</strong> - <strong>DeepSeek-R1:1.5B or 7B</strong> - Excellent reasoning, good for teaching tasks, reasonable size - <strong>Llama 3.2 3B</strong> - Fast, capable, widely supported - <strong>Qwen 2.5 7B</strong> - Strong multilingual, good for international contexts - <strong>Phi-4</strong> - Microsoft’s efficient small model, surprisingly capable</p>
+<p><strong>Size considerations:</strong> - <strong>1-3B parameters:</strong> Fast, runs on most laptops, good for basic tasks (2-6GB RAM needed) - <strong>7-8B parameters:</strong> Sweet spot for teaching - good quality, reasonable speed (8-16GB RAM) - <strong>13B+ parameters:</strong> Better quality, but slower and needs more RAM (16GB+ minimum)</p>
+<p><strong>With Ollama:</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href=""></a><span class="ex">ollama</span> pull deepseek-r1:1.5b    <span class="co"># Small, fast</span></span>
+<span id="cb3-2"><a href=""></a><span class="ex">ollama</span> pull llama3.2:3b          <span class="co"># General purpose</span></span>
+<span id="cb3-3"><a href=""></a><span class="ex">ollama</span> pull qwen2.5:7b           <span class="co"># Multilingual</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>With LM Studio:</strong> - Open the model browser - Search for “deepseek” or “llama” - Look for models marked with your RAM capacity - Click download</p>
+<p><strong>Key point:</strong> You can always download more models later. Start small, test it out, then try larger models if needed. Models are just files - you can delete them if you don’t like them.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="step-3-run-your-first-query" class="slide level2">
+<h2>Step 3: Run Your First Query</h2>
+<p>Now you can <strong>interact</strong> with the model</p>
+<ul>
+<li class="fragment">Start the model/server</li>
+<li class="fragment">Send it a prompt</li>
+<li class="fragment">Get a response</li>
+</ul>
+<div class="fragment">
+<p><strong>That’s it!</strong> You’re running AI locally.</p>
+</div>
+<aside class="notes">
+<p><strong>With Ollama (command-line):</strong></p>
+<p>Start a chat session:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href=""></a><span class="ex">ollama</span> run deepseek-r1:1.5b</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Then just type your question:</p>
+<pre><code>&gt;&gt;&gt; Generate 3 multiple choice questions about photosynthesis</code></pre>
+<p>Or use it as an API:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href=""></a><span class="ex">curl</span> http://localhost:11434/api/generate <span class="at">-d</span> <span class="st">'{</span></span>
+<span id="cb6-2"><a href=""></a><span class="st">  "model": "deepseek-r1:1.5b",</span></span>
+<span id="cb6-3"><a href=""></a><span class="st">  "prompt": "Summarize this: [paste text]"</span></span>
+<span id="cb6-4"><a href=""></a><span class="st">}'</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>With LM Studio (GUI):</strong> 1. Select your downloaded model from the left sidebar 2. Click “Load Model” 3. Type your prompt in the chat interface 4. Hit enter</p>
+<p><strong>With GPT4All or Jan.ai:</strong> - Similar - select model, type in chat box, get response</p>
+<p><strong>First prompts to try:</strong> - “Generate 5 practice questions about [your subject]” - “Summarize this text in simple language: [paste text]” - “Give feedback on this student paragraph: [paste text]” - “Explain [concept] at a high school level”</p>
+<p><strong>What’s happening behind the scenes:</strong> - The model file is loaded into RAM - Your text is converted to numbers (tokens) - The model predicts the next token, over and over - Results are converted back to text - All happening <strong>on your machine</strong>, no internet needed (after download)</p>
+<p><strong>Key insight:</strong> Once you get to this point, you realize it’s not magic - it’s just software running locally. You have full control.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<!-- 
+continue here 
+-->
 </section>
 <section id="the-three-enhancements" class="slide level2">
 <h2>The Three Enhancements</h2>
