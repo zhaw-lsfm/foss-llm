@@ -1,0 +1,951 @@
+---
+author: FG Geoinformatik
+format:
+  revealjs:
+    theme: dark
+    css:
+    - styles/base.css
+    - styles/custom.css
+    slide-number: true
+    transition: slide
+    background-transition: fade
+    pagetitle: OSS LLMs
+---
+
+# Open-Source KI{background-image="images/table-setting-6859276\_1280.jpg" class="blurred-10px shadow"}
+
+[Und warum das so wichtig ist]{.shadow}
+
+## {background-image="images/table-setting-6859276\_1280.jpg"}
+
+::: {.notes}
+
+**Metapher aus der Küche**
+
+- Stellen Sie sich vor, Sie wurden zu einem fantastischen Abendessen bei einem entfernten Verwandten eingeladen.
+- Sie fragen, wie das Abendessen zubereitet wurde, und der Gastgeber zeigt Ihnen stolz das Rezept
+- (nächste Folie)
+
+:::
+
+## {background-image="images/5FAoI86RaWY8Goqvt1b-77.jpg" background-size="contain" background-color="white"}
+
+## {background-color="#5F9EA0"}
+
+::: {.recipe}
+REZEPT
+
+1. 2 Einheiten Compound-XJ7 (15 CHF/Flasche, nur unsere Marke) hinzufügen.
+2. In Model-Pro-Pan-2024 bei Einstellung „MEDIUM” erhitzen.
+3. Mit zertifiziertem Rührgerät (separat erhältlich) umrühren.
+4. Flavor-Packet-B hinzufügen, wenn die Kontrollleuchte grün leuchtet.
+
+
+
+⚠ WARNUNG:
+
+- Ersatzprodukte führen zum Erlöschen der Garantie
+- Das Rezept funktioniert nicht mehr, wenn Zutaten nicht mehr erhältlich sind
+- Versuchen Sie nicht, die Chemie zu verstehen
+- Model-Pro-Pan-2024 wird nächstes Jahr eingestellt; Upgrade erforderlich
+
+:::
+
+::: {.notes}
+
+- Hinweis: proprietäre Zutaten, vorgeschriebene Geräte, Warnhinweise zu Ersatzprodukten, geplante Obsoleszenz. Das sollte sich lächerlich anhören.
+- Wenn man ihn darauf anspricht, hat der Gastgeber folgende Argumente:
+  - Mit dieser Methode weiß ich, dass das Essen großartig wird. Ich habe nichts dagegen, dafür ein wenig Freiheit zu opfern.
+  - Wenn ich selbst kochen wollte, müsste ich so viele Details lernen. Dafür habe ich keine Zeit.
+  - Alle, die ich kenne, kochen so.*Das wurde uns in der Schule so beigebracht.*
+- Wir würden ein solches System im Bereich des Kochens *NIEMALS*tolerieren
+
+:::
+
+
+## {background-color="#5F9EA0"}
+
+::: {.recipe}
+OFFENES REZEPT
+
+1. Zwiebeln in Öl glasig dünsten.
+  
+2. Knoblauch hinzufügen, 30 Sekunden lang anbraten.
+  
+3. Tomaten hinzufügen, 20 Minuten köcheln lassen.
+  
+HINWEISE:
+
+- Keine Zwiebeln? Verwenden Sie Schalotten oder Lauch.
+- Olivenöl oder Butter sind beide geeignet.
+- Verwenden Sie eine handelsübliche, vorzugsweise teflonbeschichtete Bratpfanne
+
+:::
+
+::: {.notes}
+
+
+– Verständnis vs. blindes Befolgen. Beachten Sie die Flexibilität 
+– Ersatzprodukte sind willkommen. So sieht Open Source aus.
+:::
+
+## Kochen vs. Computer {background-color="white"}
+
+```{r}
+#| fig-cap: "Täglich investierte Zeit: Kochen vs. Computer  Ratnaweera et al (2025), n = 1"
+
+library(ggplot2)
+
+df <- data.frame(activity = c("Kochen", "Computer"), hours = c(1.25, 6.72))
+
+ggplot(df, aes(activity, hours)) +
+  geom_col() +
+  labs(y = "Zeit (in Stunden)") +
+  theme_minimal() +
+  theme(panel.grid = element_blank(), axis.title.x = element_blank()) 
+
+
+
+```
+
+::: {.notes}
+
+- Wir verbringen*viel*mehr Zeit am Computer als mit Kochen.
+- Warum lassen wir das im digitalen Bereich zu?
+
+:::
+
+## Déjà vu {background-image="images/matrix-cat.png" .center .shadow}
+
+
+## Das Muster wiederholt sich
+
+- Wir verwenden keine Textverarbeitungsprogramme, wir verwenden *Microsoft Office*
+- Wir verwenden keine Messenger, sondern *WhatsApp*
+- Wir verwenden kein GIS, sondern *ArcGIS*
+
+::: {.fragment}
+- Werden wir KI verwenden oder werden wir*ChatGPT*verwenden?
+:::
+
+::: {.notes}
+:::
+
+## Die Problematik
+
+Sobald Sie in ChatGPT Plus investiert haben...
+
+- die Benutzeroberfläche kennengelernt haben
+- Ihre Eingabeaufforderungen in deren System erstellt haben
+- **Ihre Daten bei ihnen gespeichert haben**
+
+::: {.fragment}
+
+- →**werden die Wechselkosten ENORM**
+:::
+
+::: {.notes}
+
+- Warum?
+:::
+
+## Vendor Lock-In {data-background="images/Push-and-pull.jpg"}
+
+::: {.notes}
+
+- Anbieter wollen nicht, dass Sie plattformunabhängig sind.
+- Sie machen ihre Produkte absichtlich mit denen anderer Anbieter inkompatibel.
+- Sobald ein bestimmte Investition gemacht ist, ist es schwierig oder sogar unmöglich, den Anbieter zu wechseln.
+- (zurück zur Koch-analogie)
+:::
+
+## {background-color="#5F9EA0"}
+
+::: {.recipe}
+REZEPT
+
+1. 2 Einheiten Compound-XJ7 (15 CHF/Flasche, nur unsere Marke) hinzufügen.
+2. In Model-Pro-Pan-2024 bei Einstellung "MEDIUM" erhitzen.
+3. Mit zertifiziertem Rührgerät (separat erhältlich) umrühren.
+4. Flavor-Packet-B hinzufügen, wenn die Kontrollleuchte grün leuchtet.
+
+
+
+⚠ WARNUNG:
+
+- Ersatzprodukte führen zum Erlöschen der Garantie
+- Das Rezept funktioniert nicht mehr, wenn Zutaten nicht mehr erhältlich sind
+- Versuchen Sie nicht, die Chemie zu verstehen
+- Model-Pro-Pan-2024 wird nächstes Jahr eingestellt; Upgrade erforderlich
+
+:::
+
+::: {.notes}
+- Sobald*Model-Pro-Pan-2024*, *zertifiziertem Rührgerät*und andere ähnliche Produkte gekauft wurden, wird es schwierig sein, Rezepte anderer Anbieter zu verwenden
+:::
+
+## Warum ist das ein Problem? {.center}
+
+  
+## {background-image="images/whatsapp-leak.png" background-size="contain" background-color="white"}
+
+:::{.notes}
+
+- Manchmal sind Produkte einfach schlecht, verfügen nicht über grundlegende Sicherheitsfunktionen und die Sicherheit der Benutzerdaten hat keine Priorität.
+
+:::
+
+## {background-image="images/sanctions.png" background-size="contain" background-color="white"}
+
+<!-- https://www.heise.de/news/Strafgerichtshof-Microsofts-E-Mail-Sperre-als-Weckruf-fuer-digitale-Souveraenitaet-10387368.html -->
+
+::: {.notes}
+
+- Microsoft hat nach Trump-Sanktionen das Mail-Konto des Chefanklägers des Internationalen Gerichtshofs blockiert.
+- Trump sanktionierte das Den Haager Gericht im Februar, nachdem ein Gremium von IStGH-Richtern im November 25 Haftbefehle gegen den israelischen Premierminister Benjamin Netanjahu mit Blick auf Kriegsverbrechen im Gaza-Streifen erlassen hatte.
+:::
+
+## {background-image="images/end-of-10.png" background-size="contain" background-color="white"}
+
+<!-- https://www.computerbild.de/artikel/cb-Tipps-Software-Windows-10-wird-eingestellt-Updates-36482825.html -->
+
+::: {.notes}
+
+- Manchmal werden Softwareversionen nicht mehr unterstützt, wie das Beispiel des End-of-Life für Windows 10 zeigt.
+- Das Problem: Zahlreiche PCs bringen die geforderten Komponenten nicht mit. Ein Upgrade auf Windows 11 auf offiziellem Wege ist in solchen Fällen ausgeschlossen.
+:::
+
+## {background-iframe="https://endof10.org"}
+
+::: {.notes}
+Gehen Sie zu „Orte und vergrößern Sie die Ansicht”
+:::
+
+## {.center}
+
+> Aber nicht jeder kann ein Computerexperte sein
+
+::: {.notes}
+
+- Die „10.000-Stunden-Regel”, die Malcolm Gladwell in seinem Buch „Outliers” populär gemacht hat, besagt, dass man etwa 10.000 Stunden Übung benötigt, um eine Fertigkeit zu meistern.
+- Bei 6 Stunden pro Tag sind Sie nach etwa 7 Jahren ein Computerexperte
+- Insbesondere müssen wir nicht alle 3 Ebenen verstehen (nächste Folie)
+
+:::
+
+## Drei Ebenen{.center}
+
+::: {.fragment .fade-in-then-semi-out}
+::: {.layer-box-blue}
+**Schnittstellenschicht**
+„ChatGPT oder MS Copilot”
+:::
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+::: {.layer-box-orange}
+**Implementierungsformate**
+, Standards usw.
+:::
+:::
+
+::: {.fragment}
+::: {.layer-box-purple}
+**Technologie**
+Die grundlegende Fähigkeit
+:::
+:::
+
+## Am Scheideweg {data-background-image="images/fork-in-the-road-624151138_f1ff60b2db_o-1950536461.jpg" .center .shadow .scheideweg}
+
+::: {.notes}
+
+- Gehen wir *den einfachen* oder *den richtigen Weg*?
+- Werden wir *Meister einer Technologie* oder *Nutzer eines Produkts*?
+
+:::
+
+# OpenSource \& LLM{background-image="images/books-2596809\_1280.jpg" class="blurred-10px shadow"}
+
+## {background-image="images/books-2596809\_1280.jpg"}
+
+## „Offenheit” ist ein Spektrum
+
+offener ↑
+
+::: {.incremental .two-col-list}
+
+- [Vollständig offen]{}  [(Gewichte ✔ Code ✔ Daten ✔)]{}
+- [Offener Code]{} [(Gewichte ✔ Code ✔ Daten ✕)]{}
+- [Offene Gewichte]{}  [(Gewichte ✔ Code ✕ Daten ✕)]{}
+- [Proprietär]{} [(Gewichte ✕ Code ✕ Daten ✕)]{}
+:::
+
+geschlossener ↓
+
+::: {.notes}
+
+**Proprietär (ChatGPT, Claude, Gemini):**
+
+- Komplette Black Box – Sie erhalten nur API-Zugriff
+- Keine Einblicke in die Funktionsweise, die verwendeten Trainingsdaten oder die Entscheidungsfindung
+- Sie sind vollständig vom Anbieter abhängig
+
+**Offene Gewichte (Llama 3.3, DeepSeek, Mistral, Qwen):**
+
+- Die Gewichte des trainierten Modells werden veröffentlicht – Sie können sie herunterladen und lokal ausführen
+- ABER: Trainingscode und Trainingsdaten sind in der Regel NICHT enthalten
+- Sie können es VERWENDEN, aber nicht vollständig überprüfen oder reproduzieren, wie es erstellt wurde
+- Hier befinden sich heute die meisten „offenen” Modelle
+- Für praktische Lehrzwecke: Das ist ausreichend! Sie erhalten lokale Kontrolle.
+
+**Offene Gewichte + Code (einige Forschungsveröffentlichungen):**
+
+- Gewichte + die für das Training verwendete Methodik/der verwendete Code
+- Sie können nachvollziehen und überprüfen, WIE das Training durchgeführt wurde
+- ABER: Trainingsdaten sind in der Regel nicht enthalten (Lizenzprobleme, Wettbewerbsvorteil)
+- Beispiel: Veröffentlichungen einiger akademischer Labore
+- Näher an der echten „Open Source”-Philosophie – transparent und überprüfbar
+
+**Vollständig Open Source (OLMo, BLOOM – selten!):**
+
+- Gewichte + Trainingscode + Trainingsdaten – alles
+- Vollständig reproduzierbar und überprüfbar
+- Dies ist der Goldstandard, aber extrem selten (Trainingsdaten sind teuer, komplexe Lizenzierung)
+- Am ähnlichsten zu traditioneller Open-Source-Software
+
+:::
+
+
+
+## {.center}
+
+Ok, wie funktioniert das?
+
+# Praktische Demo {background-image="images/magic-note-8836935\_1280.jpg" .shadow .blurred-5px}
+
+## {background-image="images/magic-note-8836935\_1280.jpg"}
+
+## Schritt 1: Software installieren
+
+Wir benötigen eine Software, mit der Siedas Modell auf Ihrem Rechner **ausführen** können.
+
+::: {.incremental}
+
+- Lädt Modelldaten herunter
+- Verwaltet Speicher und Verarbeitung
+- Stellt eine Schnittstelle bereit
+:::
+
+
+
+## Beliebte Optionen
+
+- Ollama (ollama.ai)
+- LM Studio (lmstudio.ai)
+- GPT4All (gpt4all.io)
+- Jan (jan.ai) 
+
+
+::: {.notes}
+
+**Ollama** (ollama.ai)
+
+- Befehlszeilentool, sehr einfach
+- Funktioniert unter Mac, Linux und Windows
+- Einfache Modellverwaltung:`ollama pull deepseek-r1`
+- Integrierter API-Server
+- Kostenlos und Open Source
+
+**LM Studio**(lmstudio.ai)
+
+- Grafische Benutzeroberfläche, sehr benutzerfreundlich
+- Ideal für nicht-technische Benutzer
+- Integrierter Modellbrowser
+- Funktioniert unter Mac, Windows und Linux
+- Kostenlos
+
+**GPT4All**
+
+- Desktop-App mit GUI
+- Gut für absolute Anfänger
+- Begrenzte Modellauswahl, aber kuratiert
+- Kostenlos und Open Source
+
+**Jan.ai**
+
+- Desktop-App, moderne Benutzeroberfläche
+- Local-First-Philosophie
+- Guter Fokus auf Datenschutz
+- Kostenlos und Open Source
+
+**In diesem Workshop konzentrieren wir uns auf Ollama**– es ist das flexibelste und am weitesten verbreitete Programm, aber jedes dieser Programme eignet sich für den Einstieg.
+
+:::
+
+## Schritt 2: Modell auswählen und herunterladen
+
+Modelle unterscheiden sich hinsichtlich:
+
+::: {.incremental}
+
+- **Größe**(1 GB bis 100 GB+)
+- **Fähigkeiten**(allgemeiner Chat, Programmierung, logisches Denken)
+- **Sprache**(mehrsprachig vs. englischorientiert)
+:::
+
+::: {.fragment}
+Beginnen Sie mit einem **kleinen, universell einsetzbaren Modell**
+:::
+
+::: {.notes}
+
+**So wählen Sie aus:**
+
+**Für Anfänger empfehlen wir:**
+
+- **DeepSeek-R1:1,5B oder 7B**– Ausgezeichnetes logisches Denken, gut für Lehraufgaben geeignet, angemessene Größe
+- **Llama 3.2 3B**– Schnell, leistungsfähig, weit verbreitet
+- **Qwen 2.5 7B**– Stark in mehreren Sprachen, gut für internationale Kontexte
+- **Phi-4**– Effizientes kleines Modell von Microsoft, überraschend leistungsfähig
+
+**Überlegungen zur Größe:**
+
+- **1-3B-Parameter:**Schnell, läuft auf den meisten Laptops, gut für grundlegende Aufgaben (2-6 GB RAM erforderlich)
+- **7-8B-Parameter:**Ideal für den Unterricht – gute Qualität, angemessene Geschwindigkeit (8-16 GB RAM)
+- **13B+-Parameter:**Bessere Qualität, aber langsamer und benötigt mehr RAM (mindestens 16 GB+)
+
+**Mit Ollama:**
+
+```bash
+ollama pull deepseek-r1:1.5b    # Small, fast
+ollama pull llama3.2:3b          # General purpose
+ollama pull qwen2.5:7b           # Multilingual
+```
+
+**Mit LM Studio:**
+
+- Öffnen Sie den Modellbrowser.
+- Suchen Sie nach „deepseek” oder „llama”.
+- Suchen Sie nach Modellen, die mit Ihrer RAM-Kapazität gekennzeichnet sind.
+- Klicken Sie auf „Herunterladen
+
+**”. Wichtig:**Sie können später jederzeit weitere Modelle herunterladen. Fangen Sie klein an, testen Sie es und probieren Sie bei Bedarf größere Modelle aus. Modelle sind nur Dateien – Sie können sie löschen, wenn sie Ihnen nicht gefallen.
+
+:::
+
+## Schritt 3: Führen Sie Ihre erste Abfrage aus
+
+Jetzt können Siemit dem Modell**interagieren**
+
+.
+
+::: {.incremental}
+
+- Starten Sie das Modell/den Server
+- . Senden Sie ihm eine Eingabeaufforderung.
+- Erhalten Sie eine Antwort.
+
+**Das**
+
+- 
+:::
+
+::: {.fragment}
+**war's schon!**Sie führen KI lokal aus.
+:::
+
+::: {.notes}
+
+**Mit Ollama (Befehlszeile):**
+
+Starten Sie eine Chat-Sitzung:
+
+Geben
+
+```bash
+ollama run deepseek-r1:1.5b
+```
+
+Sie dann einfach Ihre Frage ein:
+
+```
+>>> Generate 3 multiple choice questions about photosynthesis
+```
+
+Oder verwenden Sie es als API:
+
+```bash
+curl http://localhost:11434/api/generate -d '{
+  "model": "deepseek-r1:1.5b",
+  "prompt": "Summarize this: [paste text]"
+}'
+```
+
+**Mit LM Studio (GUI):**
+
+1. Wählen Sie Ihr heruntergeladenes Modell aus der linken Seitenleiste aus.
+2. Klicken Sie auf „Modell laden“
+3. Geben Sie Ihre Eingabe in die Chat-Oberfläche ein.
+4. Drücken Sie die Eingabetaste
+
+**Mit GPT4All oder Jan.ai:**
+
+- Ähnlich – Modell auswählen, in das Chatfeld eingeben, Antwort erhalten
+
+**Erste Eingabeaufforderungen zum Ausprobieren:**
+
+- „Erstelle 5 Übungsfragen zu [deinem Thema] ”
+- „Fasse diesen Text in einfacher Sprache zusammen: [Text einfügen] “
+- „Geben Sie Feedback zu diesem Absatz eines Schülers: [Text einfügen] “
+- „Erklären Sie [das Konzept] auf Highschool-Niveau“
+
+**Was hinter den Kulissen geschieht:**
+
+- Die Modelldatei wird in den RAM geladen
+- Ihr Text wird in Zahlen (Tokens) umgewandelt
+- Das Modell sagt immer wieder das nächste Token voraus
+- Die Ergebnisse werden wieder in Text umgewandelt
+- All dies geschieht**auf Ihrem Computer**, ohne dass eine Internetverbindung erforderlich ist (nach dem Herunterladen)
+
+**Wichtige Erkenntnis:**Sobald Sie diesen Punkt erreicht haben, erkennen Sie, dass es sich nicht um Zauberei handelt – es ist lediglich eine lokal ausgeführte Software. Sie haben die volle Kontrolle.
+
+:::
+
+<!-- 
+hier weiterlesen 
+-->
+
+## Die drei Verbesserungen
+
+::: {.columns}
+::: {.column width="33%"}
+**RAG**
+
+Retrieval Augmented Generation
+
+Geben Sie LLM Zugriff auf IHRE Dokumente
+
+*Beispiel: IUNR-Kursmaterialien, Forschungsarbeiten*
+:::
+
+::: {.column width="33%"}
+**MCPs**
+
+Modellkontextprotokoll
+
+Verbinden Sie LLM mit Ihren Tools
+
+*Beispiel: Felddaten, GIS, E-Mail, Kalender*
+:::
+
+::: {.column width="33%"}
+**Personas**
+
+Systemaufforderungen
+
+Gestalten Sie das Verhalten von LLM
+
+*Beispiel: „Lehrassistent für Umweltwissenschaften”*
+:::
+:::
+
+::: {.notes}
+Diese drei Verbesserungen machen lokale LLMs leistungsstark. Gehen Sie nicht zu sehr ins Technische – erklären Sie einfach, was jede einzelne Funktion bewirkt, und geben Sie konkrete Beispiele, die für den Unterricht relevant sind. RAG ist für ihren Anwendungsfall besonders wichtig.
+:::
+
+## Warum lokale LLMs für den Unterricht sinnvoll sind
+
+- Studierendendaten sind**sensibel**(DSGVO, Datenschutz)
+- **Sich wiederholende Aufgaben**(Benotung, Feedback)
+- Maßgeschneiderte**Kursmaterialien**(RAG)
+- Einmalige Einrichtung,**dauerhafter Nutzen**
+- **Keine Kosten pro Abfrage**
+
+::: {.notes}
+Verbinden Sie die Punkte: Studentendaten + DSGVO = muss lokal sein. Sich wiederholende Aufgaben + keine Kosten pro Abfrage = wirtschaftlich rentabel. Deshalb ist lokal speziell für den Unterricht sinnvoll.
+:::
+
+## Übergang
+
+::: {.r-fit-text}
+Okay, was können Siedamit**konkret machen**?
+:::
+
+::: {.notes}
+Übergang zu praktischen Anwendungen. Wechsel von „Warum“ zu „Was“. Zeit, konkreten Wert zu zeigen.
+:::
+
+# 3\. ANWENDUNGSFÄLLE + BENCHMARKS{.section}
+
+::: {.notes}
+Dieser Abschnitt zeigt konkrete Anwendungsfälle im Unterricht mit Benchmarks, die belegen, dass lokale Modelle gut genug sind. Dauer: 8 Minuten. Zeigen Sie 3 detaillierte Beispiele und listen Sie dann kurz weitere auf.
+:::
+
+## Was können lokale LLMs für den Unterricht leisten?
+
+::: {.notes}
+Abschnittstrenner – Pause, Frage offen lassen.
+:::
+
+## Anwendungsfall 1: Übungsfragen generieren
+
+**Eingabe:**Vorlesungsfolien oder Kapitel aus einem Lehrbuch
+
+**Ausgabe:**10 Multiple-Choice-Fragen mit Erläuterungen
+
+**Warum lokal:**Kursmaterialien sind oft urheberrechtlich geschützt/sensibel
+
+***
+
+**Benchmark:**
+
+```
+ChatGPT-4:        ⭐⭐⭐⭐⭐
+Local DeepSeek-r1: ⭐⭐⭐⭐⭐
+
+Privacy: Local WINS | Cost: Local WINS
+```
+
+::: {.notes}
+Erster Anwendungsfall: Generierung von Übungsfragen. Betonen Sie den Benchmark – DeepSeek-r1 entspricht der Qualität von ChatGPT-4. Weisen Sie auf die Vorteile in Bezug auf Datenschutz und Kosten hin. Dies ist eine häufige Aufgabe im Unterricht.
+:::
+
+## Anwendungsfall 2: Feedback zum Schreiben von Schülern
+
+**Eingabe:**Aufsatz oder Bericht eines Schülers
+
+**Ausgabe:**Konstruktives Feedback zu Struktur, Argumentation und Klarheit
+
+**Warum lokal:**Die Arbeiten der Schüler sind vertraulich
+
+***
+
+**Benchmark:**
+
+```
+ChatGPT-4:        ⭐⭐⭐⭐⭐
+Local DeepSeek-r1: ⭐⭐⭐⭐
+
+Privacy: Local WINS | Cost: Local WINS
+```
+
+::: {.notes}
+Zweiter Anwendungsfall: Feedback schreiben. Hinweis: DeepSeek etwas geringere Qualität (4 Sterne gegenüber 5), aber immer noch gut genug. Hervorheben: Die Arbeiten der Studierenden sind VERTRAULICH – dies muss aus Gründen der DSGVO-Konformität unbedingt lokal erfolgen.
+:::
+
+## Anwendungsfall 3: Zusammenfassung von Forschungsergebnissen
+
+**Input:**30-seitige Forschungsarbeit
+
+**Output:**1-seitige Zusammenfassung für Studierende
+
+**Warum lokal:**Kann viele Arbeiten verarbeiten, keine API-Kosten
+
+***
+
+**Benchmark:**
+
+```
+ChatGPT-4:        ⭐⭐⭐⭐⭐
+Local DeepSeek-r1: ⭐⭐⭐⭐⭐
+
+Privacy: Local WINS | Cost: Local WINS
+```
+
+::: {.notes}
+Dritter Anwendungsfall: Forschungszusammenfassungen. Zurück zu 5 Sternen – entspricht der Qualität von ChatGPT. Hinweis: „Kann viele Arbeiten verarbeiten, keine API-Kosten“ – hier zeigt sich der wirtschaftliche Vorteil der lokalen Verarbeitung. 100 Arbeiten verarbeiten? Kein Problem, keine zusätzlichen Kosten.
+:::
+
+## Weitere Anwendungsfälle
+
+Weitere Aufgaben, die sich gut lokal umsetzen lassen:
+
+- Übersetzen Sie technische Inhalte in verschiedene Lesestufen
+- Erstellen Sie interaktive Studienführer mit RAG
+- Erstellen von Bewertungsrubriken
+- Beantwortung von Fragen der Studierenden zu Kursmaterialien
+
+::: {.notes}
+Kurze Liste – verharren Sie nicht bei jedem Punkt. Es geht darum, ihr mentales Modell dessen, was möglich ist, zu erweitern. Sie können diese Punkte später erkunden.
+:::
+
+## Die wichtigste Erkenntnis
+
+- Lokale Modelle sindfür Lehraufgaben**„gut genug“**
+- Die Qualitätslücke hat sich**drastisch geschlossen**
+- Der Datenschutzvorteil ist**enorm**
+- Kosten: Einmalige Anschaffung der Hardware, dann**unbegrenzte Nutzung**
+
+::: {.notes}
+Zusammenfassende Folie. Hammer home: „Gut genug“ ist das Schlüsselkonzept. Perfektion ist nicht erforderlich. Die Qualitätslücke hat sich geschlossen. Der Datenschutz ist enorm. Das Kostenmodell ist anders und für den Einsatz im Unterricht vorteilhaft.
+:::
+
+## Übergang zur Demo
+
+::: {.r-fit-text}
+Sehen wir uns das in Aktion an
+:::
+
+::: {.notes}
+Übergang zur Live-Demo. Energiewende – dies ist der Moment der „Beweisführung“. Zeigen, nicht nur erzählen.
+:::
+
+# 4\. LIVE-DEMO{.section}
+
+::: {.notes}
+Live-Demo-Abschnitt – 10 Minuten. Zeigen Sie ChatGPT und das lokale Ollama nebeneinander bei der Ausführung derselben Aufgabe. Beteiligung des Publikums – es gibt Ihnen die Aufgabe vor. Halten Sie einen Plan B bereit, falls die Technik versagt.
+:::
+
+## Demo-Einführung
+
+**Sehen wir uns das in Aktion an**
+
+- Ich werde sowohl ChatGPT als auch das lokale Ollama ausführen
+- SIE geben mir eine Lehr-Aufgabe
+- Wir vergleichen die Ergebnisse
+
+::: {.notes}
+Laden Sie das Publikum zur Teilnahme ein – „SIE geben mir eine Lehraufgabe”. Das macht es spannender und stellt sicher, dass die Demo für die tatsächlichen Bedürfnisse relevant ist.
+:::
+
+## Demo-Einrichtung
+
+::: {.notes}
+Geteilter Bildschirm oder nebeneinander
+Gleiche Eingabeaufforderung für beide
+Echtzeitvergleich
+
+Mögliche Demo-Aufgaben:
+
+- Erstellen Sie 5 Prüfungsfragen aus einem Textausschnitt
+- Feedback zu einem kurzen Absatz eines Schülers geben
+- Fassen Sie eine Forschungszusammenfassung zusammen
+:::
+
+[LIVE-DEMO-BILDSCHIRM]
+
+## Demo-Nachbesprechung
+
+::: {.r-fit-text}
+Gleiche Funktionen, unterschiedliche Backends
+
+Das eine können Sie kontrollieren, das andere nicht
+
+Beide eignen sich für Lehraufgaben
+:::
+
+::: {.notes}
+Wichtige Punkte der Nachbesprechung: gleiche Leistungsfähigkeit (beide können die Aufgabe erfüllen), unterschiedliche Backends (eines proprietär, eines lokal), beide eignen sich für den Unterricht (Beweis dafür, dass lokal praktikabel ist). Erkennen Sie Qualitätsunterschiede an, betonen Sie jedoch, dass sie „gut genug” sind.
+:::
+
+# 5\. WARUM OPEN SOURCE WICHTIG IST{.section}
+
+::: {.notes}
+Dieser Abschnitt enthält Argumente dafür, warum Kontrolle und Souveränität wichtig sind. Dauer: 7 Minuten. Zwei Beispiele für Verrat, Lock-in-Muster, Foto des Vaters, Dringlichkeit, Rückgriff auf das Kochen.
+:::
+
+## Warum Kontrolle wichtig ist
+
+::: {.notes}
+Abschnittstrenner – möglichst wenig sprechen, die Frage wirken lassen.
+:::
+
+## Zwei Mal, als Sie betrogen wurden
+
+**Beispiel 1: WhatsApp-Leck**
+
+- Milliarden von Telefonnummern offengelegt
+- „Sie haben ihnen Ihre Daten anvertraut“
+- Jeder nutzt es, persönliche Interessen
+
+***
+
+**Beispiel 2: Windows 10 Veralterung**
+
+- Hardware durch Softwareentscheidung „veraltet“
+- Umweltverschmutzung, E-Müll-Krise
+- Erzwungene Upgrades, keine Wahl
+
+::: {.notes}
+Zwei konkrete Beispiele für Verrat. WhatsApp: Verletzung der Privatsphäre, jeder nutzt es, persönliche Interessen. Windows 10: Umweltverschwendung, erzwungene Veralterung. Dies sind reale, dokumentierte Ereignisse. Lassen Sie Ihre Wut brodeln – diese Unternehmen haben ihre Nutzer im Stich gelassen.
+:::
+
+## Das Lock-in-Muster
+
+```
+         Cognitive Lock-in
+         (I only know THIS)
+              ╱│╲
+             ╱ │ ╲
+   Technical│  │ Institutional
+   (Format) │  │ (Everyone uses it)
+```
+
+::: {.notes}
+Erläutern Sie die drei Arten von Lock-in: kognitiv (Sie kennen nur dieses eine Tool), technisch (Dateiformate, APIs), institutionell (alle anderen nutzen es). Alle drei verstärken sich gegenseitig und machen ein Entkommen nahezu unmöglich.
+
+## Foto
+
+
+:::
+
+## des Vaters + globale Gerechtigkeit
+
+![](images/father-linux-1998.jpg){fig-alt="Linux-Workshop in Sri Lanka, 1998"}
+
+„Das war schon immer ein wichtiger Punkt – Lizenzkosten schließen ganze Regionen aus.“
+
+**Open Source = globale Gerechtigkeit**
+
+::: {.notes}
+TODO: Aktuelles Foto hinzufügen
+
+Persönliche Anmerkung: Ihr Vater hat 1998 in Sri Lanka Linux unterrichtet. Hier ging es schon immer um globale Gerechtigkeit und Gleichheit. Proprietäre Softwarelizenzen schließen ganze Regionen der Welt aus. Open Source = Zugang für alle, unabhängig von geografischer Lage oder Wohlstand.
+:::
+
+## Die Entscheidung für KI ist JETZT
+
+- Werden in 2–3 Jahren alle wie bei WhatsApp an ChatGPT gebunden sein?
+- Oder werden wir Alternativen bewahren?
+
+::: {.fragment}
+**Dieses Fenster bleibt nicht für immer offen**
+:::
+
+::: {.fragment}
+**Gute Nachricht:**Offene Modelle gibt es JETZT
+:::
+
+::: {.notes}
+Schaffen Sie Dringlichkeit. Wir stehen JETZT vor einer Entscheidung. Werden in 2–3 Jahren alle an ChatGPT gebunden sein, so wie sie an WhatsApp gebunden sind? Oder werden wir Alternativen bewahren? Dieses Fenster wird nicht ewig offen bleiben. Aber die gute Nachricht ist: Offene Modelle gibt es bereits heute, genau jetzt.
+:::
+
+## Rezept-Rückruf
+
+::: {.r-fit-text}
+Erinnern Sie sich an das firmeneigene Rezept?
+
+Würden Sie das beim Kochen akzeptieren?
+
+**Warum akzeptieren Sie es dann für KI?**
+:::
+
+::: {.notes}
+Rückruf zum Anfang. Schließen Sie den Kreis. Sie würden proprietäres Kochen nicht akzeptieren – warum also proprietäre KI? Lassen Sie das sacken. Pause.
+:::
+
+# 6\. INTERAKTIVER MOMENT{.section}
+
+::: {.notes}
+Kurzer interaktiver Abschnitt – insgesamt 5 Minuten. Zwei Diskussionsanregungen, um die Teilnehmer dazu zu bringen, über die Anwendung und Bindung in ihrem eigenen Kontext nachzudenken.
+:::
+
+## Ihre Anwendungsfälle
+
+::: {.r-fit-text}
+Wofür würden SIE lokale LLMs in Ihrem Unterricht einsetzen?
+:::
+
+::: {.notes}
+Kurzes Brainstorming (Handzeichen oder Zurufe)3–5 Ideen
+mündlich festhalten
+Validieren: „Ja, das würde funktionieren!“
+:::
+
+## Wo bist du gefangen?
+
+**Welche Tools scheinen am schwersten zu überwinden zu sein?**
+
+::: {.notes}
+Kurze Diskussion (2–3 Personen tauschen sich aus)
+„Das ist die Einschränkung, von der wir sprechen.“
+„Lokale LLMs können dabei helfen, einige dieser Ketten zu sprengen.“
+:::
+
+# 7\. ABSCHLUSS: Die Einladung{.section}
+
+::: {.notes}
+Abschließender Abschnitt – 5 Minuten. Kehren Sie zur Eingangsfrage zurück, zeigen Sie ihnen, dass sie Optionen haben, gehen Sie auf Einwände ein, nennen Sie konkrete nächste Schritte und schließen Sie mit Ressourcen.
+:::
+
+## Zurück zu „Fork in the Road“
+
+::: {.r-fit-text}
+Wir haben mit einer Entscheidung begonnen
+
+**Wird die KI uns beherrschen oder beherrschen wir die KI?**
+:::
+
+::: {.notes}
+Kehren Sie zur ersten Frage zurück. Der Kreis schließt sich. Hier haben wir begonnen, und jetzt haben Sie gesehen, dass es eine Alternative gibt. Erinnern Sie die Zuhörer an die Wahlmöglichkeit.
+:::
+
+## Sie haben Optionen
+
+- Es gibt Modelle mit offenem Gewicht
+- Die Hardware ist leistungsfähig genug (sogar Laptops)
+- Die Tools werden immer ausgereifter (Ollama, LM Studio)
+- Die Community wächst
+
+::: {.fragment}
+**SIE können das schaffen**
+:::
+
+::: {.notes}
+Befähigung. Führen Sie die Beweise auf: Modelle existieren, die Hardware ist leistungsfähig (sogar Laptops!), die Tools werden immer ausgereifter, die Community wächst. Bauen Sie Vertrauen auf. Schließen Sie mit: SIE können das schaffen. Betonen Sie SIE.
+:::
+
+## Gehen Sie auf Einwände ein
+
+„Ich habe keine Zeit, das zu lernen!“
+
+::: {.incremental}
+
+- Ja, anfängliche Investitionen sind erforderlich
+- Aber: Es zahlt sich mit der Zeit aus
+- Und: Sie sind nicht mehr verwundbar
+:::
+
+::: {.fragment}
+*Rückruf zum Thema Kochen: Es lohnt sich, kochen zu lernen vs. proprietäre Rezepte*
+:::
+
+::: {.notes}
+Gehen Sie direkt auf den größten Einwand ein: „Ich habe keine Zeit!“ Geben Sie zu, dass dies ein echtes Problem ist – ja, es ist eine Anfangsinvestition erforderlich. Aber kontern Sie: Es zahlt sich mit der Zeit aus und beseitigt Ihre Anfälligkeit. Der Rückruf zum Thema Kochen bekräftigt: Es lohnt sich, kochen zu lernen, anstatt von einem proprietären System abhängig zu sein.
+:::
+
+## Fangen Sie klein an
+
+Probieren Sie diesen Monat **EINE** Sache aus:
+
+- Installieren Sie Ollama und führen Sie ein Modell aus
+- Erstellen Sie lokal einen Satz von Prüfungsfragen
+- Testen Sie ein lokales LLM zum Zusammenfassen
+- Entdecken Sie LM Studio oder ähnliche Tools
+
+::: {.fragment}
+**Sie müssen nicht alles auf einmal umstellen**
+:::
+
+::: {.notes}
+Geben Sie konkrete, umsetzbare nächste Schritte vor. Wählen Sie EINE Sache aus, die Sie diesen Monat ausprobieren möchten. Senken Sie die Einstiegshürde. Betonen Sie: Sie müssen nicht alles auf einmal umstellen. Fangen Sie klein an, bauen Sie Vertrauen auf und erweitern Sie schrittweise.
+:::
+
+## Ressourcen \& Dankeschön
+
+**Kontaktdaten des GrüentAI-Teams**
+
+- Wir arbeiten daran, um zu lehren
+- Wir stehen Ihnen als Ressource zur Verfügung
+- Wenden Sie sich bei Fragen an uns
+
+::: {.r-fit-text}
+**Vielen Dank**
+:::
+
+::: {.notes}
+Schließen Sie mit Ressourcen und einer Einladung zur Kontaktaufnahme. Machen Sie deutlich: GrüentAI arbeitet speziell für den Unterricht daran. Sie sind als Ressource für sie da. Bei Fragen können Sie sich gerne an uns wenden. Öffnen Sie die Tür für weitere Gespräche und Unterstützung.
+:::
+
+
