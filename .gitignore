@@ -3,7 +3,5 @@
 .RData
 .Ruserdata
 
-# Quarto generated files
-index_files/
-index.html
-index.knit.md
+
+zueri-wie-neu/data/stzh.zwn_meldungen_p.csv
