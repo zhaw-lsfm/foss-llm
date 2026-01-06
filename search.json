@@ -1,0 +1,989 @@
+[
+  {
+    "objectID": "Workshop_IUNR_Design_v2.html",
+    "href": "Workshop_IUNR_Design_v2.html",
+    "title": "Technology Sovereignty Workshop for IUNR",
+    "section": "",
+    "text": "Target Audience: IUNR researchers and teachers (mixed tech literacy: “simple mail users” → power users) Duration: 60 minutes fixed Format: Empowering, slightly provocative awareness session + hands-on demo Language: English working document, will translate to German later\n\n\n\n\nMake audience realize: “I’m a product user, not a technology wielder - and that’s a problem”\nDesired outcome: - Be more adventurous in trying alternatives - Remove fear of switching costs - Realize it’s worth trying something different - Know GrüentAI team as a resource\n\n\n\n\n\n\nThe Absurd Proprietary Cooking System:\nImagine you want to cook a meal, but you can only follow recipes from one specific provider. The recipe card looks like this:\nPROPRIETARY RECIPE CARD:\n\n1. Add 2 units of Compound-XJ7 (available only from us, $15/bottle)\n2. Heat in Model-Pro-Pan-2024 at setting \"MEDIUM\"\n3. Stir with Certified-Stirring-Tool (sold separately)\n4. When indicator light turns green, add Flavor-Packet-B\n\n⚠️ WARNING:\n- Substitutions void warranty\n- Recipe may stop working if ingredients discontinued\n- Do not attempt to understand the chemical processes involved\n- Model-Pro-Pan-2024 will be discontinued next year; upgrade required\nContrast with Open Source Cooking:\nOPEN RECIPE:\n\n1. Sauté onions in oil until translucent\n   (WHY: releases sugars, builds flavor base)\n2. Add garlic, cook 30 seconds\n   (WHY: aromatic, cooks fast, burns easily)\n3. Add tomatoes, simmer 20 min\n   (WHY: breaks down, concentrates)\n4. Season to taste\n\nNOTES:\n- No onions? Try shallots or leeks (similar aromatic base)\n- Olive oil or butter both work (you need fat for flavor)\n- Any pan that conducts heat evenly\n- Adjust time based on your stove's heat output\nKey Questions to Audience:\n\n“Would you accept this for cooking?”\n\nOf course not! It’s absurd!\nYou’d want to understand WHY each step works\nYou’d want to substitute based on what you have\nYou’d want freedom to adapt to YOUR needs\n\n“But we DO accept this for software. Why?”\n\nTime argument: “We spend FAR more time on computers than cooking”\nMost people cook 30-60 min/day\nMost people use computers 4-8 hours/day\nYet we accept ignorance about technology but not about cooking\n\n“What about someone who doesn’t know how to cook?”\n\nThey might say: “It’s going to take me ages just deciding on a pan!”\n“How should I find the time to learn all that?”\nSame with software: Yes, initial investment needed\nBUT: It pays off many-fold over time\nAnd you’re NOT vulnerable anymore\n\n\nThe Vulnerability of Lock-in (Vendor Lock-in via Cooking):\nOnce you’ve bought: - The Model-Pro-Pan-2024 ($200) - 12 bottles of Compound-XJ7 ($180) - The Certified-Stirring-Tool ($50) - Learned their obscure ingredient names - Built up a recipe collection that ONLY works with their system\nYou are now in a vulnerable position: - Switching cost is enormous - you’d have to replace everything - They can raise prices - you’re already invested - They can discontinue products - your recipes break - They control your ability to cook - you’re dependent\nSound familiar? This is exactly how software lock-in works.\nMapping to Software Reality:\n\n\n\n\n\n\n\nCooking Metaphor\nSoftware Reality\n\n\n\n\n“Compound-XJ7”\nProprietary file formats (.docx, .psd, etc.)\n\n\n“Model-Pro-Pan-2024”\nSpecific OS/hardware requirements\n\n\nRecipe only works with their stuff\nVendor lock-in, no interoperability\n\n\nCan’t substitute ingredients\nCan’t switch tools/platforms\n\n\nDon’t know WHY it works\nClosed source, black box systems\n\n\nIngredient discontinued = recipe breaks\nSoftware sunset = your workflow dies\n\n\nUnderstanding cooking basics\nUnderstanding technology principles\n\n\nCan adapt recipe to YOUR context\nCan modify open source for YOUR needs\n\n\nVulnerable after investment\nTrapped by switching costs\n\n\n\nThe Empowerment Message:\nWhen you understand the BASICS of cooking: - “Oh, I’m building a flavor base - I can use what I have” - “This is creating an emulsion - milk works too” - “I’m at high altitude, I need to adjust” - You become empowered, not dependent\nWhen you understand the BASICS of technology: - “Oh, this is just a text editor - I can use any one” - “This is file synchronization - multiple tools do this” - “I need privacy - I’ll choose the open alternative” - Same empowerment, same freedom\nHow to Use Throughout Workshop:\n\nOpening hook: Start with this scenario, get them reacting\nWhen explaining lock-in: “Remember the proprietary recipe? That’s what’s happening here.”\nInfuriating examples: “WhatsApp leak? You trusted the recipe provider and they exposed your data.”\nFramework section: “Three layers: Recipe (interface), Ingredients (implementation), Cooking process (technology)”\nSwitching costs: “You’ve invested in their pans and ingredients - now you’re stuck”\nClosing: “Would you accept proprietary cooking? Then why accept proprietary software?”\n\n\n\n\n\nFather’s Photo (1998 Linux Workshop, Sri Lanka) - Open Source vs proprietary matters for global justice - Licensing costs exclude entire regions - This is not a new problem\nAda & Zangemann Story - Brief overview with openly licensed images - Shows the pattern: inventor controls devices, kids hack freedom - Makes the concept accessible and narrative\nInfuriating Examples (make them feel the anger!)\nFINAL SELECTION - 3 Concrete Examples: 1. WhatsApp security flaw - Billions of phone numbers exposed (Wired article) - Everyone uses it, personal stakes - Shows you can’t trust platforms you don’t control - Links to opening: “Why not Signal? THIS is why.” 2. ICC prosecutor email block - Microsoft blocked emails after Trump sanctions - Corporate platforms can censor at will - Global justice implications 3. Windows 10 forced obsolescence - Hardware made “obsolete” by software - Environmental waste, e-waste crisis - Resonates with IUNR environmental focus\n(Other candidates considered but dropped: Academic paywalls - separate issue; Field data/ArcGIS - not concrete enough)\n\n\n\nThree Layers:\nInterface Layer    → \"I know how to use ChatGPT\"\nImplementation     → Open vs. proprietary\nTechnology         → The fundamental capability\nLock-in Triangle:\n     Cognitive Lock-in\n         ╱│╲\n        ╱ │ ╲\nTechnical│  Institutional\nExamples Everyone Knows: - WhatsApp vs Signal - Google Maps vs OpenStreetMap - Podcast via iTunes vs RSS feed - ArcGIS vs QGIS - Microsoft Office vs LibreOffice - [More to brainstorm]\n\n\n\n“LLMs are another lock-in risk we need to avoid”\nAND: “LLMs are tools that let you WIELD difficult technologies without mastering proprietary interfaces!”\nThe Promise:\n\nUse tools more easily with AI assistance\nBuild custom solutions for YOUR needs\nDemocratize technical capability\nBreak down barriers to open source adoption\n\n\n\n\nShow real value for their work:\nUse Cases to Demonstrate:\n\nGenerate practice questions from lecture materials\nProvide feedback on student writing\nTranslate technical content to different levels\nSummarize research papers for students\nCreate interactive study guides\nAssist with grading rubrics\n\nBenchmark Format:\nTask: [Specific teaching task]\n\nChatGPT-4:        ⭐⭐⭐⭐⭐ [Result]\nLocal Llama3.3:   ⭐⭐⭐⭐  [Result]\nLocal DeepSeek-r1: ⭐⭐⭐⭐⭐ [Result]\n\nPrivacy: Local wins\nCost: Local wins\nSpeed: ChatGPT slightly faster\nQuality: Nearly equivalent\n\n\n\nShow in slides (not interactive): - Proprietary: Hard to export, obscure formats, lock your data - Open Source: Easy export, lists alternatives on their websites!\nExamples: - WhatsApp chat export (painful) vs Signal (easy) - ArcGIS export process vs QGIS - EndNote vs Zotero\n\n\n\nKey Framing Question: “We are at a critical moment in history. AI is becoming ubiquitous. The question is: Is AI going to own us, or are we going to own AI?”\nThe Choice:\n\nPath 1: AI remains controlled by a few tech corporations\n\nThey decide what we can do\nThey set the terms\nWe pay their prices\nWe’re dependent on their decisions\nPattern repeats: Windows, Office, ArcGIS → now AI\n\nPath 2: AI becomes a democratic technology\n\nOpen models anyone can run\nLocal control over your data\nCustomize for your needs\nNot beholden to corporate decisions\nTrue technological sovereignty\n\n\nThe Urgency: “We’re making this choice RIGHT NOW. In 5 years, will everyone be locked into ChatGPT the way they’re locked into WhatsApp? Or will we preserve alternatives?”\nWhy This Moment Matters:\n\nOpen weight models are NOW available (DeepSeek-r1, Llama3.3)\nHardware is NOW capable (you can run them locally)\nThe window won’t stay open forever\nFirst-mover advantage creates lock-in\n\n\n\n\nPurpose: Make LLMs less “magic” and more “technology you can understand and control”\nComponents to Explain (Accessible to Mixed Audience):\nA. Training a Language Model - The Basics - What is a “word embedding”? (Words as coordinates in meaning-space) - High-level concept: Model learns patterns from massive text - Like a very sophisticated autocomplete - Not “intelligence” - pattern matching at massive scale\nB. The Last 5 Years: Explosive Progress - 2019: GPT-2 was impressive but limited - 2023: ChatGPT changes everything - 2024-2025: Open models catch up to proprietary ones - Key insight: The gap is closing FAST\nC. “Open Weights” vs “Open Source” - Open weights: You can download and run the model - Different from fully open source (training code, data) - But still: YOU control it, not a company - Examples: Llama, DeepSeek-r1, Mistral\nD. AI Safety Concerns (Rob Miles Perspective) - LLMs can be manipulated (trigger words, jailbreaks) - Example: Specific phrases that make models behave unexpectedly - Why it matters: If you don’t control the model, you don’t know what’s happening - Local models: You can inspect, test, understand\nE. Enhancing LLMs: The Ecosystem\nRAG (Retrieval Augmented Generation): - Give the LLM access to specific documents - Makes it accurate for YOUR domain - Example: Feed it IUNR course materials, then ask questions - You control what knowledge it uses\nMCPs (Model Context Protocol): - Let LLMs interact with your tools and data - Connects AI to your existing workflows - Example: LLM that can access your field data, GIS systems - Standardized way to extend capabilities\nPersonas/System Prompts: - Shape how the LLM behaves - “You are a teaching assistant for environmental science” - Customizable for specific tasks - You control the personality and focus\nF. Why Understanding This Matters - Not magic → Technology you can shape - Not monolithic → Modular components you can swap - Not proprietary only → Open alternatives exist - Not all-or-nothing → Use the right tool for each task\nKey Message: “LLMs are powerful but they’re not magic. Once you understand the components, you realize: you can build this yourself, customize it, control it. That’s the difference between being a user and being a wielder.”\n\n\n\n\n\nTotal time: 60-65 minutes (may need slight adjustment)\n\n\nStart with the absurd scenario: - “Imagine you could only cook using one company’s recipes…” - Show the proprietary recipe card (visual slide) - Show the open recipe (visual slide) - Key questions: “Would you accept this? No! Why not?”\nThen pivot to software: - “But we DO accept this for software” - Time argument: “We spend 4-8 hours/day on computers, 30-60 min cooking” - “Yet we accept ignorance about technology but not cooking”\nThe vulnerability point: - “Once you’ve invested in their pans, ingredients, learned their system…” - “Switching cost becomes enormous - you’re trapped” - This is vendor lock-in\nQuick WhatsApp validation: - “How many use WhatsApp daily? Signal?” - “Why not switch? EXACTLY - switching costs” - “Keep the cooking metaphor in mind - we’ll come back to it”\n\n\n\n\nFather’s photo: 1998, Sri Lanka, licensing costs matter\nAda & Zangemann: The pattern of control vs. freedom (brief!)\nInfuriating examples with cooking callbacks:\n\nWhatsApp leak: “You trusted the recipe provider with your data - they exposed it”\nICC block: “The recipe provider decided you can’t cook anymore”\nWindows waste: “Your pan is ‘obsolete’ because they say so”\n\nThe arc: This has always mattered (1998) → It’s a pattern (Ada) → It’s urgent NOW\n\n\n\n\n\nThree layers with cooking parallel:\n\nInterface: “I can follow the recipe” → “I can use Word”\nImplementation: Proprietary vs open (their ingredients vs any ingredients)\nTechnology: The cooking process itself → The fundamental capability\n\nLock-in triangle\nExamples: Maps, Podcasts, ArcGIS, WhatsApp\nExport difficulty: Proprietary traps vs Open Source liberates\nCooking callback: “Recipe (interface), Ingredients (implementation), Cooking (technology)”\n\n\n\n\nFormat: Flipcharts with stars\nSetup: - Multiple flipcharts with pre-printed tool pairs/triplets - Examples: - Messaging: WhatsApp / Signal / Telegram - Maps: Google Maps / OpenStreetMap / Apple Maps - GIS: ArcGIS / QGIS - Office: MS Office / LibreOffice / Google Docs - Stats: SPSS / R / Python - Reference: EndNote / Zotero / Mendeley - [More as needed]\nActivity: - 5 min: Everyone walks around, adds stars to tools they use - 5 min: Look at the patterns together - 5 min: Debrief - “What surprised you? Where’s the concentration?”\nKey insight: “See how we’re clustered on proprietary? That’s collective lock-in.”\n\n\n\n“We’re at a choice point with AI”\n\nSame pattern is forming with LLMs RIGHT NOW\nQuestion: “Is AI going to own us, or are we going to own AI?”\nPath 1: Corporate control (repeat of WhatsApp/Windows/ArcGIS)\nPath 2: Democratic technology (open models, local control)\nUrgency: “This choice happens in the next 2-3 years. The window won’t stay open.”\nGood news: Open models exist NOW, hardware is capable NOW\n\n\n\n\n“Let’s understand what we’re talking about”\nQuick explainer (accessible): - What LLMs are: Sophisticated pattern matching, not magic - Last 5 years: Explosive progress, gap closing fast - Open weights: You can download and run them locally - Components that enhance them: - RAG: Give it access to your documents (e.g., course materials) - MCPs: Connect to your tools (e.g., field data, GIS) - Personas: Customize behavior for your needs - Key point: “Not magic → technology you can understand and control”\n\n\n\n“This is why LLMs matter for sovereignty”\n\nLLMs make technology ACCESSIBLE without mastering proprietary interfaces\nYou can now WIELD difficult tools with AI assistance\nWrite custom solutions for YOUR needs\nDemocratizes technical capability\n\nTeaching Use Cases + Benchmarks (quick overview): - Generate exam questions - Provide feedback on student writing - Summarize research papers - Show benchmarks: Local models nearly match ChatGPT quality - Advantage: Privacy, cost, control\nGrüentAI connection: “We’re making this real for teaching - and we’re here as a resource”\n\n\n\nYOU run both ChatGPT and local Ollama THEY give you prompts\nShow both things: 1. Same task, different backend (technical point) 2. LLM helps you use open source tools (liberation point)\nPossible demo: - Generate exam questions from a text (teaching use case) - Show both produce good results - “Same technology, different products - and YOU control one of them”\n\n\n\n\nReturn to cooking metaphor: “Would you accept proprietary cooking? No! So why accept proprietary software?”\n“We’re at the fork in the road. Which path do we take?”\nAddress the ‘I don’t have time’ objection:\n\n“Learning to ‘cook’ with technology takes initial investment”\n“But it pays off many-fold over time”\n“And you’re no longer vulnerable to vendor decisions”\n\n“Switching costs are real, but so is the cost of staying locked in”\n“Try one new open alternative this month - start small”\nGrüentAI is here as a resource for questions\n“We’ve gained knowledge on this, you can contact us”\n\n\n\n\n\n\nTotal: 65 minutes - slightly over.\nChanges with cooking metaphor: - Opening extended from 5→7 min (worth it for strong hook) - Personal Stakes shortened from 8→7 min (Ada can be briefer) - Net change: Still at 65 minutes\nOptions to fit 60 minutes: 1. Tighten Framework section (6→5 min) 2. Compress Understanding LLMs (6→5 min) 3. Acknowledge workshop may run 65 min with discussion 4. Make Understanding LLMs optional/backup slides\nRecommendation: The cooking metaphor is so strong, keep the 7 min opening. Compress Understanding LLMs to 5 min to compensate.\n\n\n\n\n\n\n1. Teaching Use Cases Section: - Where does it fit in the flow? - Option A: Before demo (shows why you should care) - Option B: After Activity 1 (bridges lock-in to practical value) - Option C: Integrated into demo (demo IS the use case) - How many use cases to show? - Deep dive on 1-2 with live demo - Quick overview of 5-6 on slides - Let audience choose which to demo - Benchmark presentation format? - Pre-tested results on slides (safe) - Live head-to-head comparison (powerful but risky) - Video recording of comparisons (backup plan)\n2. “Anger Moments” Selection: ✅ RESOLVED - WhatsApp security flaw (billions exposed - personal stakes, everyone uses it) - ICC prosecutor email block (corporate censorship, global justice) - Windows 10 obsolescence (environmental waste - resonates with IUNR focus)\n3. Example Collection: Need more tool pairs that resonate with IUNR. Brainstorm: - Field data collection tools? - Statistical software? - Specialized environmental science tools? - Communication/collaboration tools?\n4. Personal Elements Placement: - Father photo: One powerful moment - where? - Ada & Zangemann: How brief? Just story or deeper dive? - Infuriating examples: Quick succession or focus on one?\n\n\n\n5. Activity 1 Flipcharts: - How many flipcharts total? - What tool categories to include? - Format: Large paper? Digital display? - Visualization: Just count stars or create a pattern?\n6. Activity 2 Demo: - Which teaching use case to demo live? - Backup plan if tech fails? - How much audience participation vs watching?\n\n\n\n7. Materials Needed: - Flipcharts + markers - Laptop with ChatGPT and Ollama running - Slides (to be created) - Backup videos/screenshots if demo fails - Handouts? (TBD)\n8. Risk Mitigation: - Local LLM demo fails during workshop - Audience is more/less technical than expected - Time management if discussions run long - Pushback: “But proprietary tools are just better”\n\n\n\n\n\nRole in Workshop: “This is why this workshop is possible - we’ve gained knowledge on this topic and are people you can contact if you have questions”\nNOT: “Let us tell you about our amazing project” BUT: “We’re working on this problem and we’re a resource for you”\nCall to action: - Try alternatives - Reach out with questions - Optional: Participate in testing (if relevant)\n\n\n\n\n\n\n\nFinalize teaching use cases to showcase (TABLED - see notes in Open Questions)\nSelect 2-3 most powerful “anger” examples (WhatsApp leak, ICC block, Windows waste)\nDecide on benchmark presentation approach\nDetermine teaching content placement in flow (TABLED - see notes in Open Questions)\nComplete example collection (tool pairs) - IN PROGRESS\n\n\n\n\n\nCreate slide deck\nDesign flipchart templates\nPrepare and test live demo\nCreate benchmark visualizations\nWrite facilitator script\nPrepare backup materials\nTest full workshop timing\nTranslate to German\n\n\n\n\n\n\n✓ Empowering over scolding ✓ Concrete over abstract ✓ Visual/hands-on over passive listening ✓ Their experience first, theory second ✓ Action-oriented - they should DO something after ✓ Accessible to simple mail users AND power users ✓ Emotional connection (father, Ada, anger) + practical value (teaching use cases)\n\nThis document captures the current high-level design. Once we finalize these structural decisions, we’ll drill down into detailed content, slides, and scripts."
+  },
+  {
+    "objectID": "Workshop_IUNR_Design_v2.html#design-document-v2---high-level-structure",
+    "href": "Workshop_IUNR_Design_v2.html#design-document-v2---high-level-structure",
+    "title": "Technology Sovereignty Workshop for IUNR",
+    "section": "",
+    "text": "Target Audience: IUNR researchers and teachers (mixed tech literacy: “simple mail users” → power users) Duration: 60 minutes fixed Format: Empowering, slightly provocative awareness session + hands-on demo Language: English working document, will translate to German later"
+  },
+  {
+    "objectID": "Workshop_IUNR_Design_v2.html#core-goal",
+    "href": "Workshop_IUNR_Design_v2.html#core-goal",
+    "title": "Technology Sovereignty Workshop for IUNR",
+    "section": "",
+    "text": "Make audience realize: “I’m a product user, not a technology wielder - and that’s a problem”\nDesired outcome: - Be more adventurous in trying alternatives - Remove fear of switching costs - Realize it’s worth trying something different - Know GrüentAI team as a resource"
+  },
+  {
+    "objectID": "Workshop_IUNR_Design_v2.html#key-themes-elements",
+    "href": "Workshop_IUNR_Design_v2.html#key-themes-elements",
+    "title": "Technology Sovereignty Workshop for IUNR",
+    "section": "",
+    "text": "The Absurd Proprietary Cooking System:\nImagine you want to cook a meal, but you can only follow recipes from one specific provider. The recipe card looks like this:\nPROPRIETARY RECIPE CARD:\n\n1. Add 2 units of Compound-XJ7 (available only from us, $15/bottle)\n2. Heat in Model-Pro-Pan-2024 at setting \"MEDIUM\"\n3. Stir with Certified-Stirring-Tool (sold separately)\n4. When indicator light turns green, add Flavor-Packet-B\n\n⚠️ WARNING:\n- Substitutions void warranty\n- Recipe may stop working if ingredients discontinued\n- Do not attempt to understand the chemical processes involved\n- Model-Pro-Pan-2024 will be discontinued next year; upgrade required\nContrast with Open Source Cooking:\nOPEN RECIPE:\n\n1. Sauté onions in oil until translucent\n   (WHY: releases sugars, builds flavor base)\n2. Add garlic, cook 30 seconds\n   (WHY: aromatic, cooks fast, burns easily)\n3. Add tomatoes, simmer 20 min\n   (WHY: breaks down, concentrates)\n4. Season to taste\n\nNOTES:\n- No onions? Try shallots or leeks (similar aromatic base)\n- Olive oil or butter both work (you need fat for flavor)\n- Any pan that conducts heat evenly\n- Adjust time based on your stove's heat output\nKey Questions to Audience:\n\n“Would you accept this for cooking?”\n\nOf course not! It’s absurd!\nYou’d want to understand WHY each step works\nYou’d want to substitute based on what you have\nYou’d want freedom to adapt to YOUR needs\n\n“But we DO accept this for software. Why?”\n\nTime argument: “We spend FAR more time on computers than cooking”\nMost people cook 30-60 min/day\nMost people use computers 4-8 hours/day\nYet we accept ignorance about technology but not about cooking\n\n“What about someone who doesn’t know how to cook?”\n\nThey might say: “It’s going to take me ages just deciding on a pan!”\n“How should I find the time to learn all that?”\nSame with software: Yes, initial investment needed\nBUT: It pays off many-fold over time\nAnd you’re NOT vulnerable anymore\n\n\nThe Vulnerability of Lock-in (Vendor Lock-in via Cooking):\nOnce you’ve bought: - The Model-Pro-Pan-2024 ($200) - 12 bottles of Compound-XJ7 ($180) - The Certified-Stirring-Tool ($50) - Learned their obscure ingredient names - Built up a recipe collection that ONLY works with their system\nYou are now in a vulnerable position: - Switching cost is enormous - you’d have to replace everything - They can raise prices - you’re already invested - They can discontinue products - your recipes break - They control your ability to cook - you’re dependent\nSound familiar? This is exactly how software lock-in works.\nMapping to Software Reality:\n\n\n\n\n\n\n\nCooking Metaphor\nSoftware Reality\n\n\n\n\n“Compound-XJ7”\nProprietary file formats (.docx, .psd, etc.)\n\n\n“Model-Pro-Pan-2024”\nSpecific OS/hardware requirements\n\n\nRecipe only works with their stuff\nVendor lock-in, no interoperability\n\n\nCan’t substitute ingredients\nCan’t switch tools/platforms\n\n\nDon’t know WHY it works\nClosed source, black box systems\n\n\nIngredient discontinued = recipe breaks\nSoftware sunset = your workflow dies\n\n\nUnderstanding cooking basics\nUnderstanding technology principles\n\n\nCan adapt recipe to YOUR context\nCan modify open source for YOUR needs\n\n\nVulnerable after investment\nTrapped by switching costs\n\n\n\nThe Empowerment Message:\nWhen you understand the BASICS of cooking: - “Oh, I’m building a flavor base - I can use what I have” - “This is creating an emulsion - milk works too” - “I’m at high altitude, I need to adjust” - You become empowered, not dependent\nWhen you understand the BASICS of technology: - “Oh, this is just a text editor - I can use any one” - “This is file synchronization - multiple tools do this” - “I need privacy - I’ll choose the open alternative” - Same empowerment, same freedom\nHow to Use Throughout Workshop:\n\nOpening hook: Start with this scenario, get them reacting\nWhen explaining lock-in: “Remember the proprietary recipe? That’s what’s happening here.”\nInfuriating examples: “WhatsApp leak? You trusted the recipe provider and they exposed your data.”\nFramework section: “Three layers: Recipe (interface), Ingredients (implementation), Cooking process (technology)”\nSwitching costs: “You’ve invested in their pans and ingredients - now you’re stuck”\nClosing: “Would you accept proprietary cooking? Then why accept proprietary software?”\n\n\n\n\n\nFather’s Photo (1998 Linux Workshop, Sri Lanka) - Open Source vs proprietary matters for global justice - Licensing costs exclude entire regions - This is not a new problem\nAda & Zangemann Story - Brief overview with openly licensed images - Shows the pattern: inventor controls devices, kids hack freedom - Makes the concept accessible and narrative\nInfuriating Examples (make them feel the anger!)\nFINAL SELECTION - 3 Concrete Examples: 1. WhatsApp security flaw - Billions of phone numbers exposed (Wired article) - Everyone uses it, personal stakes - Shows you can’t trust platforms you don’t control - Links to opening: “Why not Signal? THIS is why.” 2. ICC prosecutor email block - Microsoft blocked emails after Trump sanctions - Corporate platforms can censor at will - Global justice implications 3. Windows 10 forced obsolescence - Hardware made “obsolete” by software - Environmental waste, e-waste crisis - Resonates with IUNR environmental focus\n(Other candidates considered but dropped: Academic paywalls - separate issue; Field data/ArcGIS - not concrete enough)\n\n\n\nThree Layers:\nInterface Layer    → \"I know how to use ChatGPT\"\nImplementation     → Open vs. proprietary\nTechnology         → The fundamental capability\nLock-in Triangle:\n     Cognitive Lock-in\n         ╱│╲\n        ╱ │ ╲\nTechnical│  Institutional\nExamples Everyone Knows: - WhatsApp vs Signal - Google Maps vs OpenStreetMap - Podcast via iTunes vs RSS feed - ArcGIS vs QGIS - Microsoft Office vs LibreOffice - [More to brainstorm]\n\n\n\n“LLMs are another lock-in risk we need to avoid”\nAND: “LLMs are tools that let you WIELD difficult technologies without mastering proprietary interfaces!”\nThe Promise:\n\nUse tools more easily with AI assistance\nBuild custom solutions for YOUR needs\nDemocratize technical capability\nBreak down barriers to open source adoption\n\n\n\n\nShow real value for their work:\nUse Cases to Demonstrate:\n\nGenerate practice questions from lecture materials\nProvide feedback on student writing\nTranslate technical content to different levels\nSummarize research papers for students\nCreate interactive study guides\nAssist with grading rubrics\n\nBenchmark Format:\nTask: [Specific teaching task]\n\nChatGPT-4:        ⭐⭐⭐⭐⭐ [Result]\nLocal Llama3.3:   ⭐⭐⭐⭐  [Result]\nLocal DeepSeek-r1: ⭐⭐⭐⭐⭐ [Result]\n\nPrivacy: Local wins\nCost: Local wins\nSpeed: ChatGPT slightly faster\nQuality: Nearly equivalent\n\n\n\nShow in slides (not interactive): - Proprietary: Hard to export, obscure formats, lock your data - Open Source: Easy export, lists alternatives on their websites!\nExamples: - WhatsApp chat export (painful) vs Signal (easy) - ArcGIS export process vs QGIS - EndNote vs Zotero\n\n\n\nKey Framing Question: “We are at a critical moment in history. AI is becoming ubiquitous. The question is: Is AI going to own us, or are we going to own AI?”\nThe Choice:\n\nPath 1: AI remains controlled by a few tech corporations\n\nThey decide what we can do\nThey set the terms\nWe pay their prices\nWe’re dependent on their decisions\nPattern repeats: Windows, Office, ArcGIS → now AI\n\nPath 2: AI becomes a democratic technology\n\nOpen models anyone can run\nLocal control over your data\nCustomize for your needs\nNot beholden to corporate decisions\nTrue technological sovereignty\n\n\nThe Urgency: “We’re making this choice RIGHT NOW. In 5 years, will everyone be locked into ChatGPT the way they’re locked into WhatsApp? Or will we preserve alternatives?”\nWhy This Moment Matters:\n\nOpen weight models are NOW available (DeepSeek-r1, Llama3.3)\nHardware is NOW capable (you can run them locally)\nThe window won’t stay open forever\nFirst-mover advantage creates lock-in\n\n\n\n\nPurpose: Make LLMs less “magic” and more “technology you can understand and control”\nComponents to Explain (Accessible to Mixed Audience):\nA. Training a Language Model - The Basics - What is a “word embedding”? (Words as coordinates in meaning-space) - High-level concept: Model learns patterns from massive text - Like a very sophisticated autocomplete - Not “intelligence” - pattern matching at massive scale\nB. The Last 5 Years: Explosive Progress - 2019: GPT-2 was impressive but limited - 2023: ChatGPT changes everything - 2024-2025: Open models catch up to proprietary ones - Key insight: The gap is closing FAST\nC. “Open Weights” vs “Open Source” - Open weights: You can download and run the model - Different from fully open source (training code, data) - But still: YOU control it, not a company - Examples: Llama, DeepSeek-r1, Mistral\nD. AI Safety Concerns (Rob Miles Perspective) - LLMs can be manipulated (trigger words, jailbreaks) - Example: Specific phrases that make models behave unexpectedly - Why it matters: If you don’t control the model, you don’t know what’s happening - Local models: You can inspect, test, understand\nE. Enhancing LLMs: The Ecosystem\nRAG (Retrieval Augmented Generation): - Give the LLM access to specific documents - Makes it accurate for YOUR domain - Example: Feed it IUNR course materials, then ask questions - You control what knowledge it uses\nMCPs (Model Context Protocol): - Let LLMs interact with your tools and data - Connects AI to your existing workflows - Example: LLM that can access your field data, GIS systems - Standardized way to extend capabilities\nPersonas/System Prompts: - Shape how the LLM behaves - “You are a teaching assistant for environmental science” - Customizable for specific tasks - You control the personality and focus\nF. Why Understanding This Matters - Not magic → Technology you can shape - Not monolithic → Modular components you can swap - Not proprietary only → Open alternatives exist - Not all-or-nothing → Use the right tool for each task\nKey Message: “LLMs are powerful but they’re not magic. Once you understand the components, you realize: you can build this yourself, customize it, control it. That’s the difference between being a user and being a wielder.”"
+  },
+  {
+    "objectID": "Workshop_IUNR_Design_v2.html#proposed-flow-structure-revised-with-new-content",
+    "href": "Workshop_IUNR_Design_v2.html#proposed-flow-structure-revised-with-new-content",
+    "title": "Technology Sovereignty Workshop for IUNR",
+    "section": "",
+    "text": "Total time: 60-65 minutes (may need slight adjustment)\n\n\nStart with the absurd scenario: - “Imagine you could only cook using one company’s recipes…” - Show the proprietary recipe card (visual slide) - Show the open recipe (visual slide) - Key questions: “Would you accept this? No! Why not?”\nThen pivot to software: - “But we DO accept this for software” - Time argument: “We spend 4-8 hours/day on computers, 30-60 min cooking” - “Yet we accept ignorance about technology but not cooking”\nThe vulnerability point: - “Once you’ve invested in their pans, ingredients, learned their system…” - “Switching cost becomes enormous - you’re trapped” - This is vendor lock-in\nQuick WhatsApp validation: - “How many use WhatsApp daily? Signal?” - “Why not switch? EXACTLY - switching costs” - “Keep the cooking metaphor in mind - we’ll come back to it”\n\n\n\n\nFather’s photo: 1998, Sri Lanka, licensing costs matter\nAda & Zangemann: The pattern of control vs. freedom (brief!)\nInfuriating examples with cooking callbacks:\n\nWhatsApp leak: “You trusted the recipe provider with your data - they exposed it”\nICC block: “The recipe provider decided you can’t cook anymore”\nWindows waste: “Your pan is ‘obsolete’ because they say so”\n\nThe arc: This has always mattered (1998) → It’s a pattern (Ada) → It’s urgent NOW\n\n\n\n\n\nThree layers with cooking parallel:\n\nInterface: “I can follow the recipe” → “I can use Word”\nImplementation: Proprietary vs open (their ingredients vs any ingredients)\nTechnology: The cooking process itself → The fundamental capability\n\nLock-in triangle\nExamples: Maps, Podcasts, ArcGIS, WhatsApp\nExport difficulty: Proprietary traps vs Open Source liberates\nCooking callback: “Recipe (interface), Ingredients (implementation), Cooking (technology)”\n\n\n\n\nFormat: Flipcharts with stars\nSetup: - Multiple flipcharts with pre-printed tool pairs/triplets - Examples: - Messaging: WhatsApp / Signal / Telegram - Maps: Google Maps / OpenStreetMap / Apple Maps - GIS: ArcGIS / QGIS - Office: MS Office / LibreOffice / Google Docs - Stats: SPSS / R / Python - Reference: EndNote / Zotero / Mendeley - [More as needed]\nActivity: - 5 min: Everyone walks around, adds stars to tools they use - 5 min: Look at the patterns together - 5 min: Debrief - “What surprised you? Where’s the concentration?”\nKey insight: “See how we’re clustered on proprietary? That’s collective lock-in.”\n\n\n\n“We’re at a choice point with AI”\n\nSame pattern is forming with LLMs RIGHT NOW\nQuestion: “Is AI going to own us, or are we going to own AI?”\nPath 1: Corporate control (repeat of WhatsApp/Windows/ArcGIS)\nPath 2: Democratic technology (open models, local control)\nUrgency: “This choice happens in the next 2-3 years. The window won’t stay open.”\nGood news: Open models exist NOW, hardware is capable NOW\n\n\n\n\n“Let’s understand what we’re talking about”\nQuick explainer (accessible): - What LLMs are: Sophisticated pattern matching, not magic - Last 5 years: Explosive progress, gap closing fast - Open weights: You can download and run them locally - Components that enhance them: - RAG: Give it access to your documents (e.g., course materials) - MCPs: Connect to your tools (e.g., field data, GIS) - Personas: Customize behavior for your needs - Key point: “Not magic → technology you can understand and control”\n\n\n\n“This is why LLMs matter for sovereignty”\n\nLLMs make technology ACCESSIBLE without mastering proprietary interfaces\nYou can now WIELD difficult tools with AI assistance\nWrite custom solutions for YOUR needs\nDemocratizes technical capability\n\nTeaching Use Cases + Benchmarks (quick overview): - Generate exam questions - Provide feedback on student writing - Summarize research papers - Show benchmarks: Local models nearly match ChatGPT quality - Advantage: Privacy, cost, control\nGrüentAI connection: “We’re making this real for teaching - and we’re here as a resource”\n\n\n\nYOU run both ChatGPT and local Ollama THEY give you prompts\nShow both things: 1. Same task, different backend (technical point) 2. LLM helps you use open source tools (liberation point)\nPossible demo: - Generate exam questions from a text (teaching use case) - Show both produce good results - “Same technology, different products - and YOU control one of them”\n\n\n\n\nReturn to cooking metaphor: “Would you accept proprietary cooking? No! So why accept proprietary software?”\n“We’re at the fork in the road. Which path do we take?”\nAddress the ‘I don’t have time’ objection:\n\n“Learning to ‘cook’ with technology takes initial investment”\n“But it pays off many-fold over time”\n“And you’re no longer vulnerable to vendor decisions”\n\n“Switching costs are real, but so is the cost of staying locked in”\n“Try one new open alternative this month - start small”\nGrüentAI is here as a resource for questions\n“We’ve gained knowledge on this, you can contact us”"
+  },
+  {
+    "objectID": "Workshop_IUNR_Design_v2.html#timing-note",
+    "href": "Workshop_IUNR_Design_v2.html#timing-note",
+    "title": "Technology Sovereignty Workshop for IUNR",
+    "section": "",
+    "text": "Total: 65 minutes - slightly over.\nChanges with cooking metaphor: - Opening extended from 5→7 min (worth it for strong hook) - Personal Stakes shortened from 8→7 min (Ada can be briefer) - Net change: Still at 65 minutes\nOptions to fit 60 minutes: 1. Tighten Framework section (6→5 min) 2. Compress Understanding LLMs (6→5 min) 3. Acknowledge workshop may run 65 min with discussion 4. Make Understanding LLMs optional/backup slides\nRecommendation: The cooking metaphor is so strong, keep the 7 min opening. Compress Understanding LLMs to 5 min to compensate."
+  },
+  {
+    "objectID": "Workshop_IUNR_Design_v2.html#open-questions-to-resolve",
+    "href": "Workshop_IUNR_Design_v2.html#open-questions-to-resolve",
+    "title": "Technology Sovereignty Workshop for IUNR",
+    "section": "",
+    "text": "1. Teaching Use Cases Section: - Where does it fit in the flow? - Option A: Before demo (shows why you should care) - Option B: After Activity 1 (bridges lock-in to practical value) - Option C: Integrated into demo (demo IS the use case) - How many use cases to show? - Deep dive on 1-2 with live demo - Quick overview of 5-6 on slides - Let audience choose which to demo - Benchmark presentation format? - Pre-tested results on slides (safe) - Live head-to-head comparison (powerful but risky) - Video recording of comparisons (backup plan)\n2. “Anger Moments” Selection: ✅ RESOLVED - WhatsApp security flaw (billions exposed - personal stakes, everyone uses it) - ICC prosecutor email block (corporate censorship, global justice) - Windows 10 obsolescence (environmental waste - resonates with IUNR focus)\n3. Example Collection: Need more tool pairs that resonate with IUNR. Brainstorm: - Field data collection tools? - Statistical software? - Specialized environmental science tools? - Communication/collaboration tools?\n4. Personal Elements Placement: - Father photo: One powerful moment - where? - Ada & Zangemann: How brief? Just story or deeper dive? - Infuriating examples: Quick succession or focus on one?\n\n\n\n5. Activity 1 Flipcharts: - How many flipcharts total? - What tool categories to include? - Format: Large paper? Digital display? - Visualization: Just count stars or create a pattern?\n6. Activity 2 Demo: - Which teaching use case to demo live? - Backup plan if tech fails? - How much audience participation vs watching?\n\n\n\n7. Materials Needed: - Flipcharts + markers - Laptop with ChatGPT and Ollama running - Slides (to be created) - Backup videos/screenshots if demo fails - Handouts? (TBD)\n8. Risk Mitigation: - Local LLM demo fails during workshop - Audience is more/less technical than expected - Time management if discussions run long - Pushback: “But proprietary tools are just better”"
+  },
+  {
+    "objectID": "Workshop_IUNR_Design_v2.html#grüentai-positioning",
+    "href": "Workshop_IUNR_Design_v2.html#grüentai-positioning",
+    "title": "Technology Sovereignty Workshop for IUNR",
+    "section": "",
+    "text": "Role in Workshop: “This is why this workshop is possible - we’ve gained knowledge on this topic and are people you can contact if you have questions”\nNOT: “Let us tell you about our amazing project” BUT: “We’re working on this problem and we’re a resource for you”\nCall to action: - Try alternatives - Reach out with questions - Optional: Participate in testing (if relevant)"
+  },
+  {
+    "objectID": "Workshop_IUNR_Design_v2.html#next-steps",
+    "href": "Workshop_IUNR_Design_v2.html#next-steps",
+    "title": "Technology Sovereignty Workshop for IUNR",
+    "section": "",
+    "text": "Finalize teaching use cases to showcase (TABLED - see notes in Open Questions)\nSelect 2-3 most powerful “anger” examples (WhatsApp leak, ICC block, Windows waste)\nDecide on benchmark presentation approach\nDetermine teaching content placement in flow (TABLED - see notes in Open Questions)\nComplete example collection (tool pairs) - IN PROGRESS\n\n\n\n\n\nCreate slide deck\nDesign flipchart templates\nPrepare and test live demo\nCreate benchmark visualizations\nWrite facilitator script\nPrepare backup materials\nTest full workshop timing\nTranslate to German"
+  },
+  {
+    "objectID": "Workshop_IUNR_Design_v2.html#design-principles-for-this-workshop",
+    "href": "Workshop_IUNR_Design_v2.html#design-principles-for-this-workshop",
+    "title": "Technology Sovereignty Workshop for IUNR",
+    "section": "",
+    "text": "✓ Empowering over scolding ✓ Concrete over abstract ✓ Visual/hands-on over passive listening ✓ Their experience first, theory second ✓ Action-oriented - they should DO something after ✓ Accessible to simple mail users AND power users ✓ Emotional connection (father, Ada, anger) + practical value (teaching use cases)\n\nThis document captures the current high-level design. Once we finalize these structural decisions, we’ll drill down into detailed content, slides, and scripts."
+  },
+  {
+    "objectID": "oudated/Workshop_Technology_Sovereignty_OUTDATED_team_audience.html",
+    "href": "oudated/Workshop_Technology_Sovereignty_OUTDATED_team_audience.html",
+    "title": "⚠️ OUTDATED - Workshop: Technology Sovereignty in Educational AI",
+    "section": "",
+    "text": "STATUS: OUTDATED - Replaced by Workshop_IUNR_Design_v2.md\nWhy outdated: This version was designed for GrüentAI team/technical audience. The new version is for IUNR researchers/teachers with mixed skill levels and awareness focus.\nSee current version: Workshop_IUNR_Design_v2.md\n\n\n\n60-Minute Interactive Session\nTarget Audience: GrüentAI team + interested faculty/researchers Format: 25 min presentation + 35 min interactive activities Materials Needed: Flipchart/whiteboard, sticky notes, laptops for demos\n\n\n\n\n\n\nFormat: Interactive question + live demo\nOpening Question (audience participation): &gt; “Quick poll: How many of you have used an LLM in the last week?” &gt; (Show of hands) &gt; &gt; “Follow-up: Which ones?” &gt; (Write on board: ChatGPT, Claude, Copilot, Gemini, etc.) &gt; &gt; “Now: Who can tell me what LLM stands for and what the fundamental technology does?” &gt; (Usually fewer hands)\nThe Point: We all use these tools, but how many of us understand the technology vs. just knowing specific products?\nLive Demo (2 minutes): - Open ChatGPT in one window - Open local Ollama in another window - Give both the same prompt: “Explain photosynthesis in 3 sentences” - Show that both produce similar results\nKey Message: “These are two implementations of the same technology. But most users only know how to use one of them—and that’s a problem.”\n\n\n\n\nFormat: Presentation with real-world examples\n\n\n┌─────────────────────────────────────┐\n│   Interface Layer (Product UI)      │  ← Where users develop competency\n│   \"I know how to use ChatGPT\"       │\n├─────────────────────────────────────┤\n│   Implementation Layer              │  ← Open vs. proprietary\n│   (APIs, formats, protocols)        │\n├─────────────────────────────────────┤\n│   Technology Layer                  │  ← The fundamental capability\n│   (LLMs, transformers, neural nets) │\n└─────────────────────────────────────┘\nTalk track: “When we learn a tool, we build competency at one of these layers. Product literacy happens at the interface layer. Technology literacy requires understanding all three.”\n\n\n\n        Cognitive Lock-in\n       \"I know this tool\"\n              ╱│╲\n             ╱ │ ╲\n            ╱  │  ╲\n           ╱   │   ╲\n          ╱    │    ╲\n         ╱     │     ╲\n        ╱      │      ╲\nTechnical    │    Institutional\nLock-in      │       Lock-in\n\"My files\"   │   \"Our workflows\"\nTalk track: “Once locked in, switching costs become prohibitive—not because alternatives are worse, but because organizational knowledge is encoded in product-specific patterns.”\n\n\n\nExample 1: Microsoft Office - Technology: Word processing, spreadsheets, presentations - Implementation: Proprietary .docx, .xlsx, .pptx formats - Lock-in: “I know Word” becomes “I can’t switch to LibreOffice” - Critical question: Are your skills in document creation or in Microsoft’s interface?\nExample 2: ArcGIS vs QGIS - Technology: Spatial analysis, cartography, GIS - Implementation: Both do the same fundamental operations - Lock-in: Curricula, tutorials, institutional licenses all built around one product - Impact: Graduates who can’t adapt to QGIS employers\nExample 3: LLMs (The current moment) - Technology: Large language models for text generation/analysis - Implementation: ChatGPT, Claude, local open-source models - Risk: Are we building “ChatGPT skills” or “LLM skills”? - The choice we face: Repeat the MS Office pattern or do something different?\n\n\n\nWe’re not just technology users—we’re technology educators.\nWhen we integrate a tool into teaching, we: 1. Shape how the next generation understands that technology 2. Create institutional dependencies that last decades 3. Either enable or constrain future flexibility 4. Model critical engagement (or passive consumption)\nThe university’s responsibility: &gt; Teach students how to think with technology, not just how to use products.\n\n\n\n\n\nFormat: Small groups (3-4 people), sticky notes\nInstructions: &gt; “In your groups, you have 8 minutes. Think about the technologies you use in your work—not just software, but any technology.” &gt; &gt; “For each one, write on sticky notes:” &gt; - What’s the product/brand you use? (e.g., “ChatGPT”, “Windows”, “ArcGIS”) &gt; - What’s the underlying technology? (e.g., “LLM”, “operating system”, “GIS”) &gt; - Could you switch to an alternative tomorrow? Why or why not? &gt; - Rate your switching cost: Low / Medium / High\nExample template:\n┌────────────────────────────┐\n│ Product: _____________     │\n│ Technology: __________     │\n│ Alternative exists? Y / N  │\n│ Could switch? Y / N        │\n│ Why not?:                  │\n│                            │\n│ Switching cost: L / M / H  │\n└────────────────────────────┘\nGroup Share-out (7 minutes): - Each group shares 1-2 examples - Facilitator writes patterns on board: - Which technologies have high lock-in? - What creates the lock-in? (file formats, training, workflows?) - Where do we have agency vs. where are we stuck?\nKey Insight to Draw Out: “Notice how often the barrier isn’t technical capability—it’s learned patterns and institutional inertia.”\n\n\n\n\nFormat: Presentation connecting to the project\n\n\nIt’s not just about: - Privacy ✓ (but yes, important) - Cost savings ✓ (but yes, nice to have) - Technical cool factor ✓ (but yes, it’s cool)\nIt’s fundamentally about: &gt; Preserving institutional autonomy and teaching technology literacy\n\n\n\nWhat we’re building: Not “a local ChatGPT clone” but rather “institutional LLM literacy”\nFour workflows - designed for sovereignty:\n\nPrüfungsunterstützung\n\nDesign prompts that work across LLM implementations\nDocument what’s model-specific vs. general\nStudents learn “LLM-assisted assessment” not “ChatGPT assessment”\n\nBewertungsunterstützung\n\nTemplate-based approaches that aren’t tied to specific APIs\nTransparent: students see when AI is used and can understand why\nTransferable: works with local or cloud models\n\nLiteraturarbeiten\n\nOpen formats for knowledge representation\nRAG systems that aren’t locked to one LLM backend\nSkills in evaluating LLM outputs, regardless of source\n\nKollaborative Lernunterstützung\n\nExpose when we use local vs. cloud models and why\nLet users choose implementations based on their needs\nBuild meta-skills: “when is which implementation appropriate?”\n\n\n\n\n\nLocal LLMs          Commercial LLMs       Hybrid Approaches\n(GrüentAI focus)    (still available)     (smart routing)\n     │                    │                      │\n     └────────────────────┴──────────────────────┘\n                          │\n              \"LLM Technology Literacy\"\n\nUsers learn: When to use what, and why\nNot just: How to use one specific tool\n\n\n\n\n\nFormat: Same small groups, design challenge\nThe Challenge: &gt; “Pick one of the four GrüentAI workflows. Your task: Design it in a way that maximizes technology literacy and minimizes vendor lock-in.”\nGuiding Questions: - What should users learn? (The product interface or the underlying process?) - Where do you need a specific implementation vs. where can you be agnostic? - How do you make the “technology layer” visible to users? - What would make this workflow portable to other LLM implementations?\nExample Starter (for Prüfungsunterstützung):\n❌ Don't: \"Here's how to use ChatGPT to write exam questions\"\n✓ Do: \"Here's how to prompt an LLM for exam questions—we'll show you with both local and commercial models\"\n\n❌ Don't: Build workflows that only work with OpenAI's API\n✓ Do: Use abstraction layers that can switch backends\n\n❌ Don't: Hide what the LLM is doing\n✓ Do: Make it transparent, teach critical evaluation\nGroup Share-out (5 minutes): - Quick pitch from each group (1 minute) - What principles emerged?\nFacilitator Synthesis: Write common themes on board: - Transparency over black boxes - Teach the “why” not just the “how” - Build with interoperability in mind - Give users agency and choice - Make abstractions visible\n\n\n\n\n\n\nThe Big Idea: &gt; Technology sovereignty isn’t about being anti-commercial or anti-convenience. &gt; It’s about preserving institutional agency and building technology literacy instead of product dependency.\nFor GrüentAI specifically:\nThis project is really about three things:\n\nDemonstrating: LLMs are a technology class, not a single product\nPreserving: The ability to make choices based on current needs, not historical lock-in\nTeaching: Critical engagement with AI tools, not passive consumption\n\nWhat Success Looks Like:\nNot: “ZHAW uses local LLMs for everything”\nBut: “ZHAW faculty and students understand LLMs as a general technology, can work with multiple implementations, and make informed choices about when to use what”\n\n\n\nQuestions for the team:\n\nDoes this framing resonate with you?\nWhere do you see tensions between this principle and practical constraints?\nHow do we balance “teach technology literacy” with “get things done efficiently”?\nWhat would make this principle actionable in your specific institute/teaching?\n\n\n\n\nFor the GrüentAI project: - Phase 1 (April-May): Hardware setup & model testing - With this lens: Test not just performance but interoperability\n\nPhase 2 (June-August): Workflow development\n\nWith this lens: Design for portability and transparency\n\nPhase 3 (September-October): Evaluation\n\nWith this lens: Measure not just quality but technology literacy gains\n\nPhase 4 (November-December): Transfer & scaling\n\nWith this lens: Documentation emphasizes principles, not just procedures\n\n\nCall to Action: &gt; “As we build GrüentAI, we’re not just implementing technology—we’re making choices about the relationship between our institution and AI tools for years to come. Let’s make those choices intentionally.”\n\n\n\n\n\n\n\n\n\n0:00-0:05 → Opening hook & demo\n0:05-0:20 → Framework presentation\n0:20-0:35 → Activity 1: Spot the Lock-in\n0:35-0:45 → GrüentAI application\n0:45-0:55 → Activity 2: Design challenge\n0:55-1:00 → Wrap-up\n\n\n\n\n\nLaptop with:\n\nChatGPT or Claude access\nLocal Ollama running\nPresentation slides\n\nFlipchart/whiteboard + markers\nSticky notes (3 different colors recommended)\nHandout with three-layer framework diagram\n\n\n\n\n\nIf demo fails: Have screenshots ready\nIf timing runs over: Activity 2 can be homework\nIf group is small (&lt;6): Do activities as full group discussion\nIf group is large (&gt;20): Add more time for share-outs\n\n\n\n\n\nDon’t let the framework get too theoretical - Always tie back to concrete examples\nActivity 1 is the heart - This is where people have their “aha” moment about their own dependencies\nValidate concerns - People will raise “but we need to use X because…” - acknowledge this, don’t dismiss\nMake it about agency, not purity - We’re not saying “never use commercial tools,” we’re saying “understand what you’re choosing”\n\n\n\n\nQ: “But ChatGPT is just better than local models—isn’t this fighting reality?” A: “Right now, yes, GPT-4 often performs better. But: (1) That gap is closing rapidly, (2) ‘Better’ depends on your use case—local models are better for privacy-sensitive data, (3) The point isn’t ‘never use ChatGPT’ but ‘understand it as one option among many.’”\nQ: “Isn’t this just extra work for the sake of ideology?” A: “It’s not ideology—it’s risk management. Ask yourself: What happens if OpenAI raises prices 10x? Changes terms? Gets acquired? Goes away? Institutions that built their entire teaching infrastructure around one vendor are vulnerable. We’re building resilience.”\nQ: “Students just want to learn the tools employers use—that’s ChatGPT.” A: “True today. But in 5 years? 10 years? We’re teaching students who’ll work for 40+ years. Teaching them ‘how to think with LLMs’ is more valuable than ‘how to use ChatGPT 2025.’ Plus, employers actually want people who can adapt to their tools, not just know one consumer product.”\nQ: “How do we balance this with just getting work done?” A: “This isn’t all-or-nothing. We’re not saying ‘never use commercial tools.’ We’re saying ‘when we teach, make the technology layer visible. When we build infrastructure, prioritize interoperability. When we make choices, do it consciously.’ Small design choices add up.”\n\n\n\n\n\nImmediately after: - Share the GruentAI_Technology_Sovereignty_Principle.md document - Send photos of flipcharts/sticky note outcomes - Create a shared doc for ongoing reflections\nWithin a week: - Synthesize themes from activities into project planning - Share concrete examples of “sovereignty-first” design from other institutions - Set up working session to apply principles to specific workflow designs\nOngoing: - Make this a recurring checkpoint: “Is this design decision preserving or reducing our sovereignty?” - Document examples of when we successfully maintained portability - Celebrate wins (e.g., “This workflow works with 3 different LLM backends!”)"
+  },
+  {
+    "objectID": "oudated/Workshop_Technology_Sovereignty_OUTDATED_team_audience.html#original-design-preserved-for-reference",
+    "href": "oudated/Workshop_Technology_Sovereignty_OUTDATED_team_audience.html#original-design-preserved-for-reference",
+    "title": "⚠️ OUTDATED - Workshop: Technology Sovereignty in Educational AI",
+    "section": "",
+    "text": "60-Minute Interactive Session\nTarget Audience: GrüentAI team + interested faculty/researchers Format: 25 min presentation + 35 min interactive activities Materials Needed: Flipchart/whiteboard, sticky notes, laptops for demos"
+  },
+  {
+    "objectID": "oudated/Workshop_Technology_Sovereignty_OUTDATED_team_audience.html#session-structure",
+    "href": "oudated/Workshop_Technology_Sovereignty_OUTDATED_team_audience.html#session-structure",
+    "title": "⚠️ OUTDATED - Workshop: Technology Sovereignty in Educational AI",
+    "section": "",
+    "text": "Format: Interactive question + live demo\nOpening Question (audience participation): &gt; “Quick poll: How many of you have used an LLM in the last week?” &gt; (Show of hands) &gt; &gt; “Follow-up: Which ones?” &gt; (Write on board: ChatGPT, Claude, Copilot, Gemini, etc.) &gt; &gt; “Now: Who can tell me what LLM stands for and what the fundamental technology does?” &gt; (Usually fewer hands)\nThe Point: We all use these tools, but how many of us understand the technology vs. just knowing specific products?\nLive Demo (2 minutes): - Open ChatGPT in one window - Open local Ollama in another window - Give both the same prompt: “Explain photosynthesis in 3 sentences” - Show that both produce similar results\nKey Message: “These are two implementations of the same technology. But most users only know how to use one of them—and that’s a problem.”\n\n\n\n\nFormat: Presentation with real-world examples\n\n\n┌─────────────────────────────────────┐\n│   Interface Layer (Product UI)      │  ← Where users develop competency\n│   \"I know how to use ChatGPT\"       │\n├─────────────────────────────────────┤\n│   Implementation Layer              │  ← Open vs. proprietary\n│   (APIs, formats, protocols)        │\n├─────────────────────────────────────┤\n│   Technology Layer                  │  ← The fundamental capability\n│   (LLMs, transformers, neural nets) │\n└─────────────────────────────────────┘\nTalk track: “When we learn a tool, we build competency at one of these layers. Product literacy happens at the interface layer. Technology literacy requires understanding all three.”\n\n\n\n        Cognitive Lock-in\n       \"I know this tool\"\n              ╱│╲\n             ╱ │ ╲\n            ╱  │  ╲\n           ╱   │   ╲\n          ╱    │    ╲\n         ╱     │     ╲\n        ╱      │      ╲\nTechnical    │    Institutional\nLock-in      │       Lock-in\n\"My files\"   │   \"Our workflows\"\nTalk track: “Once locked in, switching costs become prohibitive—not because alternatives are worse, but because organizational knowledge is encoded in product-specific patterns.”\n\n\n\nExample 1: Microsoft Office - Technology: Word processing, spreadsheets, presentations - Implementation: Proprietary .docx, .xlsx, .pptx formats - Lock-in: “I know Word” becomes “I can’t switch to LibreOffice” - Critical question: Are your skills in document creation or in Microsoft’s interface?\nExample 2: ArcGIS vs QGIS - Technology: Spatial analysis, cartography, GIS - Implementation: Both do the same fundamental operations - Lock-in: Curricula, tutorials, institutional licenses all built around one product - Impact: Graduates who can’t adapt to QGIS employers\nExample 3: LLMs (The current moment) - Technology: Large language models for text generation/analysis - Implementation: ChatGPT, Claude, local open-source models - Risk: Are we building “ChatGPT skills” or “LLM skills”? - The choice we face: Repeat the MS Office pattern or do something different?\n\n\n\nWe’re not just technology users—we’re technology educators.\nWhen we integrate a tool into teaching, we: 1. Shape how the next generation understands that technology 2. Create institutional dependencies that last decades 3. Either enable or constrain future flexibility 4. Model critical engagement (or passive consumption)\nThe university’s responsibility: &gt; Teach students how to think with technology, not just how to use products.\n\n\n\n\n\nFormat: Small groups (3-4 people), sticky notes\nInstructions: &gt; “In your groups, you have 8 minutes. Think about the technologies you use in your work—not just software, but any technology.” &gt; &gt; “For each one, write on sticky notes:” &gt; - What’s the product/brand you use? (e.g., “ChatGPT”, “Windows”, “ArcGIS”) &gt; - What’s the underlying technology? (e.g., “LLM”, “operating system”, “GIS”) &gt; - Could you switch to an alternative tomorrow? Why or why not? &gt; - Rate your switching cost: Low / Medium / High\nExample template:\n┌────────────────────────────┐\n│ Product: _____________     │\n│ Technology: __________     │\n│ Alternative exists? Y / N  │\n│ Could switch? Y / N        │\n│ Why not?:                  │\n│                            │\n│ Switching cost: L / M / H  │\n└────────────────────────────┘\nGroup Share-out (7 minutes): - Each group shares 1-2 examples - Facilitator writes patterns on board: - Which technologies have high lock-in? - What creates the lock-in? (file formats, training, workflows?) - Where do we have agency vs. where are we stuck?\nKey Insight to Draw Out: “Notice how often the barrier isn’t technical capability—it’s learned patterns and institutional inertia.”\n\n\n\n\nFormat: Presentation connecting to the project\n\n\nIt’s not just about: - Privacy ✓ (but yes, important) - Cost savings ✓ (but yes, nice to have) - Technical cool factor ✓ (but yes, it’s cool)\nIt’s fundamentally about: &gt; Preserving institutional autonomy and teaching technology literacy\n\n\n\nWhat we’re building: Not “a local ChatGPT clone” but rather “institutional LLM literacy”\nFour workflows - designed for sovereignty:\n\nPrüfungsunterstützung\n\nDesign prompts that work across LLM implementations\nDocument what’s model-specific vs. general\nStudents learn “LLM-assisted assessment” not “ChatGPT assessment”\n\nBewertungsunterstützung\n\nTemplate-based approaches that aren’t tied to specific APIs\nTransparent: students see when AI is used and can understand why\nTransferable: works with local or cloud models\n\nLiteraturarbeiten\n\nOpen formats for knowledge representation\nRAG systems that aren’t locked to one LLM backend\nSkills in evaluating LLM outputs, regardless of source\n\nKollaborative Lernunterstützung\n\nExpose when we use local vs. cloud models and why\nLet users choose implementations based on their needs\nBuild meta-skills: “when is which implementation appropriate?”\n\n\n\n\n\nLocal LLMs          Commercial LLMs       Hybrid Approaches\n(GrüentAI focus)    (still available)     (smart routing)\n     │                    │                      │\n     └────────────────────┴──────────────────────┘\n                          │\n              \"LLM Technology Literacy\"\n\nUsers learn: When to use what, and why\nNot just: How to use one specific tool\n\n\n\n\n\nFormat: Same small groups, design challenge\nThe Challenge: &gt; “Pick one of the four GrüentAI workflows. Your task: Design it in a way that maximizes technology literacy and minimizes vendor lock-in.”\nGuiding Questions: - What should users learn? (The product interface or the underlying process?) - Where do you need a specific implementation vs. where can you be agnostic? - How do you make the “technology layer” visible to users? - What would make this workflow portable to other LLM implementations?\nExample Starter (for Prüfungsunterstützung):\n❌ Don't: \"Here's how to use ChatGPT to write exam questions\"\n✓ Do: \"Here's how to prompt an LLM for exam questions—we'll show you with both local and commercial models\"\n\n❌ Don't: Build workflows that only work with OpenAI's API\n✓ Do: Use abstraction layers that can switch backends\n\n❌ Don't: Hide what the LLM is doing\n✓ Do: Make it transparent, teach critical evaluation\nGroup Share-out (5 minutes): - Quick pitch from each group (1 minute) - What principles emerged?\nFacilitator Synthesis: Write common themes on board: - Transparency over black boxes - Teach the “why” not just the “how” - Build with interoperability in mind - Give users agency and choice - Make abstractions visible\n\n\n\n\n\n\nThe Big Idea: &gt; Technology sovereignty isn’t about being anti-commercial or anti-convenience. &gt; It’s about preserving institutional agency and building technology literacy instead of product dependency.\nFor GrüentAI specifically:\nThis project is really about three things:\n\nDemonstrating: LLMs are a technology class, not a single product\nPreserving: The ability to make choices based on current needs, not historical lock-in\nTeaching: Critical engagement with AI tools, not passive consumption\n\nWhat Success Looks Like:\nNot: “ZHAW uses local LLMs for everything”\nBut: “ZHAW faculty and students understand LLMs as a general technology, can work with multiple implementations, and make informed choices about when to use what”\n\n\n\nQuestions for the team:\n\nDoes this framing resonate with you?\nWhere do you see tensions between this principle and practical constraints?\nHow do we balance “teach technology literacy” with “get things done efficiently”?\nWhat would make this principle actionable in your specific institute/teaching?\n\n\n\n\nFor the GrüentAI project: - Phase 1 (April-May): Hardware setup & model testing - With this lens: Test not just performance but interoperability\n\nPhase 2 (June-August): Workflow development\n\nWith this lens: Design for portability and transparency\n\nPhase 3 (September-October): Evaluation\n\nWith this lens: Measure not just quality but technology literacy gains\n\nPhase 4 (November-December): Transfer & scaling\n\nWith this lens: Documentation emphasizes principles, not just procedures\n\n\nCall to Action: &gt; “As we build GrüentAI, we’re not just implementing technology—we’re making choices about the relationship between our institution and AI tools for years to come. Let’s make those choices intentionally.”"
+  },
+  {
+    "objectID": "oudated/Workshop_Technology_Sovereignty_OUTDATED_team_audience.html#facilitator-notes",
+    "href": "oudated/Workshop_Technology_Sovereignty_OUTDATED_team_audience.html#facilitator-notes",
+    "title": "⚠️ OUTDATED - Workshop: Technology Sovereignty in Educational AI",
+    "section": "",
+    "text": "0:00-0:05 → Opening hook & demo\n0:05-0:20 → Framework presentation\n0:20-0:35 → Activity 1: Spot the Lock-in\n0:35-0:45 → GrüentAI application\n0:45-0:55 → Activity 2: Design challenge\n0:55-1:00 → Wrap-up\n\n\n\n\n\nLaptop with:\n\nChatGPT or Claude access\nLocal Ollama running\nPresentation slides\n\nFlipchart/whiteboard + markers\nSticky notes (3 different colors recommended)\nHandout with three-layer framework diagram\n\n\n\n\n\nIf demo fails: Have screenshots ready\nIf timing runs over: Activity 2 can be homework\nIf group is small (&lt;6): Do activities as full group discussion\nIf group is large (&gt;20): Add more time for share-outs\n\n\n\n\n\nDon’t let the framework get too theoretical - Always tie back to concrete examples\nActivity 1 is the heart - This is where people have their “aha” moment about their own dependencies\nValidate concerns - People will raise “but we need to use X because…” - acknowledge this, don’t dismiss\nMake it about agency, not purity - We’re not saying “never use commercial tools,” we’re saying “understand what you’re choosing”\n\n\n\n\nQ: “But ChatGPT is just better than local models—isn’t this fighting reality?” A: “Right now, yes, GPT-4 often performs better. But: (1) That gap is closing rapidly, (2) ‘Better’ depends on your use case—local models are better for privacy-sensitive data, (3) The point isn’t ‘never use ChatGPT’ but ‘understand it as one option among many.’”\nQ: “Isn’t this just extra work for the sake of ideology?” A: “It’s not ideology—it’s risk management. Ask yourself: What happens if OpenAI raises prices 10x? Changes terms? Gets acquired? Goes away? Institutions that built their entire teaching infrastructure around one vendor are vulnerable. We’re building resilience.”\nQ: “Students just want to learn the tools employers use—that’s ChatGPT.” A: “True today. But in 5 years? 10 years? We’re teaching students who’ll work for 40+ years. Teaching them ‘how to think with LLMs’ is more valuable than ‘how to use ChatGPT 2025.’ Plus, employers actually want people who can adapt to their tools, not just know one consumer product.”\nQ: “How do we balance this with just getting work done?” A: “This isn’t all-or-nothing. We’re not saying ‘never use commercial tools.’ We’re saying ‘when we teach, make the technology layer visible. When we build infrastructure, prioritize interoperability. When we make choices, do it consciously.’ Small design choices add up.”"
+  },
+  {
+    "objectID": "oudated/Workshop_Technology_Sovereignty_OUTDATED_team_audience.html#post-workshop-follow-up",
+    "href": "oudated/Workshop_Technology_Sovereignty_OUTDATED_team_audience.html#post-workshop-follow-up",
+    "title": "⚠️ OUTDATED - Workshop: Technology Sovereignty in Educational AI",
+    "section": "",
+    "text": "Immediately after: - Share the GruentAI_Technology_Sovereignty_Principle.md document - Send photos of flipcharts/sticky note outcomes - Create a shared doc for ongoing reflections\nWithin a week: - Synthesize themes from activities into project planning - Share concrete examples of “sovereignty-first” design from other institutions - Set up working session to apply principles to specific workflow designs\nOngoing: - Make this a recurring checkpoint: “Is this design decision preserving or reducing our sovereignty?” - Document examples of when we successfully maintained portability - Celebrate wins (e.g., “This workflow works with 3 different LLM backends!”)"
+  },
+  {
+    "objectID": "SLIDES_OUTLINE_v2.html",
+    "href": "SLIDES_OUTLINE_v2.html",
+    "title": "Technology Sovereignty Workshop - Slide Outline v2",
+    "section": "",
+    "text": "Philosophy: Brief open source framing → Deep dive on local LLMs → Supporting arguments about sovereignty\n\n\n\n\n1. Title Slide\n\nTitle: “Technology Sovereignty & Local LLMs”\nSubtitle: “Who Controls Your AI Tools?”\nYour name, GrüentAI logo\n\n2. The Fork in the Road\n\n“We’re at a critical choice point with AI”\nLarge text: “Is AI going to own us, or are we going to own AI?”\n\n3. The Pattern Repeats\n\nWe’ve been here before:\n\nWindows → locked in\nOffice → locked in\nWhatsApp → locked in\nArcGIS → locked in\n\n“Now it’s happening with AI”\n\n4. Opening Question - Cooking\n\n“Let me show you what lock-in looks like…”\n“Imagine you want to cook a meal…”\n\n5. Proprietary Recipe Card (FULL SLIDE VISUAL)\nPROPRIETARY RECIPE CARD\n\n1. Add 2 units of Compound-XJ7 ($15/bottle, our brand only)\n2. Heat in Model-Pro-Pan-2024 at \"MEDIUM\"\n3. Stir with Certified-Stirring-Tool (sold separately)\n4. Add Flavor-Packet-B when light turns green\n\n⚠️ WARNING:\n- Substitutions void warranty\n- Recipe breaks if ingredients discontinued\n- Do not attempt to understand the chemistry\n- Pan discontinued next year - upgrade required\n6. Open Recipe Card (FULL SLIDE VISUAL - CONTRAST)\nOPEN RECIPE\n\n1. Sauté onions in oil until translucent\n   WHY: Releases sugars, builds flavor base\n2. Add garlic, cook 30 seconds\n   WHY: Aromatic, cooks fast, burns easily\n3. Add tomatoes, simmer 20 min\n   WHY: Breaks down, concentrates\n\nNOTES:\n- No onions? Use shallots or leeks\n- Olive oil or butter both work\n- Any pan that conducts heat evenly\n7. The Absurdity\n\n“Would you accept the proprietary system for cooking?”\n“Of course not!”\n\n8. The Pivot\n\n“But we DO accept this for software”\n“And now we’re doing it with AI”\n\n9. Time Comparison (VISUAL)\n\nBar chart:\n\nCooking: 30-60 min/day\nComputer use: 4-8 hours/day\nAI use: Growing daily\n\n“Yet we accept ignorance about technology”\n\n10. The Vulnerability\n\n“Once you’ve invested in ChatGPT Plus…”\n“Learned their interface…”\n“Built your prompts in their system…”\n“Stored your data with them…”\n“Switching cost becomes ENORMOUS”\n\n11. WhatsApp Validation\n\n“How many use ChatGPT?” (show of hands)\n“How many run local LLMs?” (show of hands)\n“Why not? Let’s explore that.”\n\n12. Transition\n\n“Today: I want to show you there IS an alternative”\n“Open source LLMs you can run locally”\n“For teaching. On your own hardware.”\n\n\n\n\n\n13. Section Title\n\n“What Are LLMs? (Practical Overview)”\n\n14. What LLMs Are (Simple)\n\nSophisticated pattern matching from massive text\nLike very advanced autocomplete\nNot “intelligence” - pattern recognition at scale\nNot magic - technology you can understand\n\n15. The Last 5 Years (TIMELINE)\n\n2019: GPT-2 impressive but limited\n2023: ChatGPT changes everything\n2024-2025: Open models catch up\nKey insight: Gap closing FAST\n\n16. Proprietary vs Open Weights\nTwo columns:\nLEFT: Proprietary (ChatGPT, Claude, Gemini) - Runs on their servers - They see your data - You pay subscription - They control access - Can change/remove features\nRIGHT: Open Weights (Llama, DeepSeek, Mistral) - Runs on YOUR hardware - Your data stays local - One-time hardware cost - You control everything - Stable, predictable\n17. “Good Enough” is Good Enough\n\nYou don’t need the absolute best model\nYou need one that solves YOUR problem\nWith YOUR data privacy intact\nAt YOUR cost structure\nUnder YOUR control\n\n18. The Three Enhancements (SIMPLE DIAGRAM)\nThree boxes:\nRAG (Retrieval Augmented Generation) - Give LLM access to YOUR documents - Example: IUNR course materials, research papers - Makes it accurate for your domain\nMCPs (Model Context Protocol) - Connect LLM to your tools - Example: Field data, GIS, email, calendar - Extends what it can do\nPersonas/System Prompts - Shape how LLM behaves - Example: “Teaching assistant for environmental science” - Customize for your needs\n19. Why Local Makes Sense for Teaching\n\nStudent data is sensitive (GDPR, privacy)\nRepetitive tasks (grading, feedback)\nCustom course materials (RAG)\nOne-time setup, ongoing value\nNo per-query costs\n\n20. Transition\n\n“Okay, so what can you actually DO with this?”\n“Let’s look at real teaching use cases”\n\n\n\n\n\n21. Section Title\n\n“What Can Local LLMs Do For Teaching?”\n\n22. Use Case 1: Generate Practice Questions (WITH BENCHMARK)\n\nInput: Lecture slides or textbook chapter\nOutput: 10 multiple choice questions with explanations\nWhy local: Course materials often proprietary/sensitive\n\nBenchmark (on same slide):\nChatGPT-4:        ⭐⭐⭐⭐⭐\nLocal DeepSeek-r1: ⭐⭐⭐⭐⭐\nPrivacy: Local WINS | Cost: Local WINS\n23. Use Case 2: Student Writing Feedback (WITH BENCHMARK)\n\nInput: Student essay or report\nOutput: Constructive feedback on structure, argument, clarity\nWhy local: Student work is confidential\n\nBenchmark (on same slide):\nChatGPT-4:        ⭐⭐⭐⭐⭐\nLocal DeepSeek-r1: ⭐⭐⭐⭐\nPrivacy: Local WINS | Cost: Local WINS\n24. Use Case 3: Summarize Research (WITH BENCHMARK)\n\nInput: 30-page research paper\nOutput: 1-page summary for students\nWhy local: Can process many papers, no API costs\n\nBenchmark (on same slide):\nChatGPT-4:        ⭐⭐⭐⭐⭐\nLocal DeepSeek-r1: ⭐⭐⭐⭐⭐\nPrivacy: Local WINS | Cost: Local WINS\n25. More Use Cases (Quick List)\nOther tasks that work well locally: - Translate technical content to different reading levels - Create interactive study guides with RAG - Generate grading rubrics - Answer student questions about course materials\n26. The Key Insight\n\nLocal models are “good enough” for teaching tasks\nQuality gap has closed dramatically\nPrivacy advantage is huge\nCost: Hardware once, then unlimited use\n\n27. Transition to Demo\n\n“Let’s see this in action”\n\n\n\n\n\n31. Demo Intro\n\n“Let’s See It In Action”\nI’ll run BOTH ChatGPT and local Ollama\nYOU give me a teaching task\nWe’ll compare results\n\n32. Demo Setup Slide\n\nSplit screen or side-by-side\nSame prompt to both\nReal-time comparison\n(Minimal slide - focus is live demo)\n\n[LIVE DEMO HAPPENS]\nPossible demo tasks: - Generate 5 exam questions from a text snippet - Give feedback on a short student paragraph - Summarize a research abstract\n33. Demo Debrief\n\n“Same capability, different backends”\n“One you control, one you don’t”\n“Both work for teaching tasks”\n\n\n\n\n\n34. Section Title\n\n“Why Control Matters”\n\n35. Two Times You Were Betrayed\nExample 1: WhatsApp Leak - Billions of phone numbers exposed - “You trusted them with your data” - Everyone uses it, personal stakes\nExample 2: Windows 10 Obsolescence - Hardware made “obsolete” by software decision - Environmental waste, e-waste crisis - Forced upgrades, no choice\n36. The Lock-in Pattern (VISUAL)\nSimple diagram:\n         Cognitive Lock-in\n         (I only know THIS)\n              ╱│╲\n             ╱ │ ╲\n   Technical│  │ Institutional\n   (Format) │  │ (Everyone uses it)\n37. Father’s Photo + Global Justice\n\nPhoto: 1998 Linux workshop, Sri Lanka\n“This has always mattered - licensing costs exclude entire regions”\nOpen source = global equity\n\n38. The AI Choice is NOW\n\nIn 2-3 years, everyone locked into ChatGPT like WhatsApp?\nOr will we preserve alternatives?\nThis window won’t stay open forever\nGood news: Open models exist NOW\n\n39. Recipe Callback\n\n“Remember the proprietary recipe?”\n“Would you accept that for cooking?”\n“Then why accept it for AI?”\n\n\n\n\n\n40. Your Use Cases\n\n“What would YOU use local LLMs for in your teaching?”\nQuick brainstorm (show of hands or call-outs)\nCapture 3-5 ideas verbally\nValidate: “Yes, that would work!”\n\n41. Where Are You Locked In?\n\n“Which tools feel hardest to escape?”\nQuick discussion (2-3 people share)\n“That’s the lock-in we’re talking about”\n“Local LLMs can help break some of those chains”\n\n\n\n\n\n42. Return to Fork in the Road\n\n“We started with a choice”\n“Is AI going to own us, or do we own AI?”\n\n43. You Have Options\n\nOpen weight models exist\nHardware is capable (even laptops)\nTools are maturing (Ollama, LM Studio)\nCommunity is growing\nYOU can do this\n\n44. Address the Objection\n\n“I don’t have time to learn this!”\n“Yes, initial investment needed”\n“But: Pays off over time”\n“And: You’re no longer vulnerable”\nCooking callback: “Worth learning to cook vs. proprietary recipes”\n\n45. Start Small\n\nTry ONE thing this month:\n\nInstall Ollama and run a model\nGenerate one set of exam questions locally\nTest a local LLM for summarizing\nExplore LM Studio or similar tools\n\n“You don’t have to switch everything at once”\n\n46. Resources & Thank You\n\nGrüentAI team contact info\n“We’re working on this for teaching”\n“We’re here as a resource”\n“Reach out with questions”\nThank you\n\n\n\n\n\nTotal slides: 46\nEstimated time: 57-59 minutes ✅\nSlide Distribution:\n\nOpening (Fork + Cooking): 12 slides, 10-12 min\nUnderstanding LLMs: 8 slides, 10 min\nTeaching Use Cases + Benchmarks: 7 slides, 8 min ⬇️\nLive Demo: 3 slides, 10 min\nWhy Open Source Matters: 6 slides, 7 min ⬇️\nInteractive Moment: 2 slides, 5 min ⬇️\nClosing: 5 slides, 5 min\n\nCuts Made to Hit 60 Minutes:\n\n✂️ Teaching use cases: 10-15 min → 8 min (integrated benchmarks into use case slides, reduced from 6 to 3 detailed examples)\n✂️ Why Open Source: 10 min → 7 min (dropped one betrayal example, condensed father’s photo section)\n✂️ Activity: 10 min → 5 min (converted from full activity to quick interactive discussion)\n\nKey Differences from v1:\n\n✅ LLMs are now the HEART (28 min total: understanding + use cases + demo)\n✅ Open source philosophy is SUPPORTING argument (7 min)\n✅ Cooking metaphor opens AND closes (bookends)\n✅ Focus stays on practical value for teaching throughout\n✅ Less theory, more “what you can actually do”\n✅ FITS IN 60 MINUTES\n\nVisual Requirements:\n\nRecipe cards (proprietary vs open) - DESIGN THESE\nTimeline (5 years of LLMs)\nBenchmark star ratings (integrated into use case slides)\nLock-in triangle diagram\nFather’s photo (1998)\nSplit-screen for demo setup\n\nNotes for Next Steps:\n\nThis outline prioritizes LLMs as core content\nOpen source arguments support WHY local matters\nCooking metaphor frames the problem and solution\nReady for Quarto slide drafting when you are"
+  },
+  {
+    "objectID": "SLIDES_OUTLINE_v2.html#focus-local-llms-for-teaching",
+    "href": "SLIDES_OUTLINE_v2.html#focus-local-llms-for-teaching",
+    "title": "Technology Sovereignty Workshop - Slide Outline v2",
+    "section": "",
+    "text": "Philosophy: Brief open source framing → Deep dive on local LLMs → Supporting arguments about sovereignty"
+  },
+  {
+    "objectID": "SLIDES_OUTLINE_v2.html#opening-hook-fork-in-the-road-cooking-metaphor-10-12-min---slides-1-12",
+    "href": "SLIDES_OUTLINE_v2.html#opening-hook-fork-in-the-road-cooking-metaphor-10-12-min---slides-1-12",
+    "title": "Technology Sovereignty Workshop - Slide Outline v2",
+    "section": "",
+    "text": "1. Title Slide\n\nTitle: “Technology Sovereignty & Local LLMs”\nSubtitle: “Who Controls Your AI Tools?”\nYour name, GrüentAI logo\n\n2. The Fork in the Road\n\n“We’re at a critical choice point with AI”\nLarge text: “Is AI going to own us, or are we going to own AI?”\n\n3. The Pattern Repeats\n\nWe’ve been here before:\n\nWindows → locked in\nOffice → locked in\nWhatsApp → locked in\nArcGIS → locked in\n\n“Now it’s happening with AI”\n\n4. Opening Question - Cooking\n\n“Let me show you what lock-in looks like…”\n“Imagine you want to cook a meal…”\n\n5. Proprietary Recipe Card (FULL SLIDE VISUAL)\nPROPRIETARY RECIPE CARD\n\n1. Add 2 units of Compound-XJ7 ($15/bottle, our brand only)\n2. Heat in Model-Pro-Pan-2024 at \"MEDIUM\"\n3. Stir with Certified-Stirring-Tool (sold separately)\n4. Add Flavor-Packet-B when light turns green\n\n⚠️ WARNING:\n- Substitutions void warranty\n- Recipe breaks if ingredients discontinued\n- Do not attempt to understand the chemistry\n- Pan discontinued next year - upgrade required\n6. Open Recipe Card (FULL SLIDE VISUAL - CONTRAST)\nOPEN RECIPE\n\n1. Sauté onions in oil until translucent\n   WHY: Releases sugars, builds flavor base\n2. Add garlic, cook 30 seconds\n   WHY: Aromatic, cooks fast, burns easily\n3. Add tomatoes, simmer 20 min\n   WHY: Breaks down, concentrates\n\nNOTES:\n- No onions? Use shallots or leeks\n- Olive oil or butter both work\n- Any pan that conducts heat evenly\n7. The Absurdity\n\n“Would you accept the proprietary system for cooking?”\n“Of course not!”\n\n8. The Pivot\n\n“But we DO accept this for software”\n“And now we’re doing it with AI”\n\n9. Time Comparison (VISUAL)\n\nBar chart:\n\nCooking: 30-60 min/day\nComputer use: 4-8 hours/day\nAI use: Growing daily\n\n“Yet we accept ignorance about technology”\n\n10. The Vulnerability\n\n“Once you’ve invested in ChatGPT Plus…”\n“Learned their interface…”\n“Built your prompts in their system…”\n“Stored your data with them…”\n“Switching cost becomes ENORMOUS”\n\n11. WhatsApp Validation\n\n“How many use ChatGPT?” (show of hands)\n“How many run local LLMs?” (show of hands)\n“Why not? Let’s explore that.”\n\n12. Transition\n\n“Today: I want to show you there IS an alternative”\n“Open source LLMs you can run locally”\n“For teaching. On your own hardware.”"
+  },
+  {
+    "objectID": "SLIDES_OUTLINE_v2.html#understanding-llms-pragmatic-overview-10-min---slides-13-20",
+    "href": "SLIDES_OUTLINE_v2.html#understanding-llms-pragmatic-overview-10-min---slides-13-20",
+    "title": "Technology Sovereignty Workshop - Slide Outline v2",
+    "section": "",
+    "text": "13. Section Title\n\n“What Are LLMs? (Practical Overview)”\n\n14. What LLMs Are (Simple)\n\nSophisticated pattern matching from massive text\nLike very advanced autocomplete\nNot “intelligence” - pattern recognition at scale\nNot magic - technology you can understand\n\n15. The Last 5 Years (TIMELINE)\n\n2019: GPT-2 impressive but limited\n2023: ChatGPT changes everything\n2024-2025: Open models catch up\nKey insight: Gap closing FAST\n\n16. Proprietary vs Open Weights\nTwo columns:\nLEFT: Proprietary (ChatGPT, Claude, Gemini) - Runs on their servers - They see your data - You pay subscription - They control access - Can change/remove features\nRIGHT: Open Weights (Llama, DeepSeek, Mistral) - Runs on YOUR hardware - Your data stays local - One-time hardware cost - You control everything - Stable, predictable\n17. “Good Enough” is Good Enough\n\nYou don’t need the absolute best model\nYou need one that solves YOUR problem\nWith YOUR data privacy intact\nAt YOUR cost structure\nUnder YOUR control\n\n18. The Three Enhancements (SIMPLE DIAGRAM)\nThree boxes:\nRAG (Retrieval Augmented Generation) - Give LLM access to YOUR documents - Example: IUNR course materials, research papers - Makes it accurate for your domain\nMCPs (Model Context Protocol) - Connect LLM to your tools - Example: Field data, GIS, email, calendar - Extends what it can do\nPersonas/System Prompts - Shape how LLM behaves - Example: “Teaching assistant for environmental science” - Customize for your needs\n19. Why Local Makes Sense for Teaching\n\nStudent data is sensitive (GDPR, privacy)\nRepetitive tasks (grading, feedback)\nCustom course materials (RAG)\nOne-time setup, ongoing value\nNo per-query costs\n\n20. Transition\n\n“Okay, so what can you actually DO with this?”\n“Let’s look at real teaching use cases”"
+  },
+  {
+    "objectID": "SLIDES_OUTLINE_v2.html#teaching-use-cases-benchmarks-8-min---slides-21-27",
+    "href": "SLIDES_OUTLINE_v2.html#teaching-use-cases-benchmarks-8-min---slides-21-27",
+    "title": "Technology Sovereignty Workshop - Slide Outline v2",
+    "section": "",
+    "text": "21. Section Title\n\n“What Can Local LLMs Do For Teaching?”\n\n22. Use Case 1: Generate Practice Questions (WITH BENCHMARK)\n\nInput: Lecture slides or textbook chapter\nOutput: 10 multiple choice questions with explanations\nWhy local: Course materials often proprietary/sensitive\n\nBenchmark (on same slide):\nChatGPT-4:        ⭐⭐⭐⭐⭐\nLocal DeepSeek-r1: ⭐⭐⭐⭐⭐\nPrivacy: Local WINS | Cost: Local WINS\n23. Use Case 2: Student Writing Feedback (WITH BENCHMARK)\n\nInput: Student essay or report\nOutput: Constructive feedback on structure, argument, clarity\nWhy local: Student work is confidential\n\nBenchmark (on same slide):\nChatGPT-4:        ⭐⭐⭐⭐⭐\nLocal DeepSeek-r1: ⭐⭐⭐⭐\nPrivacy: Local WINS | Cost: Local WINS\n24. Use Case 3: Summarize Research (WITH BENCHMARK)\n\nInput: 30-page research paper\nOutput: 1-page summary for students\nWhy local: Can process many papers, no API costs\n\nBenchmark (on same slide):\nChatGPT-4:        ⭐⭐⭐⭐⭐\nLocal DeepSeek-r1: ⭐⭐⭐⭐⭐\nPrivacy: Local WINS | Cost: Local WINS\n25. More Use Cases (Quick List)\nOther tasks that work well locally: - Translate technical content to different reading levels - Create interactive study guides with RAG - Generate grading rubrics - Answer student questions about course materials\n26. The Key Insight\n\nLocal models are “good enough” for teaching tasks\nQuality gap has closed dramatically\nPrivacy advantage is huge\nCost: Hardware once, then unlimited use\n\n27. Transition to Demo\n\n“Let’s see this in action”"
+  },
+  {
+    "objectID": "SLIDES_OUTLINE_v2.html#live-demo-10-min---slides-31-33",
+    "href": "SLIDES_OUTLINE_v2.html#live-demo-10-min---slides-31-33",
+    "title": "Technology Sovereignty Workshop - Slide Outline v2",
+    "section": "",
+    "text": "31. Demo Intro\n\n“Let’s See It In Action”\nI’ll run BOTH ChatGPT and local Ollama\nYOU give me a teaching task\nWe’ll compare results\n\n32. Demo Setup Slide\n\nSplit screen or side-by-side\nSame prompt to both\nReal-time comparison\n(Minimal slide - focus is live demo)\n\n[LIVE DEMO HAPPENS]\nPossible demo tasks: - Generate 5 exam questions from a text snippet - Give feedback on a short student paragraph - Summarize a research abstract\n33. Demo Debrief\n\n“Same capability, different backends”\n“One you control, one you don’t”\n“Both work for teaching tasks”"
+  },
+  {
+    "objectID": "SLIDES_OUTLINE_v2.html#why-open-source-matters-supporting-arguments-7-min---slides-34-39",
+    "href": "SLIDES_OUTLINE_v2.html#why-open-source-matters-supporting-arguments-7-min---slides-34-39",
+    "title": "Technology Sovereignty Workshop - Slide Outline v2",
+    "section": "",
+    "text": "34. Section Title\n\n“Why Control Matters”\n\n35. Two Times You Were Betrayed\nExample 1: WhatsApp Leak - Billions of phone numbers exposed - “You trusted them with your data” - Everyone uses it, personal stakes\nExample 2: Windows 10 Obsolescence - Hardware made “obsolete” by software decision - Environmental waste, e-waste crisis - Forced upgrades, no choice\n36. The Lock-in Pattern (VISUAL)\nSimple diagram:\n         Cognitive Lock-in\n         (I only know THIS)\n              ╱│╲\n             ╱ │ ╲\n   Technical│  │ Institutional\n   (Format) │  │ (Everyone uses it)\n37. Father’s Photo + Global Justice\n\nPhoto: 1998 Linux workshop, Sri Lanka\n“This has always mattered - licensing costs exclude entire regions”\nOpen source = global equity\n\n38. The AI Choice is NOW\n\nIn 2-3 years, everyone locked into ChatGPT like WhatsApp?\nOr will we preserve alternatives?\nThis window won’t stay open forever\nGood news: Open models exist NOW\n\n39. Recipe Callback\n\n“Remember the proprietary recipe?”\n“Would you accept that for cooking?”\n“Then why accept it for AI?”"
+  },
+  {
+    "objectID": "SLIDES_OUTLINE_v2.html#quick-interactive-moment-5-min---slides-40-41",
+    "href": "SLIDES_OUTLINE_v2.html#quick-interactive-moment-5-min---slides-40-41",
+    "title": "Technology Sovereignty Workshop - Slide Outline v2",
+    "section": "",
+    "text": "40. Your Use Cases\n\n“What would YOU use local LLMs for in your teaching?”\nQuick brainstorm (show of hands or call-outs)\nCapture 3-5 ideas verbally\nValidate: “Yes, that would work!”\n\n41. Where Are You Locked In?\n\n“Which tools feel hardest to escape?”\nQuick discussion (2-3 people share)\n“That’s the lock-in we’re talking about”\n“Local LLMs can help break some of those chains”"
+  },
+  {
+    "objectID": "SLIDES_OUTLINE_v2.html#closing-the-invitation-5-min---slides-42-46",
+    "href": "SLIDES_OUTLINE_v2.html#closing-the-invitation-5-min---slides-42-46",
+    "title": "Technology Sovereignty Workshop - Slide Outline v2",
+    "section": "",
+    "text": "42. Return to Fork in the Road\n\n“We started with a choice”\n“Is AI going to own us, or do we own AI?”\n\n43. You Have Options\n\nOpen weight models exist\nHardware is capable (even laptops)\nTools are maturing (Ollama, LM Studio)\nCommunity is growing\nYOU can do this\n\n44. Address the Objection\n\n“I don’t have time to learn this!”\n“Yes, initial investment needed”\n“But: Pays off over time”\n“And: You’re no longer vulnerable”\nCooking callback: “Worth learning to cook vs. proprietary recipes”\n\n45. Start Small\n\nTry ONE thing this month:\n\nInstall Ollama and run a model\nGenerate one set of exam questions locally\nTest a local LLM for summarizing\nExplore LM Studio or similar tools\n\n“You don’t have to switch everything at once”\n\n46. Resources & Thank You\n\nGrüentAI team contact info\n“We’re working on this for teaching”\n“We’re here as a resource”\n“Reach out with questions”\nThank you"
+  },
+  {
+    "objectID": "SLIDES_OUTLINE_v2.html#summary",
+    "href": "SLIDES_OUTLINE_v2.html#summary",
+    "title": "Technology Sovereignty Workshop - Slide Outline v2",
+    "section": "",
+    "text": "Total slides: 46\nEstimated time: 57-59 minutes ✅\nSlide Distribution:\n\nOpening (Fork + Cooking): 12 slides, 10-12 min\nUnderstanding LLMs: 8 slides, 10 min\nTeaching Use Cases + Benchmarks: 7 slides, 8 min ⬇️\nLive Demo: 3 slides, 10 min\nWhy Open Source Matters: 6 slides, 7 min ⬇️\nInteractive Moment: 2 slides, 5 min ⬇️\nClosing: 5 slides, 5 min\n\nCuts Made to Hit 60 Minutes:\n\n✂️ Teaching use cases: 10-15 min → 8 min (integrated benchmarks into use case slides, reduced from 6 to 3 detailed examples)\n✂️ Why Open Source: 10 min → 7 min (dropped one betrayal example, condensed father’s photo section)\n✂️ Activity: 10 min → 5 min (converted from full activity to quick interactive discussion)\n\nKey Differences from v1:\n\n✅ LLMs are now the HEART (28 min total: understanding + use cases + demo)\n✅ Open source philosophy is SUPPORTING argument (7 min)\n✅ Cooking metaphor opens AND closes (bookends)\n✅ Focus stays on practical value for teaching throughout\n✅ Less theory, more “what you can actually do”\n✅ FITS IN 60 MINUTES\n\nVisual Requirements:\n\nRecipe cards (proprietary vs open) - DESIGN THESE\nTimeline (5 years of LLMs)\nBenchmark star ratings (integrated into use case slides)\nLock-in triangle diagram\nFather’s photo (1998)\nSplit-screen for demo setup\n\nNotes for Next Steps:\n\nThis outline prioritizes LLMs as core content\nOpen source arguments support WHY local matters\nCooking metaphor frames the problem and solution\nReady for Quarto slide drafting when you are"
+  },
+  {
+    "objectID": "Readme.html",
+    "href": "Readme.html",
+    "title": "",
+    "section": "",
+    "text": "Todo:\nFragen an stefan: - Wäre es denkbar, dass wir Ollama global zur verfügung stellen? oder das wir ein modell global zur verfügung stellen?\n\nDescribe in Detail the method to login to the hpc, install ollama and pull a model\nSee HPC-zhaw-llm.md in Obisdian (zhaw-diary)\ncreate a funny / interesting task which can be submitted as a job.. which exceeds the possiblities of normal chat interfaces.\ncreate a workflow for submitting the job\ntest this on windows\nInclude at least one poll, eg. on the usage of messengers"
+  },
+  {
+    "objectID": "index-en.html#section",
+    "href": "index-en.html#section",
+    "title": "",
+    "section": "",
+    "text": "Cooking metaphor\n\nImagine you were invited to a faboulus dinner at a distant relative’s place\nYou ask how the dinner was prepared, and the host proudly shows you the recepie\n(next slide)"
+  },
+  {
+    "objectID": "index-en.html#section-2",
+    "href": "index-en.html#section-2",
+    "title": "",
+    "section": "",
+    "text": "RECIPE\n\nAdd 2 units of Compound-XJ7 ($15/bottle, our brand only)\n\nHeat in Model-Pro-Pan-2024 at setting “MEDIUM”\n\nStir with Certified-Stirring-Tool (sold separately)\nAdd Flavor-Packet-B when indicator light turns green\n\n⚠ WARNING:\n\nSubstitutions void warranty\nRecipe breaks if ingredients discontinued\nDo not attempt to understand the chemistry\nModel-Pro-Pan-2024 discontinued next year; upgrade required\n\n\n\n\nPoint out: proprietary ingredients, mandatory equipment, warnings about substitutions, planned obsolescence. This should feel ridiculous.\nWhen confronted, the host has following arguments:\n\nWith this method, I know the meal is going to turn out great. I dont mind sacrificing a little freedom for that\nIf I wanted to cook myself, I would have to learn so many details. I dont have time for this.\nEverone I know cooks like this. We’ve been taught so in school\n\nWe would NEVER tollerate such a system in the cooking domain"
+  },
+  {
+    "objectID": "index-en.html#open-recipe-card",
+    "href": "index-en.html#open-recipe-card",
+    "title": "",
+    "section": "Open Recipe Card",
+    "text": "Open Recipe Card\nOPEN RECIPE\n\n1. Sauté onions in oil until translucent\n   WHY: Releases sugars, builds flavor base\n\n2. Add garlic, cook 30 seconds\n   WHY: Aromatic, cooks fast, burns easily\n\n3. Add tomatoes, simmer 20 min\n   WHY: Breaks down, concentrates\n\nNOTES:\n- No onions? Use shallots or leeks\n- Olive oil or butter both work\n- Any pan that conducts heat evenly\n\nContrast is key here. Note the “WHY” explanations - understanding vs blind following. Note the flexibility - substitutions welcome. This is what open source looks like."
+  },
+  {
+    "objectID": "index-en.html#cooking-vs.-computer",
+    "href": "index-en.html#cooking-vs.-computer",
+    "title": "",
+    "section": "Cooking vs. Computer",
+    "text": "Cooking vs. Computer\n\nDaily hours spent on cooking / preparing meals vs. hours spent on the computer. Ratnaweera et al (2025), n = 1\n\nWe spent much more time at the computer than we spend cooking.\nWhy do we allow this in the digital domain?"
+  },
+  {
+    "objectID": "index-en.html#section-3",
+    "href": "index-en.html#section-3",
+    "title": "",
+    "section": "",
+    "text": "The pattern repeats:\nWe’ve been here before"
+  },
+  {
+    "objectID": "index-en.html#the-pattern-repeats",
+    "href": "index-en.html#the-pattern-repeats",
+    "title": "",
+    "section": "The Pattern Repeats",
+    "text": "The Pattern Repeats\n\nWe don’t use document publishing systems, we use Microsoft Office\nWe don’t use Instant Messangers, we use WhatsApp\nWe dont use GIS, we use ArcGIS\n\n\n\nAre we going to use AI, or are will we use ChatGPT?"
+  },
+  {
+    "objectID": "index-en.html#the-vulnerability",
+    "href": "index-en.html#the-vulnerability",
+    "title": "",
+    "section": "The Vulnerability",
+    "text": "The Vulnerability\nOnce you’ve invested in ChatGPT Plus…\n\nLearned their interface\nBuilt your prompts in their system\nStored your data with them\n\n\n\n→ Switching costs become ENORMOUS\n\n\n\n\nWhy?"
+  },
+  {
+    "objectID": "index-en.html#vendor-lock-in",
+    "href": "index-en.html#vendor-lock-in",
+    "title": "",
+    "section": "Vendor Lock-In",
+    "text": "Vendor Lock-In\n\n\nVendors don’t want you to be plattform independant\nThey purposfully make their products incompatible with those of other vendors\nOnce a certain level is reached, it’s hard or even impossible to swith vendors"
+  },
+  {
+    "objectID": "index-en.html#section-4",
+    "href": "index-en.html#section-4",
+    "title": "",
+    "section": "",
+    "text": "Going back to the cooking analogy"
+  },
+  {
+    "objectID": "index-en.html#section-5",
+    "href": "index-en.html#section-5",
+    "title": "",
+    "section": "",
+    "text": "PROPRIETARY RECIPE CARD\n\n1. Add 2 units of Compound-XJ7\n   ($15/bottle, our brand only)\n2. Heat in Model-Pro-Pan-2024 at setting \"MEDIUM\"\n3. Stir with Certified-Stirring-Tool\n   (sold separately)\n4. Add Flavor-Packet-B when indicator light turns green\n\n⚠️ WARNING:\n- Substitutions void warranty\n- Recipe breaks if ingredients discontinued\n- Do not attempt to understand the chemistry\n- Model-Pro-Pan-2024 discontinued next year; upgrade required\n\n\nOnce Model-Pro-Pan-2024, Certified-Stirring-Tool and other similar products have been bought, it will be hard to use recepies by other vendors"
+  },
+  {
+    "objectID": "index-en.html#why-is-this-a-problem",
+    "href": "index-en.html#why-is-this-a-problem",
+    "title": "",
+    "section": "Why is this a problem?",
+    "text": "Why is this a problem?"
+  },
+  {
+    "objectID": "index-en.html#section-6",
+    "href": "index-en.html#section-6",
+    "title": "",
+    "section": "",
+    "text": "Sometimes products are plain bad, lack basic security features and the safety of userdata is no priority"
+  },
+  {
+    "objectID": "index-en.html#section-7",
+    "href": "index-en.html#section-7",
+    "title": "",
+    "section": "",
+    "text": "Microsoft hat nach Trump-Sanktionen das Mail-Konto des Chefanklägers des Internationalen Gerichtshofs blockiert.\nTrump sanktionierte das Den Haager Gericht im Februar, nachdem ein Gremium von IStGH-Richtern im November 25 Haftbefehle gegen den israelischen Premierminister Benjamin Netanjahu mit Blick auf Kriegsverbrechen im Gaza-Streifen erlassen hatte."
+  },
+  {
+    "objectID": "index-en.html#section-8",
+    "href": "index-en.html#section-8",
+    "title": "",
+    "section": "",
+    "text": "Sometimes Software versions are not supported anymore, as seen in the example of the End-of-Life for Windows 10.\nDas Problem: Zahlreiche PCs bringen die geforderten Komponenten nicht mit. Ein Upgrade auf Windows 11 auf offiziellem Wege ist in solchen Fällen ausgeschlossen."
+  },
+  {
+    "objectID": "index-en.html#section-9",
+    "href": "index-en.html#section-9",
+    "title": "",
+    "section": "",
+    "text": "Go to “Places and zoom in”"
+  },
+  {
+    "objectID": "index-en.html#section-10",
+    "href": "index-en.html#section-10",
+    "title": "",
+    "section": "",
+    "text": "But not everyone can be a computer expert\n\n\n\n“10,000-hour rule,” popularized by Malcolm Gladwell in his book Outliers, suggests that achieving mastery in a skill requires approximately 10,000 hours of practice.\nAt 6 hours a day, you are a computer expert after about 7 Years\nEspecially, we don’t need to understand all 3 layers (next slide)"
+  },
+  {
+    "objectID": "index-en.html#three-layers",
+    "href": "index-en.html#three-layers",
+    "title": "",
+    "section": "Three Layers",
+    "text": "Three Layers\n\n\nInterface Layer “ChatGPT or MS Copilot”\n\n\n\n\nImplementation Formats, Standards etc\n\n\n\n\nTechnology The fundamental capability"
+  },
+  {
+    "objectID": "index-en.html#fork-in-the-road",
+    "href": "index-en.html#fork-in-the-road",
+    "title": "",
+    "section": "Fork in the Road",
+    "text": "Fork in the Road\n\n\nWill we invest time and money into the easy way or into the right way?\nWill we become masters of a techonology or users of a product?"
+  },
+  {
+    "objectID": "index-en.html#openness-is-a-spectrum",
+    "href": "index-en.html#openness-is-a-spectrum",
+    "title": "",
+    "section": "“Openness” is a spectrum",
+    "text": "“Openness” is a spectrum\nMore open ↑\n\nFully Open Source (fully reproducible)\nOpen Weights + Code (auditable methodology, but not data)\nOpen Weights (runnable, but not verifiable)\nProprietary (black box)\n\nMore closed ↓\n\nProprietary (ChatGPT, Claude, Gemini): - Complete black box - you only get API access - No insight into how it works, what data it was trained on, or how decisions are made - You’re entirely dependent on the vendor\nOpen Weights (Llama 3.3, DeepSeek, Mistral, Qwen): - The trained model weights are released - you can download and run them locally - BUT: Training code and training data typically NOT included - You can USE it, but can’t fully verify or reproduce how it was created - This is where MOST “open” models sit today - For practical teaching purposes: This is sufficient! You get local control.\nOpen Weights + Code (Some research releases): - Weights + the methodology/code used for training - You can understand and audit HOW it was trained - BUT: Training data usually not included (licensing issues, competitive advantage) - Example: Some academic lab releases - Closer to true “open source” philosophy - transparent and auditable\nFully Open Source (OLMo, BLOOM - rare!): - Weights + Training Code + Training Data - everything - Fully reproducible and auditable - This is the gold standard but extremely rare (training data is expensive, complex licensing) - Most similar to traditional open source software"
+  },
+  {
+    "objectID": "index-en.html#good-enough-is-good-enough",
+    "href": "index-en.html#good-enough-is-good-enough",
+    "title": "",
+    "section": "“Good Enough” is Good Enough",
+    "text": "“Good Enough” is Good Enough\nYou don’t need the absolute best model\n\nYou need one that solves YOUR problem\nWith YOUR data privacy intact\nAt YOUR cost structure\nUnder YOUR control\n\n\nCritical mindset shift: you don’t need the absolute best model. You need good enough for YOUR use case. This liberates them from thinking they must use ChatGPT-4 for everything."
+  },
+  {
+    "objectID": "index-en.html#section-12",
+    "href": "index-en.html#section-12",
+    "title": "",
+    "section": "",
+    "text": "Ok, so how does this work?"
+  },
+  {
+    "objectID": "index-en.html#step-1-get-a-runtime-environment",
+    "href": "index-en.html#step-1-get-a-runtime-environment",
+    "title": "",
+    "section": "Step 1: Get a Runtime Environment",
+    "text": "Step 1: Get a Runtime Environment\nYou need software that can run the model on your machine\n\nDownloads the model files\nManages memory and processing\nProvides an interface (API, chat, etc.)\n\n\nPopular options:\nOllama (ollama.ai) - Recommended for beginners\n\nCommand-line tool, very simple\nWorks on Mac, Linux, Windows\nEasy model management: ollama pull deepseek-r1\nBuilt-in API server\nFree and open source\n\nLM Studio (lmstudio.ai)\n\nGraphical interface, very user-friendly\nGreat for non-technical users\nModel browser built-in\nWorks on Mac, Windows, Linux\nFree\n\nGPT4All\n\nDesktop app with GUI\nGood for absolute beginners\nLimited model selection but curated\nFree and open source\n\nJan.ai\n\nDesktop app, modern interface\nLocal-first philosophy\nGood privacy focus\nFree and open source\n\nFor this workshop, we’ll focus on Ollama - it’s the most flexible and widely used, but any of these will work for getting started."
+  },
+  {
+    "objectID": "index-en.html#step-2-choose-and-download-a-model",
+    "href": "index-en.html#step-2-choose-and-download-a-model",
+    "title": "",
+    "section": "Step 2: Choose and Download a Model",
+    "text": "Step 2: Choose and Download a Model\nModels vary by:\n\nSize (1GB to 100GB+)\nCapability (general chat, coding, reasoning)\nLanguage (multilingual vs English-focused)\n\n\nStart with a small, general-purpose model\n\n\nHow to choose:\nFor beginners, recommend: - DeepSeek-R1:1.5B or 7B - Excellent reasoning, good for teaching tasks, reasonable size - Llama 3.2 3B - Fast, capable, widely supported - Qwen 2.5 7B - Strong multilingual, good for international contexts - Phi-4 - Microsoft’s efficient small model, surprisingly capable\nSize considerations: - 1-3B parameters: Fast, runs on most laptops, good for basic tasks (2-6GB RAM needed) - 7-8B parameters: Sweet spot for teaching - good quality, reasonable speed (8-16GB RAM) - 13B+ parameters: Better quality, but slower and needs more RAM (16GB+ minimum)\nWith Ollama:\nollama pull deepseek-r1:1.5b    # Small, fast\nollama pull llama3.2:3b          # General purpose\nollama pull qwen2.5:7b           # Multilingual\nWith LM Studio: - Open the model browser - Search for “deepseek” or “llama” - Look for models marked with your RAM capacity - Click download\nKey point: You can always download more models later. Start small, test it out, then try larger models if needed. Models are just files - you can delete them if you don’t like them."
+  },
+  {
+    "objectID": "index-en.html#step-3-run-your-first-query",
+    "href": "index-en.html#step-3-run-your-first-query",
+    "title": "",
+    "section": "Step 3: Run Your First Query",
+    "text": "Step 3: Run Your First Query\nNow you can interact with the model\n\nStart the model/server\nSend it a prompt\nGet a response\n\n\nThat’s it! You’re running AI locally.\n\n\nWith Ollama (command-line):\nStart a chat session:\nollama run deepseek-r1:1.5b\nThen just type your question:\n&gt;&gt;&gt; Generate 3 multiple choice questions about photosynthesis\nOr use it as an API:\ncurl http://localhost:11434/api/generate -d '{\n  \"model\": \"deepseek-r1:1.5b\",\n  \"prompt\": \"Summarize this: [paste text]\"\n}'\nWith LM Studio (GUI): 1. Select your downloaded model from the left sidebar 2. Click “Load Model” 3. Type your prompt in the chat interface 4. Hit enter\nWith GPT4All or Jan.ai: - Similar - select model, type in chat box, get response\nFirst prompts to try: - “Generate 5 practice questions about [your subject]” - “Summarize this text in simple language: [paste text]” - “Give feedback on this student paragraph: [paste text]” - “Explain [concept] at a high school level”\nWhat’s happening behind the scenes: - The model file is loaded into RAM - Your text is converted to numbers (tokens) - The model predicts the next token, over and over - Results are converted back to text - All happening on your machine, no internet needed (after download)\nKey insight: Once you get to this point, you realize it’s not magic - it’s just software running locally. You have full control."
+  },
+  {
+    "objectID": "index-en.html#the-three-enhancements",
+    "href": "index-en.html#the-three-enhancements",
+    "title": "",
+    "section": "The Three Enhancements",
+    "text": "The Three Enhancements\n\n\nRAG\nRetrieval Augmented Generation\nGive LLM access to YOUR documents\nExample: IUNR course materials, research papers\n\nMCPs\nModel Context Protocol\nConnect LLM to your tools\nExample: Field data, GIS, email, calendar\n\nPersonas\nSystem Prompts\nShape how LLM behaves\nExample: “Teaching assistant for environmental science”\n\n\nThese three enhancements make local LLMs powerful. Don’t go too deep technically - just explain what each does and give concrete examples relevant to teaching. RAG is especially important for their use case."
+  },
+  {
+    "objectID": "index-en.html#why-local-makes-sense-for-teaching",
+    "href": "index-en.html#why-local-makes-sense-for-teaching",
+    "title": "",
+    "section": "Why Local Makes Sense for Teaching",
+    "text": "Why Local Makes Sense for Teaching\n\nStudent data is sensitive (GDPR, privacy)\nRepetitive tasks (grading, feedback)\nCustom course materials (RAG)\nOne-time setup, ongoing value\nNo per-query costs\n\n\nConnect the dots: student data + GDPR = must be local. Repetitive tasks + no per-query cost = economically viable. This is why local makes sense specifically for teaching."
+  },
+  {
+    "objectID": "index-en.html#transition",
+    "href": "index-en.html#transition",
+    "title": "",
+    "section": "Transition",
+    "text": "Transition\n\nOkay, so what can you actually DO with this?\n\n\nTransition to practical applications. Shift from “why” to “what”. Time to show concrete value."
+  },
+  {
+    "objectID": "index-en.html#what-can-local-llms-do-for-teaching",
+    "href": "index-en.html#what-can-local-llms-do-for-teaching",
+    "title": "",
+    "section": "What Can Local LLMs Do For Teaching?",
+    "text": "What Can Local LLMs Do For Teaching?\n\nSection divider - pause, let the question hang."
+  },
+  {
+    "objectID": "index-en.html#use-case-1-generate-practice-questions",
+    "href": "index-en.html#use-case-1-generate-practice-questions",
+    "title": "",
+    "section": "Use Case 1: Generate Practice Questions",
+    "text": "Use Case 1: Generate Practice Questions\nInput: Lecture slides or textbook chapter\nOutput: 10 multiple choice questions with explanations\nWhy local: Course materials often proprietary/sensitive"
+  },
+  {
+    "objectID": "index-en.html#use-case-2-student-writing-feedback",
+    "href": "index-en.html#use-case-2-student-writing-feedback",
+    "title": "",
+    "section": "Use Case 2: Student Writing Feedback",
+    "text": "Use Case 2: Student Writing Feedback\nInput: Student essay or report\nOutput: Constructive feedback on structure, argument, clarity\nWhy local: Student work is confidential"
+  },
+  {
+    "objectID": "index-en.html#use-case-3-summarize-research",
+    "href": "index-en.html#use-case-3-summarize-research",
+    "title": "",
+    "section": "Use Case 3: Summarize Research",
+    "text": "Use Case 3: Summarize Research\nInput: 30-page research paper\nOutput: 1-page summary for students\nWhy local: Can process many papers, no API costs"
+  },
+  {
+    "objectID": "index-en.html#more-use-cases",
+    "href": "index-en.html#more-use-cases",
+    "title": "",
+    "section": "More Use Cases",
+    "text": "More Use Cases\nOther tasks that work well locally:\n\nTranslate technical content to different reading levels\nCreate interactive study guides with RAG\nGenerate grading rubrics\nAnswer student questions about course materials\n\n\nQuick list - don’t dwell on each. The point is to expand their mental model of what’s possible. They can explore these later."
+  },
+  {
+    "objectID": "index-en.html#the-key-insight",
+    "href": "index-en.html#the-key-insight",
+    "title": "",
+    "section": "The Key Insight",
+    "text": "The Key Insight\n\nLocal models are “good enough” for teaching tasks\nQuality gap has closed dramatically\nPrivacy advantage is huge\nCost: Hardware once, then unlimited use\n\n\nSummary slide. Hammer home: “good enough” is the key concept. You don’t need perfection. Quality gap has closed. Privacy is huge. Cost model is different and favorable for teaching use cases."
+  },
+  {
+    "objectID": "index-en.html#transition-to-demo",
+    "href": "index-en.html#transition-to-demo",
+    "title": "",
+    "section": "Transition to Demo",
+    "text": "Transition to Demo\n\nLet’s see this in action\n\n\nTransition to live demo. Energy shift - this is the “proof” moment. Show, don’t just tell."
+  },
+  {
+    "objectID": "index-en.html#demo-intro",
+    "href": "index-en.html#demo-intro",
+    "title": "",
+    "section": "Demo Intro",
+    "text": "Demo Intro\nLet’s See It In Action\n\nI’ll run BOTH ChatGPT and local Ollama\nYOU give me a teaching task\nWe’ll compare results\n\n\nInvite audience participation - “YOU give me a teaching task”. This makes it more engaging and ensures the demo is relevant to their actual needs."
+  },
+  {
+    "objectID": "index-en.html#demo-setup",
+    "href": "index-en.html#demo-setup",
+    "title": "",
+    "section": "Demo Setup",
+    "text": "Demo Setup\n\nSplit screen or side-by-side Same prompt to both Real-time comparison\nPossible demo tasks: - Generate 5 exam questions from a text snippet - Give feedback on a short student paragraph - Summarize a research abstract\n\n[LIVE DEMO SCREEN]"
+  },
+  {
+    "objectID": "index-en.html#demo-debrief",
+    "href": "index-en.html#demo-debrief",
+    "title": "",
+    "section": "Demo Debrief",
+    "text": "Demo Debrief\n\nSame capability, different backends\nOne you control, one you don’t\nBoth work for teaching tasks\n\n\nKey debrief points: same capability (both can do the task), different backends (one proprietary, one local), both work for teaching (proof that local is viable). Acknowledge if there were quality differences but emphasize “good enough”."
+  },
+  {
+    "objectID": "index-en.html#why-control-matters",
+    "href": "index-en.html#why-control-matters",
+    "title": "",
+    "section": "Why Control Matters",
+    "text": "Why Control Matters\n\nSection divider - minimal speaking, let the question land."
+  },
+  {
+    "objectID": "index-en.html#two-times-you-were-betrayed",
+    "href": "index-en.html#two-times-you-were-betrayed",
+    "title": "",
+    "section": "Two Times You Were Betrayed",
+    "text": "Two Times You Were Betrayed\nExample 1: WhatsApp Leak\n\nBillions of phone numbers exposed\n“You trusted them with your data”\nEveryone uses it, personal stakes"
+  },
+  {
+    "objectID": "index-en.html#the-lock-in-pattern",
+    "href": "index-en.html#the-lock-in-pattern",
+    "title": "",
+    "section": "The Lock-in Pattern",
+    "text": "The Lock-in Pattern\n         Cognitive Lock-in\n         (I only know THIS)\n              ╱│╲\n             ╱ │ ╲\n   Technical│  │ Institutional\n   (Format) │  │ (Everyone uses it)\n\nExplain the three types of lock-in: cognitive (you only know this one tool), technical (file formats, APIs), institutional (everyone else uses it). All three reinforce each other, making escape nearly impossible."
+  },
+  {
+    "objectID": "index-en.html#fathers-photo-global-justice",
+    "href": "index-en.html#fathers-photo-global-justice",
+    "title": "",
+    "section": "Father’s Photo + Global Justice",
+    "text": "Father’s Photo + Global Justice\n\n“This has always mattered - licensing costs exclude entire regions”\nOpen source = global equity\n\nTODO: Add actual photo\nPersonal moment. Your father taught Linux in Sri Lanka in 1998. This has always been about global justice and equity. Proprietary software licensing excludes entire regions of the world. Open source = access for everyone, regardless of geography or wealth."
+  },
+  {
+    "objectID": "index-en.html#the-ai-choice-is-now",
+    "href": "index-en.html#the-ai-choice-is-now",
+    "title": "",
+    "section": "The AI Choice is NOW",
+    "text": "The AI Choice is NOW\n\nIn 2-3 years, everyone locked into ChatGPT like WhatsApp?\nOr will we preserve alternatives?\n\n\nThis window won’t stay open forever\n\n\nGood news: Open models exist NOW\n\n\nCreate urgency. We’re at a choice point NOW. In 2-3 years, will everyone be locked into ChatGPT the way they’re locked into WhatsApp? Or will we preserve alternatives? This window won’t stay open forever. But good news - open models exist right now, today."
+  },
+  {
+    "objectID": "index-en.html#recipe-callback",
+    "href": "index-en.html#recipe-callback",
+    "title": "",
+    "section": "Recipe Callback",
+    "text": "Recipe Callback\n\nRemember the proprietary recipe?\nWould you accept that for cooking?\nThen why accept it for AI?\n\n\nCallback to opening. Bring it full circle. You wouldn’t accept proprietary cooking - so why accept proprietary AI? Let this land. Pause."
+  },
+  {
+    "objectID": "index-en.html#your-use-cases",
+    "href": "index-en.html#your-use-cases",
+    "title": "",
+    "section": "Your Use Cases",
+    "text": "Your Use Cases\n\nWhat would YOU use local LLMs for in your teaching?\n\n\nQuick brainstorm (show of hands or call-outs) Capture 3-5 ideas verbally Validate: “Yes, that would work!”"
+  },
+  {
+    "objectID": "index-en.html#where-are-you-locked-in",
+    "href": "index-en.html#where-are-you-locked-in",
+    "title": "",
+    "section": "Where Are You Locked In?",
+    "text": "Where Are You Locked In?\nWhich tools feel hardest to escape?\n\nQuick discussion (2-3 people share) “That’s the lock-in we’re talking about” “Local LLMs can help break some of those chains”"
+  },
+  {
+    "objectID": "index-en.html#return-to-fork-in-the-road",
+    "href": "index-en.html#return-to-fork-in-the-road",
+    "title": "",
+    "section": "Return to Fork in the Road",
+    "text": "Return to Fork in the Road\n\nWe started with a choice\nIs AI going to own us, or do we own AI?\n\n\nReturn to the opening question. Full circle. We started here, and now you’ve seen there IS an alternative. Remind them of the choice."
+  },
+  {
+    "objectID": "index-en.html#you-have-options",
+    "href": "index-en.html#you-have-options",
+    "title": "",
+    "section": "You Have Options",
+    "text": "You Have Options\n\nOpen weight models exist\nHardware is capable (even laptops)\nTools are maturing (Ollama, LM Studio)\nCommunity is growing\n\n\nYOU can do this\n\n\nEmpowerment. List the evidence: models exist, hardware is capable (even laptops!), tools are maturing, community is growing. Build confidence. End with: YOU can do this. Emphasize YOU."
+  },
+  {
+    "objectID": "index-en.html#address-the-objection",
+    "href": "index-en.html#address-the-objection",
+    "title": "",
+    "section": "Address the Objection",
+    "text": "Address the Objection\n“I don’t have time to learn this!”\n\nYes, initial investment needed\nBut: Pays off over time\nAnd: You’re no longer vulnerable\n\n\nCooking callback: Worth learning to cook vs. proprietary recipes\n\n\nAddress the biggest objection head-on: “I don’t have time!” Acknowledge it’s real - yes, initial investment needed. But counter: pays off over time, removes vulnerability. Cooking callback reinforces: worth learning to cook instead of being dependent on proprietary system."
+  },
+  {
+    "objectID": "index-en.html#start-small",
+    "href": "index-en.html#start-small",
+    "title": "",
+    "section": "Start Small",
+    "text": "Start Small\nTry ONE thing this month:\n\nInstall Ollama and run a model\nGenerate one set of exam questions locally\nTest a local LLM for summarizing\nExplore LM Studio or similar tools\n\n\nYou don’t have to switch everything at once\n\n\nGive concrete, actionable next steps. Pick ONE thing to try this month. Lower the barrier to entry. Emphasize: you don’t have to switch everything at once. Start small, build confidence, expand gradually."
+  },
+  {
+    "objectID": "index-en.html#resources-thank-you",
+    "href": "index-en.html#resources-thank-you",
+    "title": "",
+    "section": "Resources & Thank You",
+    "text": "Resources & Thank You\nGrüentAI team contact info\n\nWe’re working on this for teaching\nWe’re here as a resource\nReach out with questions\n\n\nThank you\n\n\nClose with resources and invitation to connect. Make it clear: GrüentAI is working on this specifically for teaching. You’re here as a resource for them. Reach out with questions. Open door for continued conversation and support."
+  },
+  {
+    "objectID": "SLIDES_OUTLINE.html",
+    "href": "SLIDES_OUTLINE.html",
+    "title": "Technology Sovereignty Workshop - Slide Outline",
+    "section": "",
+    "text": "Total slides: ~40-45 (aiming for ~1 slide per 1-1.5 minutes)\n\n\n\n\n1. Title Slide\n\nTitle: “Technology Sovereignty”\nSubtitle: “Who Controls Your Digital Tools?”\nYour name, GrüentAI logo\n\n2. Opening Question\n\n“Imagine you want to cook a meal…”\n\n3. Proprietary Recipe Card (FULL SLIDE VISUAL)\nPROPRIETARY RECIPE CARD\n\n1. Add 2 units of Compound-XJ7 ($15/bottle, our brand only)\n2. Heat in Model-Pro-Pan-2024 at \"MEDIUM\"\n3. Stir with Certified-Stirring-Tool (sold separately)\n4. Add Flavor-Packet-B when light turns green\n\n⚠️ WARNING:\n- Substitutions void warranty\n- Recipe breaks if ingredients discontinued\n- Do not attempt to understand the chemistry\n- Pan discontinued next year - upgrade required\n4. Open Recipe Card (FULL SLIDE VISUAL - CONTRAST)\nOPEN RECIPE\n\n1. Sauté onions in oil until translucent\n   WHY: Releases sugars, builds flavor base\n2. Add garlic, cook 30 seconds\n   WHY: Aromatic, cooks fast, burns easily\n3. Add tomatoes, simmer 20 min\n   WHY: Breaks down, concentrates\n\nNOTES:\n- No onions? Use shallots or leeks\n- Olive oil or butter both work\n- Any pan that conducts heat evenly\n5. Question to Audience\n\n“Would you accept the proprietary system for cooking?”\n“Why not?”\nBullet points of objections\n\n6. The Pivot\n\n“But we DO accept this for software”\nLarge text, dramatic\n\n7. Time Comparison (VISUAL)\n\nBar chart or simple graphic:\n\nCooking: 30-60 min/day\nComputer use: 4-8 hours/day\n\n“Yet we accept ignorance about technology but not cooking”\n\n8. Vendor Lock-in Trap\n\n“Once you’ve invested…”\nList: Model-Pro-Pan ($200), 12 bottles Compound-XJ7 ($180), Certified-Stirring-Tool ($50)\n“Switching cost becomes ENORMOUS”\n“You are now VULNERABLE”\n\n9. WhatsApp Validation\n\n“How many use WhatsApp daily?” (show of hands)\n“How many use Signal?” (show of hands)\n“Why not switch?”\n\n10. Transition\n\n“This is vendor lock-in”\n“Keep the cooking metaphor in mind - we’ll return to it”\n\n\n\n\n\n11. Section Title\n\n“Why This Matters”\n\n12. Father’s Photo (FULL SLIDE IMAGE)\n\nPhoto: 1998 Linux workshop, Sri Lanka\nCaption: “My father teaching Linux in Sri Lanka, 1998”\n\n13. Global Justice Issue\n\nLicensing costs exclude entire regions\nThis is not a new problem\nOpen Source matters for equity\n\n14. Ada & Zangemann (VISUAL)\n\nBrief: “The Pattern of Control”\nImages from the book (openly licensed)\nStory in 2-3 bullets: Inventor controls → Kids lose freedom → Kids hack liberation\n\n15. Infuriating Examples - Title\n\n“Three Times You Were Betrayed”\nCooking callback: “You trusted the recipe provider…”\n\n16. Example 1: WhatsApp Leak\n\nBillions of phone numbers exposed (Wired article citation)\n“You trusted them with your data - they exposed it”\nEveryone uses it, personal stakes\n\n17. Example 2: ICC Prosecutor Block\n\nMicrosoft blocked emails after Trump sanctions\n“The recipe provider decided you can’t cook anymore”\nCorporate platforms can censor at will\n\n18. Example 3: Windows 10 Obsolescence\n\nHardware made “obsolete” by software decision\n“Your pan is ‘obsolete’ because they say so”\nEnvironmental waste, e-waste crisis\n\n\n\n\n\n19. Section Title\n\n“Understanding Lock-in”\n\n20. Three Layers (DIAGRAM)\nInterface Layer    → \"I can use Word\" / \"I can follow the recipe\"\n     ↕\nImplementation     → Open vs. Proprietary / Any ingredients vs. Their ingredients\n     ↕\nTechnology         → Text editing capability / Cooking process\n21. Cooking Metaphor Mapping\n\nRecipe = Interface\nIngredients = Implementation\nCooking = Technology\n“You can know the recipe without understanding cooking”\n\n22. Lock-in Triangle (DIAGRAM)\n         Cognitive Lock-in\n         (I only know THIS way)\n              ╱│╲\n             ╱ │ ╲\n   Technical │  │ Institutional\n   (Format)  │  │ (Everyone uses it)\n23. Examples Everyone Knows - Part 1\n\nWhatsApp vs Signal\nGoogle Maps vs OpenStreetMap\n(Icons/logos for visual recognition)\n\n24. Examples Everyone Knows - Part 2\n\nArcGIS vs QGIS\nMicrosoft Office vs LibreOffice\nPodcast (iTunes vs RSS)\n(Icons/logos for visual recognition)\n\n25. Export Difficulty Contrast\n\nProprietary: Hard to export, obscure formats, trap your data\nOpen Source: Easy export, lists alternatives on their website!\n\n26. Examples of Export\n\nWhatsApp chat export (painful) vs Signal (easy)\nArcGIS vs QGIS\nEndNote vs Zotero\n\n\n\n\n\n27. Activity Intro\n\n“Let’s Map YOUR Lock-ins”\nFlipchart activity explanation\n\n28. Flipchart Categories (VISUAL REFERENCE)\nList of tool categories on flipcharts:\n\nMessaging: WhatsApp / Signal / Telegram\nMaps: Google Maps / OpenStreetMap / Apple Maps\nGIS: ArcGIS / QGIS\nOffice: MS Office / LibreOffice / Google Docs\nStats: SPSS / R / Python\nReference: EndNote / Zotero / Mendeley\n[More…]\n\n29. Activity Timer\n\nSimple slide: “5 minutes - Add your stars!”\n(Blank slide for during activity)\n\n[PAUSE - Activity happens]\n30. Debrief\n\n“What patterns do you see?”\n“Where’s the concentration?”\nKey insight: “Collective lock-in”\n\n\n\n\n\n31. Section Title\n\n“We’re At A Fork In The Road”\n\n32. The Key Question (LARGE TEXT)\n\n“Is AI going to own us?”\n“Or are we going to own AI?”\n\n33. Two Paths (SPLIT VISUAL)\nLeft side - Path 1: Corporate Control\n\nThey decide what we can do\nThey set the terms\nWe pay their prices\nWe’re dependent on their decisions\nPattern repeats: Windows → Office → ArcGIS → ChatGPT\n\nRight side - Path 2: Democratic Technology\n\nOpen models anyone can run\nLocal control over your data\nCustomize for your needs\nNot beholden to corporate decisions\nTrue technological sovereignty\n\n34. The Urgency\n\n“This choice happens NOW. In the next 2-3 years.”\n“Will everyone be locked into ChatGPT like WhatsApp?”\n“The window won’t stay open forever”\nGOOD NEWS: Open models exist NOW, hardware is capable NOW\n\n\n\n\n\n35. Section Title\n\n“Understanding LLMs: Not Magic, Technology”\n\n36. What LLMs Are\n\nSophisticated pattern matching, not magic\nLike very advanced autocomplete\nTrained on massive text datasets\nNot “intelligence” - pattern recognition at scale\n\n37. The Last 5 Years (TIMELINE VISUAL)\n\n2019: GPT-2 impressive but limited\n2023: ChatGPT changes everything\n2024-2025: Open models catch up\nKey insight: Gap closing FAST\n\n38. Open Weights vs Open Source\n\nOpen weights: You can download and run the model\nDifferent from fully open source (training code, data)\nBut still: YOU control it, not a company\nExamples: Llama, DeepSeek-r1, Mistral\n\n39. Enhancing LLMs - The Ecosystem (DIAGRAM)\nThree components:\n\nRAG (Retrieval Augmented Generation)\n\nGive LLM access to YOUR documents\nExample: IUNR course materials\n\nMCPs (Model Context Protocol)\n\nConnect LLM to your tools and data\nExample: Field data, GIS systems\n\nPersonas/System Prompts\n\nShape how LLM behaves\nExample: “You are a teaching assistant for environmental science”\n\n\n40. Why Understanding Matters\n\nNot magic → Technology you can shape\nNot monolithic → Modular components\nNot proprietary only → Open alternatives exist\nNot all-or-nothing → Right tool for each task\n\n\n\n\n\n41. Section Title\n\n“LLMs: Liberation Tools”\n\n42. The Double Message\n\n“Yes: LLMs are another lock-in risk”\n“BUT ALSO: LLMs make technology ACCESSIBLE”\n“You can WIELD difficult tools without mastering proprietary interfaces”\n\n43. The Promise\n\nUse tools more easily with AI assistance\nBuild custom solutions for YOUR needs\nDemocratize technical capability\nBreak down barriers to open source adoption\n\n44. Teaching Use Cases\n\nGenerate practice questions from lecture materials\nProvide feedback on student writing\nTranslate technical content to different levels\nSummarize research papers for students\nCreate interactive study guides\nAssist with grading rubrics\n\n45. Benchmarks (VISUAL - Star Ratings)\nTask: Generate exam questions from lecture text\n\nChatGPT-4:        ⭐⭐⭐⭐⭐\nLocal Llama3.3:   ⭐⭐⭐⭐\nLocal DeepSeek-r1: ⭐⭐⭐⭐⭐\n\nPrivacy:  Local WINS\nCost:     Local WINS\nSpeed:    ChatGPT slightly faster\nQuality:  Nearly equivalent\n46. GrüentAI Connection\n\n“We’re making this real for teaching”\n“We’re here as a resource”\nBrief mention of project\n\n\n\n\n\n47. Demo Intro\n\n“Let’s See It In Action”\nYOU run both ChatGPT and local Ollama\nTHEY give you prompts\n\n48. Demo Setup Slide\n\nShow: Same task, different backend\nShow: LLM helps you use open source tools\n(Minimal slide - focus is on live demo)\n\n[LIVE DEMO HAPPENS]\n49. Demo Debrief\n\n“Same technology, different products”\n“YOU control one of them”\n\n\n\n\n\n50. Return to Cooking\n\nShow proprietary recipe card again\n“Would you accept this for cooking?”\n“Then why accept it for software?”\n\n51. Address the Objection\n\n“I don’t have time to learn this!”\n“Yes, initial investment needed”\n“BUT: Pays off many-fold over time”\n“AND: You’re no longer vulnerable”\n\n52. The Choice\n\n“We’re at the fork in the road”\n“Which path do we take?”\n“Switching costs are real…”\n“But so is the cost of staying locked in”\n\n53. Action Step\n\n“Try ONE new open alternative this month”\n“Start small”\n“Learn the basics”\n“Reclaim your sovereignty”\n\n54. Resources\n\nGrüentAI team contact info\n“We’ve gained knowledge on this”\n“Reach out with questions”\nThank you\n\n\n\n\n\nTotal slides: 54\nEstimated time: 65 minutes with activities\nSlide Distribution:\n\nOpening (Cooking): 10 slides, 7 min\nPersonal Stakes: 8 slides, 7 min\nFramework: 8 slides, 6 min\nActivity 1: 4 slides, 15 min (includes activity time)\nFork in Road: 4 slides, 4 min\nUnderstanding LLMs: 6 slides, 6 min\nLLMs as Liberators: 6 slides, 6 min\nActivity 2 (Demo): 3 slides, 10 min (includes demo time)\nClosing: 5 slides, 5 min\n\nVisual Requirements:\n\nFather’s photo (1998)\nAda & Zangemann images (openly licensed)\nRecipe cards (proprietary vs open) - DESIGN THESE\nDiagrams: 3-layer model, lock-in triangle, LLM ecosystem\nTool logos/icons for examples\nTimeline graphic (5 years of LLMs)\nBenchmark star ratings\nSplit visual for two paths\n\nNotes for Drafting:\n\nSlides 3 & 4 (recipe cards) need strong visual design\nKeep text minimal on slides, details in speaker notes\nActivity slides are mostly timers/instructions\nDemo slides are minimal - action is live\nUse fragments/incremental reveals strategically"
+  },
+  {
+    "objectID": "SLIDES_OUTLINE.html#for-iunr---60-minutes",
+    "href": "SLIDES_OUTLINE.html#for-iunr---60-minutes",
+    "title": "Technology Sovereignty Workshop - Slide Outline",
+    "section": "",
+    "text": "Total slides: ~40-45 (aiming for ~1 slide per 1-1.5 minutes)"
+  },
+  {
+    "objectID": "SLIDES_OUTLINE.html#opening-the-proprietary-cooking-system-7-min---slides-1-10",
+    "href": "SLIDES_OUTLINE.html#opening-the-proprietary-cooking-system-7-min---slides-1-10",
+    "title": "Technology Sovereignty Workshop - Slide Outline",
+    "section": "",
+    "text": "1. Title Slide\n\nTitle: “Technology Sovereignty”\nSubtitle: “Who Controls Your Digital Tools?”\nYour name, GrüentAI logo\n\n2. Opening Question\n\n“Imagine you want to cook a meal…”\n\n3. Proprietary Recipe Card (FULL SLIDE VISUAL)\nPROPRIETARY RECIPE CARD\n\n1. Add 2 units of Compound-XJ7 ($15/bottle, our brand only)\n2. Heat in Model-Pro-Pan-2024 at \"MEDIUM\"\n3. Stir with Certified-Stirring-Tool (sold separately)\n4. Add Flavor-Packet-B when light turns green\n\n⚠️ WARNING:\n- Substitutions void warranty\n- Recipe breaks if ingredients discontinued\n- Do not attempt to understand the chemistry\n- Pan discontinued next year - upgrade required\n4. Open Recipe Card (FULL SLIDE VISUAL - CONTRAST)\nOPEN RECIPE\n\n1. Sauté onions in oil until translucent\n   WHY: Releases sugars, builds flavor base\n2. Add garlic, cook 30 seconds\n   WHY: Aromatic, cooks fast, burns easily\n3. Add tomatoes, simmer 20 min\n   WHY: Breaks down, concentrates\n\nNOTES:\n- No onions? Use shallots or leeks\n- Olive oil or butter both work\n- Any pan that conducts heat evenly\n5. Question to Audience\n\n“Would you accept the proprietary system for cooking?”\n“Why not?”\nBullet points of objections\n\n6. The Pivot\n\n“But we DO accept this for software”\nLarge text, dramatic\n\n7. Time Comparison (VISUAL)\n\nBar chart or simple graphic:\n\nCooking: 30-60 min/day\nComputer use: 4-8 hours/day\n\n“Yet we accept ignorance about technology but not cooking”\n\n8. Vendor Lock-in Trap\n\n“Once you’ve invested…”\nList: Model-Pro-Pan ($200), 12 bottles Compound-XJ7 ($180), Certified-Stirring-Tool ($50)\n“Switching cost becomes ENORMOUS”\n“You are now VULNERABLE”\n\n9. WhatsApp Validation\n\n“How many use WhatsApp daily?” (show of hands)\n“How many use Signal?” (show of hands)\n“Why not switch?”\n\n10. Transition\n\n“This is vendor lock-in”\n“Keep the cooking metaphor in mind - we’ll return to it”"
+  },
+  {
+    "objectID": "SLIDES_OUTLINE.html#personal-stakes-why-this-matters-7-min---slides-11-18",
+    "href": "SLIDES_OUTLINE.html#personal-stakes-why-this-matters-7-min---slides-11-18",
+    "title": "Technology Sovereignty Workshop - Slide Outline",
+    "section": "",
+    "text": "11. Section Title\n\n“Why This Matters”\n\n12. Father’s Photo (FULL SLIDE IMAGE)\n\nPhoto: 1998 Linux workshop, Sri Lanka\nCaption: “My father teaching Linux in Sri Lanka, 1998”\n\n13. Global Justice Issue\n\nLicensing costs exclude entire regions\nThis is not a new problem\nOpen Source matters for equity\n\n14. Ada & Zangemann (VISUAL)\n\nBrief: “The Pattern of Control”\nImages from the book (openly licensed)\nStory in 2-3 bullets: Inventor controls → Kids lose freedom → Kids hack liberation\n\n15. Infuriating Examples - Title\n\n“Three Times You Were Betrayed”\nCooking callback: “You trusted the recipe provider…”\n\n16. Example 1: WhatsApp Leak\n\nBillions of phone numbers exposed (Wired article citation)\n“You trusted them with your data - they exposed it”\nEveryone uses it, personal stakes\n\n17. Example 2: ICC Prosecutor Block\n\nMicrosoft blocked emails after Trump sanctions\n“The recipe provider decided you can’t cook anymore”\nCorporate platforms can censor at will\n\n18. Example 3: Windows 10 Obsolescence\n\nHardware made “obsolete” by software decision\n“Your pan is ‘obsolete’ because they say so”\nEnvironmental waste, e-waste crisis"
+  },
+  {
+    "objectID": "SLIDES_OUTLINE.html#the-framework-understanding-lock-in-6-min---slides-19-26",
+    "href": "SLIDES_OUTLINE.html#the-framework-understanding-lock-in-6-min---slides-19-26",
+    "title": "Technology Sovereignty Workshop - Slide Outline",
+    "section": "",
+    "text": "19. Section Title\n\n“Understanding Lock-in”\n\n20. Three Layers (DIAGRAM)\nInterface Layer    → \"I can use Word\" / \"I can follow the recipe\"\n     ↕\nImplementation     → Open vs. Proprietary / Any ingredients vs. Their ingredients\n     ↕\nTechnology         → Text editing capability / Cooking process\n21. Cooking Metaphor Mapping\n\nRecipe = Interface\nIngredients = Implementation\nCooking = Technology\n“You can know the recipe without understanding cooking”\n\n22. Lock-in Triangle (DIAGRAM)\n         Cognitive Lock-in\n         (I only know THIS way)\n              ╱│╲\n             ╱ │ ╲\n   Technical │  │ Institutional\n   (Format)  │  │ (Everyone uses it)\n23. Examples Everyone Knows - Part 1\n\nWhatsApp vs Signal\nGoogle Maps vs OpenStreetMap\n(Icons/logos for visual recognition)\n\n24. Examples Everyone Knows - Part 2\n\nArcGIS vs QGIS\nMicrosoft Office vs LibreOffice\nPodcast (iTunes vs RSS)\n(Icons/logos for visual recognition)\n\n25. Export Difficulty Contrast\n\nProprietary: Hard to export, obscure formats, trap your data\nOpen Source: Easy export, lists alternatives on their website!\n\n26. Examples of Export\n\nWhatsApp chat export (painful) vs Signal (easy)\nArcGIS vs QGIS\nEndNote vs Zotero"
+  },
+  {
+    "objectID": "SLIDES_OUTLINE.html#activity-1-your-lock-ins-15-min---slides-27-30",
+    "href": "SLIDES_OUTLINE.html#activity-1-your-lock-ins-15-min---slides-27-30",
+    "title": "Technology Sovereignty Workshop - Slide Outline",
+    "section": "",
+    "text": "27. Activity Intro\n\n“Let’s Map YOUR Lock-ins”\nFlipchart activity explanation\n\n28. Flipchart Categories (VISUAL REFERENCE)\nList of tool categories on flipcharts:\n\nMessaging: WhatsApp / Signal / Telegram\nMaps: Google Maps / OpenStreetMap / Apple Maps\nGIS: ArcGIS / QGIS\nOffice: MS Office / LibreOffice / Google Docs\nStats: SPSS / R / Python\nReference: EndNote / Zotero / Mendeley\n[More…]\n\n29. Activity Timer\n\nSimple slide: “5 minutes - Add your stars!”\n(Blank slide for during activity)\n\n[PAUSE - Activity happens]\n30. Debrief\n\n“What patterns do you see?”\n“Where’s the concentration?”\nKey insight: “Collective lock-in”"
+  },
+  {
+    "objectID": "SLIDES_OUTLINE.html#the-fork-in-the-road-ai-moment-4-min---slides-31-34",
+    "href": "SLIDES_OUTLINE.html#the-fork-in-the-road-ai-moment-4-min---slides-31-34",
+    "title": "Technology Sovereignty Workshop - Slide Outline",
+    "section": "",
+    "text": "31. Section Title\n\n“We’re At A Fork In The Road”\n\n32. The Key Question (LARGE TEXT)\n\n“Is AI going to own us?”\n“Or are we going to own AI?”\n\n33. Two Paths (SPLIT VISUAL)\nLeft side - Path 1: Corporate Control\n\nThey decide what we can do\nThey set the terms\nWe pay their prices\nWe’re dependent on their decisions\nPattern repeats: Windows → Office → ArcGIS → ChatGPT\n\nRight side - Path 2: Democratic Technology\n\nOpen models anyone can run\nLocal control over your data\nCustomize for your needs\nNot beholden to corporate decisions\nTrue technological sovereignty\n\n34. The Urgency\n\n“This choice happens NOW. In the next 2-3 years.”\n“Will everyone be locked into ChatGPT like WhatsApp?”\n“The window won’t stay open forever”\nGOOD NEWS: Open models exist NOW, hardware is capable NOW"
+  },
+  {
+    "objectID": "SLIDES_OUTLINE.html#understanding-llms-demystifying-the-magic-6-min---slides-35-40",
+    "href": "SLIDES_OUTLINE.html#understanding-llms-demystifying-the-magic-6-min---slides-35-40",
+    "title": "Technology Sovereignty Workshop - Slide Outline",
+    "section": "",
+    "text": "35. Section Title\n\n“Understanding LLMs: Not Magic, Technology”\n\n36. What LLMs Are\n\nSophisticated pattern matching, not magic\nLike very advanced autocomplete\nTrained on massive text datasets\nNot “intelligence” - pattern recognition at scale\n\n37. The Last 5 Years (TIMELINE VISUAL)\n\n2019: GPT-2 impressive but limited\n2023: ChatGPT changes everything\n2024-2025: Open models catch up\nKey insight: Gap closing FAST\n\n38. Open Weights vs Open Source\n\nOpen weights: You can download and run the model\nDifferent from fully open source (training code, data)\nBut still: YOU control it, not a company\nExamples: Llama, DeepSeek-r1, Mistral\n\n39. Enhancing LLMs - The Ecosystem (DIAGRAM)\nThree components:\n\nRAG (Retrieval Augmented Generation)\n\nGive LLM access to YOUR documents\nExample: IUNR course materials\n\nMCPs (Model Context Protocol)\n\nConnect LLM to your tools and data\nExample: Field data, GIS systems\n\nPersonas/System Prompts\n\nShape how LLM behaves\nExample: “You are a teaching assistant for environmental science”\n\n\n40. Why Understanding Matters\n\nNot magic → Technology you can shape\nNot monolithic → Modular components\nNot proprietary only → Open alternatives exist\nNot all-or-nothing → Right tool for each task"
+  },
+  {
+    "objectID": "SLIDES_OUTLINE.html#the-solution-llms-as-liberators-6-min---slides-41-46",
+    "href": "SLIDES_OUTLINE.html#the-solution-llms-as-liberators-6-min---slides-41-46",
+    "title": "Technology Sovereignty Workshop - Slide Outline",
+    "section": "",
+    "text": "41. Section Title\n\n“LLMs: Liberation Tools”\n\n42. The Double Message\n\n“Yes: LLMs are another lock-in risk”\n“BUT ALSO: LLMs make technology ACCESSIBLE”\n“You can WIELD difficult tools without mastering proprietary interfaces”\n\n43. The Promise\n\nUse tools more easily with AI assistance\nBuild custom solutions for YOUR needs\nDemocratize technical capability\nBreak down barriers to open source adoption\n\n44. Teaching Use Cases\n\nGenerate practice questions from lecture materials\nProvide feedback on student writing\nTranslate technical content to different levels\nSummarize research papers for students\nCreate interactive study guides\nAssist with grading rubrics\n\n45. Benchmarks (VISUAL - Star Ratings)\nTask: Generate exam questions from lecture text\n\nChatGPT-4:        ⭐⭐⭐⭐⭐\nLocal Llama3.3:   ⭐⭐⭐⭐\nLocal DeepSeek-r1: ⭐⭐⭐⭐⭐\n\nPrivacy:  Local WINS\nCost:     Local WINS\nSpeed:    ChatGPT slightly faster\nQuality:  Nearly equivalent\n46. GrüentAI Connection\n\n“We’re making this real for teaching”\n“We’re here as a resource”\nBrief mention of project"
+  },
+  {
+    "objectID": "SLIDES_OUTLINE.html#activity-2-live-llm-demo-10-min---slides-47-49",
+    "href": "SLIDES_OUTLINE.html#activity-2-live-llm-demo-10-min---slides-47-49",
+    "title": "Technology Sovereignty Workshop - Slide Outline",
+    "section": "",
+    "text": "47. Demo Intro\n\n“Let’s See It In Action”\nYOU run both ChatGPT and local Ollama\nTHEY give you prompts\n\n48. Demo Setup Slide\n\nShow: Same task, different backend\nShow: LLM helps you use open source tools\n(Minimal slide - focus is on live demo)\n\n[LIVE DEMO HAPPENS]\n49. Demo Debrief\n\n“Same technology, different products”\n“YOU control one of them”"
+  },
+  {
+    "objectID": "SLIDES_OUTLINE.html#closing-the-invitation-5-min---slides-50-54",
+    "href": "SLIDES_OUTLINE.html#closing-the-invitation-5-min---slides-50-54",
+    "title": "Technology Sovereignty Workshop - Slide Outline",
+    "section": "",
+    "text": "50. Return to Cooking\n\nShow proprietary recipe card again\n“Would you accept this for cooking?”\n“Then why accept it for software?”\n\n51. Address the Objection\n\n“I don’t have time to learn this!”\n“Yes, initial investment needed”\n“BUT: Pays off many-fold over time”\n“AND: You’re no longer vulnerable”\n\n52. The Choice\n\n“We’re at the fork in the road”\n“Which path do we take?”\n“Switching costs are real…”\n“But so is the cost of staying locked in”\n\n53. Action Step\n\n“Try ONE new open alternative this month”\n“Start small”\n“Learn the basics”\n“Reclaim your sovereignty”\n\n54. Resources\n\nGrüentAI team contact info\n“We’ve gained knowledge on this”\n“Reach out with questions”\nThank you"
+  },
+  {
+    "objectID": "SLIDES_OUTLINE.html#summary",
+    "href": "SLIDES_OUTLINE.html#summary",
+    "title": "Technology Sovereignty Workshop - Slide Outline",
+    "section": "",
+    "text": "Total slides: 54\nEstimated time: 65 minutes with activities\nSlide Distribution:\n\nOpening (Cooking): 10 slides, 7 min\nPersonal Stakes: 8 slides, 7 min\nFramework: 8 slides, 6 min\nActivity 1: 4 slides, 15 min (includes activity time)\nFork in Road: 4 slides, 4 min\nUnderstanding LLMs: 6 slides, 6 min\nLLMs as Liberators: 6 slides, 6 min\nActivity 2 (Demo): 3 slides, 10 min (includes demo time)\nClosing: 5 slides, 5 min\n\nVisual Requirements:\n\nFather’s photo (1998)\nAda & Zangemann images (openly licensed)\nRecipe cards (proprietary vs open) - DESIGN THESE\nDiagrams: 3-layer model, lock-in triangle, LLM ecosystem\nTool logos/icons for examples\nTimeline graphic (5 years of LLMs)\nBenchmark star ratings\nSplit visual for two paths\n\nNotes for Drafting:\n\nSlides 3 & 4 (recipe cards) need strong visual design\nKeep text minimal on slides, details in speaker notes\nActivity slides are mostly timers/instructions\nDemo slides are minimal - action is live\nUse fragments/incremental reveals strategically"
+  },
+  {
+    "objectID": "images/Readme.html",
+    "href": "images/Readme.html",
+    "title": "",
+    "section": "",
+    "text": "images/table-setting-6859276_1280.jpg https://pixabay.com/photos/table-setting-holiday-christmas-6859276/ images/5FAoI86RaWY8Goqvt1b-77.jpg https://www.tagesanzeiger.ch/betty-bossi-wie-es-war-fuer-das-kochmagazin-zu-arbeiten-989836279862 images/Push-and-pull.jpg https://mohammedshehu.com/switching-costs/ images/forest-6607631_1280.jpg https://pixabay.com/photos/forest-trail-fork-in-the-road-path-6607631/ images/books-2596809_1280.jpg https://pixabay.com/photos/books-library-room-school-study-2596809/"
+  },
+  {
+    "objectID": "index.html#section",
+    "href": "index.html#section",
+    "title": "",
+    "section": "",
+    "text": "Foto 1998 wo mein Vater ein Workshop zu OpenSource Software leitet\nWir lebten damals in Sri Lanka und mein Vater dozierte an der University of Peradeniya\nIn Sri Lanka ist der Bedarf an OSS noch eine ganz andere als hier, wo Lizenzkosten keine Rolle zu spielen scheinen"
+  },
+  {
+    "objectID": "index.html#section-1",
+    "href": "index.html#section-1",
+    "title": "",
+    "section": "",
+    "text": "Metapher aus der Küche\n\nStellen Sie sich vor, Sie wurden zu einem fantastischen Abendessen bei einem entfernten Verwandten eingeladen.\nSie fragen, wie das Abendessen zubereitet wurde, und der Gastgeber zeigt Ihnen stolz das Rezept\n(nächste Folie)"
+  },
+  {
+    "objectID": "index.html#section-3",
+    "href": "index.html#section-3",
+    "title": "",
+    "section": "",
+    "text": "REZEPT\n\n2 Einheiten Compound-XJ7 hinzufügen.\nIn Pfanne Model-Pro-2024 bei Einstellung “MEDIUM” erhitzen.\nMit zertifiziertem Rührgerät (separat erhältlich) umrühren.\nWenn die Kontrollleuchte grün leuchtet, Flavor-Packet-B hinzufügen\n\n⚠ WARNUNG:\n\nErsatzprodukte führen zum Erlöschen der Garantie\nModel-Pro-2024 wird nächstes Jahr eingestellt; Upgrade erforderlich\n\n\n\n\nHinweis: proprietäre Zutaten, vorgeschriebene Geräte, Warnhinweise zu Ersatzprodukten, geplante Obsoleszenz. Das sollte sich lächerlich anhören.\nWenn man ihn darauf anspricht, hat der Gastgeber folgende Argumente:\n\nMit dieser Methode weiß ich, dass das Essen großartig wird. Ich habe nichts dagegen, dafür ein wenig Freiheit zu opfern.\nWenn ich selbst kochen wollte, müsste ich so viele Details lernen. Dafür habe ich keine Zeit.\nAlle, die ich kenne, kochen so.Das wurde uns in der Schule so beigebracht.\n\nWir würden ein solches System im Bereich des Kochens NIEMALStolerieren"
+  },
+  {
+    "objectID": "index.html#section-4",
+    "href": "index.html#section-4",
+    "title": "",
+    "section": "",
+    "text": "OFFENES REZEPT\n\nZwiebeln in Öl glasig dünsten.\nKnoblauch hinzufügen, 30 Sekunden lang anbraten.\nTomaten hinzufügen, 20 Minuten köcheln lassen.\n\nHINWEISE:\n\nKeine Zwiebeln? Verwenden Sie Schalotten oder Lauch.\nOlivenöl oder Butter sind beide geeignet.\nVerwenden Sie eine handelsübliche, vorzugsweise teflonbeschichtete Bratpfanne\n\n\n\n– Verständnis vs. blindes Befolgen. Beachten Sie die Flexibilität – Ersatzprodukte sind willkommen. So sieht Open Source aus."
+  },
+  {
+    "objectID": "index.html#kochen-vs.-computer",
+    "href": "index.html#kochen-vs.-computer",
+    "title": "",
+    "section": "Kochen vs. Computer",
+    "text": "Kochen vs. Computer\n\nTäglich investierte Zeit: Kochen vs. Computer Ratnaweera et al (2025), n = 1\n\nWir verbringenvielmehr Zeit am Computer als mit Kochen.\nWarum lassen wir das im digitalen Bereich zu?"
+  },
+  {
+    "objectID": "index.html#déjà-vu",
+    "href": "index.html#déjà-vu",
+    "title": "",
+    "section": "Déjà vu",
+    "text": "Déjà vu"
+  },
+  {
+    "objectID": "index.html#das-muster-wiederholt-sich",
+    "href": "index.html#das-muster-wiederholt-sich",
+    "title": "",
+    "section": "Das Muster wiederholt sich",
+    "text": "Das Muster wiederholt sich\n\nWir verwenden keine Textverarbeitungsprogramme, wir verwenden Microsoft Word\nWir verwenden keine Messenger, sondern WhatsApp\n\n\n\nWerden wir KI nutzen oder werden wir ChatGPT verwenden?"
+  },
+  {
+    "objectID": "index.html#die-problematik",
+    "href": "index.html#die-problematik",
+    "title": "",
+    "section": "Die Problematik",
+    "text": "Die Problematik\nSobald wir genug in ChatGPT investiert haben…\n\nuns an die Benutzeroberfläche gewöhnt haben\nUnsere Systeme darauf aufgabaut haben\nUnsere Daten bei ihnen gespeichert haben\n\n\n\n→werden die Wechselkosten ENORM\n\n\n\n\nWarum?"
+  },
+  {
+    "objectID": "index.html#vendor-lock-in",
+    "href": "index.html#vendor-lock-in",
+    "title": "",
+    "section": "Vendor Lock-In",
+    "text": "Vendor Lock-In\n\n\nAnbieter wollen nicht, dass Sie plattformunabhängig sind.\nSie machen ihre Produkte absichtlich mit denen anderer Anbieter inkompatibel.\nSobald ein bestimmte Investition gemacht ist, ist es schwierig oder sogar unmöglich, den Anbieter zu wechseln.\n(zurück zur Koch-analogie)"
+  },
+  {
+    "objectID": "index.html#section-5",
+    "href": "index.html#section-5",
+    "title": "",
+    "section": "",
+    "text": "REZEPT\n\n2 Einheiten Compound-XJ7 hinzufügen.\nIn Pfanne Model-Pro-2024 bei Einstellung “MEDIUM” erhitzen.\nMit zertifiziertem Rührgerät (separat erhältlich) umrühren.\nWenn die Kontrollleuchte grün leuchtet, Flavor-Packet-B hinzufügen\n\n⚠ WARNUNG:\n\nErsatzprodukte führen zum Erlöschen der Garantie\nModel-Pro-2024 wird nächstes Jahr eingestellt; Upgrade erforderlich\n\n\n\n\nSobaldModel-Pro-Pan-2024, zertifiziertem Rührgerätund andere ähnliche Produkte gekauft wurden, wird es schwierig sein, Rezepte anderer Anbieter zu verwenden"
+  },
+  {
+    "objectID": "index.html#warum-ist-das-ein-problem",
+    "href": "index.html#warum-ist-das-ein-problem",
+    "title": "",
+    "section": "Warum ist das ein Problem?",
+    "text": "Warum ist das ein Problem?"
+  },
+  {
+    "objectID": "index.html#section-6",
+    "href": "index.html#section-6",
+    "title": "",
+    "section": "",
+    "text": "Manchmal sind Produkte einfach schlecht, verfügen nicht über grundlegende Sicherheitsfunktionen und die Sicherheit der Benutzerdaten hat keine Priorität."
+  },
+  {
+    "objectID": "index.html#section-7",
+    "href": "index.html#section-7",
+    "title": "",
+    "section": "",
+    "text": "Microsoft hat nach Trump-Sanktionen das Mail-Konto des Chefanklägers des Internationalen Gerichtshofs blockiert.\nTrump sanktionierte das Den Haager Gericht im Februar, nachdem ein Gremium von IStGH-Richtern im November 25 Haftbefehle gegen den israelischen Premierminister Benjamin Netanjahu mit Blick auf Kriegsverbrechen im Gaza-Streifen erlassen hatte."
+  },
+  {
+    "objectID": "index.html#section-8",
+    "href": "index.html#section-8",
+    "title": "",
+    "section": "",
+    "text": "Manchmal werden Softwareversionen nicht mehr unterstützt, wie das Beispiel des End-of-Life für Windows 10 zeigt.\nDas Problem: Zahlreiche PCs bringen die geforderten Komponenten nicht mit. Ein Upgrade auf Windows 11 auf offiziellem Wege ist in solchen Fällen ausgeschlossen."
+  },
+  {
+    "objectID": "index.html#section-9",
+    "href": "index.html#section-9",
+    "title": "",
+    "section": "",
+    "text": "Gehen Sie zu “Orte und vergrößern Sie die Ansicht”"
+  },
+  {
+    "objectID": "index.html#section-10",
+    "href": "index.html#section-10",
+    "title": "",
+    "section": "",
+    "text": "Aber nicht jeder kann ein Computerexperte sein\n\n\n\nDie “10.000-Stunden-Regel”, die Malcolm Gladwell in seinem Buch “Outliers” populär gemacht hat, besagt, dass man etwa 10.000 Stunden Übung benötigt, um eine Fertigkeit zu meistern.\nBei 6 Stunden pro Tag sind Sie nach etwa 7 Jahren ein Computerexperte\nInsbesondere müssen wir nicht alle 3 Ebenen verstehen (nächste Folie)"
+  },
+  {
+    "objectID": "index.html#drei-ebenen",
+    "href": "index.html#drei-ebenen",
+    "title": "",
+    "section": "Drei Ebenen",
+    "text": "Drei Ebenen\n\n\nInterface ChatGPT\n\n\n\n\nImplementierung Formate, Standards\n\n\n\n\nTechnologie"
+  },
+  {
+    "objectID": "index.html#am-scheideweg",
+    "href": "index.html#am-scheideweg",
+    "title": "",
+    "section": "Am Scheideweg",
+    "text": "Am Scheideweg\n\n\nGehen wir den einfachen oder den richtigen Weg?\nWerden wir Meister einer Technologie oder Nutzer eines Produkts?"
+  },
+  {
+    "objectID": "index.html#offenheit-ist-ein-spektrum",
+    "href": "index.html#offenheit-ist-ein-spektrum",
+    "title": "",
+    "section": "“Offenheit” ist ein Spektrum",
+    "text": "“Offenheit” ist ein Spektrum\noffener ↑\n\n\nVollständig offen (Gewichte ✔ Code ✔ Daten ✔)\nOffener Code (Gewichte ✔ Code ✔ Daten ✕)\nOffene Gewichte (Gewichte ✔ Code ✕ Daten ✕)\nProprietär (Gewichte ✕ Code ✕ Daten ✕)\n\n\ngeschlossener ↓\n\nProprietär (ChatGPT, Claude, Gemini):\n\nKomplette Black Box – Sie erhalten nur API-Zugriff\nKeine Einblicke in die Funktionsweise, die verwendeten Trainingsdaten oder die Entscheidungsfindung\nSie sind vollständig vom Anbieter abhängig\n\nOffene Gewichte (Llama 3.3, DeepSeek, Mistral, Qwen):\n\nDie Gewichte des trainierten Modells werden veröffentlicht – Sie können sie herunterladen und lokal ausführen\nABER: Trainingscode und Trainingsdaten sind in der Regel NICHT enthalten\nSie können es VERWENDEN, aber nicht vollständig überprüfen oder reproduzieren, wie es erstellt wurde\nHier befinden sich heute die meisten “offenen” Modelle\nFür praktische Lehrzwecke: Das ist ausreichend! Sie erhalten lokale Kontrolle.\n\nOffene Gewichte + Code (einige Forschungsveröffentlichungen):\n\nGewichte + die für das Training verwendete Methodik/der verwendete Code\nSie können nachvollziehen und überprüfen, WIE das Training durchgeführt wurde\nABER: Trainingsdaten sind in der Regel nicht enthalten (Lizenzprobleme, Wettbewerbsvorteil)\nBeispiel: Veröffentlichungen einiger akademischer Labore\nNäher an der echten “Open Source”-Philosophie – transparent und überprüfbar\n\nVollständig Open Source (OLMo, BLOOM – selten!):\n\nGewichte + Trainingscode + Trainingsdaten – alles\nVollständig reproduzierbar und überprüfbar\nDies ist der Goldstandard, aber extrem selten (Trainingsdaten sind teuer, komplexe Lizenzierung)\nAm ähnlichsten zu traditioneller Open-Source-Software"
+  },
+  {
+    "objectID": "index.html#section-12",
+    "href": "index.html#section-12",
+    "title": "",
+    "section": "",
+    "text": "Ok, wie funktioniert das?"
+  },
+  {
+    "objectID": "index.html#opensource-cloud-ai",
+    "href": "index.html#opensource-cloud-ai",
+    "title": "",
+    "section": "Opensource Cloud AI",
+    "text": "Opensource Cloud AI\n\nmistral.ai\nollama.ai\nqwen.ai\ndeepseek.com\nGemma\n\n\n\nMistral ist EU basiert (FR)\nqwen ist aus China (Alibaba Cloud)\nollama cloud ist CLI basiert, und kann auch lokale AI models verwenden\ndeepseek ist aus China. Eine der ersten OS AI Models, die aufgrund von Einschränkungen in der Grafikkarte mit weniger Leistung klarkommen mussten\nGemma ist von Google"
+  },
+  {
+    "objectID": "index.html#section-14",
+    "href": "index.html#section-14",
+    "title": "",
+    "section": "",
+    "text": "Opensource Lokale KI\nOS Cloud KI sind zwar super, aber mit vorsicht zu geniessen. Sensible Daten wandern trotzdem ab und können für Trainingszwecken verwendet werden\nLokale LLMs sind hier die Lösung"
+  },
+  {
+    "objectID": "index.html#schritt-1-ollama-installieren",
+    "href": "index.html#schritt-1-ollama-installieren",
+    "title": "",
+    "section": "Schritt 1: Ollama installieren",
+    "text": "Schritt 1: Ollama installieren\nWindows-Installation:\n\nInstallieren sie Interim Admin aus dem Software Center\nVon ollama.com/download OllamaSetup.exe herunterladen\nOllamaSetup.exe mit default Einstellungen installieren\n\n(Ollama läuft danach automatisch im Hintergrund)\n\n\nDie Installation ist sehr einfach - wie jede andere Windows-Software\nNach der Installation läuft Ollama als Dienst im Hintergrund\nSie müssen nichts weiter konfigurieren"
+  },
+  {
+    "objectID": "index.html#schritt-1.1-installation-überprüfen",
+    "href": "index.html#schritt-1.1-installation-überprüfen",
+    "title": "",
+    "section": "Schritt 1.1: Installation überprüfen",
+    "text": "Schritt 1.1: Installation überprüfen\nÖffnen Sie PowerShell oder Eingabeaufforderung (CMD) und geben Sie ein:\nollama --version\n\n\nWenn der Befehl nicht gefunden wird, starten Sie den Computer neu\nPowerShell finden Sie über das Startmenü (einfach “PowerShell” eingeben)"
+  },
+  {
+    "objectID": "index.html#schritt-2-hardware-überprüfen",
+    "href": "index.html#schritt-2-hardware-überprüfen",
+    "title": "",
+    "section": "Schritt 2: Hardware überprüfen",
+    "text": "Schritt 2: Hardware überprüfen\nWieviel RAM haben Sie?\nGeben Sie in PowerShell oder CMD ein:\nsysteminfo \nund suchen sie nach der Zeile Gesamter physischer Speicher. Merken Sie sich diese Zahl.\nGesamter physischer Speicher:                  32’717 MB\n\n\nDie meisten modernen Laptops haben mindestens 8 GB RAM\nFür den Workshop reichen kleine Modelle (1.5B - 3B) völlig aus\nMehr RAM = größere Modelle = bessere Qualität (aber langsamer)\n\nInterpretation:\n\n8 GB oder weniger: Kleine Modelle (1.5B - 3B) oder Cloud\n16 GB: Mittlere Modelle (7B) möglich ✅\n32 GB+: Große Modelle (13B+) möglich"
+  },
+  {
+    "objectID": "index.html#schritt-3-variante-1",
+    "href": "index.html#schritt-3-variante-1",
+    "title": "",
+    "section": "Schritt 3 (Variante 1)",
+    "text": "Schritt 3 (Variante 1)\nLokales Modell auswählen\n(Falls Sie mindestens 8 GB RAM haben)\n\nSuchen Sie auf ollama.ai ein kleines Model (1 - 2b Parameter) heraus\nZ.B.\n\nllama3.2\ndeepseek-r1\n\n\n\n\nBei gewissen Modellen (z.B: deepseek-r1) gibt es verschiedene Grössen (1 - 700b).\nDas sind die Anzahl Parameter (in Milliarden).\nWir starten mit einem kleinen Modell, indem wir mit einem Klick den Namen kopieren."
+  },
+  {
+    "objectID": "index.html#schritt-3-variante-2",
+    "href": "index.html#schritt-3-variante-2",
+    "title": "",
+    "section": "Schritt 3 (Variante 2)",
+    "text": "Schritt 3 (Variante 2)\nCloud-Modell\n(Falls Sie weniger als 8 GB RAM haben)\n\nErstellen Sie ein kostenloses Konto auf ollama.com\nMelden Sie sich in der Kommandozeile an:\n\nollama signin"
+  },
+  {
+    "objectID": "index.html#section-15",
+    "href": "index.html#section-15",
+    "title": "",
+    "section": "",
+    "text": "Mit folgendem Kommandozeilenbefehl kann man das Modell (egal ob lokal oder cloud) initialisieren\n# initialisiert ein kleines, lokales Modell\nollama pull deepseek-r1:1.5b     \n\n\n# initialisiert ein grosses cloud Modell\nollama pull ministral            \n\n\ndeepseek-r1:1.5b: ~1 GB Download, sehr schnell, gut für logisches Denken\nllama3.2:3b: ~2 GB Download, vielseitig, populär\nqwen2.5:3b: ~2 GB Download, besser bei nicht-englischen Sprachen\nDer Download kann je nach Internetverbindung 1-5 Minuten dauern\n\nollama pull gemini-flash      # Schnell und kosteneffizient\nollama pull deepseek-v3       # Sehr leistungsfähig\nollama pull ministral         # Vielseitig"
+  },
+  {
+    "objectID": "index.html#schritt-4-chat-initialisieren",
+    "href": "index.html#schritt-4-chat-initialisieren",
+    "title": "",
+    "section": "Schritt 4: Chat initialisieren",
+    "text": "Schritt 4: Chat initialisieren\n# Lokales Modell:\nollama run deepseek-r1:1.5b\n\n\n# ODER Cloud-Modell:\nollama run gemini-flash"
+  },
+  {
+    "objectID": "index.html#schritt-5-erster-prompt",
+    "href": "index.html#schritt-5-erster-prompt",
+    "title": "",
+    "section": "Schritt 5: Erster Prompt",
+    "text": "Schritt 5: Erster Prompt\nBeispiel-Prompt:\n&gt;&gt;&gt; Erstelle 3 Multiple-Choice-Fragen zum Thema Photosynthese\n\nDas war’s schon! Sie nutzen jetzt Open-Source KI.\n\n\nWichtige Punkte: - ollama run &lt;modell&gt; startet eine Chat-Sitzung - Funktioniert identisch für lokale und Cloud-Modelle! - Die erste Abfrage kann etwas länger dauern (Modell wird geladen/verbunden) - Folgeabfragen sind schneller - Beenden Sie den Chat mit /bye oder Strg+C\nBeispiel-Prompts zum Ausprobieren: - “Erkläre mir Quantenmechanik in einfachen Worten” - “Schreibe einen Python-Code zum Sortieren einer Liste” - “Fasse diesen Text zusammen: [Text einfügen]” - “Erstelle 5 Übungsfragen zu [Thema]” - “Gib mir Feedback zu diesem Absatz: [Text]”\nWas passiert hinter den Kulissen (bei lokalen Modellen):\n\nDie Modelldatei wird in den RAM geladen\nIhr Text wird in Zahlen (Tokens) umgewandelt\nDas Modell berechnet das nächste wahrscheinlichste Token\nDie Ergebnisse werden wieder in Text umgewandelt\nAlles geschieht lokal auf Ihrem Computer - komplett offline!\n\nBei Cloud-Modellen:\n\nSchritte 1-4 passieren in Ollamas Cloud-Infrastruktur\nIhre Eingabe wird verschlüsselt übertragen\nSie erhalten die Antwort zurück\nVorteil: Keine Hardware-Limits, sehr leistungsfähige Modelle nutzbar\nNachteil: Daten verlassen Ihren Computer (nicht für sensible Daten!)\n\nWichtige Erkenntnis:\nEs ist keine Zauberei - nur Software. Bei lokalen Modellen haben Sie die volle Kontrolle. Bei Cloud-Modellen nutzen Sie dieselbe Technologie, aber remote ausgeführt. Beide Varianten sind Open Source und verwenden dasselbe Interface!"
+  },
+  {
+    "objectID": "index.html#anythingllm",
+    "href": "index.html#anythingllm",
+    "title": "",
+    "section": "AnythingLLM",
+    "text": "AnythingLLM\n\nAnything LLM ist eine ideale Ergänzung zu Ollama\nDie Software bietet ein grafisches Interface und verwendet die Modelle, die von Ollama zu Verfügung gestellt werden\nAnythingLLM ist frei und OpenSource, und für alle 3 Plattformen verfügbar"
+  },
+  {
+    "objectID": "index.html#demo",
+    "href": "index.html#demo",
+    "title": "",
+    "section": "Demo",
+    "text": "Demo\n\n\nZeige, wie Ollama als Model provider verwendet werden kann\nZeige, wie eigene Daten als RAG verwendet werden können\nZeige, wie die eigenen Daten abgefragt werden können"
+  },
+  {
+    "objectID": "oudated/Workshop_Slides_Outline_OUTDATED_team_audience.html",
+    "href": "oudated/Workshop_Slides_Outline_OUTDATED_team_audience.html",
+    "title": "⚠️ OUTDATED - Slide Deck Outline: Technology Sovereignty Workshop",
+    "section": "",
+    "text": "STATUS: OUTDATED - Replaced by content in Workshop_IUNR_Design_v2.md\nWhy outdated: This slide outline was for GrüentAI team/technical audience. New version needs different content for IUNR researchers/teachers.\nSee current design: Workshop_IUNR_Design_v2.md\n\n\n\n\n\n\nTechnology Sovereignty in Educational AI Why open-source LLMs matter beyond privacy and cost\nNils Ratnaweera | GrüentAI Project | ZHAW LSFM\n\n\n\n\nQuick Question:\nHow many of you have used an LLM this week?\nWhich ones?\n[Interactive - capture responses]\n\n\n\n\n┌─────────────────────────────────────┐\n│   Interface Layer                   │\n│   \"I know how to use ChatGPT\"       │ ← Product Literacy\n├─────────────────────────────────────┤\n│   Implementation Layer              │\n│   APIs, formats, protocols          │ ← The Gap\n├─────────────────────────────────────┤\n│   Technology Layer                  │\n│   LLMs, transformers, neural nets   │ ← Technology Literacy\n└─────────────────────────────────────┘\nKey Question: Where do you build your competency?\n\n\n\n\n        Cognitive Lock-in\n       \"I know this tool\"\n              ╱│╲\n             ╱ │ ╲\n            ╱  │  ╲\n           ╱   │   ╲\n          ╱    │    ╲\n         ╱     │     ╲\n        ╱      │      ╲\nTechnical    │    Institutional\nLock-in      │       Lock-in\n\"My files\"   │   \"Our workflows\"\nOnce locked in, switching becomes prohibitively expensive.\n\n\n\n\nTechnology: Word processing, spreadsheets, presentations\nProduct: Microsoft Office (Word, Excel, PowerPoint)\nThe Lock-in: - Proprietary file formats (.docx, .xlsx) - Interface-specific skills - Institutional workflows and templates - Training materials and shared knowledge\nThe Question: Skills in document creation or in Microsoft’s interface?\n\n\n\n\nTechnology: Geographic Information Systems\nProducts: ArcGIS (proprietary) vs QGIS (open-source)\nSame capabilities, different ecosystems\nImpact: Graduates who can’t adapt when employers use different tools\nThe Pattern: Curriculum → Tutorials → Licenses → Lock-in\n\n\n\n\nTechnology: Large Language Models\nProducts: ChatGPT, Claude, Gemini, Local models…\nThe Critical Moment: Are we building “ChatGPT skills” or “LLM skills”?\nThe Choice: Repeat the MS Office pattern — OR — Do something different?\n\n\n\n\nWe’re not just technology users—we’re technology educators\nWhen we integrate tools into teaching: - ✓ Shape next generation’s understanding - ✓ Create institutional dependencies (decades) - ✓ Model critical engagement or passive consumption - ✓ Enable or constrain future flexibility\nThe Responsibility: Teach students to think with technology, not just use products\n\n\n\n\nIn small groups (8 minutes):\nFor technologies you use regularly: 1. Product/brand name 2. Underlying technology 3. Could you switch tomorrow? 4. What prevents you? 5. Rate switching cost: Low / Medium / High\nUse the sticky notes provided!\n\n\n\n\nThe project isn’t just about: - ✓ Privacy (yes, important) - ✓ Cost savings (yes, nice) - ✓ Technical coolness (yes, fun)\nIt’s fundamentally about: - Preserving institutional autonomy - Building technology literacy - Creating sustainable agency\n\n\n\n\nLocal LLMs          Commercial LLMs       Hybrid Approaches\n(Our focus)         (Still available)     (Smart routing)\n     │                    │                      │\n     └────────────────────┴──────────────────────┘\n                          │\n              \"LLM Technology Literacy\"\nGoal: Users learn when to use what, and why\nNot: Just how to use one specific tool\n\n\n\n\n1. Prüfungsunterstützung → Prompts work across implementations\n2. Bewertungsunterstützung → Template-based, API-agnostic\n3. Literaturarbeiten → Open formats, portable RAG systems\n4. Kollaborative Lernunterstützung → Transparent, user choice, meta-skills\n\n\n\n\nFor each workflow:\n❌ Don’t hide the LLM behind a black box ✓ Make it transparent\n❌ Don’t lock into one vendor’s API ✓ Build with abstraction layers\n❌ Don’t teach product-specific tricks ✓ Teach underlying principles\n❌ Don’t remove user agency ✓ Enable informed choices\n\n\n\n\nPick one workflow. Design it for sovereignty.\nQuestions to consider: - What should users learn? (Interface or process?) - Where do you need specific implementation? - How do you make the technology layer visible? - What makes this portable to other LLMs?\nTime: 10 minutes\n\n\n\n\nNot this: “ZHAW uses local LLMs for everything”\nBut this: “ZHAW faculty and students understand LLMs as a general technology, can work with multiple implementations, and make informed choices”\n\n\n\n\nTechnology sovereignty is about:\n\nAgency - Ability to choose based on current needs\nResilience - Not vulnerable to vendor changes\nLiteracy - Understanding not just using\nValues - Intentional choices about our relationship with technology\n\nNot anti-commercial. Pro-choice.\n\n\n\n\nPhase 1 (Apr-May): Setup & exploration → Test for interoperability, not just performance\nPhase 2 (Jun-Aug): Workflow development → Design for portability and transparency\nPhase 3 (Sep-Oct): Evaluation → Measure technology literacy gains\nPhase 4 (Nov-Dec): Transfer & scaling → Documentation emphasizes principles, not just procedures\n\n\n\n\n\n“We’re not just implementing technology— we’re making choices about our institution’s relationship with AI tools for years to come.\nLet’s make those choices intentionally.”\n\nQuestions? Discussion?\n\n\n\n\n\n\n“But ChatGPT is just better…” → Gap is closing; context matters; it’s about options, not purity\n“This is extra work…” → It’s risk management and resilience, not ideology\n“Employers want ChatGPT skills…” → They want adaptable people, not one-product users\n\n\n\nWhat local models are viable? - Deepseek-r1 (new, promising) - Llama 3.3 (solid, well-supported) - Qwen2.5 (strong reasoning)\nWhere to run them? - HPC cluster (for scale) - Workstations (for development) - Laptops (for demos/testing)\n\n\n\nProject: GrüentAI Funding: CHF 30,000 (LSFM Digital Learning) Timeline: April - December 2025 Team: rahn, murj, rata, terz, juch Scope: 4 workflows, dept-wide implementation"
+  },
+  {
+    "objectID": "oudated/Workshop_Slides_Outline_OUTDATED_team_audience.html#slide-1-title",
+    "href": "oudated/Workshop_Slides_Outline_OUTDATED_team_audience.html#slide-1-title",
+    "title": "⚠️ OUTDATED - Slide Deck Outline: Technology Sovereignty Workshop",
+    "section": "",
+    "text": "Technology Sovereignty in Educational AI Why open-source LLMs matter beyond privacy and cost\nNils Ratnaweera | GrüentAI Project | ZHAW LSFM"
+  },
+  {
+    "objectID": "oudated/Workshop_Slides_Outline_OUTDATED_team_audience.html#slide-2-opening-poll",
+    "href": "oudated/Workshop_Slides_Outline_OUTDATED_team_audience.html#slide-2-opening-poll",
+    "title": "⚠️ OUTDATED - Slide Deck Outline: Technology Sovereignty Workshop",
+    "section": "",
+    "text": "Quick Question:\nHow many of you have used an LLM this week?\nWhich ones?\n[Interactive - capture responses]"
+  },
+  {
+    "objectID": "oudated/Workshop_Slides_Outline_OUTDATED_team_audience.html#slide-3-the-three-layers",
+    "href": "oudated/Workshop_Slides_Outline_OUTDATED_team_audience.html#slide-3-the-three-layers",
+    "title": "⚠️ OUTDATED - Slide Deck Outline: Technology Sovereignty Workshop",
+    "section": "",
+    "text": "┌─────────────────────────────────────┐\n│   Interface Layer                   │\n│   \"I know how to use ChatGPT\"       │ ← Product Literacy\n├─────────────────────────────────────┤\n│   Implementation Layer              │\n│   APIs, formats, protocols          │ ← The Gap\n├─────────────────────────────────────┤\n│   Technology Layer                  │\n│   LLMs, transformers, neural nets   │ ← Technology Literacy\n└─────────────────────────────────────┘\nKey Question: Where do you build your competency?"
+  },
+  {
+    "objectID": "oudated/Workshop_Slides_Outline_OUTDATED_team_audience.html#slide-4-the-lock-in-triangle",
+    "href": "oudated/Workshop_Slides_Outline_OUTDATED_team_audience.html#slide-4-the-lock-in-triangle",
+    "title": "⚠️ OUTDATED - Slide Deck Outline: Technology Sovereignty Workshop",
+    "section": "",
+    "text": "Cognitive Lock-in\n       \"I know this tool\"\n              ╱│╲\n             ╱ │ ╲\n            ╱  │  ╲\n           ╱   │   ╲\n          ╱    │    ╲\n         ╱     │     ╲\n        ╱      │      ╲\nTechnical    │    Institutional\nLock-in      │       Lock-in\n\"My files\"   │   \"Our workflows\"\nOnce locked in, switching becomes prohibitively expensive."
+  },
+  {
+    "objectID": "oudated/Workshop_Slides_Outline_OUTDATED_team_audience.html#slide-5-example-1---microsoft-office",
+    "href": "oudated/Workshop_Slides_Outline_OUTDATED_team_audience.html#slide-5-example-1---microsoft-office",
+    "title": "⚠️ OUTDATED - Slide Deck Outline: Technology Sovereignty Workshop",
+    "section": "",
+    "text": "Technology: Word processing, spreadsheets, presentations\nProduct: Microsoft Office (Word, Excel, PowerPoint)\nThe Lock-in: - Proprietary file formats (.docx, .xlsx) - Interface-specific skills - Institutional workflows and templates - Training materials and shared knowledge\nThe Question: Skills in document creation or in Microsoft’s interface?"
+  },
+  {
+    "objectID": "oudated/Workshop_Slides_Outline_OUTDATED_team_audience.html#slide-6-example-2---arcgis-vs-qgis",
+    "href": "oudated/Workshop_Slides_Outline_OUTDATED_team_audience.html#slide-6-example-2---arcgis-vs-qgis",
+    "title": "⚠️ OUTDATED - Slide Deck Outline: Technology Sovereignty Workshop",
+    "section": "",
+    "text": "Technology: Geographic Information Systems\nProducts: ArcGIS (proprietary) vs QGIS (open-source)\nSame capabilities, different ecosystems\nImpact: Graduates who can’t adapt when employers use different tools\nThe Pattern: Curriculum → Tutorials → Licenses → Lock-in"
+  },
+  {
+    "objectID": "oudated/Workshop_Slides_Outline_OUTDATED_team_audience.html#slide-7-example-3---llms-now",
+    "href": "oudated/Workshop_Slides_Outline_OUTDATED_team_audience.html#slide-7-example-3---llms-now",
+    "title": "⚠️ OUTDATED - Slide Deck Outline: Technology Sovereignty Workshop",
+    "section": "",
+    "text": "Technology: Large Language Models\nProducts: ChatGPT, Claude, Gemini, Local models…\nThe Critical Moment: Are we building “ChatGPT skills” or “LLM skills”?\nThe Choice: Repeat the MS Office pattern — OR — Do something different?"
+  },
+  {
+    "objectID": "oudated/Workshop_Slides_Outline_OUTDATED_team_audience.html#slide-8-why-universities-must-lead",
+    "href": "oudated/Workshop_Slides_Outline_OUTDATED_team_audience.html#slide-8-why-universities-must-lead",
+    "title": "⚠️ OUTDATED - Slide Deck Outline: Technology Sovereignty Workshop",
+    "section": "",
+    "text": "We’re not just technology users—we’re technology educators\nWhen we integrate tools into teaching: - ✓ Shape next generation’s understanding - ✓ Create institutional dependencies (decades) - ✓ Model critical engagement or passive consumption - ✓ Enable or constrain future flexibility\nThe Responsibility: Teach students to think with technology, not just use products"
+  },
+  {
+    "objectID": "oudated/Workshop_Slides_Outline_OUTDATED_team_audience.html#slide-9-activity-1---spot-your-lock-ins",
+    "href": "oudated/Workshop_Slides_Outline_OUTDATED_team_audience.html#slide-9-activity-1---spot-your-lock-ins",
+    "title": "⚠️ OUTDATED - Slide Deck Outline: Technology Sovereignty Workshop",
+    "section": "",
+    "text": "In small groups (8 minutes):\nFor technologies you use regularly: 1. Product/brand name 2. Underlying technology 3. Could you switch tomorrow? 4. What prevents you? 5. Rate switching cost: Low / Medium / High\nUse the sticky notes provided!"
+  },
+  {
+    "objectID": "oudated/Workshop_Slides_Outline_OUTDATED_team_audience.html#slide-10-grüentai---beyond-privacy-cost",
+    "href": "oudated/Workshop_Slides_Outline_OUTDATED_team_audience.html#slide-10-grüentai---beyond-privacy-cost",
+    "title": "⚠️ OUTDATED - Slide Deck Outline: Technology Sovereignty Workshop",
+    "section": "",
+    "text": "The project isn’t just about: - ✓ Privacy (yes, important) - ✓ Cost savings (yes, nice) - ✓ Technical coolness (yes, fun)\nIt’s fundamentally about: - Preserving institutional autonomy - Building technology literacy - Creating sustainable agency"
+  },
+  {
+    "objectID": "oudated/Workshop_Slides_Outline_OUTDATED_team_audience.html#slide-11-the-grüentai-strategy",
+    "href": "oudated/Workshop_Slides_Outline_OUTDATED_team_audience.html#slide-11-the-grüentai-strategy",
+    "title": "⚠️ OUTDATED - Slide Deck Outline: Technology Sovereignty Workshop",
+    "section": "",
+    "text": "Local LLMs          Commercial LLMs       Hybrid Approaches\n(Our focus)         (Still available)     (Smart routing)\n     │                    │                      │\n     └────────────────────┴──────────────────────┘\n                          │\n              \"LLM Technology Literacy\"\nGoal: Users learn when to use what, and why\nNot: Just how to use one specific tool"
+  },
+  {
+    "objectID": "oudated/Workshop_Slides_Outline_OUTDATED_team_audience.html#slide-12-four-workflows---designed-for-sovereignty",
+    "href": "oudated/Workshop_Slides_Outline_OUTDATED_team_audience.html#slide-12-four-workflows---designed-for-sovereignty",
+    "title": "⚠️ OUTDATED - Slide Deck Outline: Technology Sovereignty Workshop",
+    "section": "",
+    "text": "1. Prüfungsunterstützung → Prompts work across implementations\n2. Bewertungsunterstützung → Template-based, API-agnostic\n3. Literaturarbeiten → Open formats, portable RAG systems\n4. Kollaborative Lernunterstützung → Transparent, user choice, meta-skills"
+  },
+  {
+    "objectID": "oudated/Workshop_Slides_Outline_OUTDATED_team_audience.html#slide-13-design-principles",
+    "href": "oudated/Workshop_Slides_Outline_OUTDATED_team_audience.html#slide-13-design-principles",
+    "title": "⚠️ OUTDATED - Slide Deck Outline: Technology Sovereignty Workshop",
+    "section": "",
+    "text": "For each workflow:\n❌ Don’t hide the LLM behind a black box ✓ Make it transparent\n❌ Don’t lock into one vendor’s API ✓ Build with abstraction layers\n❌ Don’t teach product-specific tricks ✓ Teach underlying principles\n❌ Don’t remove user agency ✓ Enable informed choices"
+  },
+  {
+    "objectID": "oudated/Workshop_Slides_Outline_OUTDATED_team_audience.html#slide-14-activity-2---design-challenge",
+    "href": "oudated/Workshop_Slides_Outline_OUTDATED_team_audience.html#slide-14-activity-2---design-challenge",
+    "title": "⚠️ OUTDATED - Slide Deck Outline: Technology Sovereignty Workshop",
+    "section": "",
+    "text": "Pick one workflow. Design it for sovereignty.\nQuestions to consider: - What should users learn? (Interface or process?) - Where do you need specific implementation? - How do you make the technology layer visible? - What makes this portable to other LLMs?\nTime: 10 minutes"
+  },
+  {
+    "objectID": "oudated/Workshop_Slides_Outline_OUTDATED_team_audience.html#slide-15-what-success-looks-like",
+    "href": "oudated/Workshop_Slides_Outline_OUTDATED_team_audience.html#slide-15-what-success-looks-like",
+    "title": "⚠️ OUTDATED - Slide Deck Outline: Technology Sovereignty Workshop",
+    "section": "",
+    "text": "Not this: “ZHAW uses local LLMs for everything”\nBut this: “ZHAW faculty and students understand LLMs as a general technology, can work with multiple implementations, and make informed choices”"
+  },
+  {
+    "objectID": "oudated/Workshop_Slides_Outline_OUTDATED_team_audience.html#slide-16-key-takeaways",
+    "href": "oudated/Workshop_Slides_Outline_OUTDATED_team_audience.html#slide-16-key-takeaways",
+    "title": "⚠️ OUTDATED - Slide Deck Outline: Technology Sovereignty Workshop",
+    "section": "",
+    "text": "Technology sovereignty is about:\n\nAgency - Ability to choose based on current needs\nResilience - Not vulnerable to vendor changes\nLiteracy - Understanding not just using\nValues - Intentional choices about our relationship with technology\n\nNot anti-commercial. Pro-choice."
+  },
+  {
+    "objectID": "oudated/Workshop_Slides_Outline_OUTDATED_team_audience.html#slide-17-next-steps-for-grüentai",
+    "href": "oudated/Workshop_Slides_Outline_OUTDATED_team_audience.html#slide-17-next-steps-for-grüentai",
+    "title": "⚠️ OUTDATED - Slide Deck Outline: Technology Sovereignty Workshop",
+    "section": "",
+    "text": "Phase 1 (Apr-May): Setup & exploration → Test for interoperability, not just performance\nPhase 2 (Jun-Aug): Workflow development → Design for portability and transparency\nPhase 3 (Sep-Oct): Evaluation → Measure technology literacy gains\nPhase 4 (Nov-Dec): Transfer & scaling → Documentation emphasizes principles, not just procedures"
+  },
+  {
+    "objectID": "oudated/Workshop_Slides_Outline_OUTDATED_team_audience.html#slide-18-call-to-action",
+    "href": "oudated/Workshop_Slides_Outline_OUTDATED_team_audience.html#slide-18-call-to-action",
+    "title": "⚠️ OUTDATED - Slide Deck Outline: Technology Sovereignty Workshop",
+    "section": "",
+    "text": "“We’re not just implementing technology— we’re making choices about our institution’s relationship with AI tools for years to come.\nLet’s make those choices intentionally.”\n\nQuestions? Discussion?"
+  },
+  {
+    "objectID": "oudated/Workshop_Slides_Outline_OUTDATED_team_audience.html#backup-slides",
+    "href": "oudated/Workshop_Slides_Outline_OUTDATED_team_audience.html#backup-slides",
+    "title": "⚠️ OUTDATED - Slide Deck Outline: Technology Sovereignty Workshop",
+    "section": "",
+    "text": "“But ChatGPT is just better…” → Gap is closing; context matters; it’s about options, not purity\n“This is extra work…” → It’s risk management and resilience, not ideology\n“Employers want ChatGPT skills…” → They want adaptable people, not one-product users\n\n\n\nWhat local models are viable? - Deepseek-r1 (new, promising) - Llama 3.3 (solid, well-supported) - Qwen2.5 (strong reasoning)\nWhere to run them? - HPC cluster (for scale) - Workstations (for development) - Laptops (for demos/testing)\n\n\n\nProject: GrüentAI Funding: CHF 30,000 (LSFM Digital Learning) Timeline: April - December 2025 Team: rahn, murj, rata, terz, juch Scope: 4 workflows, dept-wide implementation"
+  }
+]

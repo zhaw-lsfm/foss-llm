@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.11">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>workshop_iunr_design_v2</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-a5dfee7ccc7f20503a6465e15a2cff9c.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-e4e2392ece711ea705772d4f304040e4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="fullcontent quarto-light">
+
+<div id="quarto-search-results"></div>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+
+
+
+
+<section id="technology-sovereignty-workshop-for-iunr" class="level1">
+<h1>Technology Sovereignty Workshop for IUNR</h1>
+<section id="design-document-v2---high-level-structure" class="level2">
+<h2 class="anchored" data-anchor-id="design-document-v2---high-level-structure">Design Document v2 - High Level Structure</h2>
+<p><strong>Target Audience:</strong> IUNR researchers and teachers (mixed tech literacy: “simple mail users” → power users) <strong>Duration:</strong> 60 minutes fixed <strong>Format:</strong> Empowering, slightly provocative awareness session + hands-on demo <strong>Language:</strong> English working document, will translate to German later</p>
+<hr>
+</section>
+<section id="core-goal" class="level2">
+<h2 class="anchored" data-anchor-id="core-goal">Core Goal</h2>
+<p><strong>Make audience realize:</strong> “I’m a product user, not a technology wielder - and that’s a problem”</p>
+<p><strong>Desired outcome:</strong> - Be more adventurous in trying alternatives - Remove fear of switching costs - Realize it’s worth trying something different - Know GrüentAI team as a resource</p>
+<hr>
+</section>
+<section id="key-themes-elements" class="level2">
+<h2 class="anchored" data-anchor-id="key-themes-elements">Key Themes &amp; Elements</h2>
+<section id="the-cooking-metaphor-opening-hook-recurring-reference" class="level3">
+<h3 class="anchored" data-anchor-id="the-cooking-metaphor-opening-hook-recurring-reference">0. The Cooking Metaphor (OPENING HOOK &amp; RECURRING REFERENCE)</h3>
+<p><strong>The Absurd Proprietary Cooking System:</strong></p>
+<p>Imagine you want to cook a meal, but you can only follow recipes from one specific provider. The recipe card looks like this:</p>
+<pre><code>PROPRIETARY RECIPE CARD:
+
+1. Add 2 units of Compound-XJ7 (available only from us, $15/bottle)
+2. Heat in Model-Pro-Pan-2024 at setting "MEDIUM"
+3. Stir with Certified-Stirring-Tool (sold separately)
+4. When indicator light turns green, add Flavor-Packet-B
+
+⚠️ WARNING:
+- Substitutions void warranty
+- Recipe may stop working if ingredients discontinued
+- Do not attempt to understand the chemical processes involved
+- Model-Pro-Pan-2024 will be discontinued next year; upgrade required</code></pre>
+<p><strong>Contrast with Open Source Cooking:</strong></p>
+<pre><code>OPEN RECIPE:
+
+1. Sauté onions in oil until translucent
+   (WHY: releases sugars, builds flavor base)
+2. Add garlic, cook 30 seconds
+   (WHY: aromatic, cooks fast, burns easily)
+3. Add tomatoes, simmer 20 min
+   (WHY: breaks down, concentrates)
+4. Season to taste
+
+NOTES:
+- No onions? Try shallots or leeks (similar aromatic base)
+- Olive oil or butter both work (you need fat for flavor)
+- Any pan that conducts heat evenly
+- Adjust time based on your stove's heat output</code></pre>
+<p><strong>Key Questions to Audience:</strong></p>
+<ol type="1">
+<li><strong>“Would you accept this for cooking?”</strong>
+<ul>
+<li>Of course not! It’s absurd!</li>
+<li>You’d want to understand WHY each step works</li>
+<li>You’d want to substitute based on what you have</li>
+<li>You’d want freedom to adapt to YOUR needs</li>
+</ul></li>
+<li><strong>“But we DO accept this for software. Why?”</strong>
+<ul>
+<li><strong>Time argument:</strong> “We spend FAR more time on computers than cooking”</li>
+<li>Most people cook 30-60 min/day</li>
+<li>Most people use computers 4-8 hours/day</li>
+<li>Yet we accept ignorance about technology but not about cooking</li>
+</ul></li>
+<li><strong>“What about someone who doesn’t know how to cook?”</strong>
+<ul>
+<li>They might say: “It’s going to take me ages just deciding on a pan!”</li>
+<li>“How should I find the time to learn all that?”</li>
+<li><strong>Same with software:</strong> Yes, initial investment needed</li>
+<li><strong>BUT:</strong> It pays off many-fold over time</li>
+<li>And you’re NOT vulnerable anymore</li>
+</ul></li>
+</ol>
+<p><strong>The Vulnerability of Lock-in (Vendor Lock-in via Cooking):</strong></p>
+<p>Once you’ve bought: - The Model-Pro-Pan-2024 ($200) - 12 bottles of Compound-XJ7 ($180) - The Certified-Stirring-Tool ($50) - Learned their obscure ingredient names - Built up a recipe collection that ONLY works with their system</p>
+<p><strong>You are now in a vulnerable position:</strong> - <strong>Switching cost is enormous</strong> - you’d have to replace everything - <strong>They can raise prices</strong> - you’re already invested - <strong>They can discontinue products</strong> - your recipes break - <strong>They control your ability to cook</strong> - you’re dependent</p>
+<p><strong>Sound familiar?</strong> This is exactly how software lock-in works.</p>
+<p><strong>Mapping to Software Reality:</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Cooking Metaphor</th>
+<th>Software Reality</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>“Compound-XJ7”</td>
+<td>Proprietary file formats (.docx, .psd, etc.)</td>
+</tr>
+<tr class="even">
+<td>“Model-Pro-Pan-2024”</td>
+<td>Specific OS/hardware requirements</td>
+</tr>
+<tr class="odd">
+<td>Recipe only works with their stuff</td>
+<td>Vendor lock-in, no interoperability</td>
+</tr>
+<tr class="even">
+<td>Can’t substitute ingredients</td>
+<td>Can’t switch tools/platforms</td>
+</tr>
+<tr class="odd">
+<td>Don’t know WHY it works</td>
+<td>Closed source, black box systems</td>
+</tr>
+<tr class="even">
+<td>Ingredient discontinued = recipe breaks</td>
+<td>Software sunset = your workflow dies</td>
+</tr>
+<tr class="odd">
+<td>Understanding cooking basics</td>
+<td>Understanding technology principles</td>
+</tr>
+<tr class="even">
+<td>Can adapt recipe to YOUR context</td>
+<td>Can modify open source for YOUR needs</td>
+</tr>
+<tr class="odd">
+<td>Vulnerable after investment</td>
+<td>Trapped by switching costs</td>
+</tr>
+</tbody>
+</table>
+<p><strong>The Empowerment Message:</strong></p>
+<p>When you understand the BASICS of cooking: - “Oh, I’m building a flavor base - I can use what I have” - “This is creating an emulsion - milk works too” - “I’m at high altitude, I need to adjust” - <strong>You become empowered, not dependent</strong></p>
+<p>When you understand the BASICS of technology: - “Oh, this is just a text editor - I can use any one” - “This is file synchronization - multiple tools do this” - “I need privacy - I’ll choose the open alternative” - <strong>Same empowerment, same freedom</strong></p>
+<p><strong>How to Use Throughout Workshop:</strong></p>
+<ul>
+<li><strong>Opening hook:</strong> Start with this scenario, get them reacting</li>
+<li><strong>When explaining lock-in:</strong> “Remember the proprietary recipe? That’s what’s happening here.”</li>
+<li><strong>Infuriating examples:</strong> “WhatsApp leak? You trusted the recipe provider and they exposed your data.”</li>
+<li><strong>Framework section:</strong> “Three layers: Recipe (interface), Ingredients (implementation), Cooking process (technology)”</li>
+<li><strong>Switching costs:</strong> “You’ve invested in their pans and ingredients - now you’re stuck”</li>
+<li><strong>Closing:</strong> “Would you accept proprietary cooking? Then why accept proprietary software?”</li>
+</ul>
+<hr>
+</section>
+<section id="personalemotional-arc" class="level3">
+<h3 class="anchored" data-anchor-id="personalemotional-arc">1. Personal/Emotional Arc</h3>
+<p><strong>Father’s Photo (1998 Linux Workshop, Sri Lanka)</strong> - Open Source vs proprietary matters for global justice - Licensing costs exclude entire regions - This is not a new problem</p>
+<p><strong>Ada &amp; Zangemann Story</strong> - Brief overview with openly licensed images - Shows the pattern: inventor controls devices, kids hack freedom - Makes the concept accessible and narrative</p>
+<p><strong>Infuriating Examples</strong> (make them feel the anger!)</p>
+<p><strong>FINAL SELECTION - 3 Concrete Examples:</strong> 1. <strong>WhatsApp security flaw</strong> - Billions of phone numbers exposed (Wired article) - Everyone uses it, personal stakes - Shows you can’t trust platforms you don’t control - Links to opening: “Why not Signal? THIS is why.” 2. <strong>ICC prosecutor email block</strong> - Microsoft blocked emails after Trump sanctions - Corporate platforms can censor at will - Global justice implications 3. <strong>Windows 10 forced obsolescence</strong> - Hardware made “obsolete” by software - Environmental waste, e-waste crisis - Resonates with IUNR environmental focus</p>
+<p><em>(Other candidates considered but dropped: Academic paywalls - separate issue; Field data/ArcGIS - not concrete enough)</em></p>
+</section>
+<section id="the-framework-simplified-for-mixed-audience" class="level3">
+<h3 class="anchored" data-anchor-id="the-framework-simplified-for-mixed-audience">2. The Framework (Simplified for Mixed Audience)</h3>
+<p><strong>Three Layers:</strong></p>
+<pre><code>Interface Layer    → "I know how to use ChatGPT"
+Implementation     → Open vs. proprietary
+Technology         → The fundamental capability</code></pre>
+<p><strong>Lock-in Triangle:</strong></p>
+<pre><code>     Cognitive Lock-in
+         ╱│╲
+        ╱ │ ╲
+Technical│  Institutional</code></pre>
+<p><strong>Examples Everyone Knows:</strong> - WhatsApp vs Signal - Google Maps vs OpenStreetMap - Podcast via iTunes vs RSS feed - ArcGIS vs QGIS - Microsoft Office vs LibreOffice - [More to brainstorm]</p>
+</section>
+<section id="llms-as-liberation-tool-key-reframe" class="level3">
+<h3 class="anchored" data-anchor-id="llms-as-liberation-tool-key-reframe">3. LLMs as Liberation Tool (KEY REFRAME!)</h3>
+<p>“LLMs are another lock-in risk we need to avoid”</p>
+<p><strong>AND:</strong> “LLMs are tools that let you WIELD difficult technologies without mastering proprietary interfaces!”</p>
+<p><strong>The Promise:</strong></p>
+<ul>
+<li>Use tools more easily with AI assistance</li>
+<li>Build custom solutions for YOUR needs</li>
+<li>Democratize technical capability</li>
+<li>Break down barriers to open source adoption</li>
+</ul>
+</section>
+<section id="concrete-teaching-use-cases-benchmarks" class="level3">
+<h3 class="anchored" data-anchor-id="concrete-teaching-use-cases-benchmarks">4. Concrete Teaching Use Cases + Benchmarks</h3>
+<p><strong>Show real value for their work:</strong></p>
+<p><strong>Use Cases to Demonstrate:</strong></p>
+<ul>
+<li>Generate practice questions from lecture materials</li>
+<li>Provide feedback on student writing</li>
+<li>Translate technical content to different levels</li>
+<li>Summarize research papers for students</li>
+<li>Create interactive study guides</li>
+<li>Assist with grading rubrics</li>
+</ul>
+<p><strong>Benchmark Format:</strong></p>
+<pre><code>Task: [Specific teaching task]
+
+ChatGPT-4:        ⭐⭐⭐⭐⭐ [Result]
+Local Llama3.3:   ⭐⭐⭐⭐  [Result]
+Local DeepSeek-r1: ⭐⭐⭐⭐⭐ [Result]
+
+Privacy: Local wins
+Cost: Local wins
+Speed: ChatGPT slightly faster
+Quality: Nearly equivalent</code></pre>
+</section>
+<section id="exportdata-liberation-contrast" class="level3">
+<h3 class="anchored" data-anchor-id="exportdata-liberation-contrast">5. Export/Data Liberation Contrast</h3>
+<p><strong>Show in slides (not interactive):</strong> - Proprietary: Hard to export, obscure formats, lock your data - Open Source: Easy export, lists alternatives on their websites!</p>
+<p><strong>Examples:</strong> - WhatsApp chat export (painful) vs Signal (easy) - ArcGIS export process vs QGIS - EndNote vs Zotero</p>
+</section>
+<section id="the-fork-in-the-road-who-owns-ai" class="level3">
+<h3 class="anchored" data-anchor-id="the-fork-in-the-road-who-owns-ai">6. The Fork in the Road: Who Owns AI?</h3>
+<p><strong>Key Framing Question:</strong> “We are at a critical moment in history. AI is becoming ubiquitous. The question is: Is AI going to own us, or are we going to own AI?”</p>
+<p><strong>The Choice:</strong></p>
+<ul>
+<li><strong>Path 1:</strong> AI remains controlled by a few tech corporations
+<ul>
+<li>They decide what we can do</li>
+<li>They set the terms</li>
+<li>We pay their prices</li>
+<li>We’re dependent on their decisions</li>
+<li>Pattern repeats: Windows, Office, ArcGIS → now AI</li>
+</ul></li>
+<li><strong>Path 2:</strong> AI becomes a democratic technology
+<ul>
+<li>Open models anyone can run</li>
+<li>Local control over your data</li>
+<li>Customize for your needs</li>
+<li>Not beholden to corporate decisions</li>
+<li>True technological sovereignty</li>
+</ul></li>
+</ul>
+<p><strong>The Urgency:</strong> “We’re making this choice RIGHT NOW. In 5 years, will everyone be locked into ChatGPT the way they’re locked into WhatsApp? Or will we preserve alternatives?”</p>
+<p><strong>Why This Moment Matters:</strong></p>
+<ul>
+<li>Open weight models are NOW available (DeepSeek-r1, Llama3.3)</li>
+<li>Hardware is NOW capable (you can run them locally)</li>
+<li>The window won’t stay open forever</li>
+<li>First-mover advantage creates lock-in</li>
+</ul>
+</section>
+<section id="understanding-llms-demystifying-the-technology" class="level3">
+<h3 class="anchored" data-anchor-id="understanding-llms-demystifying-the-technology">7. Understanding LLMs: Demystifying the Technology</h3>
+<p><strong>Purpose:</strong> Make LLMs less “magic” and more “technology you can understand and control”</p>
+<p><strong>Components to Explain (Accessible to Mixed Audience):</strong></p>
+<p><strong>A. Training a Language Model - The Basics</strong> - What is a “word embedding”? (Words as coordinates in meaning-space) - High-level concept: Model learns patterns from massive text - Like a very sophisticated autocomplete - Not “intelligence” - pattern matching at massive scale</p>
+<p><strong>B. The Last 5 Years: Explosive Progress</strong> - 2019: GPT-2 was impressive but limited - 2023: ChatGPT changes everything - 2024-2025: Open models catch up to proprietary ones - Key insight: The gap is closing FAST</p>
+<p><strong>C. “Open Weights” vs “Open Source”</strong> - Open weights: You can download and run the model - Different from fully open source (training code, data) - But still: YOU control it, not a company - Examples: Llama, DeepSeek-r1, Mistral</p>
+<p><strong>D. AI Safety Concerns (Rob Miles Perspective)</strong> - LLMs can be manipulated (trigger words, jailbreaks) - Example: Specific phrases that make models behave unexpectedly - Why it matters: If you don’t control the model, you don’t know what’s happening - Local models: You can inspect, test, understand</p>
+<p><strong>E. Enhancing LLMs: The Ecosystem</strong></p>
+<p><strong>RAG (Retrieval Augmented Generation):</strong> - Give the LLM access to specific documents - Makes it accurate for YOUR domain - Example: Feed it IUNR course materials, then ask questions - You control what knowledge it uses</p>
+<p><strong>MCPs (Model Context Protocol):</strong> - Let LLMs interact with your tools and data - Connects AI to your existing workflows - Example: LLM that can access your field data, GIS systems - Standardized way to extend capabilities</p>
+<p><strong>Personas/System Prompts:</strong> - Shape how the LLM behaves - “You are a teaching assistant for environmental science” - Customizable for specific tasks - You control the personality and focus</p>
+<p><strong>F. Why Understanding This Matters</strong> - Not magic → Technology you can shape - Not monolithic → Modular components you can swap - Not proprietary only → Open alternatives exist - Not all-or-nothing → Use the right tool for each task</p>
+<p><strong>Key Message:</strong> “LLMs are powerful but they’re not magic. Once you understand the components, you realize: you can build this yourself, customize it, control it. That’s the difference between being a user and being a wielder.”</p>
+<hr>
+</section>
+</section>
+<section id="proposed-flow-structure-revised-with-new-content" class="level2">
+<h2 class="anchored" data-anchor-id="proposed-flow-structure-revised-with-new-content">Proposed Flow Structure (Revised with New Content)</h2>
+<p><strong>Total time: 60-65 minutes</strong> (may need slight adjustment)</p>
+<section id="opening-7-min---the-proprietary-cooking-system-revised" class="level3">
+<h3 class="anchored" data-anchor-id="opening-7-min---the-proprietary-cooking-system-revised">Opening (7 min) - “The Proprietary Cooking System” [REVISED]</h3>
+<p><strong>Start with the absurd scenario:</strong> - “Imagine you could only cook using one company’s recipes…” - Show the proprietary recipe card (visual slide) - Show the open recipe (visual slide) - <strong>Key questions:</strong> “Would you accept this? No! Why not?”</p>
+<p><strong>Then pivot to software:</strong> - “But we DO accept this for software” - <strong>Time argument:</strong> “We spend 4-8 hours/day on computers, 30-60 min cooking” - “Yet we accept ignorance about technology but not cooking”</p>
+<p><strong>The vulnerability point:</strong> - “Once you’ve invested in their pans, ingredients, learned their system…” - “Switching cost becomes enormous - you’re trapped” - <strong>This is vendor lock-in</strong></p>
+<p><strong>Quick WhatsApp validation:</strong> - “How many use WhatsApp daily? Signal?” - “Why not switch? EXACTLY - switching costs” - “Keep the cooking metaphor in mind - we’ll come back to it”</p>
+</section>
+<section id="personal-stakes-7-min---why-this-matters-shortened-from-8" class="level3">
+<h3 class="anchored" data-anchor-id="personal-stakes-7-min---why-this-matters-shortened-from-8">Personal Stakes (7 min) - Why This Matters [SHORTENED from 8]</h3>
+<ul>
+<li><strong>Father’s photo:</strong> 1998, Sri Lanka, licensing costs matter</li>
+<li><strong>Ada &amp; Zangemann:</strong> The pattern of control vs.&nbsp;freedom (brief!)</li>
+<li><strong>Infuriating examples with cooking callbacks:</strong>
+<ul>
+<li><strong>WhatsApp leak:</strong> “You trusted the recipe provider with your data - they exposed it”</li>
+<li><strong>ICC block:</strong> “The recipe provider decided you can’t cook anymore”</li>
+<li><strong>Windows waste:</strong> “Your pan is ‘obsolete’ because they say so”</li>
+</ul></li>
+<li><strong>The arc:</strong> This has always mattered (1998) → It’s a pattern (Ada) → It’s urgent NOW</li>
+</ul>
+</section>
+<section id="the-framework-6-min---understanding-lock-in-shortened-from-7" class="level3">
+<h3 class="anchored" data-anchor-id="the-framework-6-min---understanding-lock-in-shortened-from-7">The Framework (6 min) - Understanding Lock-in [SHORTENED from 7]</h3>
+<ul>
+<li><strong>Three layers with cooking parallel:</strong>
+<ul>
+<li>Interface: “I can follow the recipe” → “I can use Word”</li>
+<li>Implementation: Proprietary vs open (their ingredients vs any ingredients)</li>
+<li>Technology: The cooking process itself → The fundamental capability</li>
+</ul></li>
+<li>Lock-in triangle</li>
+<li>Examples: Maps, Podcasts, ArcGIS, WhatsApp</li>
+<li>Export difficulty: Proprietary traps vs Open Source liberates</li>
+<li><strong>Cooking callback:</strong> “Recipe (interface), Ingredients (implementation), Cooking (technology)”</li>
+</ul>
+</section>
+<section id="activity-1-your-lock-ins-15-min" class="level3">
+<h3 class="anchored" data-anchor-id="activity-1-your-lock-ins-15-min">Activity 1: Your Lock-ins (15 min)</h3>
+<p><strong>Format:</strong> Flipcharts with stars</p>
+<p><strong>Setup:</strong> - Multiple flipcharts with pre-printed tool pairs/triplets - Examples: - Messaging: WhatsApp / Signal / Telegram - Maps: Google Maps / OpenStreetMap / Apple Maps - GIS: ArcGIS / QGIS - Office: MS Office / LibreOffice / Google Docs - Stats: SPSS / R / Python - Reference: EndNote / Zotero / Mendeley - [More as needed]</p>
+<p><strong>Activity:</strong> - 5 min: Everyone walks around, adds stars to tools they use - 5 min: Look at the patterns together - 5 min: Debrief - “What surprised you? Where’s the concentration?”</p>
+<p><strong>Key insight:</strong> “See how we’re clustered on proprietary? That’s collective lock-in.”</p>
+</section>
+<section id="the-fork-in-the-road-4-min---critical-transition-new" class="level3">
+<h3 class="anchored" data-anchor-id="the-fork-in-the-road-4-min---critical-transition-new">The Fork in the Road (4 min) - Critical Transition [NEW]</h3>
+<p><strong>“We’re at a choice point with AI”</strong></p>
+<ul>
+<li>Same pattern is forming with LLMs RIGHT NOW</li>
+<li>Question: “Is AI going to own us, or are we going to own AI?”</li>
+<li>Path 1: Corporate control (repeat of WhatsApp/Windows/ArcGIS)</li>
+<li>Path 2: Democratic technology (open models, local control)</li>
+<li><strong>Urgency:</strong> “This choice happens in the next 2-3 years. The window won’t stay open.”</li>
+<li><strong>Good news:</strong> Open models exist NOW, hardware is capable NOW</li>
+</ul>
+</section>
+<section id="understanding-llms-6-min---demystifying-the-magic-new" class="level3">
+<h3 class="anchored" data-anchor-id="understanding-llms-6-min---demystifying-the-magic-new">Understanding LLMs (6 min) - Demystifying the Magic [NEW]</h3>
+<p><strong>“Let’s understand what we’re talking about”</strong></p>
+<p><strong>Quick explainer (accessible):</strong> - What LLMs are: Sophisticated pattern matching, not magic - Last 5 years: Explosive progress, gap closing fast - Open weights: You can download and run them locally - Components that enhance them: - RAG: Give it access to your documents (e.g., course materials) - MCPs: Connect to your tools (e.g., field data, GIS) - Personas: Customize behavior for your needs - <strong>Key point:</strong> “Not magic → technology you can understand and control”</p>
+</section>
+<section id="the-solution-llms-as-liberators-6-min-refocused-from-10" class="level3">
+<h3 class="anchored" data-anchor-id="the-solution-llms-as-liberators-6-min-refocused-from-10">The Solution: LLMs as Liberators (6 min) [REFOCUSED from 10]</h3>
+<p><strong>“This is why LLMs matter for sovereignty”</strong></p>
+<ul>
+<li>LLMs make technology ACCESSIBLE without mastering proprietary interfaces</li>
+<li>You can now WIELD difficult tools with AI assistance</li>
+<li>Write custom solutions for YOUR needs</li>
+<li>Democratizes technical capability</li>
+</ul>
+<p><strong>Teaching Use Cases + Benchmarks (quick overview):</strong> - Generate exam questions - Provide feedback on student writing - Summarize research papers - <strong>Show benchmarks:</strong> Local models nearly match ChatGPT quality - <strong>Advantage:</strong> Privacy, cost, control</p>
+<p><strong>GrüentAI connection:</strong> “We’re making this real for teaching - and we’re here as a resource”</p>
+</section>
+<section id="activity-2-live-llm-demo-10-min" class="level3">
+<h3 class="anchored" data-anchor-id="activity-2-live-llm-demo-10-min">Activity 2: Live LLM Demo (10 min)</h3>
+<p><strong>YOU run both ChatGPT and local Ollama</strong> <strong>THEY give you prompts</strong></p>
+<p><strong>Show both things:</strong> 1. Same task, different backend (technical point) 2. LLM helps you use open source tools (liberation point)</p>
+<p><strong>Possible demo:</strong> - Generate exam questions from a text (teaching use case) - Show both produce good results - “Same technology, different products - and YOU control one of them”</p>
+</section>
+<section id="closing-5-min---the-invitation" class="level3">
+<h3 class="anchored" data-anchor-id="closing-5-min---the-invitation">Closing (5 min) - The Invitation</h3>
+<ul>
+<li><strong>Return to cooking metaphor:</strong> “Would you accept proprietary cooking? No! So why accept proprietary software?”</li>
+<li>“We’re at the fork in the road. Which path do we take?”</li>
+<li><strong>Address the ‘I don’t have time’ objection:</strong>
+<ul>
+<li>“Learning to ‘cook’ with technology takes initial investment”</li>
+<li>“But it pays off many-fold over time”</li>
+<li>“And you’re no longer vulnerable to vendor decisions”</li>
+</ul></li>
+<li>“Switching costs are real, but so is the cost of staying locked in”</li>
+<li>“Try one new open alternative this month - start small”</li>
+<li>GrüentAI is here as a resource for questions</li>
+<li>“We’ve gained knowledge on this, you can contact us”</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="timing-note" class="level2">
+<h2 class="anchored" data-anchor-id="timing-note">Timing Note</h2>
+<p><strong>Total: 65 minutes</strong> - slightly over.</p>
+<p><strong>Changes with cooking metaphor:</strong> - Opening extended from 5→7 min (worth it for strong hook) - Personal Stakes shortened from 8→7 min (Ada can be briefer) - Net change: Still at 65 minutes</p>
+<p><strong>Options to fit 60 minutes:</strong> 1. Tighten Framework section (6→5 min) 2. Compress Understanding LLMs (6→5 min) 3. Acknowledge workshop may run 65 min with discussion 4. Make Understanding LLMs optional/backup slides</p>
+<p><strong>Recommendation:</strong> The cooking metaphor is so strong, keep the 7 min opening. Compress Understanding LLMs to 5 min to compensate.</p>
+<hr>
+</section>
+<section id="open-questions-to-resolve" class="level2">
+<h2 class="anchored" data-anchor-id="open-questions-to-resolve">Open Questions to Resolve</h2>
+<section id="content-decisions" class="level3">
+<h3 class="anchored" data-anchor-id="content-decisions">Content Decisions</h3>
+<p><strong>1. Teaching Use Cases Section:</strong> - Where does it fit in the flow? - Option A: Before demo (shows why you should care) - Option B: After Activity 1 (bridges lock-in to practical value) - Option C: Integrated into demo (demo IS the use case) - How many use cases to show? - Deep dive on 1-2 with live demo - Quick overview of 5-6 on slides - Let audience choose which to demo - Benchmark presentation format? - Pre-tested results on slides (safe) - Live head-to-head comparison (powerful but risky) - Video recording of comparisons (backup plan)</p>
+<p><strong>2. “Anger Moments” Selection:</strong> ✅ <strong>RESOLVED</strong> - <strong>WhatsApp security flaw</strong> (billions exposed - personal stakes, everyone uses it) - <strong>ICC prosecutor email block</strong> (corporate censorship, global justice) - <strong>Windows 10 obsolescence</strong> (environmental waste - resonates with IUNR focus)</p>
+<p><strong>3. Example Collection:</strong> Need more tool pairs that resonate with IUNR. Brainstorm: - Field data collection tools? - Statistical software? - Specialized environmental science tools? - Communication/collaboration tools?</p>
+<p><strong>4. Personal Elements Placement:</strong> - Father photo: One powerful moment - where? - Ada &amp; Zangemann: How brief? Just story or deeper dive? - Infuriating examples: Quick succession or focus on one?</p>
+</section>
+<section id="activity-design" class="level3">
+<h3 class="anchored" data-anchor-id="activity-design">Activity Design</h3>
+<p><strong>5. Activity 1 Flipcharts:</strong> - How many flipcharts total? - What tool categories to include? - Format: Large paper? Digital display? - Visualization: Just count stars or create a pattern?</p>
+<p><strong>6. Activity 2 Demo:</strong> - Which teaching use case to demo live? - Backup plan if tech fails? - How much audience participation vs watching?</p>
+</section>
+<section id="logistics" class="level3">
+<h3 class="anchored" data-anchor-id="logistics">Logistics</h3>
+<p><strong>7. Materials Needed:</strong> - Flipcharts + markers - Laptop with ChatGPT and Ollama running - Slides (to be created) - Backup videos/screenshots if demo fails - Handouts? (TBD)</p>
+<p><strong>8. Risk Mitigation:</strong> - Local LLM demo fails during workshop - Audience is more/less technical than expected - Time management if discussions run long - Pushback: “But proprietary tools are just better”</p>
+<hr>
+</section>
+</section>
+<section id="grüentai-positioning" class="level2">
+<h2 class="anchored" data-anchor-id="grüentai-positioning">GrüentAI Positioning</h2>
+<p><strong>Role in Workshop:</strong> “This is why this workshop is possible - we’ve gained knowledge on this topic and are people you can contact if you have questions”</p>
+<p><strong>NOT:</strong> “Let us tell you about our amazing project” <strong>BUT:</strong> “We’re working on this problem and we’re a resource for you”</p>
+<p><strong>Call to action:</strong> - Try alternatives - Reach out with questions - Optional: Participate in testing (if relevant)</p>
+<hr>
+</section>
+<section id="next-steps" class="level2">
+<h2 class="anchored" data-anchor-id="next-steps">Next Steps</h2>
+<section id="high-level-before-drilling-down" class="level3">
+<h3 class="anchored" data-anchor-id="high-level-before-drilling-down">High-Level (Before Drilling Down):</h3>
+<ul class="task-list">
+<li><label><input type="checkbox">Finalize teaching use cases to showcase (TABLED - see notes in Open Questions)</label></li>
+<li><label><input type="checkbox" checked="">Select 2-3 most powerful “anger” examples (WhatsApp leak, ICC block, Windows waste)</label></li>
+<li><label><input type="checkbox">Decide on benchmark presentation approach</label></li>
+<li><label><input type="checkbox">Determine teaching content placement in flow (TABLED - see notes in Open Questions)</label></li>
+<li><label><input type="checkbox">Complete example collection (tool pairs) - IN PROGRESS</label></li>
+</ul>
+</section>
+<section id="detail-work-after-high-level-is-set" class="level3">
+<h3 class="anchored" data-anchor-id="detail-work-after-high-level-is-set">Detail Work (After High-Level is Set):</h3>
+<ul class="task-list">
+<li><label><input type="checkbox">Create slide deck</label></li>
+<li><label><input type="checkbox">Design flipchart templates</label></li>
+<li><label><input type="checkbox">Prepare and test live demo</label></li>
+<li><label><input type="checkbox">Create benchmark visualizations</label></li>
+<li><label><input type="checkbox">Write facilitator script</label></li>
+<li><label><input type="checkbox">Prepare backup materials</label></li>
+<li><label><input type="checkbox">Test full workshop timing</label></li>
+<li><label><input type="checkbox">Translate to German</label></li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="design-principles-for-this-workshop" class="level2">
+<h2 class="anchored" data-anchor-id="design-principles-for-this-workshop">Design Principles for This Workshop</h2>
+<p>✓ <strong>Empowering</strong> over scolding ✓ <strong>Concrete</strong> over abstract ✓ <strong>Visual/hands-on</strong> over passive listening ✓ <strong>Their experience</strong> first, theory second ✓ <strong>Action-oriented</strong> - they should DO something after ✓ <strong>Accessible</strong> to simple mail users AND power users ✓ <strong>Emotional connection</strong> (father, Ada, anger) + practical value (teaching use cases)</p>
+<hr>
+<p><em>This document captures the current high-level design. Once we finalize these structural decisions, we’ll drill down into detailed content, slides, and scripts.</em></p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

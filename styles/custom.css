@@ -1,0 +1,69 @@
+/* ============================================
+   PROJECT-SPECIFIC STYLES
+   Custom styles for this presentation
+   ============================================ */
+   
+   
+   
+.scheideweg .slide-background-content {
+  filter: sepia(40%) blur(2px);
+}
+
+
+
+
+/* Three Layers boxes */
+.layer-box-blue {
+  background: #e1f5ff;
+  padding: 20px;
+  border: 2px solid #01579b;
+  border-radius: 5px;
+  color: black;
+}
+
+.layer-box-orange {
+  background: #fff3e0;
+  padding: 20px;
+  border: 2px solid #e65100;
+  border-radius: 5px;
+  margin-top: 10px;
+  color: black;
+}
+
+.layer-box-purple {
+  background: #f3e5f5;
+  padding: 20px;
+  border: 2px solid #9963dbff;
+  border-radius: 5px;
+  margin-top: 10px;
+  color: black;
+}
+
+/* Recipe card styling */
+.recipe {
+  font-family: 'Shadows Into Light Two', cursive;
+  font-size: 0.8em;
+  line-height: 1;
+}
+
+/* Two-column list layout with aligned columns */
+.two-col-list li {
+  display: flex;
+  gap: 2rem;
+}
+
+.two-col-list ul{
+  margin: 0pt !important;
+}
+
+.two-col-list li span:first-child {
+  flex: 0 0 auto; /* fixed width for first column */
+  text-align: left;
+}
+
+.two-col-list li span:last-child {
+  flex: 1 1 auto;
+  text-align: right;
+}
+
+
