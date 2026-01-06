@@ -1,0 +1,720 @@
+---
+author: FG Geoinformatik
+format:
+  revealjs:
+    theme: dark
+    css:
+    - styles/base.css
+    - styles/custom.css
+    slide-number: true
+    transition: slide
+    background-transition: fade
+    pagetitle: OSS LLMs
+    code-line-numbers: false
+---
+
+# Open-Source KI {background-image="images/VR_and_Greshan3.png" class="blurred-5px shadow"}
+
+[und was daran so wichtig ist]{.shadow}
+
+
+## {background-image="images/VR_and_Greshan3.png"}
+
+
+:::{.notes}
+- Foto 1998 wo mein Vater ein Workshop zu OpenSource Software leitet
+- Wir lebten damals in Sri Lanka und mein Vater dozierte an der University of Peradeniya
+- In Sri Lanka ist der Bedarf an OSS noch eine ganz andere als hier, wo Lizenzkosten keine Rolle zu spielen scheinen
+
+:::
+
+
+## {background-image="images/table-setting-6859276\_1280.jpg"}
+
+::: {.notes}
+
+**Metapher aus der Küche**
+
+- Stellen Sie sich vor, Sie wurden zu einem fantastischen Abendessen bei einem entfernten Verwandten eingeladen.
+- Sie fragen, wie das Abendessen zubereitet wurde, und der Gastgeber zeigt Ihnen stolz das Rezept
+- (nächste Folie)
+
+:::
+
+## {background-image="images/5FAoI86RaWY8Goqvt1b-77.jpg" background-size="contain" background-color="white"}
+
+## {background-color="#5F9EA0"}
+
+:::: {.recipe}
+REZEPT
+
+1. 2 Einheiten Compound-XJ7 hinzufügen.
+2. In Pfanne *Model-Pro-2024* bei Einstellung "MEDIUM” erhitzen.
+3. Mit zertifiziertem Rührgerät (separat erhältlich) umrühren.
+4. Wenn die Kontrollleuchte grün leuchtet, Flavor-Packet-B hinzufügen
+
+
+
+⚠ WARNUNG:
+
+- Ersatzprodukte führen zum Erlöschen der Garantie
+- *Model-Pro-2024* wird nächstes Jahr eingestellt; Upgrade erforderlich
+
+::::
+
+::: {.notes}
+
+- Hinweis: proprietäre Zutaten, vorgeschriebene Geräte, Warnhinweise zu Ersatzprodukten, geplante Obsoleszenz. Das sollte sich lächerlich anhören.
+- Wenn man ihn darauf anspricht, hat der Gastgeber folgende Argumente:
+  - Mit dieser Methode weiß ich, dass das Essen großartig wird. Ich habe nichts dagegen, dafür ein wenig Freiheit zu opfern.
+  - Wenn ich selbst kochen wollte, müsste ich so viele Details lernen. Dafür habe ich keine Zeit.
+  - Alle, die ich kenne, kochen so.*Das wurde uns in der Schule so beigebracht.*
+- Wir würden ein solches System im Bereich des Kochens *NIEMALS*tolerieren
+
+:::
+
+
+## {background-color="#5F9EA0"}
+
+::: {.recipe}
+OFFENES REZEPT
+
+1. Zwiebeln in Öl glasig dünsten.
+  
+2. Knoblauch hinzufügen, 30 Sekunden lang anbraten.
+  
+3. Tomaten hinzufügen, 20 Minuten köcheln lassen.
+  
+HINWEISE:
+
+- Keine Zwiebeln? Verwenden Sie Schalotten oder Lauch.
+- Olivenöl oder Butter sind beide geeignet.
+- Verwenden Sie eine handelsübliche, vorzugsweise teflonbeschichtete Bratpfanne
+
+:::
+
+::: {.notes}
+
+
+– Verständnis vs. blindes Befolgen. Beachten Sie die Flexibilität 
+– Ersatzprodukte sind willkommen. So sieht Open Source aus.
+:::
+
+## Kochen vs. Computer {background-color="white"}
+
+```{r}
+#| fig-cap: "Täglich investierte Zeit: Kochen vs. Computer  Ratnaweera et al (2025), n = 1"
+#| fig-width: 3
+
+library(ggplot2)
+
+df <- data.frame(activity = c("Kochen", "Computer"), hours = c(1.25, 6.72))
+
+ggplot(df, aes(activity, hours)) +
+  geom_col(width = 0.25) +
+  labs(y = "Zeit (in Stunden)") +
+  theme_minimal() +
+  theme(panel.grid = element_blank(), axis.title.x = element_blank()) 
+
+
+
+```
+
+::: {.notes}
+
+- Wir verbringen*viel*mehr Zeit am Computer als mit Kochen.
+- Warum lassen wir das im digitalen Bereich zu?
+
+:::
+
+## Déjà vu {background-image="images/matrix-cat.png" .center .shadow}
+
+
+## Das Muster wiederholt sich
+
+- Wir verwenden keine Textverarbeitungsprogramme, wir verwenden *Microsoft Word*
+- Wir verwenden keine Messenger, sondern *WhatsApp*
+
+::: {.fragment}
+- Werden wir KI nutzen oder werden wir *ChatGPT* verwenden?
+:::
+
+::: {.notes}
+:::
+
+## Die Problematik
+
+Sobald wir genug in ChatGPT investiert haben...
+
+- uns an die Benutzeroberfläche gewöhnt haben
+- Unsere Systeme darauf aufgabaut haben
+- **Unsere Daten bei ihnen gespeichert haben**
+
+::: {.fragment}
+
+- →**werden die Wechselkosten ENORM**
+:::
+
+::: {.notes}
+
+- Warum?
+:::
+
+## Vendor Lock-In {data-background="images/Push-and-pull.jpg"}
+
+::: {.notes}
+
+- Anbieter wollen nicht, dass Sie plattformunabhängig sind.
+- Sie machen ihre Produkte absichtlich mit denen anderer Anbieter inkompatibel.
+- Sobald ein bestimmte Investition gemacht ist, ist es schwierig oder sogar unmöglich, den Anbieter zu wechseln.
+- (zurück zur Koch-analogie)
+:::
+
+## {background-color="#5F9EA0"}
+
+:::: {.recipe}
+REZEPT
+
+1. 2 Einheiten Compound-XJ7 hinzufügen.
+2. In Pfanne *Model-Pro-2024* bei Einstellung "MEDIUM” erhitzen.
+3. Mit zertifiziertem Rührgerät (separat erhältlich) umrühren.
+4. Wenn die Kontrollleuchte grün leuchtet, Flavor-Packet-B hinzufügen
+
+
+
+⚠ WARNUNG:
+
+- Ersatzprodukte führen zum Erlöschen der Garantie
+- *Model-Pro-2024* wird nächstes Jahr eingestellt; Upgrade erforderlich
+
+::::
+
+::: {.notes}
+- Sobald*Model-Pro-Pan-2024*, *zertifiziertem Rührgerät*und andere ähnliche Produkte gekauft wurden, wird es schwierig sein, Rezepte anderer Anbieter zu verwenden
+:::
+
+## Warum ist das ein Problem? {.center}
+
+  
+## {background-image="images/whatsapp-leak.png" background-size="contain" background-color="white"}
+
+:::{.notes}
+
+- Manchmal sind Produkte einfach schlecht, verfügen nicht über grundlegende Sicherheitsfunktionen und die Sicherheit der Benutzerdaten hat keine Priorität.
+
+:::
+
+## {background-image="images/sanctions.png" background-size="contain" background-color="white"}
+
+<!-- https://www.heise.de/news/Strafgerichtshof-Microsofts-E-Mail-Sperre-als-Weckruf-fuer-digitale-Souveraenitaet-10387368.html -->
+
+::: {.notes}
+
+- Microsoft hat nach Trump-Sanktionen das Mail-Konto des Chefanklägers des Internationalen Gerichtshofs blockiert.
+- Trump sanktionierte das Den Haager Gericht im Februar, nachdem ein Gremium von IStGH-Richtern im November 25 Haftbefehle gegen den israelischen Premierminister Benjamin Netanjahu mit Blick auf Kriegsverbrechen im Gaza-Streifen erlassen hatte.
+:::
+
+## {background-image="images/end-of-10.png" background-size="contain" background-color="white"}
+
+<!-- https://www.computerbild.de/artikel/cb-Tipps-Software-Windows-10-wird-eingestellt-Updates-36482825.html -->
+
+::: {.notes}
+
+- Manchmal werden Softwareversionen nicht mehr unterstützt, wie das Beispiel des End-of-Life für Windows 10 zeigt.
+- Das Problem: Zahlreiche PCs bringen die geforderten Komponenten nicht mit. Ein Upgrade auf Windows 11 auf offiziellem Wege ist in solchen Fällen ausgeschlossen.
+:::
+
+
+## {background-image="images/end-of-10-2.png" background-color="#2a67b2"}
+
+::: {.notes}
+Gehen Sie zu "Orte und vergrößern Sie die Ansicht”
+:::
+
+## {.center}
+
+> Aber nicht jeder kann ein Computerexperte sein
+
+::: {.notes}
+
+- Die "10.000-Stunden-Regel”, die Malcolm Gladwell in seinem Buch "Outliers” populär gemacht hat, besagt, dass man etwa 10.000 Stunden Übung benötigt, um eine Fertigkeit zu meistern.
+- Bei 6 Stunden pro Tag sind Sie nach etwa 7 Jahren ein Computerexperte
+- Insbesondere müssen wir nicht alle 3 Ebenen verstehen (nächste Folie)
+
+:::
+
+## Drei Ebenen{.center}
+
+::: {.fragment .fade-in-then-semi-out}
+::: {.layer-box-blue}
+**Interface**
+ChatGPT
+:::
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+::: {.layer-box-orange}
+**Implementierung**
+Formate, Standards
+:::
+:::
+
+::: {.fragment}
+::: {.layer-box-purple}
+**Technologie**
+:::
+:::
+
+## Am Scheideweg {data-background-image="images/fork-in-the-road-624151138_f1ff60b2db_o-1950536461.jpg" .center .shadow .scheideweg}
+
+::: {.notes}
+
+- Gehen wir *den einfachen* oder *den richtigen Weg*?
+- Werden wir *Meister einer Technologie* oder *Nutzer eines Produkts*?
+
+:::
+
+# OpenSource \& LLM{background-image="images/books-2596809\_1280.jpg" class="blurred-10px shadow"}
+
+## {background-image="images/books-2596809\_1280.jpg"}
+
+## "Offenheit” ist ein Spektrum
+
+offener ↑
+
+::: {.incremental .two-col-list}
+
+- [Vollständig offen]{}  [(Gewichte ✔ Code ✔ Daten ✔)]{}
+- [Offener Code]{} [(Gewichte ✔ Code ✔ Daten ✕)]{}
+- [Offene Gewichte]{}  [(Gewichte ✔ Code ✕ Daten ✕)]{}
+- [Proprietär]{} [(Gewichte ✕ Code ✕ Daten ✕)]{}
+:::
+
+geschlossener ↓
+
+::: {.notes}
+
+**Proprietär (ChatGPT, Claude, Gemini):**
+
+- Komplette Black Box – Sie erhalten nur API-Zugriff
+- Keine Einblicke in die Funktionsweise, die verwendeten Trainingsdaten oder die Entscheidungsfindung
+- Sie sind vollständig vom Anbieter abhängig
+
+**Offene Gewichte (Llama 3.3, DeepSeek, Mistral, Qwen):**
+
+- Die Gewichte des trainierten Modells werden veröffentlicht – Sie können sie herunterladen und lokal ausführen
+- ABER: Trainingscode und Trainingsdaten sind in der Regel NICHT enthalten
+- Sie können es VERWENDEN, aber nicht vollständig überprüfen oder reproduzieren, wie es erstellt wurde
+- Hier befinden sich heute die meisten "offenen” Modelle
+- Für praktische Lehrzwecke: Das ist ausreichend! Sie erhalten lokale Kontrolle.
+
+**Offene Gewichte + Code (einige Forschungsveröffentlichungen):**
+
+- Gewichte + die für das Training verwendete Methodik/der verwendete Code
+- Sie können nachvollziehen und überprüfen, WIE das Training durchgeführt wurde
+- ABER: Trainingsdaten sind in der Regel nicht enthalten (Lizenzprobleme, Wettbewerbsvorteil)
+- Beispiel: Veröffentlichungen einiger akademischer Labore
+- Näher an der echten "Open Source”-Philosophie – transparent und überprüfbar
+
+**Vollständig Open Source (OLMo, BLOOM – selten!):**
+
+- Gewichte + Trainingscode + Trainingsdaten – alles
+- Vollständig reproduzierbar und überprüfbar
+- Dies ist der Goldstandard, aber extrem selten (Trainingsdaten sind teuer, komplexe Lizenzierung)
+- Am ähnlichsten zu traditioneller Open-Source-Software
+
+:::
+
+
+
+## {.center}
+
+Ok, wie funktioniert das?
+
+# Praktische Demo 1 {background-image="images/magic-note-8836935\_1280.jpg" .shadow .blurred-5px}
+
+
+:::{.notes}
+
+Opensource Cloud AI
+
+:::
+
+## {background-image="images/magic-note-8836935\_1280.jpg"}
+
+
+## Opensource Cloud AI
+
+- [mistral.ai](https://mistral.ai)
+- [ollama.ai](https://ollama.ai)
+- [qwen.ai](https://qwen.ai)
+- [deepseek.com](https://deepseek.com)
+- [Gemma](https://deepmind.google/models/gemma/)
+
+
+:::{.notes}
+
+- Mistral ist EU basiert (FR)
+- qwen ist aus China (Alibaba Cloud)
+- ollama cloud ist CLI basiert, und kann auch lokale AI models verwenden
+- deepseek ist aus China. Eine der ersten OS AI Models, die aufgrund von Einschränkungen in der Grafikkarte mit weniger Leistung klarkommen mussten
+- Gemma ist von Google
+
+
+:::
+
+
+
+# Praktische Demo 2 {background-image="images/magic-note-8836935\_1280.jpg" .shadow .blurred-5px}
+
+## {background-image="images/magic-note-8836935\_1280.jpg"}
+
+
+:::{.notes}
+
+- Opensource Lokale KI
+- OS Cloud KI sind zwar super, aber mit vorsicht zu geniessen. Sensible Daten wandern trotzdem ab und können für Trainingszwecken verwendet werden
+- Lokale LLMs sind hier die Lösung
+:::
+
+
+## Schritt 1: Ollama installieren
+
+**Windows-Installation:**
+
+1. Installieren sie *Interim Admin* aus dem Software Center
+1. Von [ollama.com/download](https://ollama.com/download) **OllamaSetup.exe** herunterladen
+3. OllamaSetup.exe mit default Einstellungen installieren 
+
+(Ollama läuft danach automatisch im Hintergrund)
+
+::: {.notes}
+- Die Installation ist sehr einfach - wie jede andere Windows-Software
+- Nach der Installation läuft Ollama als Dienst im Hintergrund
+- Sie müssen nichts weiter konfigurieren
+:::
+
+## Schritt 1.1: Installation überprüfen
+
+Öffnen Sie **PowerShell** oder **Eingabeaufforderung** (CMD) und geben Sie ein:
+
+```powershell
+ollama --version
+```
+
+
+::: {.notes}
+- Wenn der Befehl nicht gefunden wird, starten Sie den Computer neu
+- PowerShell finden Sie über das Startmenü (einfach "PowerShell" eingeben)
+:::
+
+## Schritt 2: Hardware überprüfen
+
+**Wieviel RAM haben Sie?**
+
+Geben Sie in PowerShell oder CMD ein:
+
+```powershell
+systeminfo 
+```
+
+und suchen sie nach der Zeile `Gesamter physischer Speicher`. Merken Sie sich diese Zahl.
+
+```powershell
+Gesamter physischer Speicher:                  32’717 MB
+```
+
+::: {.notes}
+- Die meisten modernen Laptops haben mindestens 8 GB RAM
+- Für den Workshop reichen kleine Modelle (1.5B - 3B) völlig aus
+- Mehr RAM = größere Modelle = bessere Qualität (aber langsamer)
+
+**Interpretation:**
+
+- **8 GB oder weniger**: Kleine Modelle (1.5B - 3B) oder Cloud
+- **16 GB**: Mittlere Modelle (7B) möglich ✅
+- **32 GB+**: Große Modelle (13B+) möglich
+:::
+
+## Schritt 2.1: GPU überprüfen (optional) {visibility="hidden"}
+
+**Haben Sie eine NVIDIA-Grafikkarte?**
+
+```powershell
+wmic path win32_VideoController get name
+```
+
+::: {.fragment}
+✅ **NVIDIA GPU vorhanden**: Modelle laufen deutlich schneller!
+
+⚠ **Keine NVIDIA GPU**: Kein Problem - CPU ist ausreichend für kleine Modelle
+:::
+
+::: {.notes}
+- NVIDIA GPUs beschleunigen die Inferenz erheblich
+- AMD/Intel GPUs werden von Ollama noch nicht gut unterstützt
+- Ohne GPU dauern Antworten etwas länger, funktionieren aber trotzdem
+- Für den Unterricht ist CPU-basierte Inferenz völlig ausreichend
+:::
+
+## Schritt 3 (Variante 1)
+
+**Lokales Modell auswählen**
+
+(Falls Sie mindestens 8 GB RAM haben)
+
+- Suchen Sie auf [ollama.ai](https://ollama.ai) ein kleines Model (1 - 2b Parameter) heraus
+- Z.B.
+  - `llama3.2`
+  - `deepseek-r1`
+  
+:::{.notes}
+
+- Bei gewissen Modellen (z.B: deepseek-r1) gibt es verschiedene Grössen (1 - 700b). 
+- Das sind die Anzahl Parameter (in Milliarden). 
+- Wir starten mit einem kleinen Modell, indem wir mit einem Klick den Namen kopieren.
+
+:::
+
+## Schritt 3 (Variante 2)
+
+**Cloud-Modell**
+
+(Falls Sie weniger als 8 GB RAM haben)
+
+1. Erstellen Sie ein kostenloses Konto auf [ollama.com](https://ollama.com)
+2. Melden Sie sich in der Kommandozeile an:
+
+```powershell
+ollama signin
+```
+
+
+
+
+##
+
+Mit folgendem Kommandozeilenbefehl kann man das Modell (egal ob lokal oder cloud) initialisieren
+
+
+```powershell
+# initialisiert ein kleines, lokales Modell
+ollama pull deepseek-r1:1.5b     
+
+
+# initialisiert ein grosses cloud Modell
+ollama pull ministral            
+
+```
+
+
+::: {.notes}
+- `deepseek-r1:1.5b`: ~1 GB Download, sehr schnell, gut für logisches Denken
+- `llama3.2:3b`: ~2 GB Download, vielseitig, populär
+- `qwen2.5:3b`: ~2 GB Download, besser bei nicht-englischen Sprachen
+- Der Download kann je nach Internetverbindung 1-5 Minuten dauern
+
+
+```powershell
+ollama pull gemini-flash      # Schnell und kosteneffizient
+ollama pull deepseek-v3       # Sehr leistungsfähig
+ollama pull ministral         # Vielseitig
+```
+:::
+
+
+
+## Entscheidungshilfe: Lokal vs. Cloud{visibility="hidden"}
+
+```{mermaid}
+graph LR
+    A[Hardware Check] --> B{≥ 8 GB RAM?}
+    B -->|Ja| C[Lokales Modell]
+    B -->|Nein| D[Cloud-Modell]
+    C --> E[ollama pull deepseek-r1:1.5b]
+    D --> F[ollama login]
+    F --> G[ollama pull gemini-flash]
+    E --> H[ollama run ...]
+    G --> H
+
+    style C fill:#90EE90
+    style D fill:#87CEEB
+    style H fill:#FFD700
+```
+
+::: {.notes}
+**Beide Wege führen zum Ziel!**
+- Lokal: Volle Kontrolle, Datenschutz, keine laufenden Kosten
+- Cloud: Keine Hardware-Limits, immer aktuellste Modelle, einfacher Einstieg
+- Wichtig: Beides verwendet dieselbe Ollama-CLI - kein Umlernen nötig!
+:::
+
+
+## Schritt 4: Chat initialisieren
+
+
+```powershell
+# Lokales Modell:
+ollama run deepseek-r1:1.5b
+
+
+# ODER Cloud-Modell:
+ollama run gemini-flash
+```
+
+
+## Schritt 5: Erster Prompt
+
+
+
+**Beispiel-Prompt:**
+
+```
+>>> Erstelle 3 Multiple-Choice-Fragen zum Thema Photosynthese
+```
+
+
+::: {.fragment}
+**Das war's schon!** Sie nutzen jetzt Open-Source KI.
+:::
+
+::: {.notes}
+**Wichtige Punkte:**
+- `ollama run <modell>` startet eine Chat-Sitzung
+- Funktioniert identisch für lokale und Cloud-Modelle!
+- Die erste Abfrage kann etwas länger dauern (Modell wird geladen/verbunden)
+- Folgeabfragen sind schneller
+- Beenden Sie den Chat mit `/bye` oder Strg+C
+
+**Beispiel-Prompts zum Ausprobieren:**
+- "Erkläre mir Quantenmechanik in einfachen Worten"
+- "Schreibe einen Python-Code zum Sortieren einer Liste"
+- "Fasse diesen Text zusammen: [Text einfügen]"
+- "Erstelle 5 Übungsfragen zu [Thema]"
+- "Gib mir Feedback zu diesem Absatz: [Text]"
+
+**Was passiert hinter den Kulissen (bei lokalen Modellen):**
+
+1. Die Modelldatei wird in den RAM geladen
+2. Ihr Text wird in Zahlen (Tokens) umgewandelt
+3. Das Modell berechnet das nächste wahrscheinlichste Token
+4. Die Ergebnisse werden wieder in Text umgewandelt
+5. Alles geschieht **lokal auf Ihrem Computer** - komplett offline!
+
+**Bei Cloud-Modellen:**
+
+- Schritte 1-4 passieren in Ollamas Cloud-Infrastruktur
+- Ihre Eingabe wird verschlüsselt übertragen
+- Sie erhalten die Antwort zurück
+- **Vorteil:** Keine Hardware-Limits, sehr leistungsfähige Modelle nutzbar
+- **Nachteil:** Daten verlassen Ihren Computer (nicht für sensible Daten!)
+
+**Wichtige Erkenntnis:**
+
+Es ist keine Zauberei - nur Software. Bei lokalen Modellen haben Sie die volle Kontrolle. Bei Cloud-Modellen nutzen Sie dieselbe Technologie, aber remote ausgeführt. Beide Varianten sind Open Source und verwenden dasselbe Interface!
+
+:::
+
+
+## Die drei Verbesserungen{visibility="hidden"}
+
+::: {.columns}
+::: {.column width="33%"}
+**RAG**
+
+Retrieval Augmented Generation
+
+Geben Sie LLM Zugriff auf IHRE Dokumente
+
+*Beispiel: IUNR-Kursmaterialien, Forschungsarbeiten*
+:::
+
+::: {.column width="33%"}
+**MCPs**
+
+Modellkontextprotokoll
+
+Verbinden Sie LLM mit Ihren Tools
+
+*Beispiel: Felddaten, GIS, E-Mail, Kalender*
+:::
+
+::: {.column width="33%"}
+**Personas**
+
+Systemaufforderungen
+
+Gestalten Sie das Verhalten von LLM
+
+*Beispiel: "Lehrassistent für Umweltwissenschaften”*
+:::
+:::
+
+::: {.notes}
+Diese drei Verbesserungen machen lokale LLMs leistungsstark. Gehen Sie nicht zu sehr ins Technische – erklären Sie einfach, was jede einzelne Funktion bewirkt, und geben Sie konkrete Beispiele, die für den Unterricht relevant sind. RAG ist für ihren Anwendungsfall besonders wichtig.
+:::
+
+## Warum lokale LLMs für den Unterricht sinnvoll sind{visibility="hidden"}
+
+- Studierendendaten sind**sensibel**(DSGVO, Datenschutz)
+- **Sich wiederholende Aufgaben**(Benotung, Feedback)
+- Maßgeschneiderte**Kursmaterialien**(RAG)
+- Einmalige Einrichtung,**dauerhafter Nutzen**
+- **Keine Kosten pro Abfrage**
+
+::: {.notes}
+Verbinden Sie die Punkte: Studentendaten + DSGVO = muss lokal sein. Sich wiederholende Aufgaben + keine Kosten pro Abfrage = wirtschaftlich rentabel. Deshalb ist lokal speziell für den Unterricht sinnvoll.
+:::
+
+## Übergang{visibility="hidden"}
+
+::: {.r-fit-text}
+Okay, was können Siedamit**konkret machen**?
+:::
+
+::: {.notes}
+Übergang zu praktischen Anwendungen. Wechsel von "Warum" zu "Was". Zeit, konkreten Wert zu zeigen.
+:::
+
+
+
+
+# Praktische Demo 3 {background-image="images/magic-note-8836935\_1280.jpg" .shadow .blurred-5px}
+
+
+:::{.notes}
+
+Anything LLM
+
+:::
+
+## {background-image="images/magic-note-8836935\_1280.jpg"}
+
+
+## AnythingLLM
+
+- Anything LLM ist eine ideale Ergänzung zu Ollama
+- Die Software bietet ein grafisches Interface und verwendet die Modelle, die von Ollama zu Verfügung gestellt werden
+- AnythingLLM ist frei und OpenSource, und für alle 3 Plattformen verfügbar
+
+
+
+## Demo
+
+:::{.notes}
+
+- Zeige, wie Ollama als Model provider verwendet werden kann
+- Zeige, wie eigene Daten als RAG verwendet werden können
+- Zeige, wie die eigenen Daten abgefragt werden können
+
+:::
+
+
+# Viele Wege raus aus Rom{background-image="images/italy-9505450_1280.jpg" .shadow .blurred-5px}
+
+## {background-image="images/italy-9505450_1280.jpg"}
+
+## {background-iframe="https://di.day" background-interactive="true"}
+
+
+
