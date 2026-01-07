@@ -627,25 +627,32 @@
     "href": "index.html#section",
     "title": "",
     "section": "",
-    "text": "Foto 1998 wo mein Vater ein Workshop zu OpenSource Software leitet\nWir lebten damals in Sri Lanka und mein Vater dozierte an der University of Peradeniya\nIn Sri Lanka ist der Bedarf an OSS noch eine ganz andere als hier, wo Lizenzkosten keine Rolle zu spielen scheinen"
+    "text": "Photo courtesy of Leonard Bentley, CC BY-SA 2.0\n\n\n\n\nSpeakers corner in Hyde Park, London\nThey shout at each other, they shout at their listeners, and sometimes they just shout at the squirrels."
   },
   {
     "objectID": "index.html#section-1",
     "href": "index.html#section-1",
     "title": "",
     "section": "",
+    "text": "Was verbindet mich mit dem Thema OpenSource?\nFoto 1998 wo mein Vater ein Workshop zu OpenSource Software leitet\nWir lebten damals in Sri Lanka und mein Vater dozierte an der University of Peradeniya\nIn Sri Lanka ist der Bedarf an OSS noch eine ganz andere als hier, wo Lizenzkosten keine Rolle zu spielen scheinen"
+  },
+  {
+    "objectID": "index.html#section-2",
+    "href": "index.html#section-2",
+    "title": "",
+    "section": "",
     "text": "Metapher aus der Küche\n\nStellen Sie sich vor, Sie wurden zu einem fantastischen Abendessen bei einem entfernten Verwandten eingeladen.\nSie fragen, wie das Abendessen zubereitet wurde, und der Gastgeber zeigt Ihnen stolz das Rezept\n(nächste Folie)"
   },
   {
-    "objectID": "index.html#section-3",
-    "href": "index.html#section-3",
+    "objectID": "index.html#section-4",
+    "href": "index.html#section-4",
     "title": "",
     "section": "",
     "text": "REZEPT\n\n2 Einheiten Compound-XJ7 hinzufügen.\nIn Pfanne Model-Pro-2024 bei Einstellung “MEDIUM” erhitzen.\nMit zertifiziertem Rührgerät (separat erhältlich) umrühren.\nWenn die Kontrollleuchte grün leuchtet, Flavor-Packet-B hinzufügen\n\n⚠ WARNUNG:\n\nErsatzprodukte führen zum Erlöschen der Garantie\nModel-Pro-2024 wird nächstes Jahr eingestellt; Upgrade erforderlich\n\n\n\n\nHinweis: proprietäre Zutaten, vorgeschriebene Geräte, Warnhinweise zu Ersatzprodukten, geplante Obsoleszenz. Das sollte sich lächerlich anhören.\nWenn man ihn darauf anspricht, hat der Gastgeber folgende Argumente:\n\nMit dieser Methode weiß ich, dass das Essen großartig wird. Ich habe nichts dagegen, dafür ein wenig Freiheit zu opfern.\nWenn ich selbst kochen wollte, müsste ich so viele Details lernen. Dafür habe ich keine Zeit.\nAlle, die ich kenne, kochen so.Das wurde uns in der Schule so beigebracht.\n\nWir würden ein solches System im Bereich des Kochens NIEMALStolerieren"
   },
   {
-    "objectID": "index.html#section-4",
-    "href": "index.html#section-4",
+    "objectID": "index.html#section-5",
+    "href": "index.html#section-5",
     "title": "",
     "section": "",
     "text": "OFFENES REZEPT\n\nZwiebeln in Öl glasig dünsten.\nKnoblauch hinzufügen, 30 Sekunden lang anbraten.\nTomaten hinzufügen, 20 Minuten köcheln lassen.\n\nHINWEISE:\n\nKeine Zwiebeln? Verwenden Sie Schalotten oder Lauch.\nOlivenöl oder Butter sind beide geeignet.\nVerwenden Sie eine handelsübliche, vorzugsweise teflonbeschichtete Bratpfanne\n\n\n\n– Verständnis vs. blindes Befolgen. Beachten Sie die Flexibilität – Ersatzprodukte sind willkommen. So sieht Open Source aus."
@@ -686,8 +693,8 @@
     "text": "Vendor Lock-In\n\n\nAnbieter wollen nicht, dass Sie plattformunabhängig sind.\nSie machen ihre Produkte absichtlich mit denen anderer Anbieter inkompatibel.\nSobald ein bestimmte Investition gemacht ist, ist es schwierig oder sogar unmöglich, den Anbieter zu wechseln.\n(zurück zur Koch-analogie)"
   },
   {
-    "objectID": "index.html#section-5",
-    "href": "index.html#section-5",
+    "objectID": "index.html#section-6",
+    "href": "index.html#section-6",
     "title": "",
     "section": "",
     "text": "REZEPT\n\n2 Einheiten Compound-XJ7 hinzufügen.\nIn Pfanne Model-Pro-2024 bei Einstellung “MEDIUM” erhitzen.\nMit zertifiziertem Rührgerät (separat erhältlich) umrühren.\nWenn die Kontrollleuchte grün leuchtet, Flavor-Packet-B hinzufügen\n\n⚠ WARNUNG:\n\nErsatzprodukte führen zum Erlöschen der Garantie\nModel-Pro-2024 wird nächstes Jahr eingestellt; Upgrade erforderlich\n\n\n\n\nSobaldModel-Pro-Pan-2024, zertifiziertem Rührgerätund andere ähnliche Produkte gekauft wurden, wird es schwierig sein, Rezepte anderer Anbieter zu verwenden"
@@ -700,53 +707,53 @@
     "text": "Warum ist das ein Problem?"
   },
   {
-    "objectID": "index.html#section-6",
-    "href": "index.html#section-6",
-    "title": "",
-    "section": "",
-    "text": "Manchmal sind Produkte einfach schlecht, verfügen nicht über grundlegende Sicherheitsfunktionen und die Sicherheit der Benutzerdaten hat keine Priorität."
-  },
-  {
     "objectID": "index.html#section-7",
     "href": "index.html#section-7",
     "title": "",
     "section": "",
-    "text": "Microsoft hat nach Trump-Sanktionen das Mail-Konto des Chefanklägers des Internationalen Gerichtshofs blockiert.\nTrump sanktionierte das Den Haager Gericht im Februar, nachdem ein Gremium von IStGH-Richtern im November 25 Haftbefehle gegen den israelischen Premierminister Benjamin Netanjahu mit Blick auf Kriegsverbrechen im Gaza-Streifen erlassen hatte."
+    "text": "Manchmal sind Produkte einfach schlecht, verfügen nicht über grundlegende Sicherheitsfunktionen und die Sicherheit der Benutzerdaten hat keine Priorität."
   },
   {
     "objectID": "index.html#section-8",
     "href": "index.html#section-8",
     "title": "",
     "section": "",
-    "text": "Manchmal werden Softwareversionen nicht mehr unterstützt, wie das Beispiel des End-of-Life für Windows 10 zeigt.\nDas Problem: Zahlreiche PCs bringen die geforderten Komponenten nicht mit. Ein Upgrade auf Windows 11 auf offiziellem Wege ist in solchen Fällen ausgeschlossen."
+    "text": "Microsoft hat nach Trump-Sanktionen das Mail-Konto des Chefanklägers des Internationalen Gerichtshofs blockiert.\nTrump sanktionierte das Den Haager Gericht im Februar, nachdem ein Gremium von IStGH-Richtern im November 25 Haftbefehle gegen den israelischen Premierminister Benjamin Netanjahu mit Blick auf Kriegsverbrechen im Gaza-Streifen erlassen hatte."
   },
   {
     "objectID": "index.html#section-9",
     "href": "index.html#section-9",
     "title": "",
     "section": "",
-    "text": "Gehen Sie zu “Orte und vergrößern Sie die Ansicht”"
+    "text": "Manchmal werden Softwareversionen nicht mehr unterstützt, wie das Beispiel des End-of-Life für Windows 10 zeigt.\nDas Problem: Zahlreiche PCs bringen die geforderten Komponenten nicht mit. Ein Upgrade auf Windows 11 auf offiziellem Wege ist in solchen Fällen ausgeschlossen."
   },
   {
     "objectID": "index.html#section-10",
     "href": "index.html#section-10",
     "title": "",
     "section": "",
-    "text": "Aber nicht jeder kann ein Computerexperte sein\n\n\n\nDie “10.000-Stunden-Regel”, die Malcolm Gladwell in seinem Buch “Outliers” populär gemacht hat, besagt, dass man etwa 10.000 Stunden Übung benötigt, um eine Fertigkeit zu meistern.\nBei 6 Stunden pro Tag sind Sie nach etwa 7 Jahren ein Computerexperte\nInsbesondere müssen wir nicht alle 3 Ebenen verstehen (nächste Folie)"
+    "text": "(Überleitung: Einwand)"
+  },
+  {
+    "objectID": "index.html#section-11",
+    "href": "index.html#section-11",
+    "title": "",
+    "section": "",
+    "text": "Aber nicht jeder kann ein Computerexperte sein\n\n\n\nDie “10’000-Stunden-Regel”, die Malcolm Gladwell in seinem Buch “Outliers” populär gemacht hat, besagt, dass man etwa 10.000 Stunden Übung benötigt, um eine Fertigkeit zu meistern.\nBei 6 Stunden pro Tag sind Sie nach etwa 7 Jahren ein Computerexperte\nInsbesondere müssen wir nicht alle 3 Ebenen verstehen (nächste Folie)"
   },
   {
     "objectID": "index.html#drei-ebenen",
     "href": "index.html#drei-ebenen",
     "title": "",
     "section": "Drei Ebenen",
-    "text": "Drei Ebenen\n\n\nInterface ChatGPT\n\n\n\n\nImplementierung Formate, Standards\n\n\n\n\nTechnologie"
+    "text": "Drei Ebenen\n\n\nInterface Die Oberfläche\n\n\n\n\nImplementierung Die Architektur\n\n\n\n\nTechnologie Die Grundlagen\n\n\n\n\nInterface - Für alle\nImplementierung - Für Anwender\nTechnologie - Für Experten"
   },
   {
     "objectID": "index.html#am-scheideweg",
     "href": "index.html#am-scheideweg",
     "title": "",
     "section": "Am Scheideweg",
-    "text": "Am Scheideweg\n\n\nGehen wir den einfachen oder den richtigen Weg?\nWerden wir Meister einer Technologie oder Nutzer eines Produkts?"
+    "text": "Am Scheideweg\n\n\nGehen wir den einfachen oder den richtigen Weg?\nWerden wir Meister einer Technologie oder Nutzer eines Produkts?\nDamit beende ich das Plädoyer und wir wechseln in die konkrete Umsetzung"
   },
   {
     "objectID": "index.html#offenheit-ist-ein-spektrum",
@@ -756,8 +763,8 @@
     "text": "“Offenheit” ist ein Spektrum\noffener ↑\n\n\nVollständig offen (Gewichte ✔ Code ✔ Daten ✔)\nOffener Code (Gewichte ✔ Code ✔ Daten ✕)\nOffene Gewichte (Gewichte ✔ Code ✕ Daten ✕)\nProprietär (Gewichte ✕ Code ✕ Daten ✕)\n\n\ngeschlossener ↓\n\nProprietär (ChatGPT, Claude, Gemini):\n\nKomplette Black Box – Sie erhalten nur API-Zugriff\nKeine Einblicke in die Funktionsweise, die verwendeten Trainingsdaten oder die Entscheidungsfindung\nSie sind vollständig vom Anbieter abhängig\n\nOffene Gewichte (Llama 3.3, DeepSeek, Mistral, Qwen):\n\nDie Gewichte des trainierten Modells werden veröffentlicht – Sie können sie herunterladen und lokal ausführen\nABER: Trainingscode und Trainingsdaten sind in der Regel NICHT enthalten\nSie können es VERWENDEN, aber nicht vollständig überprüfen oder reproduzieren, wie es erstellt wurde\nHier befinden sich heute die meisten “offenen” Modelle\nFür praktische Lehrzwecke: Das ist ausreichend! Sie erhalten lokale Kontrolle.\n\nOffene Gewichte + Code (einige Forschungsveröffentlichungen):\n\nGewichte + die für das Training verwendete Methodik/der verwendete Code\nSie können nachvollziehen und überprüfen, WIE das Training durchgeführt wurde\nABER: Trainingsdaten sind in der Regel nicht enthalten (Lizenzprobleme, Wettbewerbsvorteil)\nBeispiel: Veröffentlichungen einiger akademischer Labore\nNäher an der echten “Open Source”-Philosophie – transparent und überprüfbar\n\nVollständig Open Source (OLMo, BLOOM – selten!):\n\nGewichte + Trainingscode + Trainingsdaten – alles\nVollständig reproduzierbar und überprüfbar\nDies ist der Goldstandard, aber extrem selten (Trainingsdaten sind teuer, komplexe Lizenzierung)\nAm ähnlichsten zu traditioneller Open-Source-Software"
   },
   {
-    "objectID": "index.html#section-12",
-    "href": "index.html#section-12",
+    "objectID": "index.html#section-13",
+    "href": "index.html#section-13",
     "title": "",
     "section": "",
     "text": "Ok, wie funktioniert das?"
@@ -770,8 +777,8 @@
     "text": "Opensource Cloud AI\n\nmistral.ai\nollama.ai\nqwen.ai\ndeepseek.com\nGemma\n\n\n\nMistral ist EU basiert (FR)\nqwen ist aus China (Alibaba Cloud)\nollama cloud ist CLI basiert, und kann auch lokale AI models verwenden\ndeepseek ist aus China. Eine der ersten OS AI Models, die aufgrund von Einschränkungen in der Grafikkarte mit weniger Leistung klarkommen mussten\nGemma ist von Google"
   },
   {
-    "objectID": "index.html#section-14",
-    "href": "index.html#section-14",
+    "objectID": "index.html#section-15",
+    "href": "index.html#section-15",
     "title": "",
     "section": "",
     "text": "Opensource Lokale KI\nOS Cloud KI sind zwar super, aber mit vorsicht zu geniessen. Sensible Daten wandern trotzdem ab und können für Trainingszwecken verwendet werden\nLokale LLMs sind hier die Lösung"
@@ -812,8 +819,8 @@
     "text": "Schritt 3 (Variante 2)\nCloud-Modell\n(Falls Sie weniger als 8 GB RAM haben)\n\nErstellen Sie ein kostenloses Konto auf ollama.com\nMelden Sie sich in der Kommandozeile an:\n\nollama signin"
   },
   {
-    "objectID": "index.html#section-15",
-    "href": "index.html#section-15",
+    "objectID": "index.html#section-16",
+    "href": "index.html#section-16",
     "title": "",
     "section": "",
     "text": "Mit folgendem Kommandozeilenbefehl kann man das Modell (egal ob lokal oder cloud) initialisieren\n# initialisiert ein kleines, lokales Modell\nollama pull deepseek-r1:1.5b     \n\n\n# initialisiert ein grosses cloud Modell\nollama pull ministral            \n\n\ndeepseek-r1:1.5b: ~1 GB Download, sehr schnell, gut für logisches Denken\nllama3.2:3b: ~2 GB Download, vielseitig, populär\nqwen2.5:3b: ~2 GB Download, besser bei nicht-englischen Sprachen\nDer Download kann je nach Internetverbindung 1-5 Minuten dauern\n\nollama pull gemini-flash      # Schnell und kosteneffizient\nollama pull deepseek-v3       # Sehr leistungsfähig\nollama pull ministral         # Vielseitig"
@@ -845,6 +852,13 @@
     "title": "",
     "section": "Demo",
     "text": "Demo\n\n\nZeige, wie Ollama als Model provider verwendet werden kann\nZeige, wie eigene Daten als RAG verwendet werden können\nZeige, wie die eigenen Daten abgefragt werden können"
+  },
+  {
+    "objectID": "index.html#section-18",
+    "href": "index.html#section-18",
+    "title": "",
+    "section": "",
+    "text": "ssh rata@login-rhel8.hpc.zhaw.ch\n\nsrun --partition=earth-4 --qos=earth-4.8h --gres=gpu:2 --mem=32G --time=8:00:00 --chdir $LSFM_CLUSTER_SCRATCH_USER_PATH/ollama --pty bash \n\n\n./bin/ollama serve\nsecond terminal:\nssh node301\ncd $LSFM_CLUSTER_SCRATCH_USER_PATH/ollama\n\n\nollama list\n\nollama run"
   },
   {
     "objectID": "oudated/Workshop_Slides_Outline_OUTDATED_team_audience.html",
