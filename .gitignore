@@ -4,4 +4,11 @@
 .Ruserdata
 
 
-zueri-wie-neu/data/stzh.zwn_meldungen_p.csv
+**/stzh.zwn_meldungen_p.csv
+
+/.quarto/
+**/*.quarto_ipynb
+_site
+**/*_files
+*_files
+*.html
