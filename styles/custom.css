@@ -3,7 +3,26 @@
    Custom styles for this presentation
    ============================================ */
    
-   
+
+#rata{
+  border-radius: 50%;
+}
+
+
+/* Profile layout */
+.profile-layout {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  height: 60vh;
+  place-content: center;
+}
+
+#portrait{
+  font-size: x-large;
+}
    
 .scheideweg .slide-background-content {
   filter: sepia(40%) blur(2px);

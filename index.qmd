@@ -41,6 +41,27 @@ Photo courtesy of Leonard Bentley, CC BY-SA 2.0
 
 :::
 
+##
+
+::::{.profile-layout}
+:::{}
+![](images/rata.jpeg){#rata}
+:::
+
+
+:::{#portrait}
+**Nils Ratnaweera**  
+Spatial Data Scientist  
+
+Wissenschaftlicher Mitarbeiter [FG Geoinformatik (ZHAW)](https://www.zhaw.ch/de/lsfm/institute-zentren/iunr/geooekologie/geoinformatik)  
+Selbständig ([Ratnaweera.xyz](https://www.ratnaweera.xyz))
+
+:::
+
+::::
+
+
+
 
 ## {background-image="images/VR_and_Greshan3.png"}
 
@@ -277,9 +298,23 @@ REZEPT
 - Damit beende ich das Plädoyer und wir wechseln in die konkrete Umsetzung
 :::
 
-# OpenSource \& LLM{background-image="images/books-2596809\_1280.jpg" class="blurred-10px shadow"}
 
-## {background-image="images/books-2596809\_1280.jpg"}
+
+
+
+# Openweights AI {background-image="images/machine-3039352_1280.jpg" .shadow .blurred-5px}
+
+## {background-image="images/machine-3039352_1280.jpg"}
+
+:::{.notes}
+Gewichte sind die gelernten Zahlen innerhalb eines neuronalen Netzwerks.                      
+- Stellen Sie sich das so vor: Ein neuronales Netzwerk besteht im Grunde aus Millionen/Milliarden winziger „Regler“, die während des Trainings angepasst werden. Jeder Regler steuert, wie stark eine Information eine andere beeinflusst.                                     
+- Wenn Sie ein Modell anhand von Text trainieren, stellen Sie im Wesentlichen alle diese Knöpfe ein     , bis das Modell gute Ergebnisse liefert. Die endgültigen Einstellungen all dieser Knöpfe = die Gewichte.                                                                 
+- Wenn also jemand von einem „7B-Modell” spricht, bedeutet das 7 Milliarden Gewichte (7 Milliarden Zahlen, die während des Trainings gelernt wurden).                                   
+   
+
+:::
+
 
 ## "Offenheit" ist ein Spektrum
 
@@ -297,11 +332,7 @@ geschlossener ↓
 
 ::: {.notes}
 
-Gewichte sind die gelernten Zahlen innerhalb eines neuronalen Netzwerks.                      
-- Stellen Sie sich das so vor: Ein neuronales Netzwerk besteht im Grunde aus Millionen/Milliarden winziger „Regler“, die während des Trainings angepasst werden. Jeder Regler steuert, wie stark eine Information eine andere beeinflusst.                                     
-- Wenn Sie ein Modell anhand von Text trainieren, stellen Sie im Wesentlichen alle diese Knöpfe ein     , bis das Modell gute Ergebnisse liefert. Die endgültigen Einstellungen all dieser Knöpfe = die Gewichte.                                                                 
-- Wenn also jemand von einem „7B-Modell” spricht, bedeutet das 7 Milliarden Gewichte (7 Milliarden Zahlen, die während des Trainings gelernt wurden).                                   
-                                                                                
+                                                                             
 
 - **Proprietär (ChatGPT, Claude, Gemini):**
   - Komplette Black Box – Sie erhalten nur API-Zugriff
@@ -328,11 +359,12 @@ Gewichte sind die gelernten Zahlen innerhalb eines neuronalen Netzwerks.
 :::
 
 
-# Openweights AI
-
 
 
 ## {background-image="images/huggingface.jpeg" background-size="contain" background-color="white"}
+
+
+
 
 ## {background-image="images/huggingface.png" background-size="contain" background-color="white"}
 
