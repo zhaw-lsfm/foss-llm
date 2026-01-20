@@ -11,7 +11,7 @@ format:
     background-transition: fade
     pagetitle: OSS LLMs
     code-line-numbers: false
-    footer: zhaw-lsfm.github.io/foss-llm
+    footer: <a href="https://webgis.lsfm.zhaw.ch/foss-llm/">webgis.lsfm.zhaw.ch/foss-llm</a>
 revealjs-plugins:
   - attribution
 ---
