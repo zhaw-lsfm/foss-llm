@@ -66,30 +66,31 @@ Photo courtesy of Leonard Bentley, CC BY-SA 2.0
 
 :::
 
-## {background-image="images/5FAoI86RaWY8Goqvt1b-77.jpg" background-size="contain" background-color="white"}
+## {background-image="images/thermomix.png" background-size="contain" background-color="white"}
 
 ## {background-color="#5F9EA0"}
 
 :::: {.recipe}
 REZEPT
 
-1. 2 Einheiten Compound-XJ7 hinzufügen.
-2. In Pfanne *Model-Pro-2024* bei Einstellung "MEDIUM" erhitzen.
-3. Mit zertifiziertem Rührgerät (separat erhältlich) umrühren.
-4. Wenn die Kontrollleuchte grün leuchtet, Flavor-Packet-B hinzufügen
+1. 200g Compound-XJ7 in den Mixtopf geben, 5 Sek./Stufe 5 zerkleinern.
+2. 20g Carrier-Oil-Premium™ hinzufügen, 3 Min./120°C/Stufe 1 erhitzen.
+3. Rezept-Chip einlegen (separat erhältlich) und Guided-Cooking starten.
+4. Bei grüner Kontrollleuchte 1 Portion Flavor-Packet-B hinzufügen.
 
 
 
 ⚠ WARNUNG:
 
-- Ersatzprodukte führen zum Erlöschen der Garantie
+- Nur zertifizierte Zutaten verwenden (Garantie!)
+- Rezept erfordert aktives Cloud-Abo (49€/Jahr)
 - *Model-Pro-2024* wird nächstes Jahr eingestellt; Upgrade erforderlich
 
 ::::
 
 ::: {.notes}
 
-- Hinweis: proprietäre Zutaten, vorgeschriebene Geräte, Warnhinweise zu Ersatzprodukten, geplante Obsoleszenz. Das sollte sich lächerlich anhören.
+- Hinweis: proprietäre Zutaten, vorgeschriebene Geräte, Abo-Modell, geplante Obsoleszenz. Das sollte sich lächerlich anhören.
 
 :::
 
@@ -99,17 +100,17 @@ REZEPT
 ::: {.recipe}
 OFFENES REZEPT
 
-1. Zwiebeln in Öl glasig dünsten.
-  
-2. Knoblauch hinzufügen, 30 Sekunden lang anbraten.
-  
+1. Zwiebeln klein schneiden, in Öl glasig dünsten (ca. 3-5 Min.).
+
+2. Knoblauch dazu, kurz anbraten bis es duftet.
+
 3. Tomaten hinzufügen, 20 Minuten köcheln lassen.
-  
+
 HINWEISE:
 
-- Keine Zwiebeln? Verwenden Sie Schalotten oder Lauch.
-- Olivenöl oder Butter sind beide geeignet.
-- Verwenden Sie eine handelsübliche, vorzugsweise teflonbeschichtete Bratpfanne
+- Keine Zwiebeln? Schalotten oder Lauch funktionieren auch.
+- Jedes Öl oder Butter geht – was Sie zuhause haben.
+- Jede Pfanne funktioniert. Mit Deckel geht's schneller.
 
 :::
 
@@ -153,47 +154,6 @@ ggplot(df, aes(activity, hours)) +
 
 :::
 
-## Déjà vu {background-image="images/matrix-cat.png" .center .shadow}
-
-
-## Das Muster wiederholt sich
-
-- Wir kennen keine Betriebssysteme, wir kennen nur *Windows*
-- Wir verwenden keine Textverarbeitungsprogramme, wir verwenden *Microsoft Word*
-- Wir verwenden keine Messenger, sondern *WhatsApp*
-
-::: {.fragment}
-- Werden wir KI nutzen oder werden wir *ChatGPT* verwenden?
-:::
-
-::: {.notes}
-- Übung: Alle aufstehen.
-- Alle hinsetzen, die kein Whatsapp installiert haben
-- Wieder aufstehen
-- Alle hinsetzen, die kein Telegramm installiert haben
-- wieder aufstehen
-- Alle hinsetzen, die kein Threema installiert haben
-- Alle aufstehen
-- Alle hinsetzen, die kein Signal installiert haben
-:::
-
-## Die Problematik
-
-Sobald wir genug in ChatGPT investiert haben...
-
-- uns an die Benutzeroberfläche gewöhnt haben
-- Unsere Systeme darauf aufgabaut haben
-- **Unsere Daten bei ihnen gespeichert haben**
-
-::: {.fragment}
-
-- →**werden die Wechselkosten ENORM**
-:::
-
-::: {.notes}
-
-- Warum?
-:::
 
 ## Vendor Lock-In
 
@@ -215,35 +175,28 @@ Sobald wir genug in ChatGPT investiert haben...
 :::: {.recipe}
 REZEPT
 
-1. 2 Einheiten Compound-XJ7 hinzufügen.
-2. In Pfanne *Model-Pro-2024* bei Einstellung "MEDIUM" erhitzen.
-3. Mit zertifiziertem Rührgerät (separat erhältlich) umrühren.
-4. Wenn die Kontrollleuchte grün leuchtet, Flavor-Packet-B hinzufügen
+1. 200g Compound-XJ7 in den Mixtopf geben, 5 Sek./Stufe 5 zerkleinern.
+2. 20g Carrier-Oil-Premium™ hinzufügen, 3 Min./120°C/Stufe 1 erhitzen.
+3. Rezept-Chip einlegen (separat erhältlich) und Guided-Cooking starten.
+4. Bei grüner Kontrollleuchte 1 Portion Flavor-Packet-B hinzufügen.
 
 
 
 ⚠ WARNUNG:
 
-- Ersatzprodukte führen zum Erlöschen der Garantie
+- Nur zertifizierte Zutaten verwenden (Garantie!)
+- Rezept erfordert aktives Cloud-Abo (49€/Jahr)
 - *Model-Pro-2024* wird nächstes Jahr eingestellt; Upgrade erforderlich
 
 ::::
 
 ::: {.notes}
-- Sobald*Model-Pro-Pan-2024*, *zertifiziertem Rührgerät*und andere ähnliche Produkte gekauft wurden, wird es schwierig sein, Rezepte anderer Anbieter zu verwenden
+- Sobald das Gerät, das Cloud-Abo und die zertifizierten Zutaten gekauft wurden, wird es schwierig sein, Rezepte anderer Anbieter zu verwenden
 :::
 
 ## Warum ist das ein Problem? {.center}
 
   
-## {background-image="images/whatsapp-leak.png" background-size="contain" background-color="white"}
-
-:::{.notes}
-
-- Manchmal sind Produkte einfach schlecht, verfügen nicht über grundlegende Sicherheitsfunktionen und die Sicherheit der Benutzerdaten hat keine Priorität.
-
-:::
-
 ## {background-image="images/sanctions.png" background-size="contain" background-color="white"}
 
 <!-- https://www.heise.de/news/Strafgerichtshof-Microsofts-E-Mail-Sperre-als-Weckruf-fuer-digitale-Souveraenitaet-10387368.html -->
@@ -288,23 +241,20 @@ REZEPT
 ## Drei Ebenen{.center}
 
 :::: {.fragment .fade-in-then-semi-out}
-::: {.layer-box-blue}
+::: {.layer-box .layer-box-blue}
 **Interface**
-Die Oberfläche
 :::
 ::::
 
 :::: {.fragment .fade-in-then-semi-out}
-::: {.layer-box-orange}
+::: {.layer-box .layer-box-orange}
 **Implementierung**
-Die Architektur
 :::
 ::::
 
 :::: {.fragment}
-::: {.layer-box-purple}
-**Technologie**
-Die Grundlagen
+::: {.layer-box  .layer-box-purple}
+**Technologie** 
 :::
 ::::
 
@@ -347,51 +297,48 @@ geschlossener ↓
 
 ::: {.notes}
 
-**Proprietär (ChatGPT, Claude, Gemini):**
+Gewichte sind die gelernten Zahlen innerhalb eines neuronalen Netzwerks.                      
+- Stellen Sie sich das so vor: Ein neuronales Netzwerk besteht im Grunde aus Millionen/Milliarden winziger „Regler“, die während des Trainings angepasst werden. Jeder Regler steuert, wie stark eine Information eine andere beeinflusst.                                     
+- Wenn Sie ein Modell anhand von Text trainieren, stellen Sie im Wesentlichen alle diese Knöpfe ein     , bis das Modell gute Ergebnisse liefert. Die endgültigen Einstellungen all dieser Knöpfe = die Gewichte.                                                                 
+- Wenn also jemand von einem „7B-Modell” spricht, bedeutet das 7 Milliarden Gewichte (7 Milliarden Zahlen, die während des Trainings gelernt wurden).                                   
+                                                                                
 
-- Komplette Black Box – Sie erhalten nur API-Zugriff
-- Keine Einblicke in die Funktionsweise, die verwendeten Trainingsdaten oder die Entscheidungsfindung
-- Sie sind vollständig vom Anbieter abhängig
-
-**Offene Gewichte (Llama 3.3, DeepSeek, Mistral, Qwen):**
-
-- Die Gewichte des trainierten Modells werden veröffentlicht – Sie können sie herunterladen und lokal ausführen
-- ABER: Trainingscode und Trainingsdaten sind in der Regel NICHT enthalten
-- Sie können es VERWENDEN, aber nicht vollständig überprüfen oder reproduzieren, wie es erstellt wurde
-- Hier befinden sich heute die meisten "offenen" Modelle
-- Für praktische Lehrzwecke: Das ist ausreichend! Sie erhalten lokale Kontrolle.
-
-**Offene Gewichte + Code (einige Forschungsveröffentlichungen):**
-
-- Gewichte + die für das Training verwendete Methodik/der verwendete Code
-- Sie können nachvollziehen und überprüfen, WIE das Training durchgeführt wurde
-- ABER: Trainingsdaten sind in der Regel nicht enthalten (Lizenzprobleme, Wettbewerbsvorteil)
-- Beispiel: Veröffentlichungen einiger akademischer Labore
-- Näher an der echten "Open Source"-Philosophie – transparent und überprüfbar
-
-**Vollständig Open Source (OLMo, BLOOM – selten!):**
-
-- Gewichte + Trainingscode + Trainingsdaten – alles
-- Vollständig reproduzierbar und überprüfbar
-- Dies ist der Goldstandard, aber extrem selten (Trainingsdaten sind teuer, komplexe Lizenzierung)
-- Am ähnlichsten zu traditioneller Open-Source-Software
+- **Proprietär (ChatGPT, Claude, Gemini):**
+  - Komplette Black Box – Sie erhalten nur API-Zugriff
+  - Keine Einblicke in die Funktionsweise, die verwendeten Trainingsdaten oder die Entscheidungsfindung
+  - Sie sind vollständig vom Anbieter abhängig
+- **Offene Gewichte (Llama 3.3, DeepSeek, Mistral, Qwen):**
+  - Die Gewichte des trainierten Modells werden veröffentlicht – Sie können sie herunterladen und lokal ausführen
+  - ABER: Trainingscode und Trainingsdaten sind in der Regel NICHT enthalten
+  - Sie können es VERWENDEN, aber nicht vollständig überprüfen oder reproduzieren, wie es erstellt wurde
+  - Hier befinden sich heute die meisten "offenen" Modelle
+  - Für praktische Lehrzwecke: Das ist ausreichend! Sie erhalten lokale Kontrolle.
+- **Offene Gewichte + Code (einige Forschungsveröffentlichungen):**
+  - Gewichte + die für das Training verwendete Methodik/der verwendete Code
+  - Sie können nachvollziehen und überprüfen, WIE das Training durchgeführt wurde
+  - ABER: Trainingsdaten sind in der Regel nicht enthalten (Lizenzprobleme, Wettbewerbsvorteil)
+  - Beispiel: Veröffentlichungen einiger akademischer Labore
+  - Näher an der echten "Open Source"-Philosophie – transparent und überprüfbar
+- **Vollständig Open Source (OLMo, BLOOM – selten!):**
+  - Gewichte + Trainingscode + Trainingsdaten – alles
+  - Vollständig reproduzierbar und überprüfbar
+  - Dies ist der Goldstandard, aber extrem selten (Trainingsdaten sind teuer, komplexe Lizenzierung)
+  - Am ähnlichsten zu traditioneller Open-Source-Software
 
 :::
 
 
-
-## {.center}
-
-Ok, wie funktioniert das?
-
-# Praktische Demo 1 {background-image="images/magic-note-8836935\_1280.jpg" .shadow .blurred-5px}
-
-[OpenSource in der Cloud]{.shadow}
+# Openweights AI
 
 
 
-## {background-image="images/magic-note-8836935\_1280.jpg"}
+## {background-image="images/huggingface.jpeg" background-size="contain" background-color="white"}
 
+## {background-image="images/huggingface.png" background-size="contain" background-color="white"}
+
+:::{#huggingface}                                                             
+[](https://huggingface.co)                                                    
+:::  
 
 ## Opensource Cloud AI
 

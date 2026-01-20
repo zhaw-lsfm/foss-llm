@@ -10,31 +10,43 @@
 }
 
 
+#huggingface {                                                                
+  position: relative;  /* add this */                                         
+  height: 100vh;                                                              
+  width: 100%;                                                                
+  
+}                                                                             
+                                                                              
+#huggingface a {                                                              
+  position: absolute;                                                         
+  inset: 0;                                                                   
+} 
+
+
+.layer-box{
+  padding: 20px;
+  border-radius: 5px;
+  width: 50%;
+}
 
 
 /* Three Layers boxes */
 .layer-box-blue {
   background: #e1f5ff;
-  padding: 20px;
   border: 2px solid #01579b;
-  border-radius: 5px;
   color: black;
 }
 
 .layer-box-orange {
   background: #fff3e0;
-  padding: 20px;
   border: 2px solid #e65100;
-  border-radius: 5px;
   margin-top: 10px;
   color: black;
 }
 
 .layer-box-purple {
   background: #f3e5f5;
-  padding: 20px;
   border: 2px solid #9963dbff;
-  border-radius: 5px;
   margin-top: 10px;
   color: black;
 }
