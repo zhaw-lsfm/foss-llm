@@ -1,0 +1,320 @@
+---
+title: "GruentAI - Thesis Evaluation"
+subtitle: "Evaluierung lokaler LLMs zur Bewertung von Bachelorarbeiten"
+author: FG Geoinformatik
+date: "2026-01-15"
+format:
+  revealjs:
+    theme: dark
+    title-slide: false
+    slide-number: true
+    transition: slide
+    background-transition: fade
+    pagetitle: GruentAI Results
+    code-line-numbers: false
+    footer: "GruentAI | ZHAW Geoinformatik"
+    smaller: true
+    scrollable: false
+---
+
+# GruentAI - Thesis Evaluation {.title-slide}
+
+Evaluierung lokaler LLMs zur Bewertung von Bachelorarbeiten
+
+**Projektabschluss-Präsentation**
+
+*Datenbasis: 07.12.2025 – 15.01.2026*
+
+::: {.notes}
+Willkommen zur Projektabschluss-Präsentation von GruentAI.
+Wir präsentieren die Ergebnisse unserer Untersuchung zur automatisierten Thesis-Bewertung.
+:::
+
+## Projektkontext & Forschungsfrage
+
+### Ausgangslage
+
+Untersuchung der Eignung lokaler Large Language Models (LLMs) für die automatisierte Bewertung von Bachelorarbeiten nach dem ZHAW-Bewertungsschema.
+
+### Forschungsfrage
+
+> Können lokal betriebene LLM-Modelle Bachelorarbeiten nach dem ZHAW-Schema bewerten und dabei eine **Abweichung von weniger als 0.5 Notenpunkten** zur manuellen Bewertung erzielen?
+
+::: {.notes}
+Die zentrale Forschungsfrage zielt auf eine Abweichung unter 0.5 Notenpunkten.
+Dies würde eine praktische Nutzbarkeit als Zweitmeinung ermöglichen.
+:::
+
+## Scope & Limitierungen
+
+### Was wird untersucht?
+
+- Fokus auf **Bachelorarbeiten (BA)**
+- Bewertung nur auf Basis der **PDF-Dokumente**
+
+### Was wird NICHT berücksichtigt?
+
+- Semesterarbeiten / Masterarbeiten (spätere Phasen)
+- Mündliche Verteidigung
+- Prozessbeurteilung
+
+::: {.notes}
+SA und MA werden in späteren Projektphasen hinzugefügt.
+:::
+
+## ZHAW-Bewertungsschema
+
+### Schweizer Notenskala (1–6)
+
+| Note | Bewertung | Beschreibung |
+|------|-----------|--------------|
+| **6.0** | Sehr gut | Hervorragende Leistung |
+| **5.0–5.9** | Gut | Gute bis sehr gute Leistung |
+| **4.0–4.9** | Genügend | Befriedigende Leistung |
+| **< 4.0** | Ungenügend | Unzureichende Leistung |
+
+**Wichtig:** 6 ist die beste Note (nicht wie im deutschen System!)
+
+::: {.notes}
+Im Schweizer System ist 6 die Bestnote, 4 ist genügend.
+Dies ist wichtig für die Interpretation der Abweichungen.
+:::
+
+## Kennzahlen & Top-Modelle
+
+![Kennzahlen Dashboard mit Top-Modellen](images/gruentai_chart_07.png)
+
+::: {.notes}
+Das Dashboard zeigt die wichtigsten Kennzahlen auf einen Blick.
+Die Top-3 Modelle werden hervorgehoben.
+:::
+
+## Durchschnittliche Abweichung pro Modell
+
+![Abweichungs-Balkendiagramm](images/gruentai_chart_02.png)
+
+**Grün:** Abweichung < 0.5 | **Gelb:** 0.5–0.7 | **Rot:** > 0.7
+
+::: {.notes}
+Die Farbcodierung zeigt sofort, welche Modelle das Ziel erreichen.
+Nur wenige Modelle schaffen eine Abweichung unter 0.5.
+:::
+
+## Modell-Konsistenz (Box-Plot)
+
+![Box-Plot Notenstreuung](images/gruentai_chart_01.png)
+
+**Erkenntnis:** Schmale Boxen = konsistente Bewertungen. Grosse Streuung bei gemma3:12b sichtbar.
+
+::: {.notes}
+Konsistenz ist ebenso wichtig wie Genauigkeit.
+Ein Modell, das stark schwankt, ist praktisch schwer einsetzbar.
+:::
+
+## Laufzeitanalyse
+
+![Laufzeit-Diagramm](images/gruentai_chart_03.png){height="350px"}
+
+| Kategorie | Beispiele | Laufzeit |
+|-----------|-----------|----------|
+| Schnell | llama3:8b, gemma3:4b | 1:38 – 2:06 |
+| Mittel | hermes3:70b, nemotron:70b | 6:59 – 7:03 |
+| Extrem | phi4-mini-reasoning:3.8b | **101:51** |
+
+::: {.notes}
+Die Laufzeit ist ein wichtiger praktischer Faktor.
+Für den produktiven Einsatz sind Modelle unter 10 Minuten ideal.
+:::
+
+## Modell-Zuverlässigkeit (Erfolgsraten)
+
+![Erfolgsraten-Diagramm](images/gruentai_chart_04.png){height="350px"}
+
+**Stabil (100%):** command-a:111b, deepseek-r1:70b-q4_K_M, gemma3:4b, nemotron:70b
+
+**Problematisch (<70%):** mistral:7b, qwen3:8b, gemma3:12b
+
+::: {.notes}
+Erfolgsrate bedeutet: Wie oft liefert das Modell eine valide Bewertung?
+Modelle mit niedriger Rate sind für den Produktiveinsatz ungeeignet.
+:::
+
+## Korrelation: KI vs. Manuelle Note
+
+![Scatterplot KI vs Manuell](images/gruentai_chart_00.png){height="380px"}
+
+Punkte nahe der Diagonale = gute Übereinstimmung
+
+::: {.notes}
+Der Scatterplot zeigt die Beziehung zwischen KI- und manueller Bewertung.
+Ideale Übereinstimmung wäre eine perfekte Diagonale.
+:::
+
+## Bias-Analyse: Gerichtete Abweichung
+
+![Bias-Analyse Scatterplot](images/gruentai_chart_05.png){height="380px"}
+
+Positive Werte = KI bewertet besser | Negative Werte = KI bewertet strenger
+
+::: {.notes}
+Die gerichtete Abweichung zeigt systematische Tendenzen der Modelle.
+:::
+
+## Bias-Analyse: Nach Notenbereich
+
+![Bias nach Notenbereich](images/gruentai_chart_06.png){height="350px"}
+
+| Notenbereich | Tendenz |
+|--------------|---------|
+| **3.0–4.0** | Zu gut (+0.8 bis +1.7) |
+| **4.0–5.0** | Neutral (±0.5) |
+| **5.0–6.0** | Zu streng (-0.3 bis -1.7) |
+
+::: {.notes}
+Regression zur Mitte: Schwache Arbeiten werden aufgewertet, sehr gute abgewertet.
+Dies ist ein bekanntes Phänomen bei ML-Modellen.
+:::
+
+## Warum weicht die KI ab?
+
+### Socializing-Parameter (Teil 1)
+
+Die KI kann diese Faktoren **nicht** bewerten:
+
+| Parameter | Beschreibung |
+|-----------|--------------|
+| **Prozessqualität** | Stellt der Student die richtigen Fragen? |
+| **Engagement** | Wie viel sichtbare Arbeit wurde investiert? |
+| **Zuverlässigkeit** | Pünktlichkeit bei Abgaben und Terminen |
+
+::: {.notes}
+Die KI sieht nur das Endprodukt, nicht den Prozess.
+:::
+
+## Warum weicht die KI ab? (Fortsetzung)
+
+### Socializing-Parameter (Teil 2)
+
+| Parameter | Beschreibung |
+|-----------|--------------|
+| **Zusammenarbeit** | Kommunikation mit dem Betreuer |
+| **Eigeninitiative** | Selbstständige Lösungsansätze |
+| **Lernfortschritt** | Entwicklung während der Arbeit |
+
+Diese Faktoren erklären, warum manuelle Noten besser ausfallen können.
+
+::: {.notes}
+Besonders bei engagierten Studierenden macht dies einen Unterschied.
+:::
+
+## Fazit: Empfohlene Modelle
+
+| Modell | Abweichung | Laufzeit | Erfolgsrate |
+|--------|------------|----------|-------------|
+| **hermes3:70b** | 0.27 | 6:59 | 95.5% |
+| **llama3:8b** | 0.39 | 1:38 | 90.7% |
+| **nemotron:70b** | 0.40 | 7:03 | 100% |
+| **phi4-reasoning:14b** | 0.41 | 10:47 | 100% |
+
+::: {.notes}
+hermes3:70b ist der klare Gewinner in Bezug auf Genauigkeit.
+llama3:8b bietet den besten Kompromiss aus Geschwindigkeit und Qualität.
+:::
+
+## Fazit: Nicht empfohlene Modelle
+
+| Modell | Problem |
+|--------|---------|
+| **gemma3:12b** | Höchste Abweichung (1.45), niedrige Erfolgsrate (69%) |
+| **mistral:7b** | Niedrigste Erfolgsrate (56.9%) |
+| **phi4-mini-reasoning:3.8b** | Extrem lange Laufzeit (>100 Min.) |
+
+::: {.notes}
+Diese Modelle sind für den Produktiveinsatz nicht geeignet.
+:::
+
+## Nutzungshinweise: Workflow
+
+### Empfohlener Workflow
+
+1. **Thesis hochladen** - Modell wählen (hermes3:70b empfohlen)
+2. **KI-Bewertung generieren** - ca. 7 Min. Wartezeit
+3. **Ergebnis als Zweitmeinung** - nicht als finale Note!
+4. **Bei Abweichung > 0.5** - eigene Bewertung überprüfen
+
+::: {.notes}
+Der Workflow ist einfach gehalten für maximale Akzeptanz.
+:::
+
+## Nutzungshinweise: Regeln
+
+### Empfohlen
+
+- Als **Qualitätssicherung** nutzen
+- Bei **Unsicherheit** als Orientierung
+
+### Nicht empfohlen
+
+- **Niemals** als alleinige Bewertung verwenden
+- **Nicht** unter Zeitdruck ohne Review einsetzen
+
+::: {.notes}
+Der wichtigste Punkt: Die KI ersetzt nicht den Prüfer.
+Sie ist ein Werkzeug zur Qualitätssicherung und Reflexion.
+:::
+
+## Ausblick: Kurzfristig
+
+### Phase 2 – Erweiterung
+
+- **Semesterarbeiten (SA)** in Evaluation einbeziehen
+- **Masterarbeiten (MA)** als dritte Kategorie
+
+### Phase 3 – Optimierung
+
+- **Fine-Tuning** der Modelle auf ZHAW-Bewertungsschema
+- Mehrere Evaluationsläufe pro Thesis
+
+::: {.notes}
+Die nächsten Phasen erweitern den Anwendungsbereich.
+:::
+
+## Ausblick: Langfristig
+
+### Ziele
+
+- Integration in bestehende Bewertungsprozesse
+- Automatische Vorschläge für Bewertungskategorien
+- Regelmässige Kalibrierung mit neuen manuellen Bewertungen
+
+::: {.notes}
+Das Projekt wird kontinuierlich weiterentwickelt.
+:::
+
+## Zusammenfassung
+
+### Kernaussagen
+
+| Frage | Antwort |
+|-------|---------|
+| Ziel erreicht? | **Teilweise** – 0.57 statt < 0.5 Abweichung |
+| Bestes Modell? | **hermes3:70b** mit 0.27 Abweichung |
+| Produktiv einsetzbar? | **Ja, als Zweitmeinung** |
+| Ersetzt KI den Prüfer? | **Nein** – Socializing-Parameter fehlen |
+
+### Take-Away
+
+> Lokale LLMs sind ein **vielversprechendes Werkzeug** zur Unterstützung, aber **kein Ersatz** für die menschliche Bewertung.
+
+::: {.notes}
+Die zentrale Botschaft: KI als Werkzeug, nicht als Ersatz.
+Die Ergebnisse sind vielversprechend für den Einsatz als Zweitmeinung.
+:::
+
+## Vielen Dank! {.center}
+
+**Fragen?**
+
+---
+
+*Generiert mit GruentAI | Stand: 15.01.2026*
