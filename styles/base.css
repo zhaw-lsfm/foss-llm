@@ -12,6 +12,19 @@
   src: url('../fonts/shadows-into-light-two-v19-latin-regular.woff2') format('woff2');
 }
 
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Yanone Kaffeesatz';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/yanone-kaffeesatz-v30-latin/yanone-kaffeesatz-v30-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+  
+
+body .reveal {
+    font-family: "Yanone Kaffeesatz", "normal";
+}
+
 /* Blur effect for backgrounds */
 .blurred-5px .slide-background-content {
   filter: blur(5px);
@@ -38,3 +51,44 @@
   text-shadow: 2px 2px #000000 !important;
 }
 
+.strokeme,
+.strokeme h1,
+.strokeme h2
+{
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000 !important;
+}
+
+
+
+
+/* blockquote start */
+
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Gloria Hallelujah';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/gloria-hallelujah-v21-latin/gloria-hallelujah-v21-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+.blockquote>p::before {
+    content: "“";
+}
+
+.blockquote>p::after {
+    content: "”";
+}
+.blockquote{
+    font-family: "Gloria Hallelujah", "normal";
+}
+
+.attribution{
+    font-size: large;
+    padding-top: 20px;
+}
+
+.attribution::before{
+    content: "- ";
+}
+
+/* blockquote end */
