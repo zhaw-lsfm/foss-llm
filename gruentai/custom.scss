@@ -1,0 +1,277 @@
+/*-- scss:defaults --*/
+
+// Fonts
+$font-family-sans-serif: "Inter", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-family-monospace: "JetBrains Mono", "Fira Code", Consolas, monospace;
+
+// Colors
+$body-bg: #1a1a2e;
+$body-color: #f0f0f0;
+$link-color: #64b5f6;
+$selection-bg: #3b82f6;
+
+// Headings
+$presentation-heading-color: #ffffff;
+$presentation-heading-font: "Inter", sans-serif;
+
+/*-- scss:rules --*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+// ===== GLOBALE ZENTRIERUNG =====
+.reveal .slides {
+  text-align: center !important;
+}
+
+.reveal .slides section {
+  padding: 30px 80px !important;
+  box-sizing: border-box;
+  text-align: center !important;
+}
+
+// ===== TITEL-FOLIE =====
+#title-slide {
+  text-align: center !important;
+  
+  h1.title {
+    font-size: 3.2em !important;
+    font-weight: 700;
+    color: #64b5f6;
+    margin-bottom: 0.2em;
+  }
+  
+  p.subtitle {
+    font-size: 1.5em !important;
+    color: #90caf9;
+  }
+  
+  p.author {
+    font-size: 1.1em !important;
+    color: #b0bec5;
+    margin-top: 1.5em;
+  }
+  
+  p.date {
+    font-size: 1em !important;
+    color: #78909c;
+  }
+}
+
+// ===== UEBERSCHRIFTEN ZENTRIERT =====
+.reveal h2 {
+  text-transform: none !important;
+  border-bottom: 3px solid #3b82f6 !important;
+  padding-bottom: 0.3em !important;
+  margin-bottom: 0.8em !important;
+  font-size: 1.7em !important;
+  text-align: center !important;
+}
+
+.reveal h3 {
+  font-size: 1.25em !important;
+  color: #90caf9 !important;
+  margin-bottom: 0.6em !important;
+  text-align: center !important;
+}
+
+// ===== LISTEN GROESSER =====
+.reveal ul, 
+.reveal ol {
+  margin-left: 0.5em !important;
+  text-align: left !important;
+  display: inline-block !important;
+}
+
+.reveal li {
+  margin-bottom: 0.5em !important;
+  line-height: 1.5 !important;
+  font-size: 1.1em !important;
+}
+
+// ===== TABELLEN ZENTRIERT =====
+.reveal table {
+  font-size: 1em !important;
+  margin: 0.8em auto !important;
+  width: auto !important;
+  border-collapse: collapse !important;
+}
+
+.reveal table th {
+  background: #0f3460 !important;
+  color: #fff !important;
+  padding: 12px 20px !important;
+  text-align: center !important;
+  font-weight: 600 !important;
+  font-size: 1em !important;
+}
+
+.reveal table td {
+  padding: 10px 20px !important;
+  border-bottom: 1px solid #334155 !important;
+  background: rgba(30, 41, 59, 0.5) !important;
+  text-align: center !important;
+  font-size: 1em !important;
+}
+
+.reveal table td:first-child {
+  text-align: left !important;
+}
+
+// ===== COLUMNS ZENTRIERT =====
+.reveal .columns {
+  display: flex !important;
+  gap: 3em !important;
+  justify-content: center !important;
+  align-items: flex-start !important;
+  width: 100% !important;
+}
+
+.reveal .column {
+  text-align: center !important;
+}
+
+.reveal .column h3 {
+  text-align: center !important;
+  margin-bottom: 0.6em !important;
+}
+
+.reveal .column ul,
+.reveal .column ol {
+  text-align: left !important;
+  display: inline-block !important;
+  margin: 0 auto !important;
+}
+
+.reveal .column table {
+  margin: 0.5em auto !important;
+}
+
+.reveal .column p {
+  text-align: center !important;
+}
+
+// ===== CALLOUTS =====
+.reveal .callout {
+  border-radius: 10px !important;
+  padding: 1em 1.5em !important;
+  margin: 0.8em auto !important;
+  border-left: 4px solid !important;
+  font-size: 1.05em !important;
+  text-align: left !important;
+  max-width: 85% !important;
+}
+
+.reveal .callout-note {
+  background: rgba(59, 130, 246, 0.15) !important;
+  border-color: #3b82f6 !important;
+}
+
+.reveal .callout-tip {
+  background: rgba(16, 185, 129, 0.15) !important;
+  border-color: #10b981 !important;
+}
+
+.reveal .callout-important {
+  background: rgba(239, 68, 68, 0.15) !important;
+  border-color: #ef4444 !important;
+}
+
+.reveal .callout-warning {
+  background: rgba(245, 158, 11, 0.15) !important;
+  border-color: #f59e0b !important;
+}
+
+.reveal .callout-title {
+  font-weight: 600 !important;
+  margin-bottom: 0.4em !important;
+  font-size: 1.1em !important;
+}
+
+// ===== PARAGRAPHEN =====
+.reveal p {
+  margin: 0.5em 0 !important;
+  font-size: 1.05em !important;
+  text-align: center !important;
+}
+
+// ===== STRONG/BOLD =====
+.reveal strong {
+  color: #fbbf24 !important;
+}
+
+// ===== PROGRESS BAR =====
+.reveal .progress {
+  height: 4px !important;
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+
+.reveal .progress span {
+  background: #3b82f6 !important;
+}
+
+// ===== SLIDE NUMBERS =====
+.reveal .slide-number {
+  font-size: 0.85em !important;
+  color: #64748b !important;
+}
+
+// ===== FOOTER =====
+.reveal .footer {
+  font-size: 0.75em !important;
+  color: #64748b !important;
+}
+
+// ===== SECTION DIVIDERS =====
+.reveal section[data-background-color="#0f3460"] h2 {
+  border-bottom: none !important;
+  text-align: center !important;
+  font-size: 1.6em !important;
+}
+
+// ===== BILDER =====
+.reveal img {
+  border-radius: 8px !important;
+}
+
+// ===== COLLAGE LAYOUT =====
+.reveal .collage {
+  margin-top: -0.8em !important;
+  padding: 0 !important;
+}
+
+.reveal .collage .columns {
+  gap: 0.4em !important;
+  margin-bottom: 0.4em !important;
+  padding: 0 !important;
+}
+
+.reveal .collage .column {
+  padding: 0 !important;
+}
+
+.reveal .collage img {
+  width: 100% !important;
+  height: auto !important;
+  border-radius: 4px !important;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5) !important;
+  display: block !important;
+}
+
+.reveal .collage p {
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 0 !important;
+}
+
+// ===== BLOCKQUOTES =====
+.reveal blockquote {
+  background: rgba(59, 130, 246, 0.1) !important;
+  border-left: 4px solid #3b82f6 !important;
+  padding: 1em 1.2em !important;
+  margin: 0.6em auto !important;
+  border-radius: 0 8px 8px 0 !important;
+  font-style: italic !important;
+  color: #e0e7ff !important;
+  font-size: 1.05em !important;
+  max-width: 85% !important;
+}

@@ -1,0 +1,384 @@
+---
+title: "GruentAI"
+subtitle: "Lokale Open Source LLM in der Hochschullehre einsetzen"
+author: ""
+date: ""
+format:
+  revealjs:
+    theme: [dark, custom.scss]
+    footer: "GruentAI | ZHAW Geoinformatik"
+    slide-number: c/t
+    progress: true
+    transition: slide
+    width: 1920
+    height: 1080
+    margin: 0.1
+    center: true
+title-slide-attributes:
+  data-background-color: "#1a1a2e"
+---
+
+## GruentAI {background-color="#1a1a2e"}
+
+[Das Projekt zielt darauf ab den Einsatz von Lokalen Open Source LLMs fuer die Hochschullehre zu testen und fuer ausgewaehlte Use Cases zugaenglich zu machen.]{style="font-size: 1.2em;"}
+
+- **Lehrunterstuetzung:** Bereitstellen von lokalen Customized ChatBots fuer die Lehre (z.B. Pruefungsfragen, Aufgaben, Uebungen,... aus eigenen Lehrunterlagen und fachspezifischem Material)
+- **Bewertungsunterstuetzung:** KI-gestuetzte Korrektur von Bachelorarbeiten
+- **Kollaborative Lernunterstuetzung:** KI-gestuetztes Feedback fuer studentische Projektarbeiten
+
+---
+
+## {background-color="#1a1a2e" .unlisted}
+
+[GruentAI]{style="font-size: 3.2em; font-weight: 700; color: #64b5f6; display: block; margin-bottom: 0.2em;"}
+
+[KI-gestuetzte Thesis-Bewertung mit lokalen LLMs]{style="font-size: 1.5em; color: #90caf9; display: block;"}
+
+[Forschungsgruppe Geoinformatik | ZHAW Waedenswil]{style="font-size: 1.1em; color: #b0bec5; display: block; margin-top: 1.5em;"}
+
+[Januar 2026]{style="font-size: 1em; color: #78909c; display: block;"}
+
+---
+
+## Agenda
+
+::: {.columns}
+::: {.column width="50%"}
+1. Ausgangslage und Forschungsfrage
+2. Methodik und Datenbasis
+3. Ergebnisse und Top-Modelle
+:::
+::: {.column width="50%"}
+4. Modell- und Bias-Analyse
+5. Fazit und Empfehlungen
+6. Ausblick und Deliverables
+:::
+:::
+
+---
+
+## Ausgangslage: Zwei Perspektiven {background-color="#0f3460"}
+
+::: {.columns}
+::: {.column width="45%"}
+
+### Lehrende
+
+- 2-4h Zeitaufwand pro Thesis
+- Konsistenz zwischen Pruefern schwierig
+- Wunsch nach objektiver Zweitmeinung
+- Wachsende Anzahl Abschlussarbeiten
+
+**KI als Entlastung und Qualitaetssicherung**
+
+:::
+::: {.column width="45%"}
+
+### Studierende
+
+- Unsicherheit vor der Abgabe
+- Kein fruehes Feedback moeglich
+- Selbsteinschaetzung schwierig
+- Blind fuer eigene Schwaechen
+
+**KI als Feedback-Tool vor Abgabe**
+
+:::
+:::
+
+---
+
+## Die Forschungsfrage
+
+::: {.callout-note}
+## Zentrale Frage
+Koennen lokal betriebene LLM-Modelle Bachelorarbeiten nach dem ZHAW-Schema bewerten und dabei eine **Abweichung von weniger als 0.5 Notenpunkten** zur manuellen Bewertung erzielen?
+:::
+
+::: {.columns}
+::: {.column width="45%"}
+
+### Untersucht
+
+- Bachelorarbeiten (BA)
+- PDF-Dokument-Analyse
+- Schweizer Notenskala (1-6)
+
+:::
+::: {.column width="45%"}
+
+### Nicht untersucht
+
+- Semester-/Masterarbeiten
+- Muendliche Verteidigung
+- Prozessbeurteilung
+
+:::
+:::
+
+---
+
+## Methodik: Das ZHAW-Bewertungsschema {background-color="#0f3460"}
+
+| Kategorie | Gewicht | Bewertungsfokus |
+|:----------|:-------:|:----------------|
+| **Inhalt** | **40%** | Stand des Wissens, Methodik, Relevanz |
+| Aufbau | 10% | Roter Faden, logische Struktur |
+| Darstellung | 10% | Formatierung, Abbildungen, Tabellen |
+| Sprache | 10% | Wissenschaftlicher Stil, Grammatik |
+| Literaturangabe | 10% | Zitierweise, Quellenarbeit |
+| Allgemeiner Eindruck | 20% | Wissenschaftlichkeit, Eigenstaendigkeit |
+
+**38 Einzelkriterien** werden bewertet und zur Gesamtnote aggregiert.
+
+---
+
+## Das Bewertungsraster {background-color="#0f3460"}
+
+![](images/bewertungsraster.png){width="90%"}
+
+---
+
+## Der Bewertungs-Workflow
+
+| Schritt | Aktion | Beschreibung |
+|:-------:|:-------|:-------------|
+| 1 | PDF Upload | Thesis als PDF hochladen |
+| 2 | Text-Extraktion | Automatisches Preprocessing |
+| 3 | LLM Evaluation | Bewertung nach ZHAW-Schema |
+| 4 | Notenvergleich | Abgleich mit Referenznote |
+| 5 | Feedback-Report | Detailliertes Kriterien-Feedback |
+| 6 | Dashboard | Statistiken und Analyse |
+
+---
+
+## Der Feedback-Report {background-color="#0f3460"}
+
+<img src="images/step4c_27-01-2026_17-15-59.png" style="width: 1100px;">
+
+---
+
+## Datenbasis und Dashboard
+
+::: {.columns}
+::: {.column width="45%"}
+
+### Datenbasis
+
+| Metrik | Wert |
+|:-------|-----:|
+| Thesen mit Referenznote | 24 |
+| Evaluierungs-Sessions | 436 |
+| Einzelne KI-Runs | 3279 |
+| Getestete Modelle | 33 |
+
+Zeitraum: Januar 2025 - Januar 2026
+
+:::
+::: {.column width="45%"}
+
+### Dashboard Features
+
+- Kennzahlen-Kacheln mit Live-Daten
+- Top-Modelle Ranking nach Score
+- Notenverteilung (KI vs. Manuell)
+- Aggregierte Analysen
+- Automatischer PDF-Projektbericht
+
+:::
+:::
+
+---
+
+## Das System: Einblicke {background-color="#0f3460"}
+
+::: {.collage}
+::: {.columns}
+::: {.column width="33%"}
+![](images/26-01-2026_20-59-16.png)
+:::
+::: {.column width="34%"}
+![](images/26-01-2026_21-00-10.png)
+:::
+::: {.column width="33%"}
+![](images/26-01-2026_21-01-04.png)
+:::
+:::
+::: {.columns}
+::: {.column width="33%"}
+![](images/26-01-2026_21-03-39.png)
+:::
+::: {.column width="34%"}
+![](images/26-01-2026_21-04-33.png){style="margin-top: -60px;"}
+:::
+::: {.column width="33%"}
+![](images/27-01-2026_20-08-45.png)
+:::
+:::
+:::
+
+---
+
+## Ergebnisse: Kernkennzahlen {background-color="#0f3460"}
+
+| Metrik | Ergebnis | Ziel | Status |
+|:-------|:--------:|:----:|:------:|
+| Durchschn. Abweichung | **0.57 Pkt.** | 0.5 | Knapp verfehlt |
+| Durchschn. Laufzeit | **6:21 Min.** | - | Akzeptabel |
+| Erfolgsrate | **81.2%** | - | Gut |
+| Bestes Modell | **0.27 Pkt.** | 0.5 | Erreicht! |
+
+::: {.callout-tip}
+## Wichtig
+Das beste Modell **hermes3:70b** erreicht mit nur **0.27 Punkten** Abweichung das Ziel deutlich!
+:::
+
+---
+
+## Top 5 Modelle
+
+| Rang | Modell | Score | Abweichung | Konsistenz | Laufzeit | Erfolgsrate |
+|:----:|:-------|------:|:----------:|:----------:|:--------:|:-----------:|
+| 1 | **hermes3:70b** | 74.20 | **0.27** | 0.10 | 6:59 | 96% |
+| 2 | llama3:8b | 71.80 | 0.39 | 0.11 | **1:38** | 91% |
+| 3 | mistral-small3.2:24b | 69.20 | 0.42 | **0.07** | 3:55 | **100%** |
+| 4 | qwen3:14b | 67.10 | 0.43 | 0.12 | 4:00 | 100% |
+| 5 | gemma3:4b | 65.20 | 0.48 | 0.17 | 1:51 | 100% |
+
+**Score-Gewichtung:** 60% Abweichung | 25% Konsistenz | 10% Laufzeit | 5% Erfolgsrate
+
+---
+
+## Modell-Analyse: Performance nach Groesse {background-color="#0f3460"}
+
+| Kategorie | Abweichung | Streuung | Samples | Bewertung |
+|:----------|:----------:|:--------:|--------:|:----------|
+| Klein (bis 20B) | 0.64 | 0.14 | 1865 | Zu ungenau |
+| **Mittel (21-70B)** | **0.45** | **0.08** | 1300 | **Beste Wahl** |
+| Gross (ueber 70B) | 0.70 | 0.07 | 13 | Zu langsam |
+
+::: {.callout-tip}
+## Empfehlung
+**Mittelgrosse Modelle (21-70B)** zeigen die beste Performance mit niedrigster Abweichung und Streuung!
+:::
+
+---
+
+## HPC vs. Lokale Ausfuehrung
+
+| Metrik | HPC Cluster | Lokal |
+|:-------|:-----------:|:-----:|
+| Erfolgsrate | **83%** | 26% |
+| Anzahl Runs | 3246 | 33 |
+| Abweichung | 0.57 | 0.65 |
+| Status | Produktiv | Nicht nutzbar |
+
+::: {.callout-warning}
+## Empfehlung
+**HPC wird fuer den Produktivbetrieb empfohlen.** Lokale Tests nur mit kleiner Datenbasis (n=33), daher eingeschraenkte Aussagekraft.
+:::
+
+---
+
+## Bias-Analyse: Regression zur Mitte {background-color="#0f3460"}
+
+| Notenbereich | Abweichung | Tendenz | Erklaerung |
+|:-------------|:----------:|:--------|:-----------|
+| 3.0-4.0 (schwach) | **1.17** | Zu gut | KI ueberbewertet |
+| 4.0-5.0 (mittel) | **0.38** | Neutral | Beste Uebereinstimmung |
+| 5.0-6.0 (gut) | **0.52** | Zu streng | KI unterbewertet |
+
+**Gesamtbias:** KI bewertet im Schnitt **0.21 Punkte strenger** (KI: 4.96 vs. Manuell: 5.17)
+
+---
+
+## Warum weicht die KI ab?
+
+::: {.columns}
+::: {.column width="45%"}
+
+### Was die KI NICHT sieht
+
+- Prozessqualitaet
+- Engagement und Motivation
+- Zuverlaessigkeit
+- Kommunikation mit Betreuer
+- Eigeninitiative
+- Lernfortschritt
+
+:::
+::: {.column width="45%"}
+
+### Einflussfaktoren auf Note
+
+| Faktor | Anteil | KI sieht? |
+|:-------|:------:|:---------:|
+| Dokument | 60% | Ja |
+| Prozess | 25% | Nein |
+| Verteidigung | 15% | Nein |
+| **Unsichtbar** | **40%** | - |
+
+:::
+:::
+
+---
+
+## Fazit & Empfehlungen {background-color="#0f3460"}
+
+::: {style="font-size: 0.8em;"}
+
+| Ziel | Status | Ergebnis |
+|:-----|:------:|:---------|
+| Abweichung < 0.5 (gesamt) | Knapp verfehlt | 0.57 statt 0.5 |
+| Abweichung < 0.5 (Top-Modell) | **Erreicht** | hermes3:70b = 0.27 |
+| Praktische Nutzbarkeit | **Erreicht** | Als Zweitmeinung |
+
+::: {.columns}
+::: {.column width="45%"}
+### Erkenntnisse
+- **Mittelgrosse Modelle** (21-70B) beste Wahl
+- **HPC empfohlen** - Lokal eingeschraenkt
+- **Vorsicht bei Extremnoten** (unter 4.0)
+:::
+::: {.column width="45%"}
+### Empfehlungen
+- **hermes3:70b** fuer beste Genauigkeit
+- **llama3:8b** fuer schnelles Studierenden-Feedback
+- **Nur als Zweitmeinung** nutzen
+:::
+:::
+
+:::
+
+[**Take-Away:** Die KI **ersetzt nicht** den Pruefer - sie ist ein **Werkzeug** zur Unterstuetzung! Sowohl fuer **Lehrende** als auch fuer **Studierende**!]{style="display: block; background: rgba(239, 68, 68, 0.3); border-left: 4px solid #ef4444; padding: 0.6em 1em; border-radius: 6px; text-align: left; max-width: 85%; margin: 0.5em auto;"}
+
+---
+
+## Was haben wir gelernt? {background-color="#0f3460"}
+
+::: {style="font-size: 0.9em;"}
+- **Lokaler Einsatz von LLM auf eigenem PC ist moeglich** (Ollama-Installationsanleitung)
+  - Z.B: Pruefungsunterstuetzung mit eigenen Lehrmaterialien
+- **Anspruchsvollere Anwendungen** (Bewertung von studentischen Arbeiten) eignen sich besser auf dem HPC (immer noch lokal)
+  - Bewertungen von studentischen Arbeiten mit Abweichungen zwischen 0.25 (gut!) und 0.5 (mit Vorsicht!) Noten
+  - Spezifisches Feedback zu Bewertungskriterien von Studierenden fuer sinnvoll befunden
+:::
+
+---
+
+## Deliverables und Nachlese {background-color="#0f3460"}
+
+- **Link auf Installationsanleitungen** (z.B: Ollama)
+- **Bewertung/Feedback Applikation** fuer studentische Arbeiten
+  - Besteht Interesse es fuers ganze Departement zugaenglich zu machen? (Weitere Bewertungsraster, Interface fuer HPC, ...)
+- **Foliensatz** (heute)
+
+---
+
+## {background-color="#1a1a2e"}
+
+### Vielen Dank!
+
+**Fragen?**
+
+GruentAI | Forschungsgruppe Geoinformatik | ZHAW Waedenswil
