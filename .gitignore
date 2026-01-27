@@ -2,6 +2,7 @@
 .Rhistory
 .RData
 .Ruserdata
+node_modules/
 
 
 **/stzh.zwn_meldungen_p.csv
