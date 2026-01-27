@@ -1,15 +1,13 @@
 
 
-Todo: 
+To sketchify a (svg) image:
 
-Fragen an stefan:
-- Wäre es denkbar, dass wir Ollama global zur verfügung stellen? oder das wir ein modell global zur verfügung stellen?
+```bash
+node sketchify-svg.js images/kochen-vs-computer.svg 
+``` 
 
+- [ ] Wechsel zu Opensource fehlt. 1. Diagramm ist fehlplatziert 
+- [x] Describe in Detail the method to login to the hpc, install ollama and pull a model
+- [ ] include [OSAID 1.0](https://opensource.org/blog/2024-end-of-year-review-open-source-ai-definition-v1-0)
+- [ ] include zueriwieneu R example
 
-
-- Describe in Detail the method to login to the hpc, install ollama and pull a model
-- See HPC-zhaw-llm.md in Obisdian (zhaw-diary)
-- create a funny / interesting task which can be submitted as a job.. which exceeds the possiblities of normal chat interfaces.
-- create a workflow for submitting the job
-- test this on windows
-- Include at least one poll, eg. on the usage of messengers

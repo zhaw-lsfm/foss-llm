@@ -12,13 +12,14 @@ format:
     pagetitle: OSS LLMs
     code-line-numbers: false
     footer: zhaw-lsfm.github.io/foss-llm
+    chalkboard: true
 revealjs-plugins:
   - attribution
 ---
 
-# Open-Source KI {background-image="images/5790836212_87a89fe3b9_o.jpg" class="blurred-10px shadow"}
+# Mehr als nur ChatGPT {background-image="images/5790836212_87a89fe3b9_o.jpg" class="blurred-10px strokeme"}
 
-[Der Weg zur digitalen Unabhängigkeit]{.shadow}
+[Was Open Source und On Premise KI uns bieten können]{.strokeme}
 
 
 ::: {.attribution}
@@ -48,7 +49,6 @@ Photo courtesy of Leonard Bentley, CC BY-SA 2.0
 ![](images/rata.jpeg){#rata}
 :::
 
-
 :::{#portrait}
 **Nils Ratnaweera**  
 Spatial Data Scientist  
@@ -59,8 +59,37 @@ Selbständig ([Ratnaweera.xyz](https://www.ratnaweera.xyz))
 :::
 
 ::::
+:::{.notes}
+
+- Weder AI Experte noch KI-Apologet (Person, die mit ihrer ganzen Überzeugung hinter einer Auffassung oder Lehre steht und diese mit Nachdruck nach außen vertritt)
+- Nicht mal ein KI *early adopter*
+- Warum halte ich diesen Talk? 
+:::
+
+## Drei Thesen
+
+:::{.incremental}
+1. KI wird unsere Arbeitsweise grundlegend verändern
+2. Wir müssen diese Veränderung aktiv mitgestalten
+3. Open Source ist der Schlüssel zur Mitgestaltung von KI
+:::
+
+:::{.notes}
+
+1. These
+  - Die meisten Aufgaben, die auf einem Computer gelöst werden, können mit Code / Scripting gelöst werden
+  - Alle Aufgaben, die mit code gelöst werden können, können mit KI ein vielfaches schneller gelöst werden
+  
 
 
+:::
+
+
+
+## 
+
+
+![Umfrage zur Nutzung von KI bei der Anmeldung an das heutige Webinar](umfrage-sketch.svg){#fig-umfrage}
 
 
 ## {background-image="images/VR_and_Greshan3.png"}
@@ -94,8 +123,8 @@ Selbständig ([Ratnaweera.xyz](https://www.ratnaweera.xyz))
 :::: {.recipe}
 REZEPT
 
-1. 200g Compound-XJ7 in den Mixtopf geben, 5 Sek./Stufe 5 zerkleinern.
-2. 20g Carrier-Oil-Premium™ hinzufügen, 3 Min./120°C/Stufe 1 erhitzen.
+1. 10 Einheiten Compound-XJ7 in den Mixtopf geben, 5 Sek./Stufe 5 zerkleinern.
+2. 4 Einheiten Carrier-Oil-Premium™ hinzufügen, 3 Min./120°C/Stufe 1 erhitzen.
 3. Rezept-Chip einlegen (separat erhältlich) und Guided-Cooking starten.
 4. Bei grüner Kontrollleuchte 1 Portion Flavor-Packet-B hinzufügen.
 
@@ -105,7 +134,7 @@ REZEPT
 
 - Nur zertifizierte Zutaten verwenden (Garantie!)
 - Rezept erfordert aktives Cloud-Abo (49€/Jahr)
-- *Model-Pro-2024* wird nächstes Jahr eingestellt; Upgrade erforderlich
+- *ThermoMax-2025* wird nächstes Jahr eingestellt; Upgrade erforderlich
 
 ::::
 
@@ -139,7 +168,6 @@ HINWEISE:
 
 
 - Verständnis vs. blindes Befolgen. Beachten Sie die Flexibilität 
-- Ersatzprodukte sind willkommen. So sieht Open Source aus.
 - Wenn man ihn darauf anspricht, hat der Gastgeber folgende Argumente:
   - Mit dieser Methode weiß ich, dass das Essen großartig wird. Ich habe nichts dagegen, dafür ein wenig Freiheit zu opfern.
   - Wenn ich selbst kochen wollte, müsste ich so viele Details lernen. Dafür habe ich keine Zeit.
@@ -148,25 +176,11 @@ HINWEISE:
 
 :::
 
-## Kochen vs. Computer {background-color="white"}
-
-```{r}
-#| fig-cap: "Täglich investierte Zeit: Kochen vs. Computer nach Ratnaweera et al (2025), n = 2"
-#| fig-width: 3
-
-library(ggplot2)
-
-df <- data.frame(activity = c("Kochen", "Computer"), hours = c(1.25, 6.72))
-
-ggplot(df, aes(activity, hours)) +
-  geom_col() +
-  labs(y = "Zeit (in Stunden)") +
-  theme_minimal() +
-  theme(panel.grid = element_blank(), axis.title.x = element_blank()) 
+## Kochen vs. Computer
 
 
 
-```
+![Täglich investierte Zeit: Kochen vs. Computer nach Ratnaweera et al (2025), n = 2](images/kochen-vs-computer-sketch.svg){#fig-kochen-vs-computer}
 
 ::: {.notes}
 
@@ -196,8 +210,8 @@ ggplot(df, aes(activity, hours)) +
 :::: {.recipe}
 REZEPT
 
-1. 200g Compound-XJ7 in den Mixtopf geben, 5 Sek./Stufe 5 zerkleinern.
-2. 20g Carrier-Oil-Premium™ hinzufügen, 3 Min./120°C/Stufe 1 erhitzen.
+1. 10 Einheiten Compound-XJ7 in den Mixtopf geben, 5 Sek./Stufe 5 zerkleinern.
+2. 4 Einheiten Carrier-Oil-Premium™ hinzufügen, 3 Min./120°C/Stufe 1 erhitzen.
 3. Rezept-Chip einlegen (separat erhältlich) und Guided-Cooking starten.
 4. Bei grüner Kontrollleuchte 1 Portion Flavor-Packet-B hinzufügen.
 
@@ -207,17 +221,16 @@ REZEPT
 
 - Nur zertifizierte Zutaten verwenden (Garantie!)
 - Rezept erfordert aktives Cloud-Abo (49€/Jahr)
-- *Model-Pro-2024* wird nächstes Jahr eingestellt; Upgrade erforderlich
+- *ThermoMax-2025* wird nächstes Jahr eingestellt; Upgrade erforderlich
 
 ::::
 
 ::: {.notes}
 - Sobald das Gerät, das Cloud-Abo und die zertifizierten Zutaten gekauft wurden, wird es schwierig sein, Rezepte anderer Anbieter zu verwenden
+
+- **Warum ist das ein Problem?**
 :::
 
-## Warum ist das ein Problem? {.center}
-
-  
 ## {background-image="images/sanctions.png" background-size="contain" background-color="white"}
 
 <!-- https://www.heise.de/news/Strafgerichtshof-Microsofts-E-Mail-Sperre-als-Weckruf-fuer-digitale-Souveraenitaet-10387368.html -->
@@ -239,7 +252,7 @@ REZEPT
 :::
 
 
-## {background-image="images/end-of-10-2.png" background-color="#2a67b2"}
+## {background-image="images/end-of-10-2.png" background-color="#2a67b2" background-size="contain"}
 
 ::: {.notes}
 - Dazu noch eine Side-Note: Tausende von Freiwillige bieten workshops an um den Umstieg von Windows 10 auf Linux zu vereinfachen. 
@@ -249,7 +262,9 @@ REZEPT
 
 ## {.center}
 
-> Aber nicht jeder kann ein Computerexperte sein
+:::{.blockquote}
+Aber nicht jeder kann ein Computerexperte sein
+:::
 
 ::: {.notes}
 
@@ -294,17 +309,14 @@ REZEPT
 - Gehen wir *den einfachen* oder *den richtigen Weg*?
 - Werden wir *Meister einer Technologie* oder *Nutzer eines Produkts*?
 
-
-- Damit beende ich das Plädoyer und wir wechseln in die konkrete Umsetzung
 :::
 
 
 
 
+# Openweights AI {background-image="images/console-4567918_1280.jpg" .shadow .blurred-10px}
 
-# Openweights AI {background-image="images/machine-3039352_1280.jpg" .shadow .blurred-5px}
-
-## {background-image="images/machine-3039352_1280.jpg"}
+## {background-image="images/console-4567918_1280.jpg"}
 
 :::{.notes}
 Gewichte sind die gelernten Zahlen innerhalb eines neuronalen Netzwerks.                      
@@ -394,7 +406,7 @@ geschlossener ↓
 
 
 
-# Praktische Demo 2 {background-image="images/magic-note-8836935\_1280.jpg" .shadow .blurred-5px}
+# Praktische Demo 1 {background-image="images/magic-note-8836935\_1280.jpg" .shadow .blurred-5px}
 
 [OpenSource Lokal]{.shadow}
 
@@ -414,51 +426,118 @@ geschlossener ↓
 :::
 
 
-## Schritt 1: Ollama installieren
+## Ollama{background-color="white"}
+
+![](images/welcome.avif)
+
+## Ollama{background-color="white"}
+
+
+![](images/ollama.png)
+
+
+
+::: {.notes}
 
 **Windows-Installation:**
 
-1. Installieren sie *Interim Admin* aus dem Software Center
 1. Von [ollama.com/download](https://ollama.com/download) **OllamaSetup.exe** herunterladen
-3. OllamaSetup.exe mit default Einstellungen installieren 
-
-(Ollama läuft danach automatisch im Hintergrund)
-
-::: {.notes}
-- Die Installation ist sehr einfach - wie jede andere Windows-Software
-- Nach der Installation läuft Ollama als Dienst im Hintergrund
-- Sie müssen nichts weiter konfigurieren
+2. OllamaSetup.exe mit default Einstellungen installieren 
 :::
 
-## Schritt 1.1: Installation überprüfen
 
-Öffnen Sie **PowerShell** oder **Eingabeaufforderung** (CMD) und geben Sie ein:
+## Terminal Öffnen
 
-```powershell
-ollama --version
-```
+- Windows: *Command Prompt*
+- Mac: *Terminal*
+- Linux: *Terminal*
 
 
 ::: {.notes}
 - Wenn der Befehl nicht gefunden wird, starten Sie den Computer neu
-- PowerShell finden Sie über das Startmenü (einfach "PowerShell" eingeben)
 :::
 
-## Schritt 2: Hardware überprüfen
 
-**Wieviel RAM haben Sie?**
+## Im Terminal
 
-Geben Sie in PowerShell oder CMD ein:
 
-```powershell
+:::{.terminal}
+```{.bash}
+ollama --version          
+```
+```{.txt}
+ollama version is 0.14.2
+```
+:::
+
+:::{.notes}
+
+- Der Terminal bietet den Zugang zu OpenSource Software
+- Ohne Terminal ist nur ein Bruchteil der FOSS nutzbar
+- Der Terminal wirkt anfänglich befremdlich und umständlich, aber mit KI wird die Benutzung vereinfacht
+- `ollama` ruft das Programm "ollama" auf
+- `--version` ist ein Argument zum Program `ollama`
+:::
+
+
+## Im Terminal
+
+
+:::{.terminal}
+```{.bash}
+ollama --help          
+```
+```{.txt}
+Large language model runner
+
+Usage:
+  ollama [flags]
+  ollama [command]
+
+Available Commands:
+  serve       Start ollama
+  create      Create a model
+  show        Show information for a model
+  run         Run a model
+  stop        Stop a running model
+  pull        Pull a model from a registry
+  push        Push a model to a registry
+  signin      Sign in to ollama.com
+  signout     Sign out from ollama.com
+  list        List models
+  ps          List running models
+  cp          Copy a model
+  rm          Remove a model
+  help        Help about any command
+
+Flags:
+  -h, --help      help for ollama
+  -v, --version   Show version information
+
+Use "ollama [command] --help" for more information about a command.
+
+```
+:::
+
+:::{.notes}
+- `ollama` ruft das Programm "ollama" auf
+- `--help` ist ein Argument zum Program `ollama` und ruft die Hilfestellung zu dieser Software auf
+- fast alle terminal programme haben die argumente `--version` und `--help`
+:::
+
+## RAM Verfügbarkeit
+
+
+:::{.terminal}
+```{.bash}
 systeminfo 
 ```
-
-und suchen sie nach der Zeile `Gesamter physischer Speicher`. Merken Sie sich diese Zahl.
-
-```powershell
+```{.txt}
+[...]
 Gesamter physischer Speicher:                  32’717 MB
+[...]
 ```
+:::
 
 ::: {.notes}
 - Die meisten modernen Laptops haben mindestens 8 GB RAM
@@ -472,19 +551,15 @@ Gesamter physischer Speicher:                  32’717 MB
 - **32 GB+**: Große Modelle (13B+) möglich
 :::
 
-## Schritt 2.1: GPU überprüfen (optional) {visibility="hidden"}
+## GPU Verfügbarkeit
 
-**Haben Sie eine NVIDIA-Grafikkarte?**
-
-```powershell
+:::{.terminal}
+```{.bash}
 wmic path win32_VideoController get name
 ```
 
-::: {.fragment}
-✅ **NVIDIA GPU vorhanden**: Modelle laufen deutlich schneller!
-
-⚠ **Keine NVIDIA GPU**: Kein Problem - CPU ist ausreichend für kleine Modelle
 :::
+
 
 ::: {.notes}
 - NVIDIA GPUs beschleunigen die Inferenz erheblich
@@ -493,17 +568,26 @@ wmic path win32_VideoController get name
 - Für den Unterricht ist CPU-basierte Inferenz völlig ausreichend
 :::
 
-## Schritt 3 (Variante 1)
+## Modellwahl
 
-**Lokales Modell auswählen**
+- Falls Sie mindestens 8 GB RAM haben
+  - Suchen Sie auf [ollama.ai](https://ollama.ai) ein kleines Model (1 - 2b Parameter) heraus
+  - Z.B.
+    - `llama3.2`
+    - `deepseek-r1`
 
-(Falls Sie mindestens 8 GB RAM haben)
+---
+    
+- Falls Sie weniger als 8 GB RAM haben
+  1. Erstellen Sie ein kostenloses Konto auf [ollama.com](https://ollama.com)
+  2. Melden Sie sich in der Kommandozeile an
 
-- Suchen Sie auf [ollama.ai](https://ollama.ai) ein kleines Model (1 - 2b Parameter) heraus
-- Z.B.
-  - `llama3.2`
-  - `deepseek-r1`
-  
+:::{.terminal}
+```{.bash}
+ollama signin
+```
+:::
+
 :::{.notes}
 
 - Bei gewissen Modellen (z.B: deepseek-r1) gibt es verschiedene Grössen (1 - 700b). 
@@ -512,36 +596,21 @@ wmic path win32_VideoController get name
 
 :::
 
-## Schritt 3 (Variante 2)
-
-**Cloud-Modell**
-
-(Falls Sie weniger als 8 GB RAM haben)
-
-1. Erstellen Sie ein kostenloses Konto auf [ollama.com](https://ollama.com)
-2. Melden Sie sich in der Kommandozeile an:
-
-```powershell
-ollama signin
-```
-
-
-
 
 ##
 
 Mit folgendem Kommandozeilenbefehl kann man das Modell (egal ob lokal oder cloud) initialisieren
 
-
-```powershell
+:::{.terminal}
+```{.bash}
 # initialisiert ein kleines, lokales Modell
 ollama pull deepseek-r1:1.5b     
 
 
 # initialisiert ein grosses cloud Modell
-ollama pull ministral            
-
+ollama pull ministral   
 ```
+:::
 
 
 ::: {.notes}
@@ -560,36 +629,13 @@ ollama pull ministral         # Vielseitig
 
 
 
-## Entscheidungshilfe: Lokal vs. Cloud{visibility="hidden"}
-
-```{mermaid}
-graph LR
-    A[Hardware Check] --> B{≥ 8 GB RAM?}
-    B -->|Ja| C[Lokales Modell]
-    B -->|Nein| D[Cloud-Modell]
-    C --> E[ollama pull deepseek-r1:1.5b]
-    D --> F[ollama login]
-    F --> G[ollama pull gemini-flash]
-    E --> H[ollama run ...]
-    G --> H
-
-    style C fill:#90EE90
-    style D fill:#87CEEB
-    style H fill:#FFD700
-```
-
-::: {.notes}
-**Beide Wege führen zum Ziel!**
-- Lokal: Volle Kontrolle, Datenschutz, keine laufenden Kosten
-- Cloud: Keine Hardware-Limits, immer aktuellste Modelle, einfacher Einstieg
-- Wichtig: Beides verwendet dieselbe Ollama-CLI - kein Umlernen nötig!
-:::
 
 
-## Schritt 4: Chat initialisieren
+## Chat initialisieren
 
 
-```powershell
+:::{.terminal}
+```{.bash}
 # Lokales Modell:
 ollama run deepseek-r1:1.5b
 
@@ -597,59 +643,44 @@ ollama run deepseek-r1:1.5b
 # ODER Cloud-Modell:
 ollama run gemini-flash
 ```
-
-
-## Schritt 5: Erster Prompt
-
-
-
-**Beispiel-Prompt:**
-
-```
->>> Erstelle 3 Multiple-Choice-Fragen zum Thema Photosynthese
-```
-
-
-::: {.fragment}
-**Das war's schon!** Sie nutzen jetzt Open-Source KI.
 :::
+
+
+## Erster Prompt
+
+
+:::{.terminal}
+```{.txt}
+>>> You are an open-source AI expert. Explain to a group of environmental 
+professionals in simple terms what a FOSS LLM is, what benefits it can 
+bring to the environmental sector, and what risks they should be aware 
+of
+```
+:::
+
+
 
 ::: {.notes}
 **Wichtige Punkte:**
-- `ollama run <modell>` startet eine Chat-Sitzung
-- Funktioniert identisch für lokale und Cloud-Modelle!
-- Die erste Abfrage kann etwas länger dauern (Modell wird geladen/verbunden)
-- Folgeabfragen sind schneller
+- `ollama run <modell>` startet eine Chat-Sitzung (cloud oder lokal)
+- Die erste Abfrage kann etwas länger dauern Folgeabfragen sind schneller
 - Beenden Sie den Chat mit `/bye` oder Strg+C
 
-**Beispiel-Prompts zum Ausprobieren:**
-- "Erkläre mir Quantenmechanik in einfachen Worten"
-- "Schreibe einen Python-Code zum Sortieren einer Liste"
-- "Fasse diesen Text zusammen: [Text einfügen]"
-- "Erstelle 5 Übungsfragen zu [Thema]"
-- "Gib mir Feedback zu diesem Absatz: [Text]"
 
 **Was passiert hinter den Kulissen (bei lokalen Modellen):**
 
 1. Die Modelldatei wird in den RAM geladen
 2. Ihr Text wird in Zahlen (Tokens) umgewandelt
-3. Das Modell berechnet das nächste wahrscheinlichste Token
+3. Das Modell (die Gewichte) berechnet das nächste wahrscheinlichste Token
 4. Die Ergebnisse werden wieder in Text umgewandelt
 5. Alles geschieht **lokal auf Ihrem Computer** - komplett offline!
 
-**Bei Cloud-Modellen:**
 
-- Schritte 1-4 passieren in Ollamas Cloud-Infrastruktur
-- Ihre Eingabe wird verschlüsselt übertragen
-- Sie erhalten die Antwort zurück
-- **Vorteil:** Keine Hardware-Limits, sehr leistungsfähige Modelle nutzbar
-- **Nachteil:** Daten verlassen Ihren Computer (nicht für sensible Daten!)
-
-**Wichtige Erkenntnis:**
-
-Es ist keine Zauberei - nur Software. Bei lokalen Modellen haben Sie die volle Kontrolle. Bei Cloud-Modellen nutzen Sie dieselbe Technologie, aber remote ausgeführt. Beide Varianten sind Open Source und verwenden dasselbe Interface!
-
+Jetzt haben wir einen etwas langsamen und nicht sehr intelligenten Chatbox.. was hat uns das gebracht?
 :::
+
+
+
 
 
 ## Die drei Verbesserungen{visibility="hidden"}
@@ -715,7 +746,7 @@ Okay, was können Siedamit**konkret machen**?
 
 
 
-# Praktische Demo 3 {background-image="images/magic-note-8836935\_1280.jpg" .shadow .blurred-5px}
+# Praktische Demo 2 {background-image="images/magic-note-8836935\_1280.jpg" .shadow .blurred-5px}
 
 [LLMs via einem GUI]{.shadow}
 
@@ -747,7 +778,7 @@ Okay, was können Siedamit**konkret machen**?
 :::
 
 
-# Praktische Demo 4 {background-image="images/magic-note-8836935\_1280.jpg" .shadow .blurred-5px}
+# Praktische Demo 3 {background-image="images/magic-note-8836935\_1280.jpg" .shadow .blurred-5px}
 
 [LLM auf dem HPC]{.shadow}
 

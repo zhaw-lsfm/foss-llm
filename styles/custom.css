@@ -25,7 +25,7 @@
 }
    
 .scheideweg .slide-background-content {
-  filter: sepia(40%) blur(2px);
+  filter: sepia(40%) blur(5px);
 }
 
 
@@ -95,6 +95,20 @@
 .two-col-list li span:last-child {
   flex: 1 1 auto;
   text-align: right;
+}
+
+
+/* in your styles.css or embedded in quarto.yml */
+
+.code-copy-outer-scaffold .sourceCode{
+    border: none !important;
+    background: #1e1e1e !important;
+}
+.terminal {
+  background: #1e1e1e;
+  padding: 0.5em;
+  border-radius: 0.2em;
+
 }
 
 
