@@ -457,66 +457,6 @@ Jetzt haben wir einen etwas langsamen und nicht sehr intelligenten Chatbox.. was
 
 
 
-## Die drei Verbesserungen{visibility="hidden"}
-
-::: {.columns}
-::: {.column width="33%"}
-**RAG**
-
-Retrieval Augmented Generation
-
-Geben Sie LLM Zugriff auf IHRE Dokumente
-
-*Beispiel: IUNR-Kursmaterialien, Forschungsarbeiten*
-:::
-
-::: {.column width="33%"}
-**MCPs**
-
-Modellkontextprotokoll
-
-Verbinden Sie LLM mit Ihren Tools
-
-*Beispiel: Felddaten, GIS, E-Mail, Kalender*
-:::
-
-::: {.column width="33%"}
-**Personas**
-
-Systemaufforderungen
-
-Gestalten Sie das Verhalten von LLM
-
-*Beispiel: "Lehrassistent für Umweltwissenschaften"*
-:::
-:::
-
-::: {.notes}
-Diese drei Verbesserungen machen lokale LLMs leistungsstark. Gehen Sie nicht zu sehr ins Technische – erklären Sie einfach, was jede einzelne Funktion bewirkt, und geben Sie konkrete Beispiele, die für den Unterricht relevant sind. RAG ist für ihren Anwendungsfall besonders wichtig.
-:::
-
-## Warum lokale LLMs für den Unterricht sinnvoll sind{visibility="hidden"}
-
-- Studierendendaten sind**sensibel**(DSGVO, Datenschutz)
-- **Sich wiederholende Aufgaben**(Benotung, Feedback)
-- Maßgeschneiderte**Kursmaterialien**(RAG)
-- Einmalige Einrichtung,**dauerhafter Nutzen**
-- **Keine Kosten pro Abfrage**
-
-::: {.notes}
-Verbinden Sie die Punkte: Studentendaten + DSGVO = muss lokal sein. Sich wiederholende Aufgaben + keine Kosten pro Abfrage = wirtschaftlich rentabel. Deshalb ist lokal speziell für den Unterricht sinnvoll.
-:::
-
-## Übergang{visibility="hidden"}
-
-::: {.r-fit-text}
-Okay, was können Siedamit**konkret machen**?
-:::
-
-::: {.notes}
-Übergang zu praktischen Anwendungen. Wechsel von "Warum" zu "Was". Zeit, konkreten Wert zu zeigen.
-:::
-
 
 
 
