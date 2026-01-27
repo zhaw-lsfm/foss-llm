@@ -5,7 +5,8 @@ author: "Fachgruppe Geoinformatik | ZHAW Waedenswil"
 date: "Januar 2026"
 format:
   revealjs:
-    theme: [dark, custom.scss]
+    theme: [dark]
+    css: styles/custom.scss
     footer: "GruentAI | ZHAW Geoinformatik"
     slide-number: c/t
     progress: true
