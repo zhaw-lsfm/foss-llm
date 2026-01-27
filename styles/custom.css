@@ -103,12 +103,68 @@
 .code-copy-outer-scaffold .sourceCode{
     border: none !important;
     background: #1e1e1e !important;
+    
+    
 }
 .terminal {
   background: #1e1e1e;
-  padding: 0.5em;
-  border-radius: 0.2em;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  position: relative;
+  padding-top: 1.5em;
+}
 
+/* Terminal title bar */
+.terminal::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1.25em;
+  background: linear-gradient(to bottom, #3c3c3c, #2a2a2a);
+  border-bottom: 1px solid #1a1a1a;
+  z-index: 10;
+}
+
+/* Traffic light buttons */
+.terminal::after {
+  content: "";
+  position: absolute;
+  top: 0.5em;
+  left: 0.8em;
+  width: 10px;
+  height: 10px;
+  background: #ff5f56;
+  border-radius: 50%;
+  box-shadow:
+    16px 0 0 #ffbd2e,
+    32px 0 0 #27c93f;
+  z-index: 11;
+}
+
+/* Reset all nested elements in terminal */
+.terminal .code-copy-outer-scaffold,
+.terminal div.sourceCode,
+.terminal pre,
+.terminal pre.sourceCode {
+  margin: 0 !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  overflow: hidden !important;
+}
+
+/* Only innermost code gets padding */
+.terminal code {
+  display: block;
+  padding: 0.3em 0.8em !important;
+}
+
+.terminal code {
+  background: transparent !important;
 }
 
 

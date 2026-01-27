@@ -1,0 +1,8 @@
+date,approx_public_models,notes
+2022-01-01,10000,"Early 2022 estimate; community observations"
+2022-12-31,65000,"End of 2022 estimate; rough snapshot"
+2023-06-30,120000,"Mid-2023 estimate from reports"
+2023-12-31,500000,"End of 2023; wide uncertainty range (300k–700k), midpoint used"
+2024-09-01,1193810,"Public milestone reported by Hugging Face coverage"
+2025-03-01,1500000,"Early 2025 estimate from HF staff/community"
+2025-12-31,2000000,"Late 2025 projection based on growth trend"
