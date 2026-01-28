@@ -11,15 +11,18 @@ format:
     background-transition: fade
     pagetitle: OSS LLMs
     code-line-numbers: false
-    footer: zhaw-lsfm.github.io/foss-llm
+    footer: '<a href="https://webgis.lsfm.zhaw.ch/svu-asep-webinar">webgis.lsfm.zhaw.ch/svu-asep-webinar</a>'
     chalkboard: true
 revealjs-plugins:
   - attribution
+lang: de
 ---
 
 # Mehr als nur ChatGPT {background-image="images/5790836212_87a89fe3b9_o.jpg" class="blurred-10px strokeme"}
 
 [Was Open Source und On Premise KI uns bieten können]{.strokeme}
+
+[Slides: [webgis.lsfm.zhaw.ch/svu-asep-webinar](https://webgis.lsfm.zhaw.ch/svu-asep-webinar)]{.strokeme}
 
 
 ::: {.attribution}
@@ -89,7 +92,7 @@ Selbständig ([Ratnaweera.xyz](https://www.ratnaweera.xyz))
 ## 
 
 
-![Umfrage zur Nutzung von KI bei der Anmeldung an das heutige Webinar](umfrage-sketch.svg){#fig-umfrage}
+![Umfrage zur Nutzung von KI bei der Anmeldung an das heutige Webinar](images/umfrage-sketch.svg){#fig-umfrage}
 
 
 ## {background-image="images/VR_and_Greshan3.png"}
@@ -260,7 +263,7 @@ REZEPT
 - (Überleitung: Einwand)
 :::
 
-## {.center}
+## {.center visibility="hidden"}
 
 :::{.blockquote}
 Aber nicht jeder kann ein Computerexperte sein
@@ -274,7 +277,7 @@ Aber nicht jeder kann ein Computerexperte sein
 
 :::
 
-## Drei Ebenen{.center}
+## Drei Ebenen{.center visibility="hidden"}
 
 :::: {.fragment .fade-in-then-semi-out}
 ::: {.layer-box .layer-box-blue}
@@ -373,9 +376,9 @@ geschlossener ↓
 
 
 
-## {background-image="images/huggingface.jpeg" background-size="contain" background-color="white"}
+## 
 
-
+![Geschätzte Anzahl "Open Weights" Modelle auf huggingface.co](images/hugging-face-over-time-sketch.svg){#fig-hf}
 
 
 ## {background-image="images/huggingface.png" background-size="contain" background-color="white"}
@@ -384,7 +387,7 @@ geschlossener ↓
 [](https://huggingface.co)                                                    
 :::  
 
-## Opensource Cloud AI
+## OpenWeights Cloud AI
 
 - [mistral.ai](https://mistral.ai)
 - [ollama.ai](https://ollama.ai)
@@ -426,9 +429,9 @@ geschlossener ↓
 :::
 
 
-## Ollama{background-color="white"}
+## Ollama {background-image="images/welcome.avif" background-color="white"}
 
-![](images/welcome.avif)
+
 
 ## Ollama{background-color="white"}
 
@@ -651,10 +654,8 @@ ollama run gemini-flash
 
 :::{.terminal}
 ```{.txt}
->>> You are an open-source AI expert. Explain to a group of environmental 
-professionals in simple terms what a FOSS LLM is, what benefits it can 
-bring to the environmental sector, and what risks they should be aware 
-of
+>>> Explain a group of environmental professionals the benifits of 
+OpenSource Large Language Models
 ```
 :::
 
@@ -777,60 +778,6 @@ Okay, was können Siedamit**konkret machen**?
 
 :::
 
-
-# Praktische Demo 3 {background-image="images/magic-note-8836935\_1280.jpg" .shadow .blurred-5px}
-
-[LLM auf dem HPC]{.shadow}
-
-[[wiki.hpc.zhaw.ch/hpcuserwiki](https://wiki.hpc.zhaw.ch/hpcuserwiki)]{.shadow}
-
-:::{.notes}
-- Wir haben für alle einen HPC account erstellt
-- Folgende Schritte ausführen (next slide)
-- (zuerst passwort ändern, sie wiki)
-
-:::
-
-
-
-
-## {background-image="images/magic-note-8836935\_1280.jpg"}
-
-
-
-:::{.notes}
-
-``` 
-ssh rata@login-rhel8.hpc.zhaw.ch
-
-srun --partition=earth-4 --qos=earth-4.8h --gres=gpu:2 --mem=32G --time=8:00:00 --chdir $LSFM_CLUSTER_SCRATCH_USER_PATH/ollama --pty bash 
-
-
-./bin/ollama serve
-```
-
-second terminal:
-
-
-``` 
-ssh node301
-cd $LSFM_CLUSTER_SCRATCH_USER_PATH/ollama
-
-
-ollama list
-
-ollama run 
-``` 
-
-
-:::
-
-
-# Viele Wege raus aus Rom{background-image="images/italy-9505450_1280.jpg" .shadow .blurred-5px}
-
-## {background-image="images/italy-9505450_1280.jpg"}
-
-## {background-iframe="https://di.day" background-interactive="true"}
 
 
 
