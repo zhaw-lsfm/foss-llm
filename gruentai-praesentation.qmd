@@ -1,5 +1,5 @@
 ---
-title: "GruentAI"
+# title: "GruentAI"
 subtitle: "Lokale Open Source LLM in der Hochschullehre einsetzen"
 author: ""
 date: ""
@@ -18,17 +18,525 @@ title-slide-attributes:
   data-background-color: "#1a1a2e"
 ---
 
+
+# {background-color="#1a1a2e" .unlisted}
+
+[GruentAI]{style="font-size: 3.2em; font-weight: 700; color: #64b5f6; display: block; margin-bottom: 0.2em;"}
+
+[Lokale Open Source LLM in der Hochschullehre einsetzen]{style="font-size: 1.5em; color: #90caf9; display: block;"}
+
+[Forschungsgruppe Geoinformatik | ZHAW Waedenswil]{style="font-size: 1.1em; color: #b0bec5; display: block; margin-top: 1.5em;"}
+
+[Januar 2026]{style="font-size: 1em; color: #78909c; display: block;"}
+
 ## GruentAI {background-color="#1a1a2e"}
 
-[Das Projekt zielt darauf ab den Einsatz von Lokalen Open Source LLMs fuer die Hochschullehre zu testen und fuer ausgewaehlte Use Cases zugaenglich zu machen.]{style="font-size: 1.2em;"}
+[Das Projekt zielt darauf ab den Einsatz von Lokalen Open Source LLMs für die Hochschullehre zu testen und für ausgewaehlte *Use Cases* zugaenglich zu machen.]{style="font-size: 1.2em;"}
 
 - **Lehrunterstuetzung:** Bereitstellen von lokalen Customized ChatBots fuer die Lehre (z.B. Pruefungsfragen, Aufgaben, Uebungen,... aus eigenen Lehrunterlagen und fachspezifischem Material)
 - **Bewertungsunterstuetzung:** KI-gestuetzte Korrektur von Bachelorarbeiten
 - **Kollaborative Lernunterstuetzung:** KI-gestuetztes Feedback fuer studentische Projektarbeiten
 
----
 
-## {background-color="#1a1a2e" .unlisted}
+
+# Warum OpenSource?
+
+
+## Vendor Lock-In
+
+
+![](images/Push-and-pull.jpg)
+
+
+
+::: {.notes}
+
+- Anbieter wollen nicht, dass Sie plattformunabhängig sind.
+- Sie machen ihre Produkte absichtlich mit denen anderer Anbieter inkompatibel.
+- Sobald ein bestimmte Investition gemacht ist, ist es schwierig oder sogar unmöglich, den Anbieter zu wechseln.
+- (zurück zur Koch-analogie)
+:::
+
+
+## {background-image="images/sanctions.png" background-size="contain" background-color="white"}
+
+<!-- https://www.heise.de/news/Strafgerichtshof-Microsofts-E-Mail-Sperre-als-Weckruf-fuer-digitale-Souveraenitaet-10387368.html -->
+
+::: {.notes}
+
+- Microsoft hat nach Trump-Sanktionen das Mail-Konto des Chefanklägers des Internationalen Gerichtshofs blockiert.
+- Trump sanktionierte das Den Haager Gericht im Februar, nachdem ein Gremium von IStGH-Richtern im November 25 Haftbefehle gegen den israelischen Premierminister Benjamin Netanjahu mit Blick auf Kriegsverbrechen im Gaza-Streifen erlassen hatte.
+:::
+
+## {background-image="images/end-of-10.png" background-size="contain" background-color="white"}
+
+<!-- https://www.computerbild.de/artikel/cb-Tipps-Software-Windows-10-wird-eingestellt-Updates-36482825.html -->
+
+::: {.notes}
+
+- Manchmal werden Softwareversionen nicht mehr unterstützt, wie das Beispiel des End-of-Life für Windows 10 zeigt.
+- Das Problem: Zahlreiche PCs bringen die geforderten Komponenten nicht mit. Ein Upgrade auf Windows 11 auf offiziellem Wege ist in solchen Fällen ausgeschlossen.
+:::
+
+
+## {background-image="images/end-of-10-2.png" background-color="#2a67b2" background-size="contain"}
+
+::: {.notes}
+- Dazu noch eine Side-Note: Tausende von Freiwillige bieten workshops an um den Umstieg von Windows 10 auf Linux zu vereinfachen. 
+- Mein Vater hilft natürlich mit :-)
+- (Überleitung: Einwand)
+:::
+
+## {.center}
+
+:::{.blockquote}
+Aber nicht jeder kann ein Computerexperte sein
+:::
+
+::: {.notes}
+
+- Die "10'000-Stunden-Regel", die Malcolm Gladwell in seinem Buch "Outliers" populär gemacht hat, besagt, dass man etwa 10.000 Stunden Übung benötigt, um eine Fertigkeit zu meistern.
+- Bei 6 Stunden pro Tag sind Sie nach etwa 7 Jahren ein Computerexperte
+- Insbesondere müssen wir nicht alle 3 Ebenen verstehen (nächste Folie)
+
+:::
+
+## Drei Ebenen{.center}
+
+:::: {.fragment .fade-in-then-semi-out}
+::: {.layer-box .layer-box-blue}
+**Interface**
+:::
+::::
+
+:::: {.fragment .fade-in-then-semi-out}
+::: {.layer-box .layer-box-orange}
+**Implementierung**
+:::
+::::
+
+:::: {.fragment}
+::: {.layer-box  .layer-box-purple}
+**Technologie** 
+:::
+::::
+
+
+
+:::{.notes}
+- Interface - Für alle
+- Implementierung - Für Anwender
+- Technologie - Für Experten
+:::
+
+
+
+# Openweights AI {background-image="images/console-4567918_1280.jpg" .shadow .blurred-10px}
+
+## {background-image="images/console-4567918_1280.jpg"}
+
+:::{.notes}
+Gewichte sind die gelernten Zahlen innerhalb eines neuronalen Netzwerks.                      
+- Stellen Sie sich das so vor: Ein neuronales Netzwerk besteht im Grunde aus Millionen/Milliarden winziger „Regler“, die während des Trainings angepasst werden. Jeder Regler steuert, wie stark eine Information eine andere beeinflusst.                                     
+- Wenn Sie ein Modell anhand von Text trainieren, stellen Sie im Wesentlichen alle diese Knöpfe ein     , bis das Modell gute Ergebnisse liefert. Die endgültigen Einstellungen all dieser Knöpfe = die Gewichte.                                                                 
+- Wenn also jemand von einem „7B-Modell” spricht, bedeutet das 7 Milliarden Gewichte (7 Milliarden Zahlen, die während des Trainings gelernt wurden).                                   
+   
+
+:::
+
+
+## "Offenheit" ist ein Spektrum
+
+offener ↑
+
+::: {.incremental .two-col-list}
+
+- [Vollständig offen]{}  [(Gewichte ✔ Code ✔ Daten ✔)]{}
+- [Offener Code]{} [(Gewichte ✔ Code ✔ Daten ✕)]{}
+- [Offene Gewichte]{}  [(Gewichte ✔ Code ✕ Daten ✕)]{}
+- [Proprietär]{} [(Gewichte ✕ Code ✕ Daten ✕)]{}
+:::
+
+geschlossener ↓
+
+::: {.notes}
+
+                                                                             
+
+- **Proprietär (ChatGPT, Claude, Gemini):**
+  - Komplette Black Box – Sie erhalten nur API-Zugriff
+  - Keine Einblicke in die Funktionsweise, die verwendeten Trainingsdaten oder die Entscheidungsfindung
+  - Sie sind vollständig vom Anbieter abhängig
+- **Offene Gewichte (Llama 3.3, DeepSeek, Mistral, Qwen):**
+  - Die Gewichte des trainierten Modells werden veröffentlicht – Sie können sie herunterladen und lokal ausführen
+  - ABER: Trainingscode und Trainingsdaten sind in der Regel NICHT enthalten
+  - Sie können es VERWENDEN, aber nicht vollständig überprüfen oder reproduzieren, wie es erstellt wurde
+  - Hier befinden sich heute die meisten "offenen" Modelle
+  - Für praktische Lehrzwecke: Das ist ausreichend! Sie erhalten lokale Kontrolle.
+- **Offene Gewichte + Code (einige Forschungsveröffentlichungen):**
+  - Gewichte + die für das Training verwendete Methodik/der verwendete Code
+  - Sie können nachvollziehen und überprüfen, WIE das Training durchgeführt wurde
+  - ABER: Trainingsdaten sind in der Regel nicht enthalten (Lizenzprobleme, Wettbewerbsvorteil)
+  - Beispiel: Veröffentlichungen einiger akademischer Labore
+  - Näher an der echten "Open Source"-Philosophie – transparent und überprüfbar
+- **Vollständig Open Source (OLMo, BLOOM – selten!):**
+  - Gewichte + Trainingscode + Trainingsdaten – alles
+  - Vollständig reproduzierbar und überprüfbar
+  - Dies ist der Goldstandard, aber extrem selten (Trainingsdaten sind teuer, komplexe Lizenzierung)
+  - Am ähnlichsten zu traditioneller Open-Source-Software
+
+:::
+
+
+## {background-image="images/huggingface.png" background-size="contain" background-color="white"}
+
+:::{#huggingface}                                                             
+[](https://huggingface.co)                                                    
+:::  
+
+## {background-image="images/huggingface.jpeg" background-size="contain" background-color="white"}
+
+
+
+
+
+
+
+# Praktische Demo 1 {background-image="images/magic-note-8836935\_1280.jpg" .shadow .blurred-5px}
+
+[OpenSource Lokal]{.shadow}
+
+## {background-image="images/magic-note-8836935\_1280.jpg"}
+
+
+:::{.notes}
+
+- Opensource Lokale KI
+- OS Cloud KI sind zwar super, aber mit vorsicht zu geniessen. Sensible Daten wandern trotzdem ab und können für Trainingszwecken verwendet werden
+- Lokale LLMs sind hier die Lösung
+
+- Wir arbeiten erstmals im Terminal.
+- Steiler einstieg, es gibt auch GUIS
+- aber der Terminal öffnet uns Tür und Tor für FOSS
+
+:::
+
+
+## Ollama{background-color="white"}
+
+![](images/welcome.avif)
+
+## Ollama{background-color="white"}
+
+
+![](images/ollama.png)
+
+
+
+::: {.notes}
+
+**Windows-Installation:**
+
+1. Von [ollama.com/download](https://ollama.com/download) **OllamaSetup.exe** herunterladen
+2. OllamaSetup.exe mit default Einstellungen installieren 
+:::
+
+
+## Terminal Öffnen
+
+- Windows: *Command Prompt*
+- Mac: *Terminal*
+- Linux: *Terminal*
+
+
+::: {.notes}
+- Wenn der Befehl nicht gefunden wird, starten Sie den Computer neu
+:::
+
+
+## Im Terminal
+
+
+:::{.terminal}
+```{.bash}
+ollama --version          
+```
+```
+ollama version is 0.14.2
+```
+:::
+
+:::{.notes}
+
+- Der Terminal bietet den Zugang zu OpenSource Software
+- Ohne Terminal ist nur ein Bruchteil der FOSS nutzbar
+- Der Terminal wirkt anfänglich befremdlich und umständlich, aber mit KI wird die Benutzung vereinfacht
+- `ollama` ruft das Programm "ollama" auf
+- `--version` ist ein Argument zum Program `ollama`
+:::
+
+
+## Im Terminal {visibility="hidden"}
+
+
+:::{.terminal}
+```{.bash}
+ollama --help          
+```
+```{.txt}
+Large language model runner
+
+Usage:
+  ollama [flags]
+  ollama [command]
+
+Available Commands:
+  serve       Start ollama
+  create      Create a model
+  show        Show information for a model
+  run         Run a model
+  stop        Stop a running model
+  pull        Pull a model from a registry
+  push        Push a model to a registry
+  signin      Sign in to ollama.com
+  signout     Sign out from ollama.com
+  list        List models
+  ps          List running models
+  cp          Copy a model
+  rm          Remove a model
+  help        Help about any command
+
+Flags:
+  -h, --help      help for ollama
+  -v, --version   Show version information
+
+Use "ollama [command] --help" for more information about a command.
+
+```
+:::
+
+:::{.notes}
+- `ollama` ruft das Programm "ollama" auf
+- `--help` ist ein Argument zum Program `ollama` und ruft die Hilfestellung zu dieser Software auf
+- fast alle terminal programme haben die argumente `--version` und `--help`
+:::
+
+## RAM Verfügbarkeit {visibility="hidden"}
+
+
+:::{.terminal}
+```{.bash}
+systeminfo 
+```
+```{.txt}
+[...]
+Gesamter physischer Speicher:                  32’717 MB
+[...]
+```
+:::
+
+::: {.notes}
+- Die meisten modernen Laptops haben mindestens 8 GB RAM
+- Für den Workshop reichen kleine Modelle (1.5B - 3B) völlig aus
+- Mehr RAM = größere Modelle = bessere Qualität (aber langsamer)
+
+**Interpretation:**
+
+- **8 GB oder weniger**: Kleine Modelle (1.5B - 3B) oder Cloud
+- **16 GB**: Mittlere Modelle (7B) möglich ✅
+- **32 GB+**: Große Modelle (13B+) möglich
+:::
+
+## GPU Verfügbarkeit {visibility="hidden"}
+
+:::{.terminal}
+```{.bash}
+wmic path win32_VideoController get name
+```
+
+:::
+
+
+::: {.notes}
+- NVIDIA GPUs beschleunigen die Inferenz erheblich
+- AMD/Intel GPUs werden von Ollama noch nicht gut unterstützt
+- Ohne GPU dauern Antworten etwas länger, funktionieren aber trotzdem
+- Für den Unterricht ist CPU-basierte Inferenz völlig ausreichend
+:::
+
+## Modellwahl
+
+- Falls Sie mindestens 8 GB RAM haben
+  - Suchen Sie auf [ollama.ai](https://ollama.ai) ein kleines Model (1 - 2b Parameter) heraus
+  - Z.B.
+    - `llama3.2`
+    - `deepseek-r1`
+
+---
+    
+- Falls Sie weniger als 8 GB RAM haben
+  1. Erstellen Sie ein kostenloses Konto auf [ollama.com](https://ollama.com)
+  2. Melden Sie sich in der Kommandozeile an
+
+:::{.terminal}
+```{.bash}
+ollama signin
+```
+:::
+
+:::{.notes}
+
+- Bei gewissen Modellen (z.B: deepseek-r1) gibt es verschiedene Grössen (1 - 700b). 
+- Das sind die Anzahl Parameter (in Milliarden). 
+- Wir starten mit einem kleinen Modell, indem wir mit einem Klick den Namen kopieren.
+
+:::
+
+
+##
+
+Mit folgendem Kommandozeilenbefehl kann man das Modell (egal ob lokal oder cloud) initialisieren
+
+:::{.terminal}
+```{.bash}
+# initialisiert ein kleines, lokales Modell
+ollama pull deepseek-r1:1.5b     
+
+
+# initialisiert ein grosses cloud Modell
+ollama pull ministral   
+```
+:::
+
+
+::: {.notes}
+- `deepseek-r1:1.5b`: ~1 GB Download, sehr schnell, gut für logisches Denken
+- `llama3.2:3b`: ~2 GB Download, vielseitig, populär
+- `qwen2.5:3b`: ~2 GB Download, besser bei nicht-englischen Sprachen
+- Der Download kann je nach Internetverbindung 1-5 Minuten dauern
+
+
+```powershell
+ollama pull gemini-flash      # Schnell und kosteneffizient
+ollama pull deepseek-v3       # Sehr leistungsfähig
+ollama pull ministral         # Vielseitig
+```
+:::
+
+
+
+
+
+## Chat initialisieren
+
+
+:::{.terminal}
+```{.bash}
+# Lokales Modell:
+ollama run deepseek-r1:1.5b
+
+
+# ODER Cloud-Modell:
+ollama run gemini-flash
+```
+:::
+
+
+## Erster Prompt
+
+
+:::{.terminal}
+```{.txt}
+>>> Explain to a group of environmental professionals in simple terms what a 
+FOSS LLM is, what benefits it can bring to the environmental sector, and 
+what risks they should be aware of
+```
+:::
+
+
+
+::: {.notes}
+**Wichtige Punkte:**
+- `ollama run <modell>` startet eine Chat-Sitzung (cloud oder lokal)
+- Die erste Abfrage kann etwas länger dauern Folgeabfragen sind schneller
+- Beenden Sie den Chat mit `/bye` oder Strg+C
+
+
+**Was passiert hinter den Kulissen (bei lokalen Modellen):**
+
+1. Die Modelldatei wird in den RAM geladen
+2. Ihr Text wird in Zahlen (Tokens) umgewandelt
+3. Das Modell (die Gewichte) berechnet das nächste wahrscheinlichste Token
+4. Die Ergebnisse werden wieder in Text umgewandelt
+5. Alles geschieht **lokal auf Ihrem Computer** - komplett offline!
+
+
+Jetzt haben wir einen etwas langsamen und nicht sehr intelligenten Chatbox.. was hat uns das gebracht?
+:::
+
+
+
+
+
+
+
+
+# Praktische Demo 2 {background-image="images/magic-note-8836935\_1280.jpg" .shadow .blurred-5px}
+
+[LLMs via einem GUI]{.shadow}
+
+:::{.notes}
+
+- Anything LLM
+
+:::
+
+## {background-image="images/magic-note-8836935\_1280.jpg"}
+
+
+## AnythingLLM
+
+- Anything LLM ist eine ideale Ergänzung zu Ollama
+- Die Software bietet ein grafisches Interface und verwendet die Modelle, die von Ollama zu Verfügung gestellt werden
+- AnythingLLM ist frei und OpenSource, und für alle 3 Plattformen verfügbar
+- Download: [anythingllm.com](https://anythingllm.com)
+
+
+## Ollama als "Server" konfigurieren
+
+![](images/anything-llm-0.png)
+
+
+## Neuer Workspace erstellen
+
+![](images/anything-llm-2.png)
+
+
+## Dateien Hinzufügen
+
+![](images/anything-llm-3.png)
+
+
+## Konvertierung zu RAG (lokal)
+
+![](images/anything-llm-4.png)
+
+
+:::{.notes}
+Retrieval-augmented generation (RAG) is a technique that enables large language models (LLMs) to retrieve and incorporate new information from external data sources.[1] With RAG, LLMs do not respond to user queries until they refer to a specified set of documents.
+
+:::
+
+
+
+## Kontext basiertes chatten
+
+![](images/anything-llm-5.png)
+
+
+
+
+# {background-color="#1a1a2e" .unlisted}
 
 [GruentAI]{style="font-size: 3.2em; font-weight: 700; color: #64b5f6; display: block; margin-bottom: 0.2em;"}
 

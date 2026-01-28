@@ -58,9 +58,9 @@ $presentation-heading-font: "Inter", sans-serif;
 }
 
 // ===== UEBERSCHRIFTEN ZENTRIERT =====
-.reveal h2 {
+.reveal h2{
   text-transform: none !important;
-  border-bottom: 3px solid #3b82f6 !important;
+  /*border-bottom: 3px solid #3b82f6 !important;*/
   padding-bottom: 0.3em !important;
   margin-bottom: 0.8em !important;
   font-size: 1.7em !important;

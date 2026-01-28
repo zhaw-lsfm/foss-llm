@@ -1,18 +1,31 @@
 ---
-author: FG Geoinformatik
+title: "GruentAI"
+subtitle: "Lokale Open Source LLM in der Hochschullehre einsetzen"
+author: ""
+date: ""
 format:
   revealjs:
-    theme: dark
+    theme: [dark, custom.scss]
+    footer: "GruentAI | ZHAW Geoinformatik"
+    slide-number: c/t
+    progress: true
+    transition: slide
+    width: 1920
+    height: 1080
+    margin: 0.1
+    center: true
+title-slide-attributes:
     css:
     - styles/base.css
     - styles/custom.css
+    footer: zhaw-lsfm.github.io/foss-llm
+    chalkboard: true
+    data-background-color: "#1a1a2e"
     slide-number: true
     transition: slide
     background-transition: fade
     pagetitle: OSS LLMs
     code-line-numbers: false
-    footer: zhaw-lsfm.github.io/foss-llm
-    chalkboard: true
 revealjs-plugins:
   - attribution
 ---
