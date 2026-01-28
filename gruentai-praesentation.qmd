@@ -1,12 +1,11 @@
 ---
 title: "GruentAI"
-subtitle: "KI-gestuetzte Thesis-Bewertung mit lokalen LLMs"
-author: "Fachgruppe Geoinformatik | ZHAW Waedenswil"
-date: "Januar 2026"
+subtitle: "Lokale Open Source LLM in der Hochschullehre einsetzen"
+author: ""
+date: ""
 format:
   revealjs:
-    theme: [dark]
-    css: styles/custom.scss
+    theme: [dark, custom.scss]
     footer: "GruentAI | ZHAW Geoinformatik"
     slide-number: c/t
     progress: true
@@ -19,6 +18,28 @@ title-slide-attributes:
   data-background-color: "#1a1a2e"
 ---
 
+## GruentAI {background-color="#1a1a2e"}
+
+[Das Projekt zielt darauf ab den Einsatz von Lokalen Open Source LLMs fuer die Hochschullehre zu testen und fuer ausgewaehlte Use Cases zugaenglich zu machen.]{style="font-size: 1.2em;"}
+
+- **Lehrunterstuetzung:** Bereitstellen von lokalen Customized ChatBots fuer die Lehre (z.B. Pruefungsfragen, Aufgaben, Uebungen,... aus eigenen Lehrunterlagen und fachspezifischem Material)
+- **Bewertungsunterstuetzung:** KI-gestuetzte Korrektur von Bachelorarbeiten
+- **Kollaborative Lernunterstuetzung:** KI-gestuetztes Feedback fuer studentische Projektarbeiten
+
+---
+
+## {background-color="#1a1a2e" .unlisted}
+
+[GruentAI]{style="font-size: 3.2em; font-weight: 700; color: #64b5f6; display: block; margin-bottom: 0.2em;"}
+
+[KI-gestuetzte Thesis-Bewertung mit lokalen LLMs]{style="font-size: 1.5em; color: #90caf9; display: block;"}
+
+[Forschungsgruppe Geoinformatik | ZHAW Waedenswil]{style="font-size: 1.1em; color: #b0bec5; display: block; margin-top: 1.5em;"}
+
+[Januar 2026]{style="font-size: 1em; color: #78909c; display: block;"}
+
+---
+
 ## Agenda
 
 ::: {.columns}
@@ -29,8 +50,8 @@ title-slide-attributes:
 :::
 ::: {.column width="50%"}
 4. Modell- und Bias-Analyse
-5. Limitierungen
-6. Fazit, Empfehlungen und Ausblick
+5. Fazit und Empfehlungen
+6. Ausblick und Deliverables
 :::
 :::
 
@@ -112,6 +133,12 @@ Koennen lokal betriebene LLM-Modelle Bachelorarbeiten nach dem ZHAW-Schema bewer
 
 ---
 
+## Das Bewertungsschema {background-color="#0f3460"}
+
+![](images/bewertungsraster.png){width="90%"}
+
+---
+
 ## Der Bewertungs-Workflow
 
 | Schritt | Aktion | Beschreibung |
@@ -120,7 +147,20 @@ Koennen lokal betriebene LLM-Modelle Bachelorarbeiten nach dem ZHAW-Schema bewer
 | 2 | Text-Extraktion | Automatisches Preprocessing |
 | 3 | LLM Evaluation | Bewertung nach ZHAW-Schema |
 | 4 | Notenvergleich | Abgleich mit Referenznote |
-| 5 | Dashboard | Statistiken und Analyse |
+| 5 | Feedback-Report | Detailliertes Kriterien-Feedback |
+| 6 | Dashboard | Statistiken und Analyse |
+
+---
+
+## Der Feedback-Report {background-color="#0f3460"}
+
+<img src="images/step4c_27-01-2026_17-15-59.png" style="width: 1100px;">
+
+---
+
+## Live-Demo: Der Workflow {background-color="#0f3460"}
+
+<video src="images/zhaw-workflow-v6.mp4" controls style="width: 90%; max-height: 70vh;"></video>
 
 ---
 
@@ -134,9 +174,9 @@ Koennen lokal betriebene LLM-Modelle Bachelorarbeiten nach dem ZHAW-Schema bewer
 | Metrik | Wert |
 |:-------|-----:|
 | Thesen mit Referenznote | 24 |
-| Evaluierungs-Sessions | 314 |
+| Evaluierungs-Sessions | 436 |
 | Einzelne KI-Runs | 3279 |
-| Getestete Modelle | 29 |
+| Getestete Modelle | 33 |
 
 Zeitraum: Januar 2025 - Januar 2026
 
@@ -171,11 +211,14 @@ Zeitraum: Januar 2025 - Januar 2026
 :::
 :::
 ::: {.columns}
-::: {.column width="50%"}
+::: {.column width="33%"}
 ![](images/26-01-2026_21-03-39.png)
 :::
-::: {.column width="50%"}
-![](images/26-01-2026_21-04-33.png)
+::: {.column width="34%"}
+![](images/26-01-2026_21-04-33.png){style="margin-top: -60px;"}
+:::
+::: {.column width="33%"}
+![](images/27-01-2026_20-08-45.png)
 :::
 :::
 :::
@@ -188,7 +231,7 @@ Zeitraum: Januar 2025 - Januar 2026
 |:-------|:--------:|:----:|:------:|
 | Durchschn. Abweichung | **0.57 Pkt.** | 0.5 | Knapp verfehlt |
 | Durchschn. Laufzeit | **6:21 Min.** | - | Akzeptabel |
-| Erfolgsrate | **83.3%** | - | Gut |
+| Erfolgsrate | **81.2%** | - | Gut |
 | Bestes Modell | **0.27 Pkt.** | 0.5 | Erreicht! |
 
 ::: {.callout-tip}
@@ -200,15 +243,15 @@ Das beste Modell **hermes3:70b** erreicht mit nur **0.27 Punkten** Abweichung da
 
 ## Top 5 Modelle
 
-| Rang | Modell | Score | Abweichung | Laufzeit | Erfolgsrate |
-|:----:|:-------|------:|:----------:|:--------:|:-----------:|
-| 1 | **hermes3:70b** | 74.20 | **0.27** | 6:59 | 96% |
-| 2 | llama3:8b | 71.80 | 0.39 | **1:38** | 91% |
-| 3 | mistral-small3.2:24b | 69.20 | 0.42 | 3:55 | **100%** |
-| 4 | qwen3:14b | 67.10 | 0.43 | 4:00 | 100% |
-| 5 | gemma3:4b | 65.20 | 0.48 | 1:51 | 100% |
+| Rang | Modell | Score | Abweichung | Konsistenz | Laufzeit | Erfolgsrate |
+|:----:|:-------|------:|:----------:|:----------:|:--------:|:-----------:|
+| 1 | **hermes3:70b** | 74.20 | **0.27** | 0.10 | 6:59 | 96% |
+| 2 | llama3:8b | 71.80 | 0.39 | 0.11 | **1:38** | 91% |
+| 3 | mistral-small3.2:24b | 69.20 | 0.42 | **0.07** | 3:55 | **100%** |
+| 4 | qwen3:14b | 67.10 | 0.43 | 0.12 | 4:00 | 100% |
+| 5 | gemma3:4b | 65.20 | 0.48 | 0.17 | 1:51 | 100% |
 
-**Score-Gewichtung:** 60% Genauigkeit | 25% Konsistenz | 10% Laufzeit | 5% Erfolgsrate
+**Score-Gewichtung:** 60% Abweichung | 25% Konsistenz | 10% Laufzeit | 5% Erfolgsrate
 
 ---
 
@@ -231,14 +274,14 @@ Das beste Modell **hermes3:70b** erreicht mit nur **0.27 Punkten** Abweichung da
 
 | Metrik | HPC Cluster | Lokal |
 |:-------|:-----------:|:-----:|
-| Erfolgsrate | **82%** | 29% |
-| Anzahl Runs | 3937 | 17 |
+| Erfolgsrate | **83%** | 26% |
+| Anzahl Runs | 3246 | 33 |
 | Abweichung | 0.57 | 0.65 |
 | Status | Produktiv | Nicht nutzbar |
 
 ::: {.callout-warning}
 ## Empfehlung
-**HPC wird fuer den Produktivbetrieb empfohlen.** Lokale Tests nur mit kleiner Datenbasis (n=17), daher eingeschraenkte Aussagekraft.
+**HPC wird fuer den Produktivbetrieb empfohlen.** Lokale Tests nur mit kleiner Datenbasis (n=33), daher eingeschraenkte Aussagekraft.
 :::
 
 ---
@@ -286,168 +329,55 @@ Das beste Modell **hermes3:70b** erreicht mit nur **0.27 Punkten** Abweichung da
 
 ---
 
-## Limitierungen {background-color="#0f3460"}
+## Fazit & Empfehlungen {background-color="#0f3460"}
 
-::: {.columns}
-::: {.column width="45%"}
-
-### Problematische Modelle
-
-| Modell | Problem |
-|:-------|:--------|
-| gemma3:12b | 1.41 Abweichung |
-| mistral-nemo | 0% Erfolgsrate |
-| llama3.3:70b | 26% Erfolgsrate |
-| mistral:7b | Instabil (57%) |
-
-:::
-::: {.column width="45%"}
-
-### Grundsaetzliche Grenzen
-
-| Typ | Limitierung |
-|:----|:------------|
-| Technisch | Lokal nur 29% Erfolg |
-| Technisch | Sample n=24 |
-| Konzeptionell | Nur PDF-Analyse |
-
-:::
-:::
-
----
-
-## Fazit: Zielerreichung {background-color="#0f3460"}
+::: {style="font-size: 0.8em;"}
 
 | Ziel | Status | Ergebnis |
 |:-----|:------:|:---------|
-| Abweichung unter 0.5 (gesamt) | Knapp verfehlt | 0.57 statt 0.5 |
-| Abweichung unter 0.5 (Top-Modell) | **Erreicht** | hermes3:70b = 0.27 |
+| Abweichung < 0.5 (gesamt) | Knapp verfehlt | 0.57 statt 0.5 |
+| Abweichung < 0.5 (Top-Modell) | **Erreicht** | hermes3:70b = 0.27 |
 | Praktische Nutzbarkeit | **Erreicht** | Als Zweitmeinung |
-| Produktionsreife | Teilweise | Mit Einschraenkungen |
-
----
-
-## Empfohlene Modelle
-
-| Anwendungsfall | Modell | Abweichung | Laufzeit | Erfolg |
-|:---------------|:-------|:----------:|:--------:|:------:|
-| Beste Genauigkeit | **hermes3:70b** | 0.27 | 6:59 | 96% |
-| Schnellstes Feedback | **llama3:8b** | 0.39 | 1:38 | 91% |
-| Hoechste Zuverlaessigkeit | **mistral-small3.2:24b** | 0.42 | 3:55 | 100% |
-
----
-
-## Nutzungsempfehlung
 
 ::: {.columns}
 ::: {.column width="45%"}
-
-### Do's
-
-- Als **Zweitmeinung** nutzen
-- Bei **Unsicherheit** als Orientierung
-- Zur **Reflexion** der eigenen Bewertung
-- Mit **HPC-Infrastruktur** betreiben
-- Bei Noten **4.0-5.5** einsetzen
-
-:::
-::: {.column width="45%"}
-
-### Don'ts
-
-- **Niemals** als alleinige Bewertung
-- **Nicht** bei extremen Noten (unter 4.0)
-- **Nicht** ohne menschliche Pruefung
-- **Nicht** blind vertrauen
-
-:::
-:::
-
-::: {.callout-important}
-## Take-Away
-Die KI **ersetzt nicht** den Pruefer - sie ist ein **Werkzeug** zur Unterstuetzung!
-:::
-
----
-
-## Ausblick: Roadmap {background-color="#0f3460"}
-
-| Phase | Status | Inhalt |
-|:------|:------:|:-------|
-| Phase 1 | Abgeschlossen | BA-Bewertung, 29 Modelle, Dashboard, IUNR-Schema |
-| Phase 2 | Konzept | Infrastruktur, Dokumentation, mehr Referenzdaten |
-| Phase 3 | Idee | SA/MA-Erweiterung, Multi-Run-Konsens |
-| Phase 4 | Vision | **Weitere Institute/Bewertungsschemas** |
-| Phase 5 | Vision | Fine-Tuning, Produktiv-Integration |
-
-Weiterentwicklung abhaengig von Ressourcen und Projektfinanzierung.
-
----
-
-## Kann man das jetzt nutzen?
-
-::: {.columns}
-::: {.column width="45%"}
-
-### Die Modelle (sofort nutzbar)
-
-- **hermes3:70b** oder **llama3:8b** direkt mit Ollama
-- Als Zweitmeinung einsetzbar
-- Fuer Noten im Bereich 4.0-5.5
-- Mehrfach-Durchlaeufe empfohlen
-- Bewertungsschema als Prompt nutzbar
-
-::: {.callout-tip}
-## Tipp
-Auch ohne GruentAI-System direkt mit LLM nutzbar!
-:::
-
-:::
-::: {.column width="45%"}
-
-### Das GruentAI-System
-
-- Aktuell **Testsystem** (lokal)
-- Bewertungsschema IUNR fix implementiert
-- Produktivbetrieb erfordert:
-  - Infrastruktur-Bereitstellung
-  - Budget fuer Anpassungen
-  - Benutzer-Dokumentation
-- Geplant: SA/MA-Integration
-- Geplant: Multi-Run-Konsens
-- Geplant: **Weitere Institute/Schemas**
-
-:::
-:::
-
----
-
-## Take-Aways
-
-::: {.columns}
-::: {.column width="45%"}
-
 ### Erkenntnisse
-
-1. **Ziel erreichbar** - Top-Modell unter 0.5
-2. **Mittelgrosse Modelle** - Beste Wahl
-3. **HPC zwingend** - Lokal nicht OK
-4. **Bias beachten** - Extremnoten!
-5. **Zweitmeinung** - Nicht alleinige Bewertung
-
+- **Mittelgrosse Modelle** (21-70B) beste Wahl
+- **HPC empfohlen** - Lokal eingeschraenkt
+- **Vorsicht bei Extremnoten** (unter 4.0)
 :::
 ::: {.column width="45%"}
-
 ### Empfehlungen
-
-1. **Sofort nutzbar** als Zweitmeinung
-2. **hermes3:70b** fuer Genauigkeit
-3. **llama3:8b** fuer Geschwindigkeit
-4. **Vorsicht** bei Noten unter 4.0
-5. **Immer** menschlich pruefen
-
+- **hermes3:70b** fuer beste Genauigkeit
+- **llama3:8b** fuer schnelles Studierenden-Feedback
+- **Nur als Zweitmeinung** nutzen
 :::
 :::
+
+:::
+
+[**Take-Away:** Die KI **ersetzt nicht** den Pruefer - sie ist ein **Werkzeug** zur Unterstuetzung! Sowohl fuer **Lehrende** als auch fuer **Studierende**!]{style="display: block; background: rgba(239, 68, 68, 0.3); border-left: 4px solid #ef4444; padding: 0.6em 1em; border-radius: 6px; text-align: left; max-width: 85%; margin: 0.5em auto;"}
+
+---
+
+## Was haben wir gelernt? {background-color="#0f3460"}
+
+::: {style="font-size: 0.9em;"}
+- **Lokaler Einsatz von LLM auf eigenem PC ist moeglich** (Ollama-Installationsanleitung)
+  - Z.B: Pruefungsunterstuetzung mit eigenen Lehrmaterialien
+- **Anspruchsvollere Anwendungen** (Bewertung von studentischen Arbeiten) eignen sich besser auf dem HPC (immer noch lokal)
+  - Bewertungen von studentischen Arbeiten mit Abweichungen zwischen 0.25 (gut!) und 0.5 (mit Vorsicht!) Noten
+  - Spezifisches Feedback zu Bewertungskriterien von Studierenden fuer sinnvoll befunden
+:::
+
+---
+
+## Deliverables und Nachlese {background-color="#0f3460"}
+
+- <a href="https://webgis.lsfm.zhaw.ch/gruentai/anleitung/OllamaInstallationWindows11.pdf" target="_blank">**Link auf Installationsanleitungen**</a> (z.B: Ollama)
+- **Bewertung/Feedback Applikation** fuer studentische Arbeiten
+  - Besteht Interesse es fuers ganze Departement zugaenglich zu machen? (Weitere Bewertungsraster, Interface fuer HPC, ...)
+- **Foliensatz** (heute)
 
 ---
 
@@ -457,6 +387,4 @@ Auch ohne GruentAI-System direkt mit LLM nutzbar!
 
 **Fragen?**
 
-GruentAI | Fachgruppe Geoinformatik | ZHAW Waedenswil
-
-Demo: http://127.0.0.1:8501
+GruentAI | Forschungsgruppe Geoinformatik | ZHAW Waedenswil
