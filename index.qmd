@@ -429,9 +429,6 @@ geschlossener ↓
 :::
 
 
-## Ollama {background-image="images/welcome.avif" background-color="white"}
-
-
 
 ## Ollama{background-color="white"}
 
@@ -528,7 +525,7 @@ Use "ollama [command] --help" for more information about a command.
 - fast alle terminal programme haben die argumente `--version` und `--help`
 :::
 
-## RAM Verfügbarkeit
+## RAM Verfügbarkeit{visibility="hidden"}
 
 
 :::{.terminal}
@@ -554,7 +551,7 @@ Gesamter physischer Speicher:                  32’717 MB
 - **32 GB+**: Große Modelle (13B+) möglich
 :::
 
-## GPU Verfügbarkeit
+## GPU Verfügbarkeit{visibility="hidden"}
 
 :::{.terminal}
 ```{.bash}
@@ -573,14 +570,7 @@ wmic path win32_VideoController get name
 
 ## Modellwahl
 
-- Falls Sie mindestens 8 GB RAM haben
-  - Suchen Sie auf [ollama.ai](https://ollama.ai) ein kleines Model (1 - 2b Parameter) heraus
-  - Z.B.
-    - `llama3.2`
-    - `deepseek-r1`
-
----
-    
+- Falls Sie mindestens 8 GB RAM haben suchen Sie auf [ollama.ai](https://ollama.ai) ein kleines Model (1 - 2b Parameter) heraus, (z.B. `llama3.2`, `deepseek-r1`)
 - Falls Sie weniger als 8 GB RAM haben
   1. Erstellen Sie ein kostenloses Konto auf [ollama.com](https://ollama.com)
   2. Melden Sie sich in der Kommandozeile an
@@ -602,7 +592,7 @@ ollama signin
 
 ##
 
-Mit folgendem Kommandozeilenbefehl kann man das Modell (egal ob lokal oder cloud) initialisieren
+Mit folgendem Kommandozeilenbefehl kann man ein Modell (lokal oder cloud) initialisieren
 
 :::{.terminal}
 ```{.bash}
@@ -721,30 +711,6 @@ Gestalten Sie das Verhalten von LLM
 ::: {.notes}
 Diese drei Verbesserungen machen lokale LLMs leistungsstark. Gehen Sie nicht zu sehr ins Technische – erklären Sie einfach, was jede einzelne Funktion bewirkt, und geben Sie konkrete Beispiele, die für den Unterricht relevant sind. RAG ist für ihren Anwendungsfall besonders wichtig.
 :::
-
-## Warum lokale LLMs für den Unterricht sinnvoll sind{visibility="hidden"}
-
-- Studierendendaten sind**sensibel**(DSGVO, Datenschutz)
-- **Sich wiederholende Aufgaben**(Benotung, Feedback)
-- Maßgeschneiderte**Kursmaterialien**(RAG)
-- Einmalige Einrichtung,**dauerhafter Nutzen**
-- **Keine Kosten pro Abfrage**
-
-::: {.notes}
-Verbinden Sie die Punkte: Studentendaten + DSGVO = muss lokal sein. Sich wiederholende Aufgaben + keine Kosten pro Abfrage = wirtschaftlich rentabel. Deshalb ist lokal speziell für den Unterricht sinnvoll.
-:::
-
-## Übergang{visibility="hidden"}
-
-::: {.r-fit-text}
-Okay, was können Siedamit**konkret machen**?
-:::
-
-::: {.notes}
-Übergang zu praktischen Anwendungen. Wechsel von "Warum" zu "Was". Zeit, konkreten Wert zu zeigen.
-:::
-
-
 
 
 # Praktische Demo 2 {background-image="images/magic-note-8836935\_1280.jpg" .shadow .blurred-5px}

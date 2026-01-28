@@ -34,7 +34,7 @@
 </defs>
 <g clip-path='url(#cpNDcuOTl8NTYxLjQ1fDUuNDh8MjY1LjE3)'>
 <polygon points='71.33,252.18 115.99,251.59 204.96,249.59 272.32,245.67 293.92,241.51 316.25,235.85 338.58,227.93 360.92,220.55 383.25,207.78 405.95,194.94 427.91,182.71 494.91,153.79 538.11,17.28 538.11,253.37 494.91,253.37 427.91,253.37 405.95,253.37 383.25,253.37 360.92,253.37 338.58,253.37 316.25,253.37 293.92,253.37 272.32,253.37 204.96,253.37 115.99,253.37 71.33,253.37 ' style='stroke-width: 0.00; stroke: none; stroke-linecap: butt; fill: #42AFFA;' />
-<polyline points='71.33,252.18 115.99,251.59 204.96,249.59 272.32,245.67 293.92,241.51 316.25,235.85 338.58,227.93 360.92,220.55 383.25,207.78 405.95,194.94 427.91,182.71 494.91,153.79 538.11,17.28 ' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt;' />
+<polyline points='71.33,252.18 115.99,251.59 204.96,249.59 272.32,245.67 293.92,241.51 316.25,235.85 338.58,227.93 360.92,220.55 383.25,207.78 405.95,194.94 427.91,182.71 494.91,153.79 538.11,17.28 ' style='stroke-width: 1.07; stroke: #FFFFFF; stroke-linecap: butt;' />
 </g>
 <g clip-path='url(#cpMC4wMHw1NjYuOTN8MC4wMHwyODMuNDY=)'>
 <text x='43.06' y='256.39' text-anchor='end' style='font-size: 8.80px;fill: #FFFFFF; font-family: "Liberation Sans";' textLength='4.89px' lengthAdjust='spacingAndGlyphs'>0</text>
