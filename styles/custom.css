@@ -28,6 +28,10 @@
   filter: sepia(40%) blur(5px);
 }
 
+.hydepark  .slide-background-content {
+  filter: contrast(200%) brightness(40%) blur(5px);
+}
+
 
 #huggingface {                                                                
   position: relative;  /* add this */                                         

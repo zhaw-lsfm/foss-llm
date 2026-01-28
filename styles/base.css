@@ -34,6 +34,10 @@ p.caption{
   text-align: center;
 }
 
+.center{
+  text-align: center;
+}
+
 
 .blurred-10px .slide-background-content {
   filter: blur(10px);

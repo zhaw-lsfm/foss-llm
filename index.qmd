@@ -18,11 +18,11 @@ revealjs-plugins:
 lang: de
 ---
 
-# Mehr als nur ChatGPT {background-image="images/5790836212_87a89fe3b9_o.jpg" class="blurred-10px strokeme"}
+# Mehr als nur ChatGPT {background-image="images/5790836212_87a89fe3b9_o.jpg" class="blurred-10px strokeme hydepark center" footer=false}
 
 [Was Open Source und On Premise KI uns bieten können]{.strokeme}
 
-[Slides: [webgis.lsfm.zhaw.ch/svu-asep-webinar](https://webgis.lsfm.zhaw.ch/svu-asep-webinar)]{.strokeme}
+![Slides: [webgis.lsfm.zhaw.ch/svu-asep-webinar](https://webgis.lsfm.zhaw.ch/svu-asep-webinar%5D)](images/adobe-express-qr-code.svg){width=100}
 
 
 ::: {.attribution}
@@ -69,6 +69,13 @@ Selbständig ([Ratnaweera.xyz](https://www.ratnaweera.xyz))
 - Warum halte ich diesen Talk? 
 :::
 
+
+## 
+
+
+![Umfrage zur Nutzung von KI bei der Anmeldung an das heutige Webinar](images/umfrage-sketch.svg){#fig-umfrage}
+
+
 ## Drei Thesen
 
 :::{.incremental}
@@ -89,10 +96,7 @@ Selbständig ([Ratnaweera.xyz](https://www.ratnaweera.xyz))
 
 
 
-## 
 
-
-![Umfrage zur Nutzung von KI bei der Anmeldung an das heutige Webinar](images/umfrage-sketch.svg){#fig-umfrage}
 
 
 ## {background-image="images/VR_and_Greshan3.png"}
@@ -322,16 +326,16 @@ Aber nicht jeder kann ein Computerexperte sein
 ## {background-image="images/console-4567918_1280.jpg"}
 
 :::{.notes}
-Gewichte sind die gelernten Zahlen innerhalb eines neuronalen Netzwerks.                      
-- Stellen Sie sich das so vor: Ein neuronales Netzwerk besteht im Grunde aus Millionen/Milliarden winziger „Regler“, die während des Trainings angepasst werden. Jeder Regler steuert, wie stark eine Information eine andere beeinflusst.                                     
-- Wenn Sie ein Modell anhand von Text trainieren, stellen Sie im Wesentlichen alle diese Knöpfe ein     , bis das Modell gute Ergebnisse liefert. Die endgültigen Einstellungen all dieser Knöpfe = die Gewichte.                                                                 
-- Wenn also jemand von einem „7B-Modell” spricht, bedeutet das 7 Milliarden Gewichte (7 Milliarden Zahlen, die während des Trainings gelernt wurden).                                   
+Gewichte sind die gelernten Zahlen innerhalb eines neuronalen Netzwerks.     
+- Stellen Sie sich das so vor: Ein neuronales Netzwerk besteht im Grunde aus Millionen/Milliarden winziger „Regler“, die während des Trainings angepasst werden. Jeder Regler steuert, wie stark eine Information eine andere beeinflusst.   
+- Wenn Sie ein Modell anhand von Text trainieren, stellen Sie im Wesentlichen alle diese Knöpfe ein     , bis das Modell gute Ergebnisse liefert. Die endgültigen Einstellungen all dieser Knöpfe = die Gewichte.              
+- Wenn also jemand von einem „7B-Modell” spricht, bedeutet das 7 Milliarden Gewichte (7 Milliarden Zahlen, die während des Trainings gelernt wurden). 
    
 
 :::
 
 
-## "Offenheit" ist ein Spektrum
+## "Offenheit" ist ein Spektrum {.nostrech}
 
 offener ↑
 
@@ -345,31 +349,23 @@ offener ↑
 
 geschlossener ↓
 
+
+
+
 ::: {.notes}
 
-                                                                             
+         
 
 - **Proprietär (ChatGPT, Claude, Gemini):**
-  - Komplette Black Box – Sie erhalten nur API-Zugriff
-  - Keine Einblicke in die Funktionsweise, die verwendeten Trainingsdaten oder die Entscheidungsfindung
-  - Sie sind vollständig vom Anbieter abhängig
 - **Offene Gewichte (Llama 3.3, DeepSeek, Mistral, Qwen):**
-  - Die Gewichte des trainierten Modells werden veröffentlicht – Sie können sie herunterladen und lokal ausführen
-  - ABER: Trainingscode und Trainingsdaten sind in der Regel NICHT enthalten
-  - Sie können es VERWENDEN, aber nicht vollständig überprüfen oder reproduzieren, wie es erstellt wurde
-  - Hier befinden sich heute die meisten "offenen" Modelle
-  - Für praktische Lehrzwecke: Das ist ausreichend! Sie erhalten lokale Kontrolle.
 - **Offene Gewichte + Code (einige Forschungsveröffentlichungen):**
-  - Gewichte + die für das Training verwendete Methodik/der verwendete Code
-  - Sie können nachvollziehen und überprüfen, WIE das Training durchgeführt wurde
-  - ABER: Trainingsdaten sind in der Regel nicht enthalten (Lizenzprobleme, Wettbewerbsvorteil)
-  - Beispiel: Veröffentlichungen einiger akademischer Labore
-  - Näher an der echten "Open Source"-Philosophie – transparent und überprüfbar
 - **Vollständig Open Source (OLMo, BLOOM – selten!):**
-  - Gewichte + Trainingscode + Trainingsdaten – alles
-  - Vollständig reproduzierbar und überprüfbar
-  - Dies ist der Goldstandard, aber extrem selten (Trainingsdaten sind teuer, komplexe Lizenzierung)
-  - Am ähnlichsten zu traditioneller Open-Source-Software
+
+- **Achtung: OSI Open Source AI Definition (opensource.org/ai):**
+  - Die offizielle OSI-Definition verlangt NICHT die Trainingsdaten selbst, nur "Data Information" (Beschreibung, wie man Daten beschaffen kann)
+  - D.h. Llama, Mistral etc. könnten unter OSI als "Open Source AI" gelten, obwohl sie keine Daten freigeben
+  - Meine Folie ist strenger als die OSI-Definition – das ist bewusst so, da ich "echte" Offenheit zeigen will
+  - Kritik: OSI-Definition verwässert den Open-Source-Gedanken
 
 :::
 
@@ -383,8 +379,8 @@ geschlossener ↓
 
 ## {background-image="images/huggingface.png" background-size="contain" background-color="white"}
 
-:::{#huggingface}                                                             
-[](https://huggingface.co)                                                    
+:::{#huggingface}          
+[](https://huggingface.co) 
 :::  
 
 ## OpenWeights Cloud AI
@@ -409,11 +405,11 @@ geschlossener ↓
 
 
 
-# Praktische Demo 1 {background-image="images/magic-note-8836935\_1280.jpg" .shadow .blurred-5px}
+# Demo: Ollama {background-image="images/lama-7024125_1280.jpg" .shadow .blurred-10px}
 
-[OpenSource Lokal]{.shadow}
+<!-- [OpenSource Lokal]{.shadow} -->
 
-## {background-image="images/magic-note-8836935\_1280.jpg"}
+## {background-image="images/lama-7024125_1280.jpg"}
 
 
 :::{.notes}
@@ -534,7 +530,7 @@ systeminfo
 ```
 ```{.txt}
 [...]
-Gesamter physischer Speicher:                  32’717 MB
+Gesamter physischer Speicher: 32’717 MB
 [...]
 ```
 :::
@@ -713,9 +709,9 @@ Diese drei Verbesserungen machen lokale LLMs leistungsstark. Gehen Sie nicht zu 
 :::
 
 
-# Praktische Demo 2 {background-image="images/magic-note-8836935\_1280.jpg" .shadow .blurred-5px}
+# Demo AnythingLLM {background-image="images/lama-91978_1280.jpg" .shadow .blurred-5px}
 
-[LLMs via einem GUI]{.shadow}
+<!-- [LLMs via einem GUI]{.shadow} -->
 
 :::{.notes}
 
@@ -723,26 +719,184 @@ Diese drei Verbesserungen machen lokale LLMs leistungsstark. Gehen Sie nicht zu 
 
 :::
 
-## {background-image="images/magic-note-8836935\_1280.jpg"}
+## {background-image="images/lama-91978_1280.jpg"}
 
 
 ## AnythingLLM
 
-- Anything LLM ist eine ideale Ergänzung zu Ollama
-- Die Software bietet ein grafisches Interface und verwendet die Modelle, die von Ollama zu Verfügung gestellt werden
-- AnythingLLM ist frei und OpenSource, und für alle 3 Plattformen verfügbar
+- eine ideale Ergänzung zu Ollama
+- bietet ein grafisches Interface und verwendet die Modelle, die von Ollama zu Verfügung gestellt werden
+- ist frei und OpenSource, und für alle 3 Plattformen verfügbar
 
 
 
-## Demo
+## Ollama mit AnythingLLM
+
+
+:::{.r-stack}
+![](images/anything-llm-0.png)
+
+![](images/anything-llm-2.png){.fragment}
+
+![](images/anything-llm-3.png){.fragment}
+
+![](images/anything-llm-5.png){.fragment}
+
+:::
 
 :::{.notes}
 
-- Zeige, wie Ollama als Model provider verwendet werden kann
-- Zeige, wie eigene Daten als RAG verwendet werden können
-- Zeige, wie die eigenen Daten abgefragt werden können
+- Dateien Hinzufügen
+- Konvertierung zu RAG (lokal)
+  - Retrieval-augmented generation (RAG) is a technique that enables large language models (LLMs) to retrieve and incorporate new information from external data sources.[1] With RAG, LLMs do not respond to user queries until they refer to a specified set of documents.
+- Kontext basiertes chatten
+:::
+
+
+
+# Demo R mit Ollama {background-image="images/losangeles-7754986_1280.jpg" .shadow .blurred-5px}
+
+
+## {background-image="images/losangeles-7754986_1280.jpg"}
+
+
+## Züri Wie Neu
+
+±70'000 Meldungen aus einer online Plattform zur Meldung von Schäden an der städtischen Infrastruktur. Jede Einträg enthält Koordinaten, Text und Kategorie.
+
+- [Aufgabe:]{.underline}: Meldungen kategorisieren in verschiedene Dringlichkeitsstufen: Tief, Mittel, Hoch
+- [Ansatz:]{.underline}:
+  - Jeder Task in einem neuen chat (Kontext Limitierung)
+  - Few shot: Ein paar wenige Beispiele zur Orientierung
+
+
+##
+
+```{.txt filename="prompt.txt"}
+Klassifiziere diese Meldung nach Dringlichkeit.
+
+Beispiele:
+- 'Grosses Loch in der Strasse, gefährlich für Velos und Töffs!' -> HOCH
+- 'Schachtdeckel im Trottoir Stolpergefahr' -> HOCH
+- 'Schlagloch in der Strasse beim Fussgängerstreifen' -> MITTEL
+- 'Lampe defekt' -> MITTEL
+- 'Strassenbennungstafel ist krumm' -> TIEF
+- 'Pfosten ist verbogen' -> TIEF
+
+HOCH = Sicherheitsrisiko, Verletzungsgefahr
+MITTEL = Funktionsproblem, störend
+TIEF = Kosmetisch, nicht dringend
+
+Antworte NUR mit: HOCH, MITTEL oder TIEF
+
+Die Meldung lautet wie folgt:
+```
+
+## Züri Wie Neu
+
+
+```{.r  filename="analysis.R" code-line-numbers="|2|4-5|7|9,14|10|12-13"}
+library(readr); library(dplyr); library(purrr); library(stringr)
+library(ollamar)
+
+meldungen <- read_csv("zueri-wie-neu.csv") |>
+  slice_sample(n = 20)
+
+prompt <- readLines("prompt.txt") |> 
+  paste(collapse = " ")
+
+meldungen$severity <- map_chr(meldungen$detail, \(x) {
+  prompt_i <- paste0(prompt, x)
+  
+  generate("llama2:13b", prompt_i) |>
+    resp_process("text")
+}, .progress = TRUE)
+```
+
+:::{.notes}
+- Das verwendete Modell muss lokal vorhanden sein (Terminal: `ollama list`)
+- Antworten müssen im Anschluss noch bereinigt werden
+- Quantitativ testen (Testdatensatz erstellen), mit verschiedenen Modellen!
+- Keine Kontext Limitierung, keine Limitierung der Laufzeit (eigene Hardware)
+- Erweiterung:
 
 :::
+
+
+## Erweiterung
+
+| Erweiterung      | Nutzen                                                               |
+|------------------|----------------------------------------------------------------------|
+| JSON Output      | Severity + Begründung                                                |
+| Entscheidungslog | Entscheidungen tracken, als Few-shot Beispiele für Konsistenz nutzen |
+| Konfidenz-Score  | "SICHERHEIT: 1-5" hinzufügen um unsichere Fälle zu erkennen          |
+| Batch-Kontext    | Letzte 3 Klassifikationen zeigen um die Skala zu verankern           |
+
+
+# GrüentAI {background-image="images/zhaw-gruental-905126769.jpg" .shadow .blurred-5px}
+
+::: {.attribution}
+Photo courtesy of [ZHAW](https://www.zhaw.ch/de/lsfm/ueber-uns)
+:::
+
+## {background-image="images/zhaw-gruental-905126769.jpg"}
+
+::: {.attribution}
+Photo courtesy of [ZHAW](https://www.zhaw.ch/de/lsfm/ueber-uns)
+:::
+
+##
+
+
+:::{.blockquote}
+Koennen lokal betriebene LLM-Modelle Bachelorarbeiten nach dem ZHAW-Schema bewerten und dabei eine Abweichung von weniger als 0.5 Notenpunkten zur manuellen Bewertung erzielen?
+:::
+
+## Bewertungsschema
+
+| Kategorie            | Gewicht | Bewertungsfokus                         |
+|----------------------|---------|-----------------------------------------|
+| Inhalt               | 40%     | Stand des Wissens, Methodik, Relevanz   |
+| Aufbau               | 10%     | Roter Faden, logische Struktur          |
+| Darstellung          | 10%     | Formatierung, Abbildungen, Tabellen     |
+| Sprache              | 10%     | Wissenschaftlicher Stil, Grammatik      |
+| Literaturangabe      | 10%     | Zitierweise, Quellenarbeit              |
+| Allgemeiner Eindruck | 20%     | Wissenschaftlichkeit, Eigenstaendigkeit |
+
+
+## {background-image="images/abweichung_pro_modell.svg" background-size="contain"}
+
+## {background-image="images/manual_vs_ai_grade.svg" background-size="contain"}
+
+:::{.notes}
+
+- Fazit: Die vorgeschlagenen Noten sind nicht wirklich brauchbar 
+- Allerdings waren die Begründungen, die ebenfalls als Output generiert wurden hilfreich für die manuelle Benotung
+
+:::
+
+
+# Take Home Messages {background-image="images/notebook-1840276_1280.jpg" .shadow .blurred-5px}
+
+## {background-image="images/notebook-1840276_1280.jpg"}
+
+## 
+
+:::{.incremental}
+1. Vendor Lock-In vermeiden: Kontrolle über eigene Daten behalten
+1. KI verändert unsere Arbeit: Besser aktiv mitgestalten als reagieren
+1. Lokale KI ist heute nutzbar: Ollama + AnythingLLM auf jedem Laptop
+1. Open Weights ≠ Open Source, aber für die Praxis oft ausreichend
+1. Der Terminal ist kein Hindernis, sondern das Tor zu FOSS
+:::
+
+## Was noch fehlt 
+
+- In Bezug auf KI gibt es noch viele ungelöste Probleme und reale Risiken.
+- Empfehlung: Robert Miles ([@RobertMilesAI](https://www.youtube.com/@RobertMilesAI)) — verständliche Erklärungen zu AI Safety
+
+## {background-image="images/pexels-gratisography-519.jpg"}
+
 
 
 
