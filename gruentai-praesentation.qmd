@@ -29,7 +29,7 @@ title-slide-attributes:
 
 [Januar 2026]{style="font-size: 1em; color: #78909c; display: block;"}
 
-## GruentAI {background-color="#1a1a2e"}
+## GruentAI
 
 [Das Projekt zielt darauf ab den Einsatz von Lokalen Open Source LLMs für die Hochschullehre zu testen und für ausgewaehlte *Use Cases* zugaenglich zu machen.]{style="font-size: 1.2em;"}
 
@@ -38,8 +38,34 @@ title-slide-attributes:
 - **Kollaborative Lernunterstuetzung:** KI-gestuetztes Feedback fuer studentische Projektarbeiten
 
 
+## Projektziele{visibility="hidden"}
 
-# Warum OpenSource?
+1. Installation und Konfiguration von Open-Source-LLMs
+2. Anwendungsentwicklung von Open-Source-LLMs für Digital Learning: 
+   - Lehrunterstützung
+   - Bewertungsunterstützung
+3. Leistungsevaluation der erprobten Open-Source-LLMs
+4. Wissenstransfer für die Digitale Transformation des LSFM-Lehrkörpers
+
+
+
+## Agenda
+
+::: {.columns}
+::: {.column width="50%"}
+1. Warum Opensource
+2. OpenSource & KI
+3. Installation & Konfiguration
+:::
+::: {.column width="50%"}
+4. Workflow "Lehrunterstützung"
+5. Workflow "KI-gestuetzte Thesis-Bewertung mit lokalen LLMs"
+6. Ausblick und Deliverables
+:::
+:::
+
+
+# 1. Warum Opensource {background-color="#78909c"}
 
 
 ## Vendor Lock-In
@@ -79,59 +105,11 @@ title-slide-attributes:
 :::
 
 
-## {background-image="images/end-of-10-2.png" background-color="#2a67b2" background-size="contain"}
-
-::: {.notes}
-- Dazu noch eine Side-Note: Tausende von Freiwillige bieten workshops an um den Umstieg von Windows 10 auf Linux zu vereinfachen. 
-- Mein Vater hilft natürlich mit :-)
-- (Überleitung: Einwand)
-:::
-
-## {.center}
-
-:::{.blockquote}
-Aber nicht jeder kann ein Computerexperte sein
-:::
-
-::: {.notes}
-
-- Die "10'000-Stunden-Regel", die Malcolm Gladwell in seinem Buch "Outliers" populär gemacht hat, besagt, dass man etwa 10.000 Stunden Übung benötigt, um eine Fertigkeit zu meistern.
-- Bei 6 Stunden pro Tag sind Sie nach etwa 7 Jahren ein Computerexperte
-- Insbesondere müssen wir nicht alle 3 Ebenen verstehen (nächste Folie)
-
-:::
-
-## Drei Ebenen{.center}
-
-:::: {.fragment .fade-in-then-semi-out}
-::: {.layer-box .layer-box-blue}
-**Interface**
-:::
-::::
-
-:::: {.fragment .fade-in-then-semi-out}
-::: {.layer-box .layer-box-orange}
-**Implementierung**
-:::
-::::
-
-:::: {.fragment}
-::: {.layer-box  .layer-box-purple}
-**Technologie** 
-:::
-::::
+  
 
 
 
-:::{.notes}
-- Interface - Für alle
-- Implementierung - Für Anwender
-- Technologie - Für Experten
-:::
-
-
-
-# Openweights AI {background-image="images/console-4567918_1280.jpg" .shadow .blurred-10px}
+# 2. OpenSource & KI {background-color="#78909c"}
 
 ## {background-image="images/console-4567918_1280.jpg"}
 
@@ -202,11 +180,7 @@ geschlossener ↓
 
 
 
-# Praktische Demo 1 {background-image="images/magic-note-8836935\_1280.jpg" .shadow .blurred-5px}
-
-[OpenSource Lokal]{.shadow}
-
-## {background-image="images/magic-note-8836935\_1280.jpg"}
+# 3. Installation & Konfiguration {background-color="#78909c"}
 
 
 :::{.notes}
@@ -221,10 +195,6 @@ geschlossener ↓
 
 :::
 
-
-## Ollama{background-color="white"}
-
-![](images/welcome.avif)
 
 ## Ollama{background-color="white"}
 
@@ -366,16 +336,9 @@ wmic path win32_VideoController get name
 
 ## Modellwahl
 
-- Falls Sie mindestens 8 GB RAM haben
-  - Suchen Sie auf [ollama.ai](https://ollama.ai) ein kleines Model (1 - 2b Parameter) heraus
-  - Z.B.
-    - `llama3.2`
-    - `deepseek-r1`
-
----
-    
-- Falls Sie weniger als 8 GB RAM haben
-  1. Erstellen Sie ein kostenloses Konto auf [ollama.com](https://ollama.com)
+- Falls Sie mindestens 8 GB RAM haben suchen Sie auf [ollama.ai](https://ollama.ai) ein kleines Model (1 - 2b Parameter) heraus (z.B. `llama3.2`, `deepseek-r1`)
+- Falls Sie weniger als 8 GB RAM haben:
+  1. Erstellen Sie ein kostenloses Konto auf [ollama.ai](https://ollama.ai)
   2. Melden Sie sich in der Kommandozeile an
 
 :::{.terminal}
@@ -481,9 +444,7 @@ Jetzt haben wir einen etwas langsamen und nicht sehr intelligenten Chatbox.. was
 
 
 
-# Praktische Demo 2 {background-image="images/magic-note-8836935\_1280.jpg" .shadow .blurred-5px}
-
-[LLMs via einem GUI]{.shadow}
+# 4. Workflow "Lehrunterstützung" {background-color="#78909c"}
 
 :::{.notes}
 
@@ -491,7 +452,6 @@ Jetzt haben wir einen etwas langsamen und nicht sehr intelligenten Chatbox.. was
 
 :::
 
-## {background-image="images/magic-note-8836935\_1280.jpg"}
 
 
 ## AnythingLLM
@@ -536,34 +496,12 @@ Retrieval-augmented generation (RAG) is a technique that enables large language 
 
 
 
-# {background-color="#1a1a2e" .unlisted}
+# 5. KI-gestuetzte Thesis-Bewertung mit lokalen LLMs {background-color="#78909c"}
 
-[GruentAI]{style="font-size: 3.2em; font-weight: 700; color: #64b5f6; display: block; margin-bottom: 0.2em;"}
-
-[KI-gestuetzte Thesis-Bewertung mit lokalen LLMs]{style="font-size: 1.5em; color: #90caf9; display: block;"}
-
-[Forschungsgruppe Geoinformatik | ZHAW Waedenswil]{style="font-size: 1.1em; color: #b0bec5; display: block; margin-top: 1.5em;"}
-
-[Januar 2026]{style="font-size: 1em; color: #78909c; display: block;"}
 
 ---
 
-## Agenda
 
-::: {.columns}
-::: {.column width="50%"}
-1. Ausgangslage und Forschungsfrage
-2. Methodik und Datenbasis
-3. Ergebnisse und Top-Modelle
-:::
-::: {.column width="50%"}
-4. Modell- und Bias-Analyse
-5. Fazit und Empfehlungen
-6. Ausblick und Deliverables
-:::
-:::
-
----
 
 ## Ausgangslage: Zwei Perspektiven {background-color="#0f3460"}
 
@@ -670,7 +608,8 @@ Koennen lokal betriebene LLM-Modelle Bachelorarbeiten nach dem ZHAW-Schema bewer
 
 <video src="images/zhaw-workflow-v6.mp4" controls style="width: 90%; max-height: 70vh;"></video>
 
----
+
+
 
 ## Datenbasis und Dashboard
 
@@ -731,7 +670,6 @@ Zeitraum: Januar 2025 - Januar 2026
 :::
 :::
 
----
 
 ## Ergebnisse: Kernkennzahlen {background-color="#0f3460"}
 
@@ -835,7 +773,8 @@ Das beste Modell **hermes3:70b** erreicht mit nur **0.27 Punkten** Abweichung da
 :::
 :::
 
----
+
+# 6. Ausblick und Deliverables {background-color="#78909c"}
 
 ## Fazit & Empfehlungen {background-color="#0f3460"}
 
