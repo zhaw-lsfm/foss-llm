@@ -30,6 +30,10 @@ body .reveal {
   filter: blur(5px);
 }
 
+p.caption{
+  text-align: center;
+}
+
 
 .blurred-10px .slide-background-content {
   filter: blur(10px);

@@ -1,10 +1,12 @@
 
 
-To sketchify a (svg) image:
 
-```bash
-node sketchify-svg.js images/kochen-vs-computer.svg 
-``` 
+To copy to gis-lsfm:
+
+
+```
+rsync -avh --progress _site/ /home/rata/zhaw-laufwerke/gis-lsfm/svu-asep-webinar
+```
 
 - [ ] Wechsel zu Opensource fehlt. 1. Diagramm ist fehlplatziert 
 - [x] Describe in Detail the method to login to the hpc, install ollama and pull a model
