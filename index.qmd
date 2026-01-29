@@ -18,11 +18,12 @@ revealjs-plugins:
 lang: de
 ---
 
-# Mehr als nur ChatGPT {background-image="images/5790836212_87a89fe3b9_o.jpg" class="blurred-10px strokeme hydepark center" footer=false}
+# Mehr als nur ChatGPT {background-image="images/5790836212_87a89fe3b9_o.jpg" class="blurred-10px strokeme hydepark center" footer=false .nostretch}
 
 [Was Open Source und On Premise KI uns bieten können]{.strokeme}
 
-![Slides: [webgis.lsfm.zhaw.ch/svu-asep-webinar](https://webgis.lsfm.zhaw.ch/svu-asep-webinar%5D)](images/adobe-express-qr-code.svg){width=100}
+![Slides: [webgis.lsfm.zhaw.ch/svu-asep-webinar](https://webgis.lsfm.zhaw.ch/svu-asep-webinar)](images/adobe-express-qr-code.svg){width=200}
+
 
 
 ::: {.attribution}
@@ -125,7 +126,7 @@ Selbständig ([Ratnaweera.xyz](https://www.ratnaweera.xyz))
 
 ## {background-image="images/thermomix.png" background-size="contain" background-color="white"}
 
-## {background-color="#5F9EA0"}
+## {background-color="#5F9EA0" visibility="hidden"}
 
 :::: {.recipe}
 REZEPT
@@ -152,7 +153,7 @@ REZEPT
 :::
 
 
-## {background-color="#5F9EA0"}
+## {background-color="#5F9EA0" visibility="hidden"}
 
 ::: {.recipe}
 OFFENES REZEPT
@@ -212,7 +213,7 @@ HINWEISE:
 - (zurück zur Koch-analogie)
 :::
 
-## {background-color="#5F9EA0"}
+## {background-color="#5F9EA0" visibility="hidden"}
 
 :::: {.recipe}
 REZEPT
@@ -588,11 +589,11 @@ ollama signin
 
 ##
 
-Mit folgendem Kommandozeilenbefehl kann man ein Modell (lokal oder cloud) initialisieren
+Mit folgendem Kommandozeilenbefehl kann man ein Modell initialisieren werden
 
 :::{.terminal}
 ```{.bash}
-# initialisiert ein kleines, lokales Modell
+# lädt ein kleines, lokales Modell herunter
 ollama pull deepseek-r1:1.5b     
 
 
@@ -620,7 +621,7 @@ ollama pull ministral         # Vielseitig
 
 
 
-## Chat initialisieren
+## Chat starten
 
 
 :::{.terminal}
@@ -795,7 +796,7 @@ Die Meldung lautet wie folgt:
 ## Züri Wie Neu
 
 
-```{.r  filename="analysis.R" code-line-numbers="|2|4-5|7|9,14|10|12-13"}
+```{.r  filename="analysis.R" code-line-numbers="|2|4-5|7-8|10,15|11|13-14"}
 library(readr); library(dplyr); library(purrr); library(stringr)
 library(ollamar)
 
@@ -845,11 +846,12 @@ Photo courtesy of [ZHAW](https://www.zhaw.ch/de/lsfm/ueber-uns)
 Photo courtesy of [ZHAW](https://www.zhaw.ch/de/lsfm/ueber-uns)
 :::
 
-##
+
+## {.center}
 
 
 :::{.blockquote}
-Koennen lokal betriebene LLM-Modelle Bachelorarbeiten nach dem ZHAW-Schema bewerten und dabei eine Abweichung von weniger als 0.5 Notenpunkten zur manuellen Bewertung erzielen?
+Können lokal betriebene LLM-Modelle Bachelorarbeiten nach dem ZHAW-Schema bewerten und dabei eine Abweichung von weniger als 0.5 Notenpunkten zur manuellen Bewertung erzielen?
 :::
 
 ## Bewertungsschema
